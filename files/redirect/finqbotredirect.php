@@ -1,0 +1,1 @@
+<?php header( "Location: https://www.messenger.com/t/100789932053332" );?>

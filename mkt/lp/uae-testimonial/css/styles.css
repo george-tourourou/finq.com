@@ -1,0 +1,1518 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Nov 14, 2017, 5:03:23 PM
+    Author     : Loizos.Hadjiantoni
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+body .webtrade,
+body .available-platforms {
+  display: none;
+}
+body div .content {
+  width: 1184px;
+}
+body h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+body p {
+  font-size: 18px;
+}
+body .quote-gold {
+  color: #dcad54;
+  font-size: 100px;
+}
+body .quote-gold-right {
+  color: #dcad54;
+  font-size: 100px;
+  float: right;
+}
+body .logo {
+  width: 220px;
+}
+body .banner1 {
+  background: rgba(0, 0, 0, 0) url("../img/banner1/background-header.jpg") no-repeat scroll center top;
+  height: 900px;
+}
+body .banner1 .logo-row {
+  padding: 20px 0 65px 0;
+}
+body .banner1 .logo-row div {
+  padding-top: 20px;
+  text-align: right;
+}
+body .banner1 .logo-row div p {
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+}
+body .banner1 .logo-row div a img {
+  height: 40px;
+}
+body .banner1 .tc {
+  display: none;
+  text-align: center;
+  font-size: 15px;
+  padding: 90px 0 30px 0;
+}
+body .banner1 .tc .go-down {
+  cursor: pointer;
+}
+body .banner1 .col-12 > .col-7 .col-5 img {
+  margin: -15px -100px -100px -200px;
+  width: 225%;
+}
+body .banner1 .col-12 > .col-7 .col-7 {
+  margin-left: -40px;
+}
+body .banner1 .col-12 > .col-7 .col-7 .testimonial-text {
+  font-size: 26px;
+  font-style: italic;
+  padding-top: 60px;
+  padding-bottom: 0;
+  line-height: 1.4;
+  font-weight: 300;
+}
+body .banner1 .col-12 > .col-7 .col-7 .testimonial-name {
+  font-size: 26px;
+}
+body .banner1 .col-12 > .col-5 {
+  padding: 20px 0 20px 20px;
+}
+body .banner1 .col-12 > .col-5 h4 {
+  box-shadow: 0 29px 22px -15px #e5e5e5;
+  padding: 0 3px 24px 3px;
+  margin: 0 -22px 13px -22px;
+}
+body .banner1 .col-12 > .col-5 #box-white .custom-submit-div {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  border-radius: 40px;
+}
+body .banner1 .col-12 > .col-5 #box-white p.tc {
+  display: block;
+  color: black;
+  font-size: 15px;
+  padding-bottom: 0;
+}
+body .banner1 .col-12 .col-7 img {
+  width: 100%;
+}
+body .banner6 {
+  background-color: #fff;
+  padding-bottom: 70px;
+}
+body .banner6 .content h2 {
+  margin-bottom: 50px;
+  margin-top: 60px;
+  color: #000;
+}
+body .banner6 .content p {
+  font-size: 18px;
+  color: #1f1f23cc;
+  font-weight: 300;
+}
+body .banner6 .content .row {
+  padding: 10px 0 20px;
+}
+body .banner6 .content .row .benefits {
+  text-align: center;
+  width: 25%;
+}
+body .banner6 .content .row .benefits .benefits-content-line {
+  margin: 20px 28%;
+  background-color: #b3965d;
+  height: 1px;
+}
+body .banner2 {
+  background: url("../img/banner6/background-secondBlock-b.png") repeat scroll center top / cover;
+  margin-top: -350px;
+  padding-top: 210px;
+  padding-bottom: 110px;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+body .banner2 h2 {
+  padding: 170px 0 40px 0;
+  color: #fff;
+}
+body .banner2 .tablet-version {
+  display: none;
+}
+body .banner2 .width-20 {
+  width: 20%;
+  display: block;
+  float: left;
+}
+body .banner2 .width-20 .assets-box {
+  background: white;
+  border: 1px solid #d4d4d4;
+  margin: 0 5px 0 5px;
+  padding: 3px 4px 3px 4px;
+}
+body .banner2 .width-20 .assets-box img {
+  width: 100%;
+}
+body .banner2 .width-20 .assets-box p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+body .banner2 .width-20 .assets-box p:nth-child(3) {
+  padding: 0 0 23px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+body .banner2 .width-20 .assets-box .down {
+  font-size: 16px;
+}
+body .banner2 .width-20 .assets-box .down span {
+  color: #c13636;
+  font-size: 16px;
+}
+body .banner2 .width-20 .assets-box .up {
+  font-size: 16px;
+}
+body .banner2 .width-20 .assets-box .up span,
+body .banner2 .width-20 .assets-box .up i {
+  color: #1ea360;
+  font-size: 16px;
+}
+body .banner2 .content {
+  padding-bottom: 110px;
+}
+body .banner2 #tab-slideshow .content {
+  padding-bottom: 10px;
+}
+body .banner2 .arrows {
+  display: none;
+}
+body .banner3 {
+  background-color: #1f1f23;
+}
+body .banner3 h2 {
+  padding: 90px 0 70px 0;
+}
+body .banner3 .col-12 {
+  padding: 55px 0 70px;
+}
+body .banner3 .col-12 img {
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+body .banner3 .col-12 .col-7 p:nth-child(1) {
+  padding-top: 40px;
+}
+body .banner3 .col-12.content-2 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+body .banner3 .col-12.content-3 {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+body .banner3 .col-12.content-4 {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+body .banner3 .col-12.content-5 {
+  padding-top: 70px;
+}
+body .banner3 .computer {
+  display: block;
+}
+body .banner3 .phone {
+  display: none;
+}
+body .banner4 {
+  background-color: #dae5eb;
+  height: 782px;
+  position: relative;
+  /* Position the "next button" to the right */
+}
+body .banner4 h2 {
+  padding: 100px 0 70px 0;
+}
+body .banner4 .prev,
+body .banner4 .next {
+  cursor: pointer;
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*width: auto;*/
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin: 0;
+  background-color: #a3acb04d;
+}
+body .banner4 .prev span,
+body .banner4 .next span {
+  position: absolute;
+  top: 50%;
+}
+body .banner4 .prev {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 50px;
+  top: 0;
+}
+body .banner4 .next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  width: 50px;
+  top: 0;
+}
+body .banner4 .prev:hover,
+body .banner4 .next:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+body .banner4 .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  float: right;
+}
+body .banner4 .prev {
+  float: left;
+}
+body .banner4 .col-7 {
+  box-shadow: 0 9px 20px 0 #e5e5e5;
+}
+body .banner4 .testimonial {
+  color: #a3a3a3;
+  background-color: #fff;
+  padding: 10px 17px 50px 17px;
+  margin: 0 0 0 0;
+}
+body .banner4 .testimonial p {
+  margin: 0 35px 15px 35px;
+  color: #000;
+}
+body .banner4 .testimonial .arrow {
+  float: right;
+  font-size: 35px;
+  padding: 20px 30px 0 0;
+  color: #fff;
+}
+body .banner4 .testimonial_name {
+  background-color: #c9d5dc;
+  color: #858d92;
+  padding: 10px 17px 17px 17px;
+  font-size: 18px;
+}
+body .banner4 .col-12 {
+  padding: 0 0 170px 0;
+}
+body .banner4 .col-5 img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+body .banner5 h2 {
+  padding: 63px 0 10px 0;
+  color: #000;
+}
+body .banner5 .sub-title {
+  font-weight: 300;
+}
+body .banner5 .p_bold {
+  margin: 30px -10px 30px -10px;
+  padding: 25px 0 25px 0;
+  font-weight: 500;
+  color: #000;
+  box-shadow: 0 0 20px 0 #e5e5e5;
+}
+body .banner5 .p_light {
+  font-weight: 300;
+  color: #000;
+  padding: 10px 0 0;
+}
+body .banner5 p {
+  padding: 10px 0 40px 0;
+  text-align: center;
+  color: #000;
+}
+body .banner5 .security-box {
+  background-color: #fff;
+  padding: 55px 10px 55px 10px;
+  margin: 0 10px 0 10px;
+  border-top: 4px solid #dcad54;
+  box-shadow: 0 9px 20px 0 #e5e5e5;
+}
+body .banner5 .security-box img {
+  display: block;
+  margin: auto;
+}
+body .banner5 .security-box p {
+  font-size: 18px;
+}
+body .banner5 .security-box p.p_bold {
+  font-size: 24px;
+}
+body .banner5 .col-12:nth-child(1) {
+  padding-bottom: 15px;
+}
+body .banner5 .col-12:nth-child(2) {
+  padding-bottom: 100px;
+}
+body .platform-banner {
+  background: url("../img/platform/perform-pc.png") no-repeat scroll right center / 49%, linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 70px;
+}
+body .platform-banner .col-6 {
+  padding-bottom: 170px;
+}
+body .platform-banner .col-6 h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 30px;
+  text-align: left;
+}
+body .platform-banner .col-6 h3 {
+  font-size: 26px;
+  color: #000;
+  padding-bottom: 13px;
+}
+body .platform-banner .col-6 .perform-divider {
+  height: 1px;
+  background-color: #d4d4d4;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+body .platform-banner .col-6 p {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+}
+body .testimonials {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+body .testimonials .testimonials-customer1 {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+body .testimonials .testimonials-customer2 {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+body .testimonials .testimonials-customer3 {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+body .testimonials .testimonials-customer3 h2,
+body .testimonials .testimonials-customer3 .testimonial-text,
+body .testimonials .testimonials-customer3 .testimonial-name {
+  color: #fff !important;
+}
+body .testimonials h2 {
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  text-align: left;
+}
+body .testimonials .testimonial-customer {
+  /*Remove this class*/
+}
+body .testimonials .testimonial-customer .col-6 {
+  padding-top: 45px;
+}
+body .testimonials .testimonial-customer .testimonial-text {
+  color: #2c2b2b;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+body .testimonials .testimonial-customer .testimonial-name {
+  color: #2c2b2b;
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 105px;
+}
+body .testimonials .testimonial-customer .testimonial-trading {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 55px;
+  display: none;
+}
+body .testimonials .testimonial-customer a {
+  margin-bottom: 100px;
+}
+body .testimonials .testimonials-slider {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: -70px;
+}
+body .testimonials .testimonials-slider .slider-elem2 {
+  display: inline-block;
+  border-radius: 100px;
+}
+body .testimonials .testimonials-slider .slider-elem2 img {
+  border-radius: 100px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  margin: 15px;
+  max-height: 132px;
+  padding: 7px;
+  box-sizing: border-box;
+  height: 108px;
+}
+body .testimonials .testimonials-slider .slider-elem2 img:hover {
+  background-color: #dcad54;
+  cursor: pointer;
+  height: 108px;
+}
+body .testimonials .testimonials-slider .slider-elem2.active img {
+  background-color: #dcad54;
+}
+body .banner1,
+body .social {
+  color: #fff;
+}
+body .social-media {
+  padding: 30px 0;
+  background-color: #1f1f23;
+}
+body .social-media .content span {
+  float: left;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #a9a9a9;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .social-media .content a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .social-media .content a > .gray-img {
+  display: inline-block;
+}
+body .social-media .content a > .white-img {
+  display: none;
+}
+body .social-media .content a:hover > .gray-img {
+  display: none;
+}
+body .social-media .content a:hover > .white-img {
+  display: inline-block;
+}
+body .footer-payments {
+  background-color: #131316;
+}
+body .footer-payments .content {
+  padding-top: 45px;
+  text-align: center;
+}
+body .footer-payments .content img {
+  margin: 0 8px;
+  vertical-align: middle;
+}
+body .terms-conditions {
+  padding: 40px 0 40px 0;
+  background-color: #131316;
+  color: #a9a9a9;
+}
+body .terms-conditions p {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+body .terms-conditions p a {
+  color: #a9a9a9;
+  text-decoration: underline;
+}
+body .col-12.break-line {
+  border-bottom: 2px solid #2f2f35;
+  padding: 0;
+}
+body .box-white {
+  background-color: #fff;
+  padding: 30px 20px 30px 20px;
+  z-index: 1;
+  position: relative;
+}
+body .box-white .register {
+  background-color: wheat;
+}
+body .box-white h4 {
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+body .box-white .col-12 {
+  margin: 10px 0 10px 0;
+}
+body .box-white .col-12 .col-6-sp2:nth-child(2) {
+  margin-top: 10px;
+}
+body .box-white .col-6-sp2 {
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+body .box-white .col-6-sp2:nth-child(2) {
+  margin: 0;
+}
+body .box-white #submitForm_phone,
+body .box-white #submitForm {
+  color: #4c3d22;
+  border-radius: 40px;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.8s;
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.1), 0 12px 15px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  background: radial-gradient(#edd67e 0%, #dcad54 100%);
+  border-color: #dcad54;
+  text-transform: uppercase;
+}
+body .box-white #submitForm_phone i,
+body .box-white #submitForm i {
+  display: none;
+}
+body .box-white #register-area input {
+  background-color: #fff;
+  font-size: 15px;
+  border: 1px solid #7f7f7f;
+  font-weight: 500;
+  color: #000;
+  border-radius: 30px;
+  padding: 15px;
+}
+body .box-white #register-area input::placeholder,
+body .box-white #register-area input:-ms-input-placeholder,
+body .box-white #register-area input::-ms-input-placeholder {
+  color: #000;
+  font-weight: 500;
+}
+body .box-white #register-area input::placeholder {
+  color: #000;
+  opacity: 1;
+}
+body .box-white #register-area .custom-submit-button {
+  box-shadow: 0 7px 14px 3px #888888;
+  border-radius: 30px;
+}
+body #button_up,
+body .buttonBanner {
+  color: #000;
+  border-radius: 40px;
+  font-size: 29px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.8s;
+  font-weight: 700;
+  background: #dcad54;
+  border: #dcad54;
+  text-transform: uppercase;
+}
+body #button_up:hover,
+body .buttonBanner:hover {
+  background: #ecc06b;
+}
+body #x-button {
+  display: none;
+  cursor: pointer;
+}
+body .display-topright {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.lang-en .testimonials .testimonials-customer1 {
+  background: url("../img/testimonials/photographer.jpg") no-repeat scroll right center;
+}
+.lang-en .testimonials .testimonials-customer2 {
+  background: url("../img/testimonials/accountant.jpg?v1.0.0") no-repeat scroll right center;
+}
+.lang-en .testimonials .testimonials-customer3 {
+  background: url("../img/testimonials/owner.jpg") no-repeat scroll right center;
+}
+.lang-es h1 {
+  font-size: 56px;
+}
+.lang-es h2 {
+  font-size: 38px;
+}
+.lang-es .box-white h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.lang-es .banner5 .security-box p.p_bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  padding: 15px 0;
+}
+.lang-es .banner5 .col-4:nth-child(1) .p_bold,
+.lang-es .banner5 .col-4:nth-child(3) .p_bold {
+  padding: 30px 0;
+}
+.lang-es .platform-banner .col-6 h2 {
+  margin-right: -100px;
+  padding-bottom: 20px;
+}
+.lang-es .testimonials .testimonials-customer1 {
+  background: url("../img/testimonials/es/testimonials-pic1.jpg") no-repeat scroll right center;
+}
+.lang-es .testimonials .testimonials-customer2 {
+  background: url("../img/testimonials/es/testimonials-pic2.jpg") no-repeat scroll right center;
+}
+.lang-es .testimonials .testimonials-customer2 h2 {
+  font-size: 39px;
+}
+.lang-es .testimonials .testimonials-customer3 {
+  background: url("../img/testimonials/es/testimonials-pic3.jpg") no-repeat scroll right center;
+}
+.lang-es .testimonials .testimonials-customer3 #submitForm {
+  margin-bottom: 75px;
+}
+.lang-es .social-media .content a {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.lang-ar {
+  font-family: "Arial";
+}
+.lang-ar h1 {
+  font-size: 85px;
+  margin-top: 10px;
+}
+.lang-ar h2 {
+  font-size: 60px;
+}
+.lang-ar .banner1 .content div.pull-right {
+  float: left!important;
+}
+.lang-ar .banner1 .content .col-12 > .col-7 .col-5 img {
+  margin: -15px -270px -100px -100px;
+  width: 250%;
+}
+.lang-ar .banner1 .content .col-12 > .col-7 .col-7 .testimonial-text {
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 39px;
+  line-height: 1.2;
+  margin-right: -20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.lang-ar .banner1 .content .col-12 > .col-7 .col-7 .testimonial-name {
+  font-size: 39px;
+  margin-right: -20px;
+}
+.lang-ar .banner1 .content .col-12 > .col-5 h4 {
+  font-size: 46px;
+}
+.lang-ar .banner2 {
+  background-image: url("../img/banner6/background-secondBlock-ar.png");
+}
+.lang-ar .banner6 .col-4.benefits {
+  float: left;
+}
+.lang-ar .social-media .content span {
+  float: right;
+}
+.lang-ar .social-media .social-content {
+  float: left;
+}
+.lang-ar .testimonials h2 {
+  text-align: right;
+  padding-bottom: 0;
+}
+.lang-ar .testimonials .testimonial-customer .testimonial-text,
+.lang-ar .testimonials .testimonial-customer .testimonial-name {
+  font-size: 48px;
+  line-height: 1;
+  padding-bottom: 0;
+}
+.lang-ar .testimonials .testimonial-customer .col-6 {
+  padding-top: 1px;
+}
+.lang-ar .testimonials .testimonial-customer .testimonial-trading {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+.lang-ar .testimonials .testimonial-customer a {
+  font-size: 36px;
+  padding: 0 40px;
+  margin-bottom: 70px;
+}
+.lang-ar .testimonials .testimonials-customer1 {
+  background: url("../img/testimonials/ar/testimonials-pic1.jpg") no-repeat scroll right center;
+}
+.lang-ar .testimonials .testimonials-customer2 {
+  background: url("../img/testimonials/ar/testimonials-pic2.jpg") no-repeat scroll right center;
+}
+.lang-ar .testimonials .testimonials-customer2 .col-6 {
+  padding-left: 0;
+  padding-right: 150px;
+}
+.lang-ar .testimonials .testimonials-customer2 .col-6 p.testimonial-trading {
+  font-size: 20px;
+}
+.lang-ar .testimonials .testimonials-customer3 {
+  background: url("../img/testimonials/ar/testimonials-pic3.jpg") no-repeat scroll right center;
+}
+.lang-ar .testimonials .col-6 {
+  float: left;
+}
+.lang-ar .platform-banner .col-6 {
+  float: left;
+}
+.lang-ar .platform-banner .col-6 h2 {
+  font-size: 60px;
+  text-align: right;
+}
+.lang-ar .platform-banner .col-6 p {
+  font-size: 24px;
+}
+.lang-ar .banner5 p.sub-title {
+  font-size: 36px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.lang-ar .banner5 .col-4 {
+  float: left;
+}
+.lang-ar .banner5 .col-4 .security-box {
+  padding-bottom: 15px ;
+}
+.lang-ar .banner5 .col-4 .security-box .p_light {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 400;
+}
+.lang-ar .banner5 .col-4 .security-box .p_bold {
+  font-size: 30px;
+  font-weight: 700;
+}
+.lang-ar .box-white #submitForm_phone,
+.lang-ar .box-white #submitForm {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 47px;
+}
+#user-agent-btn {
+  display: none;
+}
+#success-page .finq-button {
+  background: linear-gradient(to right, #dcad54 0%, #e8c870 30%, #e8c870 70%, #dcad54 100%);
+  border-color: #dcad54 !important;
+  box-shadow: 0px 5px 0px 3px #be923f;
+  font-size: 24px !important;
+  font-weight: 700;
+  color: #4c3d22;
+  width: 100%;
+  border-radius: 30px;
+  padding: 15px;
+  text-align: center;
+}
+#success-page .finq-button a {
+  color: #4c3d22;
+}
+#success-page .content {
+  box-sizing: border-box;
+  width: 350px !important;
+}
+#success-page .content .register {
+  float: left;
+  padding: 60px 20px;
+  text-align: center;
+}
+@media only screen and (min-width: 960px) and (max-width: 1499px) {
+  body div .content {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px), only screen and (max-width: 719px), only screen and (max-width: 550px), only screen and (max-width: 400px) {
+  body div .content {
+    width: 100%;
+    padding: 0 50px;
+  }
+  body .banner1 .logo-row {
+    padding-bottom: 40px;
+  }
+  body .banner1 .available-platforms {
+    display: none;
+  }
+  body .banner1 .tc {
+    display: block;
+  }
+  body .banner1 .col-12 > .col-7 h1 {
+    text-align: center;
+  }
+  body .banner1 .col-12 > .col-7 .col-7,
+  body .banner1 .col-12 > .col-7 .col-5 {
+    margin-left: 0;
+    display: none;
+  }
+  body .banner2 h2 {
+    font-weight: 700;
+    font-size: 37px;
+    padding: 170px 0 0;
+    line-height: 1.3;
+  }
+  body .banner2 .tablet-version {
+    display: block;
+  }
+  body .banner2 .tablet-version .customer {
+    text-align: center;
+    margin-top: -300px;
+  }
+  body .banner2 .tablet-version .testimonial-name {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+  }
+  body .banner2 .tablet-version .testimonial-text {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.7;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0 30px;
+  }
+  body .banner2 .tablet-version .testimonial-name {
+    padding-bottom: 55px;
+  }
+  body .banner2 .tablet-version #user-agent-btn {
+    background: radial-gradient(#edd67e 0%, #dcad54 100%);
+    box-shadow: 0 20px 50px -15px #a0834d;
+    padding: 15px;
+    color: #4c3d22;
+  }
+  body .banner2 h2 {
+    padding-top: 60px;
+  }
+  body .banner5 .security-box {
+    padding: 20px 10px;
+  }
+  body .banner5 .security-box p.p_bold {
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 0 5px;
+  }
+  body .banner6,
+  body .testimonials,
+  body .footer-payments {
+    display: none;
+  }
+  body .platform-banner .col-6 h2 {
+    font-size: 37px;
+    font-weight: 700;
+    text-align: left;
+  }
+  body .platform-banner .col-6 h3 {
+    text-align: left;
+    font-size: 24px;
+  }
+  body .platform-banner .col-6 a {
+    width: auto;
+  }
+  body .social-media {
+    padding: 30px 0 10px;
+  }
+  body .social-media .col-6 {
+    width: 100%;
+  }
+  body .social-media .social-content {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  body .social-media .social-content span {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  body .social-media .platforms-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    float: left;
+  }
+  body .social-media .platforms-content span {
+    display: none;
+  }
+  body .social-media .platforms-content a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  body .social-media .social-content {
+    text-align: center;
+  }
+  body .social-media .social-content span {
+    width: 100%;
+  }
+  body #button_up,
+  body .buttonBanner {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  body #user-agent-btn {
+    display: inline-block;
+  }
+  body .box-white {
+    position: fixed;
+  }
+  body .terms-conditions {
+    padding-top: 20px;
+  }
+  body .terms-conditions p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .lang-es .platform-banner .col-6 h2 {
+    margin-right: 0;
+    text-align: center;
+  }
+  .lang-es .banner2 .tablet-version .testimonial-text {
+    padding: 0;
+  }
+  .lang-ar .banner1 .col-7 h1 {
+    font-size: 80px;
+    line-height: 1;
+    margin-top: -30px;
+  }
+  .lang-ar .banner2 {
+    background: url("../img/banner6/background-secondBlock-tablet.png") no-repeat scroll center top / cover;
+  }
+  .lang-ar .banner2 h2 {
+    font-size: 55px;
+  }
+  .lang-ar .banner2 .tablet-version .testimonial-text {
+    font-style: normal;
+    padding: 0;
+    font-size: 30px;
+  }
+  .lang-ar .platform-banner .col-6 h3 {
+    text-align: right;
+  }
+  .lang-ar .banner5 .sub-title {
+    display: none;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  body div .content {
+    width: 100%;
+    padding: 0 100px;
+  }
+  body .banner1 {
+    background: rgba(0, 0, 0, 0) url("../img/banner1/background-tablet.png") no-repeat scroll left top / cover;
+    height: 550px;
+  }
+  body .banner1 .content .col-12 .col-7 {
+    width: 100%;
+  }
+  body .banner1 .content .col-12 .col-7 h1 {
+    font-size: 50px;
+    padding-top: 0;
+    line-height: 1.3;
+  }
+  body .banner1 .content .col-12 .col-7 span {
+    font-size: 75px;
+    padding-bottom: 20px;
+  }
+  body .banner1 .content .col-12 .col-5 {
+    display: none;
+  }
+  body .banner2 {
+    position: relative;
+    margin-top: -180px;
+    background: url("../img/banner6/background-secondBlock-tablet.png") no-repeat scroll center top / cover;
+    /* Position the "next button" to the right */
+    /* The dots/bullets/indicators */
+  }
+  body .banner2 .col-12 img {
+    width: 100%;
+  }
+  body .banner2 .tablet-version .customer {
+    margin-top: -250px;
+  }
+  body .banner2 #tab-slideshow .break-line {
+    border-bottom: none;
+    margin: 0;
+  }
+  body .banner2 .tab {
+    font-size: 15px;
+  }
+  body .banner2 .width-20 {
+    width: 33.33%;
+  }
+  body .banner2 .prev,
+  body .banner2 .next {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 40px;
+    top: 75%;
+    height: 60px;
+    cursor: pointer;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    margin: 0;
+    background-color: #a3acb04d;
+  }
+  body .banner2 .prev span,
+  body .banner2 .next span {
+    margin: 3px;
+  }
+  body .banner2 .prev:hover,
+  body .banner2 .next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+  }
+  body .banner2 .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    float: right;
+  }
+  body .banner2 .prev {
+    left: 0;
+    box-sizing: border-box;
+    float: left;
+  }
+  body .banner2 .next {
+    right: 0;
+    box-sizing: border-box;
+  }
+  body .banner2 .arrows {
+    display: block;
+    padding-top: 40px;
+  }
+  body .banner2 .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  body .banner2 .active,
+  body .banner2 .dot:hover {
+    background-color: #717171;
+  }
+  body .banner5 .col-4,
+  body .banner5 .col-5,
+  body .banner5 .col-6,
+  body .banner5 .col-7 {
+    width: 100%;
+  }
+  body .platform-banner {
+    background: url("../img/platform/phone.png") no-repeat scroll right bottom 60px, linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+  }
+  body .platform-banner .col-6 {
+    width: 100%;
+    padding-bottom: 35px;
+  }
+  body .platform-banner .col-6 h2 {
+    text-align: center;
+    padding-bottom: 85px;
+  }
+  body .platform-banner .col-6 a {
+    width: auto;
+  }
+  body .platform-banner .col-6 .paragraph-2,
+  body .platform-banner .col-6 .paragraph-1,
+  body .platform-banner .col-6 .perform-divider {
+    width: 60%;
+  }
+  body .banner5 .sub-title {
+    margin: 0 20px 0 20px;
+    padding-bottom: 0;
+  }
+  body .banner5 .security-box {
+    border-top: none;
+    box-shadow: none;
+  }
+  body .banner5 .security-box .p_bold {
+    box-shadow: none;
+  }
+  body #row_button_up {
+    display: block;
+  }
+  body .box-white {
+    overflow: auto;
+  }
+  .lang-ar .platform-banner .col-6 {
+    width: 70%;
+  }
+  .lang-ar .platform-banner .col-6 h2 {
+    font-size: 55px;
+  }
+  .lang-ar .platform-banner .col-6 p.paragraph-1,
+  .lang-ar .platform-banner .col-6 p.paragraph-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 719px) {
+  body div .content {
+    padding: 0 35px;
+  }
+  body .banner1 {
+    background: rgba(0, 0, 0, 0) url("../img/banner1/background-phone.jpg") no-repeat scroll center center / cover;
+    height: 515px;
+  }
+  body .banner1 img.logo {
+    padding: 0;
+  }
+  body .banner1 .logo-row {
+    padding-bottom: 44px;
+  }
+  body .banner1 .col-7 {
+    width: 100%;
+  }
+  body .banner1 .col-7 h1 {
+    font-size: 48px;
+    padding-top: 0;
+    line-height: 1.3;
+  }
+  body .banner1 .col-7 span {
+    font-size: 60px;
+  }
+  body .banner1 .col-12 .col-5 {
+    max-width: 100%;
+    background-color: #fff0;
+  }
+  body .banner1 .col-12 .col-5 #box-white {
+    display: none;
+  }
+  body .banner2 {
+    position: relative;
+    margin-top: -190px;
+    background: url("../img/banner6/background-secondBlock-tablet.png") no-repeat scroll center top / cover;
+    /* Position the "next button" to the right */
+  }
+  body .banner2 .tablet-version .customer {
+    margin-top: -250px;
+  }
+  body .banner2 .tablet-version .customer img {
+    width: 100%;
+  }
+  body .banner2 .tablet-version .testimonial-text {
+    margin-top: -60px;
+    line-height: 1.5;
+  }
+  body .banner2 .tablet-version .testimonial-name {
+    padding-bottom: 35px;
+  }
+  body .banner2 #tab-slideshow .break-line {
+    border-bottom: none;
+    margin: 0;
+  }
+  body .banner2 .tab button:nth-child(1),
+  body .banner2 .tab button:nth-child(2),
+  body .banner2 .tab button:nth-child(3) {
+    width: 33.33%;
+  }
+  body .banner2 .tab button:nth-child(4),
+  body .banner2 .tab button:nth-child(5) {
+    width: 50%;
+  }
+  body .banner2 .width-20 {
+    width: 100%;
+  }
+  body .banner2 .width-20 .assets-box {
+    margin: 0 45px;
+  }
+  body .banner2 .prev,
+  body .banner2 .next {
+    background-color: #0000004d;
+    color: #fff;
+    padding: 10px 17px 10px 17px;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 40px;
+    top: 80%;
+    height: 60px;
+  }
+  body .banner2 .prev span,
+  body .banner2 .next span {
+    top: 35%;
+  }
+  body .banner2 .prev:hover,
+  body .banner2 .next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+  }
+  body .banner2 .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    float: right;
+  }
+  body .banner2 .prev {
+    left: 0;
+    float: left;
+    padding: 10px 17px 10px 10px;
+  }
+  body .banner2 .arrows {
+    display: block;
+    padding-top: 40px;
+  }
+  body .platform-banner {
+    padding-top: 40px;
+    background: linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+    background: url("../img/platform/phone.png") no-repeat scroll right bottom 100px, linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+  }
+  body .platform-banner .col-6 {
+    width: 100%;
+    padding-bottom: 35px;
+  }
+  body .platform-banner .col-6 h2 {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  body .platform-banner .col-6 .paragraph-2,
+  body .platform-banner .col-6 .paragraph-1,
+  body .platform-banner .col-6 .perform-divider {
+    width: 100%;
+  }
+  body .platform-banner .col-6 h3 {
+    text-align: left;
+  }
+  body .platform-banner .col-6 a {
+    padding-bottom: 5px;
+    width: auto;
+    text-align: left;
+    display: inline-block;
+  }
+  body .platform-banner .col-6 .paragraph-2,
+  body .platform-banner .col-6 .paragraph-1,
+  body .platform-banner .col-6 .perform-divider {
+    width: 60%;
+  }
+  body .banner5 .col-4,
+  body .banner5 .col-5,
+  body .banner5 .col-6,
+  body .banner5 .col-7 {
+    width: 100%;
+  }
+  body .banner5 .sub-title {
+    margin: 0 10px;
+    padding-bottom: 0;
+  }
+  body .banner5 .security-box {
+    border-top: none;
+    box-shadow: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body .banner5 .security-box .p_bold {
+    box-shadow: none;
+  }
+  body .social .col-3 {
+    width: 50%;
+  }
+  body .social .col-6 {
+    width: 50%;
+    margin: 5px 0 5px;
+    float: right;
+  }
+  body .social .col-6 a {
+    padding-left: 20px;
+  }
+  body .social .col-6 a span {
+    display: none;
+  }
+  body #row_button_up {
+    display: block;
+  }
+  body #button_up,
+  body .buttonBanner {
+    display: block;
+    margin: auto;
+  }
+  .box-white {
+    overflow: auto;
+  }
+  .lang-ar .platform-banner {
+    background: url("../img/platform/phone.png") no-repeat scroll right 60px, linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+  }
+  .lang-ar .platform-banner .col-6 {
+    width: 70%;
+  }
+  .lang-ar .platform-banner .col-6 h2 {
+    font-size: 55px;
+  }
+  .lang-ar .platform-banner .col-6 p.paragraph-1,
+  .lang-ar .platform-banner .col-6 p.paragraph-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  body .banner1 {
+    height: 380px;
+  }
+  body .banner1 .col-7 h1 {
+    font-size: 35px;
+    line-height: 1.3;
+  }
+  body .banner1 .logo-row {
+    padding-bottom: 20px;
+  }
+  body .banner2 h2,
+  body .platform-banner .col-6 h2,
+  body .banner5 h2 {
+    font-size: 30px;
+  }
+  body .platform-banner {
+    background-image: none;
+    background: linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+  }
+  body .platform-banner .col-6 a {
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  body .platform-banner .col-6 .paragraph-2,
+  body .platform-banner .col-6 .paragraph-1,
+  body .platform-banner .col-6 .perform-divider {
+    width: 100%;
+  }
+  body .banner2 .tablet-version .customer {
+    margin-top: -175px;
+  }
+  body .banner2 .tablet-version .testimonial-text {
+    margin-top: -40px;
+  }
+  body .banner2 .tablet-version .testimonial-text,
+  body .banner2 .tablet-version .testimonial-name {
+    font-size: 20px;
+  }
+  body .banner2 .tablet-version .testimonial-name {
+    padding-bottom: 20px;
+  }
+  body .social-media .platforms-content.col-6 a img {
+    padding: 3px;
+  }
+  body .banner2 {
+    padding-bottom: 30px;
+  }
+  body .platform-banner .col-6 {
+    padding-bottom: 20px;
+  }
+  body .banner5 .col-12:nth-child(2) {
+    padding-bottom: 30px;
+  }
+  body #button_up,
+  body .buttonBanner {
+    font-size: 24px;
+  }
+  .lang-ar .banner1 .col-7 h1 {
+    font-size: 55px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .lang-ar .platform-banner .col-6 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body div .content {
+    padding: 0 15px;
+  }
+  body .banner1 {
+    height: 300px;
+  }
+  body .banner1 .logo-row {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  body .banner1 .logo-row img.logo {
+    width: 140px;
+  }
+  body .banner1 .col-7 h1 {
+    font-size: 28px;
+  }
+  body .banner2 .tablet-version .customer {
+    margin-top: -180px;
+  }
+  body .banner2 .tablet-version .testimonial-name {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  body .banner2 .tablet-version .testimonial-text {
+    font-size: 16px;
+    margin-top: -40px;
+  }
+  body .platform-banner {
+    background: linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+  }
+  body .platform-banner .col-6,
+  body .platform-banner .col-6 .paragraph-1,
+  body .platform-banner .col-6 .paragraph-2,
+  body .platform-banner .col-6 .perform-divider {
+    width: 100%;
+  }
+  body .platform-banner .col-6 a,
+  body .platform-banner .col-6 .paragraph-1 a,
+  body .platform-banner .col-6 .paragraph-2 a,
+  body .platform-banner .col-6 .perform-divider a {
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  body .terms-conditions p {
+    font-size: 14px;
+  }
+  body .banner2 h2,
+  body .platform-banner .col-6 h2,
+  body .banner5 h2 {
+    font-size: 26px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

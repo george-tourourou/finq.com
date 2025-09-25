@@ -1,0 +1,837 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Nov 14, 2017, 5:03:23 PM
+    Author     : Loizos.Hadjiantoni
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+body div .content {
+  width: 1184px;
+}
+body h1 {
+  font-size: 75px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+body h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+body p {
+  font-size: 18px;
+}
+body .logo {
+  width: 220px;
+}
+body .banner1 {
+  background: rgba(0, 0, 0, 0) url("../img/banners/headerNew.jpg") no-repeat scroll center top;
+  min-height: 1110px;
+}
+body .banner1 .logo-row {
+  padding: 20px 0 65px 0;
+}
+body .banner1 .logo-row div {
+  padding-top: 20px;
+  text-align: right;
+}
+body .banner1 .logo-row div p {
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+}
+body .banner1 .logo-row div a img {
+  height: 40px;
+}
+body .banner1 h1.phone-version {
+  display: none;
+}
+body .banner1 .col-12 > .col-7 h1 span {
+  color: #dbac5f;
+}
+body .banner1 .col-12 > .col-7 p {
+  font-size: 45px;
+}
+body .banner1 .col-12 > .col-7 img {
+  width: 223px;
+  float: right;
+  margin-right: 15px;
+}
+body .banner1 .col-12 > .col-5 {
+  padding: 20px;
+  background-color: #ffffff4d;
+}
+body .banner1 .col-12 > .col-5 h4 {
+  box-shadow: 0 29px 22px -15px #e5e5e5;
+  padding: 0 3px 24px 3px;
+  margin: 0 -22px 13px -22px;
+}
+body .banner1 .col-12 > .col-5 #box-white .custom-submit-div {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  border-radius: 40px;
+}
+body .banner1 .col-12 > .col-5 #box-white p.tc {
+  display: block;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  padding: 90px 0 0;
+}
+body .banner1-part2 {
+  background: url("../img/banners/bg-bottom.jpg") no-repeat scroll center bottom, url("../img/icons/background-color2.png") repeat scroll;
+  margin-top: -100px;
+  padding-bottom: 140px;
+}
+body .banner1-part2 .phone-version {
+  display: none;
+}
+body .banner1-part2 div {
+  text-align: center;
+}
+body .banner1-part2 div h2,
+body .banner1-part2 div h3,
+body .banner1-part2 div .price {
+  color: #fff;
+}
+body .banner1-part2 div h2 {
+  margin-top: -60px;
+  padding-bottom: 30px;
+}
+body .banner1-part2 div h3 {
+  margin-top: 65px;
+}
+body .banner1-part2 div p {
+  font-size: 18px;
+  color: #a6a6a6;
+  margin-top: 0;
+}
+body .banner1-part2 div p span {
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+body .banner1-part2 div p a {
+  color: #a6a6a6;
+}
+body .banner1-part2 div .title {
+  color: #5a5a5a;
+}
+body .banner1-part2 div .price {
+  font-weight: 700;
+  font-size: 24px;
+}
+body .banner1-part2 div .col-4.buy-oil,
+body .banner1-part2 div .col-4.sell-oil {
+  font-size: 16px;
+}
+body .banner1-part2 div .col-4 {
+  padding: 55px 0;
+}
+body .banner1-part2 div .col-4.change-oil {
+  background: url("../img/banners/image1.png") no-repeat scroll center top;
+}
+body .banner1-part2 div .col-4.change-oil .price {
+  font-size: 36px;
+  color: #dbac5f;
+  font-weight: 700;
+}
+body .banner1-part2 div .col-4.change-oil .title {
+  font-size: 18px;
+}
+body .banner1-phone {
+  display: none;
+}
+body .benefits-list {
+  background-color: #fff;
+  padding-bottom: 70px;
+}
+body .benefits-list .content h2 {
+  margin-bottom: 50px;
+  margin-top: 60px;
+  color: #000;
+}
+body .benefits-list .content p {
+  font-size: 18px;
+  color: #1f1f23cc;
+  font-weight: 300;
+}
+body .benefits-list .content .row {
+  padding: 10px 0 20px;
+}
+body .benefits-list .content .row .benefits {
+  text-align: center;
+  width: 25%;
+  border-right: 1px solid #d9d9d9;
+  padding-top: 6px;
+}
+body .benefits-list .content .row .benefits div {
+  height: 100px;
+}
+body .benefits-list .content .row .benefits:nth-child(5) {
+  border-right: none;
+}
+body .banner5 h2 {
+  padding: 63px 0 10px 0;
+  color: #000;
+}
+body .banner5 .sub-title {
+  font-weight: 300;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #a3a3a3;
+}
+body .banner5 .p_bold {
+  margin: 30px -10px 20px -10px;
+  padding: 25px 0 25px 0;
+  font-weight: 700;
+  color: #000;
+  box-shadow: 0 0 20px 0 #e5e5e5;
+}
+body .banner5 .p_light {
+  font-weight: 300;
+  color: #000;
+  padding: 10px 0 0;
+}
+body .banner5 p {
+  padding: 10px 0 40px;
+  text-align: center;
+  color: #000;
+}
+body .banner5 .security-box {
+  background-color: #fff;
+  padding: 55px 10px 35px;
+  margin: 0 10px 0 10px;
+  border-top: 4px solid #dcad54;
+  box-shadow: 0px 9px 20px 0px #e5e5e5;
+}
+body .banner5 .security-box img {
+  display: block;
+  margin: auto;
+}
+body .banner5 .security-box p {
+  font-size: 18px;
+}
+body .banner5 .security-box p.p_bold {
+  font-size: 24px;
+}
+body .banner5 .col-12:nth-child(1) {
+  padding-bottom: 15px;
+}
+body .banner5 .col-12:nth-child(2) {
+  padding-bottom: 100px;
+}
+body .platform-banner {
+  background: url("../img/platform-banner/main-banner-platform-new-v2.jpg") no-repeat scroll center center / cover;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 70px;
+}
+body .platform-banner .col-6 {
+  padding-bottom: 170px;
+}
+body .platform-banner .col-6 h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 30px;
+  text-align: left;
+}
+body .platform-banner .col-6 h3 {
+  font-size: 26px;
+  color: #000;
+  padding-bottom: 13px;
+  text-align: left;
+}
+body .platform-banner .col-6 .perform-divider {
+  height: 1px;
+  background-color: #d4d4d4;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+body .platform-banner .col-6 p {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+}
+body .testimonials {
+  background: url("../img/banners/testimonials.jpg") no-repeat scroll center top / cover;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+body .testimonials .testimonials-customer1 {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+body .testimonials h2 {
+  color: black;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+  text-align: left;
+}
+body .testimonials .testimonial-customer .col-6 {
+  padding-top: 45px;
+}
+body .testimonials .testimonial-customer .testimonial-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+body .testimonials .testimonial-customer .testimonial-text {
+  color: #2c2b2b;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+body .testimonials .testimonial-customer .testimonial-name {
+  color: #2c2b2b;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 55px;
+}
+body .testimonials .testimonial-customer .testimonial-trading {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  display: none;
+}
+body .testimonials .testimonial-customer a {
+  margin-bottom: 65px;
+}
+body .banner1,
+body .social {
+  color: #fff;
+}
+body .social-media {
+  padding: 30px 0;
+  background-color: #1f1f23;
+}
+body .social-media .content span {
+  float: left;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #a9a9a9;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .social-media .content a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .social-media .content a > .gray-img {
+  display: inline-block;
+}
+body .social-media .content a > .white-img {
+  display: none;
+}
+body .social-media .content a:hover > .gray-img {
+  display: none;
+}
+body .social-media .content a:hover > .white-img {
+  display: inline-block;
+}
+body .footer-payments {
+  background-color: #131316;
+}
+body .footer-payments .content {
+  padding-top: 45px;
+  text-align: center;
+}
+body .footer-payments .content img {
+  margin: 0px 8px;
+  vertical-align: middle;
+}
+body .terms-conditions {
+  padding: 40px 0 40px 0;
+  background-color: #131316;
+  color: #a9a9a9;
+}
+body .terms-conditions p {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+body .terms-conditions p a {
+  color: #a9a9a9;
+  text-decoration: underline;
+}
+body .col-12.break-line {
+  border-bottom: 2px solid #2f2f35;
+  padding: 0;
+}
+body .box-white {
+  background-color: #fff;
+  padding: 30px 20px 30px 20px;
+  z-index: 1;
+  position: relative;
+}
+body .box-white .register {
+  color: wheat;
+}
+body .box-white h4 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+body .box-white h4 span {
+  color: #c49549;
+}
+body .box-white .col-12 {
+  margin: 10px 0px 10px 0px;
+}
+body .box-white .col-12 .col-6-sp2:nth-child(2) {
+  margin-top: 10px;
+}
+body .box-white .col-6-sp2 {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+body .box-white .col-6-sp2:nth-child(2) {
+  margin: 0;
+}
+body .box-white #submitForm_phone,
+body .box-white #submitForm {
+  color: #4c3d22;
+  border-radius: 40px;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.8s;
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.1), 0 12px 15px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  background: radial-gradient(#edd67e 0%, #dcad54 100%);
+  border-color: #dcad54;
+  text-transform: uppercase;
+}
+body .box-white #submitForm_phone i,
+body .box-white #submitForm i {
+  display: none;
+}
+body .box-white #register-area input {
+  background-color: #fff;
+  font-size: 15px;
+  border: 1px solid #7f7f7f;
+  font-weight: 500;
+  color: #000;
+  border-radius: 30px;
+  padding: 15px;
+}
+body .box-white #register-area input::placeholder,
+body .box-white #register-area input:-ms-input-placeholder,
+body .box-white #register-area input::-ms-input-placeholder {
+  color: #000;
+  font-weight: 500;
+}
+body .box-white #register-area input::placeholder {
+  color: #000;
+  opacity: 1;
+}
+body .box-white #register-area .custom-submit-button {
+  box-shadow: 0px 7px 14px 3px #888888;
+  border-radius: 30px;
+}
+body #button_up,
+body .buttonBanner {
+  color: #000;
+  border-radius: 40px;
+  font-size: 29px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.8s;
+  font-weight: 700;
+  background: #dcad54;
+  border: #dcad54;
+}
+body #button_up:hover,
+body .buttonBanner:hover {
+  background: #ecc06b;
+}
+body #button_up {
+  text-transform: uppercase;
+}
+body .buttonBanner {
+  text-transform: capitalize;
+}
+body #x-button {
+  display: none;
+}
+body .display-topright {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.lang-es .banner1 .col-7 {
+  padding-right: 10px;
+}
+.lang-es .testimonials {
+  background: url("../img/banners/es/testimonial.jpg") no-repeat scroll center top / cover;
+}
+.lang-es .testimonials .testimonial-customer .testimonials-content {
+  float: right;
+}
+.lang-es .platform-banner .col-6 h2 {
+  font-size: 36px;
+}
+.lang-es .banner5 .col-12:nth-child(2) .col-4:nth-child(3) .security-box {
+  padding-bottom: 61px;
+}
+.lang-es .social-media .content a {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.lang-es .social-media .content span {
+  font-size: 16px;
+}
+.lang-ar .banner1 .logo-row div.available-platforms.pull-right {
+  float: left!important;
+}
+.lang-ar .banner1 .col-5,
+.lang-ar .banner1 .col-7 {
+  float: left;
+}
+.lang-ar .banner1 .col-7 {
+  padding-right: 40px;
+}
+.lang-ar .platform-banner .col-6 {
+  float: left;
+}
+.lang-ar .platform-banner .col-6 h3,
+.lang-ar .platform-banner .col-6 h2 {
+  text-align: right;
+}
+.lang-ar .testimonials {
+  background: url("../img/banners/ar/testimonial.jpg") no-repeat scroll center top / cover;
+}
+.lang-ar .testimonials h2 {
+  text-align: right;
+}
+.lang-ar .banner5 .col-12:nth-child(2) .col-4:nth-child(3) .security-box {
+  padding-bottom: 61px;
+}
+.lang-ar .social-media .content span {
+  float: right;
+}
+#user-agent-btn {
+  display: none;
+}
+@media only screen and (max-width: 1184px) {
+  body div .content {
+    width: 100%;
+    padding: 0 30px;
+  }
+  body .banner1-part2 .graph {
+    width: 100%;
+  }
+  body .platform-banner {
+    background: url("../img/platform-banner/perform-pc-ipad.png") no-repeat scroll right center, linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  body div .content {
+    width: 100%;
+    padding: 0 40px;
+  }
+  body h1 {
+    font-size: 70px;
+  }
+  body h2 {
+    font-size: 38px;
+  }
+  body p {
+    font-size: 18px;
+  }
+  body .banner1 {
+    background: rgba(0, 0, 0, 0) url("../img/banners/phone/banner1.jpg") no-repeat scroll center top;
+    min-height: 800px;
+  }
+  body .banner1 .logo-row {
+    padding-bottom: 40px;
+  }
+  body .banner1 h1.phone-version {
+    display: block;
+  }
+  body .banner1 h1.pc-version {
+    display: none;
+  }
+  body .banner1 .available-platforms {
+    display: none;
+  }
+  body .banner1 .col-12 > .col-7 {
+    width: 100%;
+  }
+  body .banner1 .col-12 > .col-7 img {
+    display: none;
+  }
+  body .banner1 .col-12 > .col-7 p {
+    font-size: 40px;
+  }
+  body .banner1 .col-12 .col-5 {
+    background-color: #fff0;
+    width: 100%;
+  }
+  body .banner1 .col-12 .col-5 #box-white {
+    display: none;
+  }
+  body .banner1 #user-agent-btn {
+    background: linear-gradient(to right, #dcad54 0%, #e8c870 30%, #e8c870 70%, #dcad54 100%);
+    box-shadow: 0 20px 50px -15px #a0834d;
+    padding: 11px;
+    color: #4c3d22;
+    display: block;
+    margin: auto;
+    width: 100%;
+    font-size: 24px;
+  }
+  body .box-white {
+    position: fixed;
+    overflow: auto;
+  }
+  body .banner1-part2 {
+    background: url("../img/banners/phone/graph.png") no-repeat scroll center bottom 90px, url("../img/banners/phone/bg-color.jpg") repeat scroll;
+    padding-bottom: 415px;
+    margin-top: -1px;
+  }
+  body .banner1-part2 .col-12 {
+    display: none;
+  }
+  body .banner1-part2 div p {
+    margin-top: 20px;
+  }
+  body .banner1-part2 div .col-4 {
+    padding: 15px 0;
+  }
+  body .banner1-part2 div h2 {
+    margin-top: 20px;
+  }
+  body .banner1-phone {
+    display: block;
+    background: #19191b;
+    text-align: center;
+    padding-bottom: 65px;
+  }
+  body .banner1-phone h2,
+  body .banner1-phone h3,
+  body .banner1-phone .price {
+    color: #fff;
+  }
+  body .banner1-phone h2 {
+    margin-top: -60px;
+    padding-bottom: 30px;
+  }
+  body .banner1-phone h3 {
+    margin-top: 65px;
+  }
+  body .banner1-phone p {
+    font-size: 18px;
+    color: #a6a6a6;
+    margin-top: 30px;
+  }
+  body .banner1-phone p span {
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  body .benefits-list {
+    padding-bottom: 0;
+  }
+  body .benefits-list .content h2 {
+    padding: 0 60px;
+  }
+  body .benefits-list .content .row .col-4.benefits {
+    border-right: none;
+    padding-bottom: 25px;
+    width: 50%;
+  }
+  body .testimonials {
+    background: url("../img/banners/phone/testimonial.jpg?ab") no-repeat scroll center top;
+  }
+  body .testimonials h2 {
+    padding-top: 80px;
+  }
+  body .testimonials .testimonial-customer .col-6 {
+    padding-top: 0;
+  }
+  body .testimonials .testimonial-customer .testimonial-trading {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+  body .testimonials .col-6 {
+    width: 100%;
+  }
+  body .platform-banner {
+    background: linear-gradient(to top, #d3d3d3 0%, #ffffff 100%);
+  }
+  body .platform-banner .col-6 {
+    width: 100%;
+    padding-bottom: 48px;
+  }
+  body .platform-banner .col-6 h3 {
+    text-align: left;
+  }
+  body .platform-banner .col-6 img {
+    width: 31%;
+  }
+  body .banner5 .col-12 .col-4 {
+    width: 100%;
+  }
+  body .banner5 .col-12 .sub-title {
+    display: none;
+  }
+  body .banner5 .col-12 .security-box {
+    border-top: none;
+    box-shadow: none;
+    padding: 45px 10px 0px;
+  }
+  body .banner5 .col-12 .security-box .p_bold {
+    box-shadow: none;
+    margin: 10px;
+    padding: 0;
+    font-weight: 700;
+  }
+  body .social-media {
+    padding: 30px 0 10px;
+  }
+  body .social-media .col-6 {
+    width: 100%;
+  }
+  body .social-media .social-content {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  body .social-media .social-content span {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  body .social-media .platforms-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    float: left;
+  }
+  body .social-media .platforms-content span {
+    display: none;
+  }
+  body .social-media .platforms-content a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  body .social-media .social-content {
+    text-align: center;
+  }
+  body .social-media .social-content span {
+    width: 100%;
+  }
+  .lang-es .banner1 .logo-row {
+    padding-bottom: 20px;
+  }
+  .lang-es .banner1 h1.phone-version {
+    font-size: 57px;
+  }
+  .lang-es .testimonials {
+    background: url("../img/banners/es/testimonial-phone.jpg") no-repeat scroll center top / cover;
+  }
+  .lang-ar .testimonials {
+    background: url("../img/banners/ar/testimonial-phone.jpg") no-repeat scroll center top / cover;
+  }
+}
+@media only screen and (max-width: 550px) {
+  body div .content {
+    padding: 0 25px;
+  }
+  body .banner1 h1.phone-version {
+    font-size: 38px;
+    text-align: center;
+  }
+  body .banner1 .col-12 > .col-7 p {
+    font-size: 24px;
+    text-align: center;
+  }
+  body .benefits-list,
+  body .testimonials {
+    display: none;
+  }
+  body .banner1-part2 {
+    background: url(../img/banners/graph-phone.png) no-repeat scroll center bottom 90px, url(../img/banners/phone/bg-color.jpg) repeat scroll;
+  }
+  body .banner1-part2 h2 {
+    font-size: 28px;
+  }
+  body .banner1-part2 .col-4 {
+    width: 50%;
+  }
+  body .banner1-part2 .col-4:nth-child(3) {
+    text-align: left;
+  }
+  body .banner1-part2 .col-4:nth-child(5) {
+    text-align: right;
+  }
+  body .banner1-part2 .col-4 p.title {
+    margin-bottom: 0px;
+  }
+  body .banner1-part2 .col-4 p.price {
+    margin-top: 0px;
+  }
+  body .banner1-part2 .col-4.buy-oil,
+  body .banner1-part2 .col-4.sell-oil {
+    padding-top: 0;
+  }
+  body .banner1-part2 .col-4.buy-oil p,
+  body .banner1-part2 .col-4.sell-oil p {
+    margin-top: 10px;
+  }
+  body .banner1-part2 .col-4.phone-version {
+    padding-bottom: 5px;
+  }
+  body .banner1-part2 .phone-version {
+    display: block;
+    width: 100%;
+  }
+  body .banner1-part2 .pc-version {
+    display: none;
+  }
+  body .banner5 h2 {
+    font-size: 34px;
+  }
+  body .banner1-phone h3 {
+    font-size: 22px;
+  }
+  body .social-media .platforms-content a img {
+    padding: 5px;
+  }
+  body .terms-conditions p {
+    font-size: 15px;
+  }
+  .lang-es .banner1 h1.phone-version {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body div .content {
+    padding: 0 15px;
+  }
+}

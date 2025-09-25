@@ -1,0 +1,43 @@
+#popup-proccess-window {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 10000;
+}
+#popup-proccess-window img {
+  display: block;
+  margin: 150px auto 10px;
+  width: 120px;
+}
+#popup-proccess-window span {
+  float: left;
+  width: 100%;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+#register {
+  overflow-y: auto;
+}
+#register span.error {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  float: left;
+  width: 100%;
+  background: #c91616;
+  padding: 5px 10px;
+  margin: 10px 0 0;
+  border-radius: 3px;
+  color: #fff;
+  display: none;
+  position: relative;
+  z-index: 10;
+}
+/*# sourceMappingURL=register-form.css.map */

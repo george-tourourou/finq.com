@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Nov 16, 2017, 8:55:13 AM
+    Author     : Loizos Hadjiantoni
+*/
+div.tab {
+  overflow: hidden;
+  background-color: #ffffff00;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 20px;
+  /* Style the buttons inside the tab */
+}
+div.tab a {
+  text-decoration: none;
+  font-size: 18px;
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.5s;
+  border-radius: 30px;
+  color: #dcad54;
+  text-transform: uppercase;
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+}
+div.tab a :hover {
+  background-color: #ddd;
+}
+div.tab .active {
+  color: #1f1f23;
+  border-radius: 30px;
+  background-color: #dcad54;
+  font-weight: 700;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+@media only screen and (max-width: 719px) {
+  body div.tab {
+    line-height: 3;
+  }
+}
+/*# sourceMappingURL=tabs.css.map */

@@ -1,0 +1,111 @@
+.instruments-container {
+    margin: auto;
+    width: 100%;
+}
+.instruments-container tr th {
+    text-align: center;
+    z-index: 10;
+}
+.instruments-container tr th:first-child {
+    text-align: left;
+    padding: 15px 0 15px 0;
+}
+.instruments-container tr td {
+    text-align: center;
+}
+.instruments-container tr td.flashAnimationPositive {
+    padding: 10px;
+    animation-name: flashAnimationPositiveAnim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.instruments-container tr td.flashAnimationNegative {
+    padding: 10px;
+    animation-name: flashAnimationNegativeAnim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.instruments-container tr td.change.flashAnimationPositive {
+    color: #20cc93 !important;
+}
+.instruments-container tr td.change.flashAnimationNegative {
+    color: #fe3730 !important;
+}
+@keyframes flashAnimationPositiveAnim {
+    from {
+        background-color: #85e9c7;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+@keyframes flashAnimationNegativeAnim {
+    from {
+        background-color: #fea19f;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+.instruments-container tr td img {
+    height: 50px;
+}
+.instruments-container tr td a {
+    font-weight: 600;
+    color: #000;
+}
+.instruments-container tr td:first-child {
+    text-align: unset;
+    text-align: left;
+    padding: 8px 0 8px 0;
+}
+.instruments-container tr th:last-child,
+.instruments-container tr td:last-child {
+    text-align: right;
+    padding: 8px 0 8px 0;
+}
+/*END instruments-container*/
+
+
+/* Tabs */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    display: flex;
+    /*display: inline-flex;*/
+    flex-wrap: wrap;
+    border-radius: 40px;
+    border: 1px solid #E1E1E1;
+    background: #FFF;
+    padding: 6px;
+    margin-bottom: 12px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    /*background-color: #f1f1f1;*/
+    /*border: 1px solid #ccc;*/
+    /*color: #005C97!important;*/
+    /*background-color: #EEF8FF;*/
+ border-radius: 20px;
+}
+.tab.active {
+    /*background-color: #ccc;*/
+    font-weight: bold;
+}
+.tab:hover {
+    background-color: #ddd;
+}
+
+.tabcontent {
+display: none;
+padding: 0 20px;
+/*border: 1px solid #ccc;*/
+}
+/* End Tabs */
