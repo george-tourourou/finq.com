@@ -1,0 +1,9 @@
+name = Dynamic content loading
+description = Provide functionality for load content dynamicaly via ajax request
+package = TradeFXL
+core = 7.x
+dependencies[] = variable
+dependencies[] = custom_localization
+version = "7.x-1.0"
+project = "tfxl"
+scripts[] = js/dynamic_content.js

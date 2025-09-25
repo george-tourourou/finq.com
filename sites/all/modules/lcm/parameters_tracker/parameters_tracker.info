@@ -1,0 +1,14 @@
+name = Parameter tracker
+description = Save incoming GET parameters and add them to required links
+package = TradeFXL
+core = 7.x
+
+dependencies[] = infra
+dependencies[] = variable
+
+version = "7.x-1.0"
+project = "tfxl"
+
+scripts[] = js/parameters_tracker.js
+
+

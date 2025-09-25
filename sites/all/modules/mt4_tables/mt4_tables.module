@@ -1,0 +1,115 @@
+<?php
+/**
+* Function To Display Trading Conditions MT4 Table
+* @param function_parameter
+* @returns function output description
+*/
+function mt4_table($category, $subcategory, $subCategoryName = 'empty'){
+	db_set_active('lcm-instruments');
+
+	if($category == "cosmos")
+	{
+		$category = "mt4";
+	}
+	
+	global $language;
+
+	$trading_conditions = $category."_".$subcategory;
+	switch ($trading_conditions) {
+		case "mt4_stocks":
+			$myfields = "Instrument,Spreads,Leverage,TradingHours";
+			break;
+
+        case "expiration_dates":
+            $myfields = "PlatformName,Rolloverdate"; //$myfields = "PlatformName,ActualExpirationdate,Rolloverdate";
+            break;
+
+        case "expiration_rollovers":
+            $myfields = "Content";
+            break;
+			
+		case "mt4_commodities":
+			$myfields = "Instrument,Spreads,Leverage,TradingHours";
+			break;
+			
+		case "mt4_forex":
+		   $myfields = "Instrument,Spreads,Leverage,Size_of_1_lot,TradingHours";
+			break;
+			
+		case "mt4_crypto":
+		   $myfields = "Instrument,Spreads,Leverage,Size_of_1_lot,TradingHours";
+			break;
+			
+		default:
+			$myfields = "Instrument,Spreads,Leverage,TradingHours";
+	}
+	
+	$query="SELECT ".$myfields." FROM ".$category."_".$subcategory;	
+	
+	if($subCategoryName == 'crypto')
+	{
+		//$query .= " where Instrument = 'BTCUSD'";
+	}
+	
+	$result=db_query($query);
+	
+	if ($result) {
+	    if($trading_conditions == "expiration_rollovers") {
+            echo '<ol>';
+            while ($row = $result->fetchAssoc()) {
+                foreach ($row as $column => $data) {
+                    echo '<li>';
+                    echo $data;
+                    echo '</li>';
+                }
+            }
+            echo '</ol>';
+        }
+	    else {
+            while ($row = $result->fetchAssoc()) {
+                echo '<tr>';
+                foreach ($row as $column => $data) {
+                    echo '<td>';
+                    echo getLeverage($column, $language->prefix, $data);
+                    echo '</td>';
+                }
+                echo '</tr>';
+            }
+        }
+	}
+	
+	db_set_active();
+}
+
+function getLeverage($column, $langCode, $data) 
+{	 
+	$MAX_POLISH_LEVERAGE_VALUE = 100;
+	
+	$data = trim($data);
+	
+	if(strtolower($column) === 'leverage' && $langCode === 'pl' && strpos($data, ':') === 1) {
+		
+		$myArray = explode(':', $data);
+		$leverageVal = $myArray[1];
+		if (ctype_digit($leverageVal)) {
+			$leverageVal = (int)$leverageVal;
+			
+			if($leverageVal > $MAX_POLISH_LEVERAGE_VALUE) {
+				return $myArray[0].':'.$MAX_POLISH_LEVERAGE_VALUE;
+			}
+			
+			return $data;
+		} else {
+			return $data;
+		}		
+	} else {
+		return $data;
+	}
+}
+
+
+
+
+
+
+

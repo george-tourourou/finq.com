@@ -1,0 +1,375 @@
+<?php
+
+	class PopularInstrumentsDatabaseRepository {
+		
+		function GetPopularInstruments() {
+			
+			$conn = $this->getConnection();
+			
+			$query = "SELECT Name, Alias FROM popular_instruments WHERE IsSentiment = 1 ORDER BY Ordering";
+			
+			$result = $conn->query($query);
+			
+			$popularInstruments = [];
+
+			if ($result->num_rows > 0) {
+				while($row = $result->fetch_assoc()) 
+				{
+					$instrumentSentiment = new InstrumentDataModel($row["Alias"], 0, $row["Name"]);
+					
+					$popularInstruments[] = $instrumentSentiment;
+				}
+			}
+			$conn->close();
+			
+			return $popularInstruments;
+		}
+				
+		function GetCategoryInstruments($category) {
+			
+			$conn = $this->getConnection();
+			
+			$query = "SELECT Name, Alias FROM popular_instruments WHERE Category = '".$category."' ORDER BY Ordering";
+						
+			$result = $conn->query($query);
+			
+			$popularInstruments = [];
+			
+			if ($result->num_rows > 0) {
+				while($row = $result->fetch_assoc()) 
+				{
+					$instrumentSentiment = new InstrumentDataModel($row["Alias"], 0, $row["Name"]);
+					
+					$popularInstruments[] = $instrumentSentiment;
+				}
+			}
+			$conn->close();
+			
+			return $popularInstruments;
+		}
+		
+		function GetPopularInstrumentsPerCategory() {
+			
+			$conn = $this->getConnection();
+			
+			$query = "SELECT Name, Alias, OldMarketPrice, Category FROM popular_instruments WHERE IsSentiment = 0 ORDER BY Ordering";
+			
+			$result = $conn->query($query);
+			
+			$popularInstruments = [];
+
+			if ($result->num_rows > 0) {
+				while($row = $result->fetch_assoc()) 
+				{
+					$instrument = new popular_instruments($row["Name"], $row["Alias"], $row["Category"], $row["OldMarketPrice"]);
+					
+					$popularInstruments[] = $instrument;
+				}
+			}
+			
+			$conn->close();
+			
+			return $popularInstruments;
+		}
+		
+		function getConnection() {
+			$dbName = 'lcm-instruments' ;
+			$dbHost = '343ceac831677d3fdb2676ca6fd4913ba6e030d8.rackspaceclouddb.com' ;
+			$dbUsername = 'partners';
+			$dbUserPassword = 'Yee9piey7phu';
+			
+			$conn = new mysqli($dbHost, $dbUsername, $dbUserPassword, $dbName);
+			
+			// Check connection
+			if ($conn->connect_error) {
+				die("Connection failed: " . $conn->connect_error);
+			} 			
+			
+			return $conn;
+		}
+	} 
+	
+	class popular_instruments {
+		public $Alias;
+		public $Name;
+		public $Category;
+		public $OldMarketPrice;
+		
+		function __construct($Name, $Alias, $Category, $OldMarketPrice) {
+            $this->Category = $Category;
+            $this->Name = $Name;
+            $this->Alias = $Alias;
+            $this->OldMarketPrice = $OldMarketPrice;
+        }
+	}
+
+    class PopularIstrumentsModel {
+        public $category;
+        public $elements;
+
+        function __construct($category, $elements) {
+            $this->category = $category;
+            $this->elements = $elements;
+        }
+    }
+
+    class InstrumentSentimentModel {
+        public $Name;
+        public $Alias;
+        public $LongPositionsPercentage;
+        public $ShortPositionsPercentage;
+    }
+
+    class InstrumentDataModel {
+        public $Alias;
+        public $Name;
+        public $MarketPrice;
+        public $MarketPrice6MonthsAgo;
+        public $Movement;
+
+        function __construct($alias, $marketPrice6MonthsAgo, $name = "")
+        {
+            if($name == "")
+            {
+                $name = $alias;
+            }
+
+            $this->Name = $name;
+            $this->Alias = $alias;
+            $this->MarketPrice6MonthsAgo = $marketPrice6MonthsAgo;
+        }
+    }
+
+    class InstrumentsRepository {
+
+        /**
+         * @return array
+         */
+        function GetPopularCategoryInstruments()
+        {
+			$repository = new PopularInstrumentsDatabaseRepository();
+			$limit = 5;
+			$counter = 0;
+			
+			$assets = array("forex", "stocks", "commodities", "crypto", "indices", "bonds", "etfs");
+			
+            $popularInstruments = [];
+			$allPopularInstruments = $repository->GetPopularInstrumentsPerCategory();			
+			
+			foreach($assets as $asset) 
+			{
+				$elements = [];
+				$counter = 0;
+				
+				foreach($allPopularInstruments as $instrument) 
+				{
+					if($instrument->Category == $asset && $counter < $limit)
+					{
+						$counter++;
+						$elements[] = new InstrumentDataModel($instrument->Alias, $instrument->OldMarketPrice, $instrument->Name);
+					}
+				}
+				
+				$popularInstruments[] = new PopularIstrumentsModel($asset, $elements);
+			}
+            
+			return $popularInstruments;
+        }
+
+        /**
+         * @return array|PopularIstrumentsModel
+         */
+        function GetPopularInstruments()
+        {
+			$databaseRepository = new PopularInstrumentsDatabaseRepository();
+			$elements = $databaseRepository->GetPopularInstruments();
+			
+            
+			$instruments = new PopularIstrumentsModel("popular", $elements);
+
+            return $instruments;
+        }
+
+        /**
+         * @return array|PopularIstrumentsModel
+         */
+        function GetCategoryInstruments($category)
+        {
+			$databaseRepository = new PopularInstrumentsDatabaseRepository();
+			$elements = $databaseRepository->GetCategoryInstruments($category);			
+            
+			$instruments = new PopularIstrumentsModel("popular", $elements);
+
+            return $instruments;
+        }
+
+        /**
+         * @param $alias
+         * @return bool|mixed|string
+         */
+        function GetSentimentData($alias, $name)
+        {
+            $quotesURL = "https://api-v2.finq.com/sentiment?key=1&brand=markets&q=";
+            $url = $quotesURL.$alias;
+
+            $options = stream_context_create(array('http'=>
+                array(
+                    'timeout' => 3 //10 seconds
+                )
+            ));
+
+            $jsondata = file_get_contents($url, false, $options);
+
+            $obj = json_decode($jsondata, true);
+
+            $sentiment = new InstrumentSentimentModel();
+            $sentiment->Alias = $alias;
+			$sentiment->Name = $name;
+			$sentiment->LongPositionsPercentage = 50;
+			$sentiment->ShortPositionsPercentage = 50;
+
+            foreach($obj as $property => $value)
+            {
+                foreach($value as $prop => $val)
+                {
+                    if($prop == 'percentageOfLongs')
+                    {
+                        $sentiment->LongPositionsPercentage = $val;
+                    }
+                    else if($prop == 'percentageOfShorts')
+                    {
+                        $sentiment->ShortPositionsPercentage = $val;
+                    }
+                }
+            }
+
+            return $sentiment;
+        }
+
+        /**
+         * @param $alias
+         * @return bool|mixed|string
+         */
+        function GetInstrumentMarketPrice($alias)
+        {
+            $quotesURL = 'https://api-v2.finq.com/quotesv2?key=1&callback=callbackQuotes&q=';
+            $url = $quotesURL . $alias;
+
+            $options = stream_context_create(array('http'=>
+                array(
+                    'timeout' => 3 //10 seconds
+                )
+            ));
+
+            $jsondata = file_get_contents($url, false, $options);
+            $jsondata = str_replace("callbackQuotes(", "", $jsondata);
+            $jsondata = str_replace(");", "", $jsondata);
+
+            $obj = json_decode($jsondata, true);
+            $MarketPrice = 0;
+
+            foreach($obj as $property => $value)
+            {
+                foreach($value as $prop => $val)
+                {
+                    if($prop == 'price')
+                    {
+                        $MarketPrice = $val;
+                    }
+                }
+            }
+
+            return $MarketPrice;
+        }
+    }
+
+    class PopularInstruments {
+        function GetPopularInstrumentsGroupByCategory() {
+            $databaseRepository = new PopularInstrumentsDatabaseRepository();
+
+            $group = [];
+            $assets = array("popular", "forex", "stocks", "commodities", "indices");
+            $popularInstruments = $databaseRepository->GetPopularInstrumentsPerCategory();
+
+            foreach($assets as $asset)
+            {
+                $elements = [];
+                $counter = 0;
+
+                foreach($popularInstruments as $instrument)
+                {
+                    if($instrument->Category == $asset && $counter < 6)
+                    {
+                        $counter++;
+                        $elements[] = new InstrumentDataModel($instrument->Alias, $instrument->OldMarketPrice, $instrument->Name);
+                    }
+                }
+
+                $group[] = new PopularIstrumentsModel($asset, $elements);
+            }
+
+            return $group;
+        }
+
+        function GetPopularInstrumentsSentiment() {
+
+            $repository = new InstrumentsRepository();
+
+            $instruments = $repository->GetPopularInstruments();
+
+            $SentimentsData = [];
+
+            foreach ($instruments->elements as $element) {
+                $SentimentsData[] = $repository->GetSentimentData($element->Alias, $element->Name);
+            }
+
+            return $SentimentsData;
+        }
+
+        function GetPopularInstrumentsData() {
+            $repository = new InstrumentsRepository();
+
+            $InstrumentsCategories = $repository->GetPopularCategoryInstruments();
+
+            //var_dump($InstrumentsCategories);
+
+            foreach ($InstrumentsCategories as $instrumentCategory) {
+                foreach ($instrumentCategory->elements as $instrument) {
+                    $instrument->MarketPrice = $repository->GetInstrumentMarketPrice($instrument->Alias);
+                    $instrument->Movement = number_format(($instrument->MarketPrice - $instrument->MarketPrice6MonthsAgo) / $instrument->MarketPrice6MonthsAgo * 100, 2);
+                }
+            }
+
+            return $InstrumentsCategories;
+        }
+
+        function GetCategoryInstrumentsData($category)
+        {
+            $repository = new InstrumentsRepository();
+
+            $instruments = $repository->GetCategoryInstruments($category);
+
+            $SentimentsData = [];
+
+            foreach ($instruments->elements as $element) {
+                $SentimentsData[] = $repository->GetSentimentData($element->Alias, $element->Name);
+            }
+
+            return $SentimentsData;
+        }
+
+        function GetInstrumentData($instrumentCategories, $alias) {
+            foreach ($instrumentCategories as $instrumentCategory) {
+                foreach ($instrumentCategory->elements as $instrument) {
+
+                    if($instrument->Alias == $alias)
+                    {
+                        return $instrument;
+                    }
+                }
+            }
+
+            return null;
+        }
+    }
+?>

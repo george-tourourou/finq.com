@@ -1,0 +1,4 @@
+name = Trade
+description = Provide functionality for Trade website.
+package = LC
+core = 7.x

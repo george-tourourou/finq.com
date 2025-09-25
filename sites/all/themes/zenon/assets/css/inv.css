@@ -1,0 +1,510 @@
+.wmtButton {
+    padding: 3px 10px 4px 31px;
+    display: inline-block;
+    outline: 0;
+    border: 1px solid #333333;
+    line-height: 14px;
+    font-weight: bold;
+    position: relative;
+	font-family: Arial, sans-serif;
+}
+.wmtButton.wmtButton-noSSL:before {
+    background-image: url(http://glocdn.investing.com/newSiteIconsSprite_v35g.png);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #8C8C8C;
+    box-shadow: inset -1px 0px 0px 0px #F8F8F8;
+}
+
+.wmtButton.wmtButton-SSL:before {
+    background-image: url(https://ca33f332e2199349c49c-dc74b5af55c9b2a1bd8891aa9e8701fc.ssl.cf1.rackcdn.com/newSiteIconsSprite_v35g.png);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #8C8C8C;
+    box-shadow: inset -1px 0px 0px 0px #F8F8F8;
+}
+
+.wmtButton:hover {
+    text-decoration: none;
+}
+.wmtButton.wmtButtonIcon-x:before {
+    width: 20px;
+    height: 17px;
+    background-position: -86px -2071px;
+    margin: 2px 1px 0 1px;
+}
+.wmtButton.wmtButtonIcon-arrow:before {
+    height: 17px;
+    width: 22px;
+    background-position: -15px -177px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-swap:before {
+    height: 17px;
+    width: 26px;
+    background-position: -67px -435px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-files:before {
+    background-position: -51px -177px;
+    height: 17px;
+    width: 22px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-magnifyingGlass:before {
+    height: 17px;
+    width: 22px;
+    background-position: -127px -177px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-v:before {
+    background-position: -126px -157px;
+    height: 17px;
+    width: 22px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-bell:before {
+    background-position: -74px -156px;
+    height: 17px;
+    width: 22px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-doubleArrow:before {
+    height: 17px;
+    width: 20px;
+    background-position: -69px -177px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-filter:before {
+    background-position: -130px -199px;
+    height: 17px;
+    width: 22px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-trash:before {
+    background-position: -70px -238px;
+    height: 15px;
+    width: 20px;
+    margin: 3px 0 0 3px;
+}
+.wmtButton.wmtButtonIcon-portfolio:before {
+    background-position: -43px -534px;
+    height: 17px;
+    width: 22px;
+    margin: 2px 0 0 1px;
+}
+.wmtButton.wmtButtonIcon-none {
+    padding: 3px 10px 4px;
+}
+
+
+.wmtButton.nyx_Blue_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #ffffff;
+	border: 1px solid #004f9d;
+	text-shadow: 0 1px #0C6BAF;
+	background: linear-gradient(to bottom, #0059b0, #0059b0);
+}
+
+a.nyx_Blue_FS12:hover, a.nyx_Blue_FS12:active { 
+	text-decoration: none;
+	border: 1px solid #004f9d;
+	text-shadow: 0 1px #0C6BAF;
+	background: linear-gradient(to bottom, #0C6BAF, #0059b1);
+}
+
+.wmtButton.nyx_Blue_FS9 { 
+	text-decoration: none;
+	font-size: 9px;
+	color: #ffffff;
+	border: 1px solid #004f9d;
+	text-shadow: 0 1px #0C6BAF;
+	background: linear-gradient(to bottom, #0059b0, #0059b0);
+}
+
+a.nyx_Blue_FS9:hover, a.nyx_Blue_FS9:active { 
+	text-decoration: none;
+	border: 1px solid #004f9d;
+	text-shadow: 0 1px #0C6BAF;
+	background: linear-gradient(to bottom, #0C6BAF, #0059b1);
+}
+
+.wmtButton.nyx_DarkGreenGrdBtn { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #298214;
+	background: linear-gradient(to bottom, #298214, #103308);
+}
+
+a.nyx_DarkGreenGrdBtn:hover, a.nyx_DarkGreenGrdBtn:active { 
+	text-decoration: none;
+	color: #ffffff;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #236e11;
+	background: linear-gradient(to bottom, #236e11, #0f3008);
+}
+
+.wmtButton.nyx_GreenGrd_FS10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #095c02;
+	background: linear-gradient(to bottom, #10b501, #095c02);
+}
+
+a.nyx_GreenGrd_FS10:hover, a.nyx_GreenGrd_FS10:active { 
+	text-decoration: none;
+	border: 1px solid #095c02;
+	text-shadow: 0 1px #10b501;
+	background: linear-gradient(to bottom, #10b501, #095c02);
+}
+
+.wmtButton.nyx_GreenGrd_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #fff;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #095c02;
+	background: linear-gradient(to bottom, #10b501, #095c02);
+}
+
+a.nyx_GreenGrd_FS12:hover, a.nyx_GreenGrd_FS12:active { 
+	text-decoration: none;
+	border: 1px solid #095c02;
+	text-shadow: 0 1px #10b501;
+	background: linear-gradient(to bottom, #10b501, #095c02);
+}
+
+.wmtButton.nyx_GreenGrd_FS9 { 
+	text-decoration: none;
+	font-size: 9px;
+	color: #fff;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #2AA316;
+	background: linear-gradient(to bottom, #2a8215, #2a8215);
+}
+
+a.nyx_GreenGrd_FS9:hover, a.nyx_GreenGrd_FS9:active { 
+	text-decoration: none;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #226a11;
+	background: linear-gradient(to bottom, #2a8215, #2a8215);
+}
+
+.wmtButton.nyx_Green_FS10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #fff;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #2AA316;
+	background: linear-gradient(to bottom, #2a8215, #2a8215);
+}
+
+a.nyx_Green_FS10:hover, a.nyx_Green_FS10:active { 
+	text-decoration: none;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #2a8215;
+	background: linear-gradient(to bottom, #2a8215, #2a8215);
+}
+
+.wmtButton.nyx_Green_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #fff;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #2a8215;
+	background: linear-gradient(to bottom, #2a8215, #2a8215);
+}
+
+a.nyx_Green_FS12:hover, a.nyx_Green_FS12:active { 
+	text-decoration: none;
+	border: 1px solid #226a11;
+	text-shadow: 0 1px #2AA316;
+	background: linear-gradient(to bottom, #2a8215, #2a8215);
+}
+
+.wmtButton.nyx_Orange_FS10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #333333;
+	border: 1px solid #e9a83b;
+	text-shadow: 0 1px #fdd083;
+	background: linear-gradient(to bottom, #fdb947, #fdb947);
+}
+
+a.nyx_Orange_FS10:hover, a.nyx_Orange_FS10:active { 
+	text-decoration: none;
+	border: 1px solid #e9a83b;
+	text-shadow: 0 1px #fdd289;
+	background: linear-gradient(to bottom, #ffce7d, #fdb948);
+}
+
+.wmtButton.nyx_Orange_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #333;
+	border: 1px solid #e9a83b;
+	text-shadow: 0 1px #fdc66a;
+	background: linear-gradient(to bottom, #fdb947, #fdb947);
+}
+
+a.nyx_Orange_FS12:hover, a.nyx_Orange_FS12:active { 
+	text-decoration: none;
+	border: 1px solid #fdb947;
+	text-shadow: 0 1px #fdb947;
+	background: linear-gradient(to bottom, #fdb947, #fdb947);
+}
+
+.wmtButton.nyx_Orange_Grd_F10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	border: 1px solid #c87624;
+	text-shadow: 0 1px #bb6510;
+	background: linear-gradient(to bottom, #e59d4b, #c86a10);
+}
+
+a.nyx_Orange_Grd_F10:hover, a.nyx_Orange_Grd_F10:active { 
+	text-decoration: none;
+	border: 1px solid #ae6418;
+	text-shadow: 0 1px #ad5d0f;
+	background: linear-gradient(to bottom, #cf8534, #a3590f);
+}
+
+.wmtButton.nyx_Orange_Grd_F9 { 
+	text-decoration: none;
+	font-size: 9px;
+	color: #ffffff;
+	border: 1px solid #c87624;
+	text-shadow: 0 1px #bb6510;
+	background: linear-gradient(to bottom, #e59d4b, #c86a10);
+}
+
+a.nyx_Orange_Grd_F9:hover, a.nyx_Orange_Grd_F9:active { 
+	text-decoration: none;
+	color: #ffffff;
+	border: 1px solid #ae6418;
+	text-shadow: 0 1px #ad5d0f;
+	background: linear-gradient(to bottom, #cf8534, #a3590f);
+}
+
+.wmtButton.nyx_Orange_Grd_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #ffffff;
+	border: 1px solid #c87624;
+	text-shadow: 0 1px #bb6510;
+	background: linear-gradient(to bottom, #e59d4b, #c86a10);
+}
+
+a.nyx_Orange_Grd_FS12:hover, a.nyx_Orange_Grd_FS12:active { 
+	text-decoration: none;
+	color: #ffffff;
+	border: 1px solid #ae6418;
+	text-shadow: 0 1px #ad5d0f;
+	background: linear-gradient(to bottom, #cf8534, #a3590f);
+}
+
+.wmtButton.nyx_RedDark_FS10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #fff;
+	border: 1px solid #a00400;
+	text-shadow: 0 1px #800400;
+	background: linear-gradient(to bottom, #a00400, #a00400);
+}
+
+a.nyx_RedDark_FS10:hover, a.nyx_RedDark_FS10:active { 
+	text-decoration: none;
+	border: 1px solid #a00400;
+	text-shadow: 0 1px #800400;
+	background: linear-gradient(to bottom, #a00400, #a00400);
+}
+
+.wmtButton.nyx_RedDark_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #fff;
+	border: 1px solid #720b00;
+	text-shadow: 0 1px #a00400;
+	background: linear-gradient(to bottom, #a00400, #a00400);
+}
+
+a.nyx_RedDark_FS12:hover, a.nyx_RedDark_FS12:active { 
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #720b00;
+	text-shadow: 0 1px #a00400;
+	background: linear-gradient(to bottom, #9E4545, #a00402);
+}
+
+.wmtButton.nyx_RedDark_FS9 { 
+	text-decoration: none;
+	font-size: 9px;
+	color: #fff;
+	border: 1px solid #720b00;
+	text-shadow: 0 1px #800400;
+	background: linear-gradient(to bottom, #a00400, #a00400);
+}
+
+a.nyx_RedDark_FS9:hover, a.nyx_RedDark_FS9:active { 
+	text-decoration: none;
+	border: 1px solid #720b00;
+	text-shadow: 0 1px #a00400;
+	background: linear-gradient(to bottom, #9E4545, #a00402);
+}
+
+.wmtButton.nyx_RedGrd_FS10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #fff;
+	border: 1px solid #cc0e00;
+	text-shadow: 0 1px #850000;
+	background: linear-gradient(to bottom, #ff0000, #850000);
+}
+
+a.nyx_RedGrd_FS10:hover, a.nyx_RedGrd_FS10:active { 
+	text-decoration: none;
+	border: 1px solid #cc0e00;
+	text-shadow: 0 1px #850000;
+	background: linear-gradient(to bottom, #ff0000, #ff0000);
+}
+
+.wmtButton.nyx_RedLight_FS10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #fff;
+	border: 1px solid #cc0e00;
+	text-shadow: 0 1px #ba0000;
+	background: linear-gradient(to bottom, #ff0000, #ff0000);
+}
+
+a.nyx_RedLight_FS10:hover, a.nyx_RedLight_FS10:active { 
+	text-decoration: none;
+	border: 1px solid #ff0000;
+	text-shadow: 0 1px #ff0000;
+	background: linear-gradient(to bottom, #ff0000, #ff0000);
+}
+
+.wmtButton.nyx_RedLite_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #ffffff;
+	border: 1px solid #cc0e00;
+	text-shadow: 0 1px #ba0000;
+	background: linear-gradient(to bottom, #ff0000, #ff0000);
+}
+
+a.nyx_RedLite_FS12:hover, a.nyx_RedLite_FS12:active { 
+	text-decoration: none;
+	border: 1px solid #cc0e00;
+	text-shadow: 0 1px #ba0000;
+	background: linear-gradient(to bottom, #ff6b68, #ff0002);
+}
+
+.wmtButton.nyx_Red_Grd_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #fff;
+	border: 1px solid #cc0e00;
+	text-shadow: 0 1px #850000;
+	background: linear-gradient(to bottom, #ff0000, #850000);
+}
+
+a.nyx_Red_Grd_FS12:hover, a.nyx_Red_Grd_FS12:active { 
+	text-decoration: none;
+	border: 1px solid #cc0e00;
+	text-shadow: 0 1px #e00000;
+	background: linear-gradient(to bottom, #e00000, #730000);
+}
+
+.wmtButton.nyx_YellowGrd_FS10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #232323;
+	border: 1px solid #bba95f;
+	text-shadow: 0 1px #ffc112;
+	background: linear-gradient(to bottom, #feef8a, #dea810);
+}
+
+a.nyx_YellowGrd_FS10:hover, a.nyx_YellowGrd_FS10:active { 
+	text-decoration: none;
+	border: 1px solid #dea810;
+	text-shadow: 0 1px #ffc112;
+	background: linear-gradient(to bottom, #feef8a, #dea810);
+}
+
+.wmtButton.nyx_Yellow_FS10 { 
+	text-decoration: none;
+	font-size: 10px;
+	color: #333;
+	border: 1px solid #d0b312;
+	text-shadow: 0 1px #fdd083;
+	background: linear-gradient(to bottom, #ffdb16, #ffdb16);
+}
+
+a.nyx_Yellow_FS10:hover, a.nyx_Yellow_FS10:active { 
+	text-decoration: none;
+	border: 1px solid #d0b312;
+	text-shadow: 0 1px #fdd083;
+	background: linear-gradient(to bottom, #ffdb16, #ffdb16);
+}
+
+.wmtButton.nyx_Yellow_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #333;
+	border: 1px solid #d0b312;
+	text-shadow: 0 1px #fdd083;
+	background: linear-gradient(to bottom, #ffdb16, #ffdb16);
+}
+
+a.nyx_Yellow_FS12:hover, a.nyx_Yellow_FS12:active { 
+	text-decoration: none;
+	color: #fdd083;
+	border: 1px solid #d0b312;
+	text-shadow: 0 1px #ffd99a;
+	background: linear-gradient(to bottom, #fff72b, #ffdb17);
+}
+
+.wmtButton.nyx_Yellow_FS9 { 
+	text-decoration: none;
+	font-size: 9px;
+	color: #333;
+	border: 1px solid #d0b312;
+	text-shadow: 0 1px #fdd083;
+	background: linear-gradient(to bottom, #ffdb16, #ffdb16);
+}
+
+a.nyx_Yellow_FS9:hover, a.nyx_Yellow_FS9:active { 
+	text-decoration: none;
+	border: 1px solid #d0b312;
+	text-shadow: 0 1px #fdd083;
+	background: linear-gradient(to bottom, #ffdb16, #ffdb16);
+}
+
+.wmtButton.nyx_Yellow_Grd_FS12 { 
+	text-decoration: none;
+	font-size: 12px;
+	color: #232323;
+	border: 1px solid #bba95f;
+	text-shadow: 0 1px #ffc112;
+	background: linear-gradient(to bottom, #feef8a, #dea810);
+}
+
+a.nyx_Yellow_Grd_FS12:hover, a.nyx_Yellow_Grd_FS12:active { 
+	text-decoration: none;
+	border: 1px solid #d3a620;
+	text-shadow: 0 1px #ffd99a;
+	background: linear-gradient(to bottom, #e6d771, #dea810);
+}

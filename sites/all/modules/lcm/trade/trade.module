@@ -1,0 +1,211 @@
+<?php
+
+/**
+ * @file
+ * Provide functionality for Forex Yard website.
+ */
+
+/**
+ * Implements hook_boot().
+ * Function for login and logout users automatically by login into widgets.
+ */
+function trade_boot() {
+    global $user;
+
+    if ($user->uid == 0 && !empty($_GET['checksum'])) {
+        // Login
+        $parameters = $_GET;
+        // Save page for redirect after login and remove language from if exist.
+        preg_match("/^\w{2}\/(.+)$/i", $parameters['q'], $goto_page);
+        unset($parameters['q']);
+        unset($parameters['checksum']);
+
+        if (!empty($parameters) && !empty($parameters['role']) && $parameters['role'] != 'anonymous' ) {
+            $query = http_build_query($parameters);
+            $calc_checksum = md5($query . 'forexfortune');
+
+            // Check if parameters = checksum:
+            if ($_GET['checksum'] == $calc_checksum) {
+                drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL); // Load all to continue.
+                // Login
+                if (!trade_user_login_credentials('demo', '123456')) {
+                    drupal_set_message('Failed Login automatically', 'status');
+                }
+                else {
+                   drupal_goto($goto_page[1]);
+                   //!empty($goto_page) ? drupal_goto($goto_page[1]) : drupal_goto('my-account'); - didn't work- why.
+                }
+            }
+        }
+    }
+    elseif ($user->uid != 0 && !empty($_GET['checksum']) && !empty($_GET['role']) && $_GET['role'] == 'anonymous') {
+        // Logout
+        drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL); // Load all to continue.
+        module_load_include('pages.inc', 'user');
+        user_logout();
+    }
+}
+
+/**
+ * Login user to drupal by username and password.
+ * @param $username
+ * @param $password
+ * @return bool
+ */
+function trade_user_login_credentials($username, $password) {
+
+    if (user_authenticate($username, $password)) {
+        $user_obj = user_load_by_name($username);
+        $form_state = array(
+            'uid' => $user_obj->uid,
+        );
+        user_login_submit(array(), $form_state);
+        return true;
+    }
+    return false;
+}
+
+/**
+ * Implements hook_block_view_alter().
+ * Override code of menu_block module.
+ */
+function trade_block_view_alter(&$data, $block) {
+
+    if ($block->module == 'menu_block') {
+        $config = menu_block_get_config($block->delta);
+        $data = _trade_menu_tree_build($config);
+    }
+}
+
+/**
+ * Build a menu tree based on the provided configuration.
+ * This function is copied from menu_block module and changed.
+ *
+ * @return array
+ *   An associative array containing several pieces of data.
+ *   - content: The tree as a renderable array.
+ *   - subject: The title rendered as HTML.
+ *   - subject_array: The title as a renderable array.
+ */
+function _trade_menu_tree_build(array &$config) {
+    // Retrieve the active menu item from the database.
+    if ($config['menu_name'] == MENU_TREE__CURRENT_PAGE_MENU) {
+        $config['menu_name'] = _trade_get_current_page_menu();
+        $config['parent_mlid'] = 0;
+
+        // If no menu link was found, don't display the block.
+        if (empty($config['menu_name'])) {
+            return array(
+                'subject' => t('The menu selected by the page'),
+                'subject_array' => array(),
+                'content' => array(),
+            );
+        }
+    }
+
+    return menu_tree_build($config);
+}
+
+/**
+ * Returns the current page's menu.
+ *
+ * @return string|bool
+ *   The current page's menu, or FALSE if no menu applied.
+ */
+function _trade_get_current_page_menu() {
+
+    $menu_name = menu_block_get_current_page_menu();
+
+    // For translated pages
+    if (empty($menu_name) && module_exists('i18n_menu')) {
+        //Grab node object (required for i18n)
+        $node = menu_get_object('node');
+
+        // Retrieve the list of available menus.
+        $menu_order = variable_get('menu_block_menu_order', array('main-menu' => '', 'user-menu' => ''));
+
+        if (isset($node) && isset($node->tnid) ) {
+            foreach ($menu_order as $key => $val) {
+                $parent_menu_link = menu_link_get_preferred('node/' . $node->tnid, $key);
+                if (isset($menu_order[$parent_menu_link['menu_name']])) {
+                    $menu_order[$parent_menu_link['menu_name']] = MENU_TREE__CURRENT_PAGE_MENU;
+                    $menu_name = array_search(MENU_TREE__CURRENT_PAGE_MENU, $menu_order);
+                    break;
+                }
+            }
+        }
+    }
+
+    return $menu_name;
+}
+
+/**
+ * Implements hook_menu_alter().
+ * Override code of token_custom module for display iframes without rendering by browser.
+ */
+function trade_menu_alter(&$items) {
+    $items['admin/structure/token-custom']['page callback'] = 'trade_token_custom_list_page';
+    unset($items['admin/structure/token-custom']['file']);
+}
+
+function trade_token_custom_list_page() {
+    // Load all out tokens.
+    $tokens = token_custom_load_multiple();
+    $token_admin = user_access('administer custom tokens');
+    $token_info = token_info();
+    $variables = array();
+
+    // Build the table rows.
+    foreach ($tokens as $token) {
+        // Get demo value if token doesn't need external data.
+        if (empty($token_info['types'][$token->type]['needs-data'])) {
+            $value = token_replace('[' . $token->type . ':' . $token->machine_name . ']');
+            //Avoid rendering iframes - just dispaly their code.
+            $value = preg_replace('/<iframe(.*?)<\/iframe>/s', '{frame}$1{/frame}', $value);
+        }
+        else {
+            $value = t('Demo value not available');
+        }
+
+        $row = array(
+            $token->name,
+            $token->machine_name,
+            $token->type,
+            $token->description,
+            $value,
+        );
+
+        // Add the edit/delete links if the user has the right permissions.
+        if ($token_admin) {
+            $row[] = l(t('Edit'), 'admin/structure/token-custom/' . $token->machine_name . '/edit')
+                . ' / '
+                . l(t('Delete'), 'admin/structure/token-custom/' . $token->machine_name . '/delete');
+        }
+
+        $variables['rows'][] = $row;
+    }
+
+    if (empty($variables['rows'])) {
+        $variables['rows'][] = array(
+            array(
+                'data' => t('No custom tokens available.'),
+                'colspan' => array($token_admin ? 6 : 5),
+            ),
+        );
+    }
+
+    $variables['header'] = array(
+        t('Name'),
+        t('Machine name'),
+        t('Type'),
+        t('Description'),
+        t('Demo (if available)'),
+    );
+
+    // Add extra header cell if edit/delete links were printed.
+    if ($token_admin) {
+        $variables['header'][] = "";
+    }
+
+    return theme('table', $variables);
+}

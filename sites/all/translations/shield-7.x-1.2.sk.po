@@ -1,0 +1,20 @@
+# Slovak translation of Shield (7.x-1.2)
+# Copyright (c) 2015 by the Slovak translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Shield (7.x-1.2)\n"
+"POT-Creation-Date: 2015-10-31 17:50+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Slovak\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1)?(0):(((n>=2)&&(n<=4))?(1):2));\n"
+
+msgid "Password"
+msgstr "Heslo"
+msgid "General settings"
+msgstr "Všeobecné nastavenia"
+msgid "User"
+msgstr "User"

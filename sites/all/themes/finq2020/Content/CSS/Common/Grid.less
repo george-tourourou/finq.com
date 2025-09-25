@@ -1,0 +1,38 @@
+@import "Variables";
+
+@GRID_12_COLLUMNS: 12;
+@GRID_12_COLL_1: 1 / @GRID_12_COLLUMNS;
+
+//Class names
+@GRID_COL: col;
+@GRID_SMALL_COL: col-sm;
+@GRID_MEDIUM_COL: col-md;
+@GRID_LARGE_COL: col-lg;
+@GRID_EXTRA_LARGE_COL: col-xl;
+
+.col-loop-12 (@i; @name) when (@i > 0) {
+  .@{name}-@{i} {
+    float: left;
+    width: percentage(@GRID_12_COLL_1 * @i);
+    box-sizing: border-box;
+  }
+
+  .col-loop-12(@i - 1; @name);
+}
+.col-loop-12 (@GRID_12_COLLUMNS; @GRID_COL);
+
+@media (max-width: @GRID_EXTRA_LARGE) {
+  .col-loop-12 (@GRID_12_COLLUMNS; @GRID_EXTRA_LARGE_COL);
+}
+
+@media (max-width: @GRID_LARGE) {
+  .col-loop-12 (@GRID_12_COLLUMNS; @GRID_LARGE_COL);
+}
+
+@media (max-width: @GRID_MEDIUM) {
+  .col-loop-12 (@GRID_12_COLLUMNS; @GRID_MEDIUM_COL);
+}
+
+@media (max-width: @GRID_SMALL){
+  .col-loop-12 (@GRID_12_COLLUMNS; @GRID_SMALL_COL);
+}

@@ -1,0 +1,38 @@
+@import "Variables";
+
+.container {
+  max-width: @CONTENT_EXTRA_LARGE_WIDTH;
+  margin: auto;
+  display: block;
+}
+
+//.container-lg-dk {
+//  max-width: @CONTENT_EXTRA_LARGE_WIDTH;
+//  margin: auto;
+//  display: block;
+//}
+
+@media (max-width: @GRID_EXTRA_LARGE) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: @CONTENT_EXTRA_LARGE_WIDTH;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: @GRID_LARGE) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: @CONTENT_LARGE_WIDTH;
+  }
+}
+@media (max-width: @GRID_MEDIUM) {
+  .container, .container-md, .container-sm {
+    max-width: @CONTENT_MEDIUM_WIDTH;
+  }
+}
+
+@media (max-width: @GRID_SMALL){
+  .container, .container-sm {
+    max-width: @CONTENT_SMALL_WIDTH;
+  }
+}

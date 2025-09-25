@@ -1,0 +1,7 @@
+﻿.regulation .comp-main-full-plain-banner {
+  background: url(/sites/all/themes/finq/images/Main-Banner/Regulation.jpg);
+  height: 610px;
+}
+.regulation .comp-main-full-plain-banner .btn {
+  margin-top: 240px;
+}

@@ -1,0 +1,6 @@
+name = Trading Conditions Feed
+description = This module contains my PHP helper functions.
+core = 7.x
+package = "LCM"
+
+version = "6.x-X.X"

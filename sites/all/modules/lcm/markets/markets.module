@@ -1,0 +1,197 @@
+<?php
+
+function markets_init() {
+  libraries_load('base64');
+  libraries_load('serialize');
+}
+
+/**
+ * hook_block_info implementation
+ * @return array - module's blocks info
+ */
+function markets_block_info() {
+  $blocks = array();
+  $blocks['additions_sidebar'] = array(
+    'info' => 'Additions sidebar',
+  );
+  $blocks['additions_footer'] = array(
+    'info' => 'Additions footer',
+  );
+  $blocks['applications_inner'] = array(
+    'info' => 'Applications links for inner pages',
+  );
+  $blocks['events_hub_web_client'] = array(
+    'info' => 'Events hub counter',
+  );
+  return $blocks;
+}
+
+
+/**
+ * hook_block_view implementation
+ * @param string $delta - block ID
+ * @return array - information of required block
+ */
+function markets_block_view($delta = '') {
+
+  $block = array();
+
+  switch ($delta) {
+    case 'additions_sidebar' :
+      $block['content']['#markup'] = _markets_custom_block_render(
+        'additions-sidebar',
+        _markets_get_additions_links()
+      );
+      $block['content']['#attached']['css'] = array(
+        path_to_theme() . '/css/additions-sidebar.css',
+      );
+      break;
+    case 'additions_footer' :
+      $block['content']['#markup'] = _markets_custom_block_render(
+        'additions-footer',
+        _markets_get_additions_links()
+      );
+      $block['content']['#attached']['css'] = array(
+        path_to_theme() . '/css/additions-footer.css',
+      );
+      break;
+    case 'applications_inner' :
+      $block['content']['#markup'] = _markets_custom_block_render(
+        'applications-inner'
+      );
+      $block['content']['#attached']['css'] = array(
+        path_to_theme() . '/css/applications-inner.css',
+      );
+      break;
+    case 'events_hub_web_client' :
+      $block['content']['#markup'] = _markets_custom_block_render(
+        'events-hub-block',
+        array(
+          'eh_client_path' => variable_get_value(
+            'markets_events_hub_client_path'
+          ),
+          'eh_path' => variable_get_value('markets_events_hub_path'),
+        )
+      );
+      break;
+  }
+
+  return $block;
+}
+
+function _markets_get_additions_links() {
+  global $language;
+  $bonus_translations = translation_path_get_translations("node/59");
+  $cfd_trading_translations = translation_path_get_translations("node/57");
+  $risk_management_translations = translation_path_get_translations("node/58");
+  $risk_warning_translations = translation_path_get_translations("node/25");
+
+  return array(
+    'bonus' => url($bonus_translations[$language->language]),
+    'cfd_trading' => url($cfd_trading_translations[$language->language]),
+    'risk_management' => url(
+      $risk_management_translations[$language->language]
+    ),
+    'risk_warning' => url($risk_warning_translations[$language->language]),
+  );
+}
+
+
+/**
+ * Provide additions sidebar block (with links & icons)
+ * @param $file_name - name of template file for render
+ * @return string - HTML of instruments sidebar block
+ */
+function _markets_custom_block_render($file_name, $variables = array()) {
+  $file_path = drupal_get_path('module', 'markets') . '/';
+  return theme_render_template(
+    "{$file_path}templates/{$file_name}.tpl.php",
+    $variables
+  );
+}
+
+/**
+ * hook_menu implementation
+ * @return array
+ */
+function markets_menu() {
+  $items = array();
+
+  //provide page settings for markets module variables
+  $items['admin/config/tradefxl/markets-variables'] = array(
+    'title' => 'Markets site configuration',
+    'description' => 'System pathes & links configuration for Markets.com site',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('variable_module_form', 'markets'),
+    'access arguments' => array('administer site configuration'),
+  );
+
+  return $items;
+}
+
+/**
+ * hook_variable_info implementation
+ *
+ * @return array
+ */
+function markets_variable_info() {
+  $variables = array();
+
+  $variables['markets_events_hub_client_path'] = array(
+    'title' => t('Path from where events hub web client JS should be loaded'),
+    'default' => '//events.markets.com/eventshub.js',
+    'type' => 'string',
+    'group' => 'Markets',
+    'token' => TRUE,
+  );
+
+  $variables['markets_new_events_hub_client_path'] = array(
+      'title' => t('Path from where new events hub web client JS should be loaded'),
+      'default' => '//events.markets.com/eventshub2.js',
+      'type' => 'string',
+      'group' => 'Markets',
+      'token' => TRUE,
+  );
+
+  $variables['markets_new_events_hub_server_path'] = array(
+      'title' => t('Eventos server URL'),
+      'default' => '//stats.markets.com',
+      'type' => 'string',
+      'group' => 'Markets',
+      'token' => TRUE,
+  );
+
+  $variables['markets_events_hub_path'] = array(
+    'title' => t('Path where data will be sent'),
+    'default' => '//events.markets.com/events-hub-service/events/visit',
+    'type' => 'string',
+    'group' => 'Markets',
+    'token' => TRUE,
+  );
+
+  return $variables;
+}
+
+
+/**
+ * Implementation of hook_views_query_alter for displaying banner per country
+ * @param type $view
+ * @param type $query
+ */
+//function markets_views_query_alter(&$view, &$query) {
+//
+//  $country_code = strtolower($_SERVER["GEOIP2_COUNTRY_CODE"]);
+//
+//  if(($view->name == 'promo_view' || $view->name == 'promo_view_full_width') && $country_code) {
+//    $join = new views_join();
+//    $join->table = 'field_data_field_country';
+//    $join->field = 'entity_id';
+//    $join->left_table = 'node';
+//    $join->left_field = 'nid';
+//    $join->type = 'LEFT';
+//    $join->extra = "  (field_data_field_country.entity_type = 'node' AND field_data_field_country.deleted = '0')";
+//    $query->add_relationship('field_data_field_country', $join, 'node');
+//    $query->add_where_expression(1, "field_data_field_country.field_country_value IS NULL OR field_data_field_country.field_country_value=:country",array(':country' => $country_code));
+//
+//  }
+//}

@@ -1,0 +1,54 @@
+name = Finq Theme
+description = Custom theme for finq
+core = 7.x
+engine = phptemplate
+
+regions[header] = Header
+regions[content] = Content
+regions[footer] = Footer
+regions[pre-footer] = Pre Footer
+
+features[] = name
+features[] = main_menu
+
+
+stylesheets[all][] = css/Common/Alert.css
+stylesheets[all][] = css/Common/Button.css
+stylesheets[all][] = css/Common/Dom-Elements.css
+stylesheets[all][] = css/Common/Responsive.css
+stylesheets[all][] = css/Common/Breadcrumb-Navigation.css
+stylesheets[all][] = css/Blocks/Apps.css
+stylesheets[all][] = css/Blocks/Security.css
+stylesheets[all][] = css/Blocks/Assets-block.css
+stylesheets[all][] = css/Blocks/Header.css
+stylesheets[all][] = css/Blocks/Footer.css
+stylesheets[all][] = css/Components/Bootrap-Navigation.css
+stylesheets[all][] = css/Components/MainPlainBanner.css
+stylesheets[all][] = css/Components/Tab.css
+stylesheets[all][] = css/Components/Tooltip.css
+stylesheets[all][] = css/Components/Panel.css
+stylesheets[all][] = css/Components/Language-Switcher.css
+stylesheets[all][] = css/Components/ScrollableWidget.css
+stylesheets[all][] = css/Pages/Front.css
+stylesheets[all][] = css/Pages/Platforms.css
+stylesheets[all][] = css/Pages/Assets.css
+stylesheets[all][] = css/Pages/Article.css
+stylesheets[all][] = css/Pages/Regulation.css
+stylesheets[all][] = css/Pages/Widgets.css
+stylesheets[all][] = css/Pages/Cfds-List.css
+stylesheets[all][] = css/Pages/Contact-us.css
+stylesheets[all][] = css/Pages/About-us.css
+stylesheets[all][] = css/Pages/Faq.css
+stylesheets[all][] = css/Pages/News.css
+stylesheets[all][] = css/Pages/Trading-Account-Types.css
+stylesheets[all][] = css/v2.0/common/footer.css
+stylesheets[all][] = css/v2.0/common/header.css
+stylesheets[all][] = css/v2.0/pages/front.css 
+stylesheets[all][] = js/slick/slick.css
+stylesheets[all][] = css/Components/modals.css
+stylesheets[all][] = css/NewThemeCorrections.css
+stylesheets[all][] = css/v2.0/pages/tradingview.css
+
+
+
+scripts[] = js/v2.0/change-menu.js

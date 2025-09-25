@@ -1,0 +1,104 @@
+﻿body {
+  float: left;
+  width: 100%;
+  background: #0a0a0d;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0?v=4.7.0');
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0?#iefix&v=4.7.0') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+body {
+  float: left;
+  width: 100%;
+  background: #0a0a0d;
+  margin: 0;
+  padding: 0;
+}
+.full {
+  float: left;
+  width: 100%;
+}
+#slider {
+  float: left;
+  width: 110%;
+  background: #0a0a0d;
+}
+#slider * {
+  font-family: 'Montserrat', sans-serif;
+}
+#slider #inst-selector,
+#slider #slider-left,
+#slider #slider-right {
+  display: none;
+}
+#slider #slider-middle {
+  border: none;
+  width: 100%;
+  height: 30px;
+}
+#slider #slide {
+  width: 100% !important;
+}
+#slider #slide .tickercontainer .mask {
+  height: 25px;
+}
+#slider #slide .tickercontainer .mask ul {
+  float: left;
+  width: 100% !important;
+}
+#slider #slide .tickercontainer .mask ul li {
+  width: auto;
+  float: left;
+  height: 20px;
+  padding: 0 30px 0 5px;
+  position: relative;
+  font-size: 14px;
+}
+#slider #slide .tickercontainer .mask ul li div {
+  float: left;
+  margin: 0;
+  clear: none;
+  font-weight: bold;
+}
+#slider #slide .tickercontainer .mask ul li .seperator {
+  display: none;
+}
+#slider #slide .tickercontainer .mask ul li .sell.left {
+  padding-left: 5px;
+}
+#slider #slide .tickercontainer .mask ul li .buy:before {
+  content: '(';
+}
+#slider #slide .tickercontainer .mask ul li .buy:after {
+  content: ')';
+}
+#slider #slide .tickercontainer .mask ul li .product {
+  padding-right: 5px;
+}
+#slider #slide .tickercontainer .mask ul li .left.arraw {
+  position: absolute;
+  right: 15px;
+  padding-bottom: 10px;
+}
+#slider #slide .tickercontainer .mask ul li .pos {
+  color: #0d9d0d;
+}
+#slider #slide .tickercontainer .mask ul li .neg {
+  color: #b3120c;
+}
+#slider #slide .tickercontainer .mask ul li .product {
+  color: #fff;
+  font-weight: bold;
+}

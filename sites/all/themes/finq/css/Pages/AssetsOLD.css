@@ -1,0 +1,230 @@
+﻿.plain-box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.assets.crypto .comp-main-plain-banner .text {
+  max-width: 630px;
+}
+.assets.forex .comp-main-plain-banner .text {
+  max-width: 640px;
+}
+.assets.indices .assets-content {
+  margin-top: 200px;
+}
+.assets .comp-main-plain-banner .text {
+  padding: 50px 15% 50px 0;
+}
+.assets .comp-main-plain-banner .btn.btn-promo {
+  margin: 60px 0 0;
+  float: left;
+}
+.assets .assets-common-into {
+  margin-top: 170px;
+}
+.assets .assets-common-into .assets-common-into-imgs > .full {
+  margin-bottom: 40px;
+}
+.assets .assets-common-into .assets-common-into-imgs img {
+  display: block;
+  margin: auto;
+}
+.assets .assets-common-into .assets-common-into-imgs span {
+  text-align: center;
+  margin-top: 15px;
+  color: #125688;
+  float: left;
+  width: 100%;
+}
+.assets .assets-common-into .assets-common-into-text p {
+  margin-top: 40px;
+}
+.assets .assets-content {
+  margin-top: 100px;
+}
+.assets .assets-content p {
+  margin-top: 15px;
+}
+.assets .assets-content .assets-content-imgs .full {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.assets .assets-content .assets-content-imgs .img {
+  float: left;
+  width: 60px;
+}
+.assets .assets-content .assets-content-imgs .img img {
+  margin: auto;
+  display: block;
+}
+.assets .assets-content .assets-content-imgs span {
+  float: left;
+  font-size: 28px;
+  margin-left: 20px;
+  line-height: 1;
+}
+.assets .assets-content-promo {
+  margin: 150px 0 100px;
+  text-align: center;
+}
+.assets .assets-content-promo .btn {
+  font-size: 25px;
+  padding: 11px 60px 13px;
+  margin-top: 40px;
+}
+.assets .assets-bottom {
+  padding: 60px 0 80px;
+}
+.assets .assets-bottom h2 {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.assets .assets-bottom .assets-bottom-security > .full {
+  margin-bottom: 60px;
+}
+.assets .assets-bottom .assets-bottom-security .img {
+  float: left;
+  width: 35%;
+}
+.assets .assets-bottom .assets-bottom-security .img img {
+  margin: auto;
+  display: block;
+}
+.assets .assets-bottom .assets-bottom-security .text {
+  width: 65%;
+  float: left;
+}
+.assets .assets-bottom .assets-bottom-security .text h3 {
+  font-size: 17px;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.assets .assets-bottom .assets-bottom-security .text p {
+  float: left;
+  width: 100%;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-a .btn {
+  font-size: 14px;
+  padding: 5px 30px;
+  float: left;
+  margin-top: 10px;
+}
+.assets .assets-bottom .assets-bottom-platforms .img-screen img {
+  float: right;
+  margin-top: -100px;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .img {
+  float: left;
+  width: 40%;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .img img {
+  margin-top: -50px;
+  float: left;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .text {
+  float: left;
+  width: 60%;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .text span {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .text p {
+  margin-top: 20px;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .text .block-apps {
+  float: left;
+  width: 100%;
+  margin: 10px 0 0;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .text .block-apps a {
+  margin-left: 4%;
+  width: 48%;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .text .block-apps a:first-child {
+  margin-left: 0;
+}
+.assets .assets-bottom .assets-bottom-platforms .part-b .text .block-apps img {
+  max-width: 100%;
+}
+.assets .cfds-list {
+  padding: 50px 0 0;
+}
+.assets .cfds-list .btn {
+  margin-top: 0;
+}
+@media all and (max-width: 1180px) {
+  .assets .comp-main-plain-banner .btn.btn-promo {
+    float: left;
+    margin: 20px 0 0;
+    padding: 15px;
+  }
+  .assets .assets-common-into {
+    margin-top: 70px;
+  }
+  .assets .assets-bottom {
+    padding: 40px 0 60px;
+  }
+  .assets .assets-common-into-imgs,
+  .assets .assets-content-text,
+  .assets .assets-bottom-security-container {
+    margin-left: 0;
+  }
+  .assets .assets-content .assets-content-imgs span {
+    font-size: 23px;
+    margin: 2px 0 0 10px;
+  }
+  .assets .assets-content-promo {
+    margin: 50px 0;
+  }
+  .assets .assets-content-promo .btn {
+    margin-top: 20px;
+  }
+  .assets .assets-bottom {
+    padding: 50px 0 30px;
+  }
+}
+@media all and (max-width: 650px) {
+  .assets h2,
+  .assets h3 {
+    text-align: center;
+  }
+  .assets h3 {
+    font-weight: bold;
+  }
+  .assets .assets-common-into-imgs h2 {
+    margin-bottom: 20px;
+  }
+  .assets .assets-bottom {
+    padding: 0 0 30px;
+  }
+  .assets .assets-bottom .assets-bottom-platforms .part-a .btn {
+    font-size: 15px;
+    padding: 7px 30px 9px;
+  }
+  .assets .assets-bottom .assets-bottom-platforms .part-b .text {
+    width: 100%;
+  }
+  .assets .assets-bottom .assets-bottom-platforms .part-b .img {
+    width: 100%;
+  }
+  .assets .assets-bottom .assets-bottom-platforms .part-b .img img {
+    display: block;
+    float: none;
+    margin: 20px auto 0;
+  }
+  .assets .comp-main-plain-banner .text {
+    padding: 20px 0 50px;
+  }
+  .assets .comp-main-plain-banner .btn.btn-promo {
+    float: none;
+    margin: 20px 10% 0;
+    padding: 15px;
+    width: 80%;
+  }
+}

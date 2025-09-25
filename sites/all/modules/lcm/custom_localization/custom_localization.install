@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_enable().
+ *
+ * We should have a height weight for be executed after i18n modules
+ */
+function custom_localization_enable(){
+  db_update('system')
+    ->fields(array('weight' => 1001))
+    ->condition('name', 'custom_localization', '=')
+    ->execute();
+
+  //turn on translations for default language
+  variable_set('i18n_string_translate_langcode_en', 1);
+}
+
+/**
+ * Implements hook_disable().
+ */
+function custom_localization_disable() {
+  variable_set('i18n_string_translate_langcode_en', 0);
+}

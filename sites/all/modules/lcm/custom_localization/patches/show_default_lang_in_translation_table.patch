@@ -1,0 +1,18 @@
+Index: includes/locale.inc
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- includes/locale.inc	(revision 24a20835bf861996126a62940d5a28f44efafd2b)
++++ includes/locale.inc	(revision )
+@@ -2134,9 +2134,7 @@
+   // list. The source language is English for built-in strings and the default
+   // language for other strings.
+   $languages = language_list();
+-  $default = language_default();
+-  $omit = $string['group'] == 'default' ? 'en' : $default->language;
+-  unset($languages[$omit]);
++
+   $output = '';
+   foreach ($languages as $langcode => $language) {
+     if (!$limit_language || $limit_language == $langcode) {

@@ -1,0 +1,564 @@
+.plain-box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.page-node-684603 {
+  background: #E9E9E7;
+}
+.page-node-684603 .trading-account-types {
+  padding-bottom: 150px;
+}
+.page-node-684603 .trading-account-types .theme-content {
+  width: 1280px;
+}
+.page-node-684603 .trading-account-types .theme-content.risk-warning-content {
+  width: 845px;
+  margin: auto;
+  float: none;
+  display: block;
+}
+.page-node-684603 .trading-account-types h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 90px;
+  padding-bottom: 75px;
+}
+.page-node-684603 .trading-account-types .account-type {
+  margin: 0 1% 0 0;
+  padding-left: 0;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 15.8%;
+}
+.page-node-684603 .trading-account-types .account-type:nth-last-child(1) {
+  margin: 0;
+}
+.page-node-684603 .trading-account-types .account-type:hover .category-with-spreads.category {
+  margin-top: -22px;
+}
+.page-node-684603 .trading-account-types .account-type:hover .category-with-spreads.empty {
+  height: 15px;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-data {
+  /* Hide the data table */
+  display: none;
+  margin-top: 43px;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-data:hover .category-with-spreads.category {
+  margin-top: 0;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-data:hover .category-with-spreads.empty {
+  height: 15px;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-data .category-with-spreads .cell-left {
+  border-right: none;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-data .category-with-spreads .cell-left .txt {
+  display: block;
+  width: 100%;
+  float: left;
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 15px;
+  padding: 5px 15% 4px 15px;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-data .category-with-spreads.express-withdrawal .cell-left .txt {
+  padding-right: 5%;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-data .category-with-spreads.minimum-account .cell-left.txt {
+  padding-right: 17%;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-gold .category-with-spreads.category {
+  margin-top: -22px;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-gold .category-with-spreads.empty {
+  height: 15px;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-gold .sub-category {
+  margin-top: -8px;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-gold .sub-category .cell-right,
+.page-node-684603 .trading-account-types .account-type.account-type-gold .sub-category .cell-left {
+  padding-bottom: 30px;
+}
+.page-node-684603 .trading-account-types .account-type.account-type-micro,
+.page-node-684603 .trading-account-types .account-type.account-type-silver,
+.page-node-684603 .trading-account-types .account-type.account-type-gold,
+.page-node-684603 .trading-account-types .account-type.account-type-platinum,
+.page-node-684603 .trading-account-types .account-type.account-type-exclusive {
+  box-shadow: 0 4px 7px 2px rgba(0, 0, 0, 0.17);
+  width: 19%;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads:nth-last-child(1) {
+  border-bottom: none;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left {
+  border-right: solid 1px #BCBEC0;
+  width: 60%;
+  min-height: 71px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .txt {
+  display: block;
+  width: 100%;
+  float: left;
+  text-align: left;
+  box-sizing: border-box;
+  padding-right: 17%;
+  font-size: 12px;
+  padding-top: 6px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left img {
+  padding-top: 12px;
+  padding-bottom: 7px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  position: absolute;
+  margin: 10px 5px 5px;
+  right: 0;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img.yes {
+  background: url("/sites/all/themes/finq/images/Icons/trading-accounts/desktop_yes.png") no-repeat center center;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img.no {
+  background: url("/sites/all/themes/finq/images/Icons/trading-accounts/desktop_no.png") no-repeat center center;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right {
+  width: 40%;
+  text-align: center;
+  font-size: 13px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right .instrument-name,
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right .instrument-spreads {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right .instrument-name {
+  padding-top: 7px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right .instrument-spreads {
+  padding-bottom: 10px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right span.instrument-spreads {
+  float: right;
+  font-weight: 600;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.empty .cell-left,
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.empty .cell-right {
+  height: 40px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category .cell-right {
+  margin-top: 13px;
+  padding-bottom: 24px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.category {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 17px;
+  padding-bottom: 11px;
+  margin-top: -2.5%;
+  margin-bottom: -15px;
+  border-bottom: none;
+  height: 70px;
+  box-shadow: 0px -1px 1px 0px rgba(34, 33, 34, 0.27);
+  transition: margin-top 1s;
+  -webkit-transition-timing-function: ease;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.category-micro {
+  background: linear-gradient(178deg, #EFEDEC 70%, rgba(95, 95, 95, 0.27) 72%, #fff 78%);
+  color: #9d9c9c;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.category-silver {
+  background: linear-gradient(178deg, #9d9c9c 70%, rgba(34, 33, 34, 0.27) 72%, #fff 78%);
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.category-gold {
+  background: linear-gradient(178deg, #C4A46C 70%, rgba(34, 33, 34, 0.27) 72%, #fff 75%);
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.category-platinum {
+  background: linear-gradient(178deg, #33638E 70%, rgba(34, 33, 34, 0.27) 72%, #fff 78%);
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.category-exclusive {
+  background: linear-gradient(178deg, #7a6687 70%, rgba(34, 33, 34, 0.27) 72%, #fff 78%);
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category {
+  font-size: 11px;
+  font-weight: 700;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category .txt {
+  padding-bottom: 8px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category .account-size {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  padding: 4px 7px 3px;
+  border-radius: 6px;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category.sub-category-micro .account-size {
+  background: #EFEDEC;
+  color: #9d9c9c;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category.sub-category-silver .account-size {
+  background: #9d9c9c;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category.sub-category-gold .account-size {
+  background: #C4A46C;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category.sub-category-platinum .account-size {
+  background: #33638E;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category.sub-category-exclusive .account-size {
+  background: #7a6687;
+}
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.empty,
+.page-node-684603 .trading-account-types .account-type .category-with-spreads.cell {
+  height: 5px;
+  border-bottom: none;
+  transition: height 1s;
+  -webkit-transition-timing-function: ease;
+}
+.page-node-684603 .trading-account-types .risk-warning {
+  padding-top: 55px;
+}
+.page-node-684603 .trading-account-types .risk-warning p {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+.page-node-684603 .trading-account-types .open-account {
+  text-align: center;
+  padding-top: 66px;
+}
+.page-node-684603 .trading-account-types .open-account a {
+  font-size: 25px;
+  border-radius: 12px;
+  padding: 14px 50px 16px;
+}
+.page-node-684603 .trading-account-types .phone-version,
+.page-node-684603 .trading-account-types .tablet-version {
+  display: none;
+}
+.account-type .category-with-spreads {
+  font-size: 10px;
+  font-weight: 500;
+  border-bottom: solid 1px #B2B2B2;
+}
+.account-type .category-with-spreads .cell-left,
+.account-type .category-with-spreads .cell-right {
+  padding: 10px 6px 14px;
+}
+.account-type .category-with-spreads .cell-left {
+  position: relative;
+}
+.account-type.account-type-data .cell-left {
+  width: 100%;
+}
+.account-type.account-type-data .cell-left img {
+  display: none;
+}
+.account-type.account-type-data .cell-right {
+  display: none;
+}
+@media only screen and (min-width: 1260px) {
+  .page-node-684603 .account-type.account-type-micro:hover .sub-category,
+  .page-node-684603 .account-type.account-type-silver:hover .sub-category,
+  .page-node-684603 .account-type.account-type-gold:hover .sub-category,
+  .page-node-684603 .account-type.account-type-platinum:hover .sub-category,
+  .page-node-684603 .account-type.account-type-exclusive:hover .sub-category {
+    margin-top: -8px;
+  }
+  .page-node-684603 .account-type.account-type-micro:hover .sub-category .cell-right,
+  .page-node-684603 .account-type.account-type-silver:hover .sub-category .cell-right,
+  .page-node-684603 .account-type.account-type-gold:hover .sub-category .cell-right,
+  .page-node-684603 .account-type.account-type-platinum:hover .sub-category .cell-right,
+  .page-node-684603 .account-type.account-type-exclusive:hover .sub-category .cell-right,
+  .page-node-684603 .account-type.account-type-micro:hover .sub-category .cell-left,
+  .page-node-684603 .account-type.account-type-silver:hover .sub-category .cell-left,
+  .page-node-684603 .account-type.account-type-gold:hover .sub-category .cell-left,
+  .page-node-684603 .account-type.account-type-platinum:hover .sub-category .cell-left,
+  .page-node-684603 .account-type.account-type-exclusive:hover .sub-category .cell-left {
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .page-node-684603 .trading-account-types > .theme-content {
+    width: 100%;
+    padding: 0 10px;
+    float: left;
+    box-sizing: border-box;
+  }
+  .page-node-684603 .trading-account-types .account-type.account-type-data .category-with-spreads.customer-support .cell-left .txt {
+    padding-right: 15%;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .page-node-684603 .trading-account-types .pc-version {
+    display: none;
+  }
+  .page-node-684603 .trading-account-types .tablet-version {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .page-node-684603 .trading-account-types h2 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 105px;
+    padding-bottom: 30px;
+  }
+  .page-node-684603 .trading-account-types .theme-content {
+    padding: 0;
+  }
+  .page-node-684603 .trading-account-types .theme-content.risk-warning-content {
+    width: 100%;
+    padding: 0 40px;
+    float: left;
+    box-sizing: border-box;
+  }
+  .page-node-684603 .trading-account-types .slick-slider .slick-arrow {
+    display: none !important;
+  }
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide {
+    opacity: 1;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.account-type .category-with-spreads.sub-category .cell-left,
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.account-type .category-with-spreads.sub-category .cell-right {
+    min-height: 60px;
+  }
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.slick-center {
+    opacity: 1;
+    margin-top: 10px;
+  }
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.slick-center.account-type .category-with-spreads.sub-category .cell-left,
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.slick-center.account-type .category-with-spreads.sub-category .cell-right {
+    min-height: 60px;
+  }
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.slick-center.account-type .category-with-spreads .cell-left,
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.slick-center.account-type .category-with-spreads .cell-right {
+    min-height: 57px;
+  }
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.slick-center.account-type .category-with-spreads.customer-support .cell-left {
+    min-height: 72px;
+  }
+  .page-node-684603 .trading-account-types .account-type.account-type-gold .category-with-spreads.category {
+    margin-top: 0;
+  }
+  .page-node-684603 .trading-account-types .account-type.account-type-gold .sub-category {
+    margin-top: 0;
+  }
+  .page-node-684603 .trading-account-types .account-type:hover .category-with-spreads.category {
+    margin-top: -2.5%;
+  }
+  .page-node-684603 .trading-account-types .account-type:hover .category-with-spreads.empty {
+    height: 5px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left {
+    width: 60%;
+    min-height: 57px;
+    padding: 10px 6px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .txt {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    box-sizing: border-box;
+    padding-right: 15%;
+    font-size: 12px;
+    padding-top: 3px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left img {
+    float: right;
+    position: absolute;
+    right: 5px;
+    padding-top: 3px;
+    width: 14px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img {
+    width: 14px;
+    height: 14px;
+    float: left;
+    position: absolute;
+    margin: 5px;
+    right: 0;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img.yes {
+    background: url("/sites/all/themes/finq/images/Icons/trading-accounts/tablet_yes.png") no-repeat center center;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img.no {
+    background: url("/sites/all/themes/finq/images/Icons/trading-accounts/tablet_no.png") no-repeat center center;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right {
+    width: 40%;
+    padding: 7px 6px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right .instrument-spreads {
+    padding-bottom: 5px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category .txt {
+    padding-bottom: 4px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category .account-size {
+    float: left;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category .cell-left,
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads.sub-category .cell-right {
+    margin-top: 0;
+    font-size: 11px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads.express-withdrawal .cell-left .txt {
+    padding-right: 10%;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads.customer-support .cell-left {
+    min-height: 72px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads.category {
+    font-size: 21px;
+  }
+  .page-node-684603 .trading-account-types .account-type.account-type-micro .category-with-spreads.empty,
+  .page-node-684603 .trading-account-types .account-type.account-type-silver .category-with-spreads.empty,
+  .page-node-684603 .trading-account-types .account-type.account-type-platinum .category-with-spreads.empty,
+  .page-node-684603 .trading-account-types .account-type.account-type-exclusive .category-with-spreads.empty {
+    height: 5px;
+  }
+  .page-node-684603 .trading-account-types .account-type.account-type-gold .category-with-spreads.category {
+    margin-top: -2.5%;
+  }
+  .page-node-684603 .trading-account-types .account-type.account-type-gold .category-with-spreads.empty {
+    height: 5px;
+  }
+  .trading-account-types h1 {
+    font-size: 35px;
+  }
+  .trading-account-types .category.category-description .cell {
+    font-size: 14px;
+  }
+  .trading-account-types .category .category-name {
+    font-size: 20px;
+  }
+  .trading-account-types .category .category-amount {
+    font-size: 18px;
+  }
+  .trading-account-types .category .cell {
+    padding: 10px;
+  }
+  .trading-account-types .category .cell-btn .btn {
+    border-radius: 10px;
+  }
+}
+@media all and (max-width: 900px) {
+  .page-node-684603 .trading-account-types h2 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .txt {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 650px) {
+  .page-node-684603 .trading-account-types {
+    background-color: #EFEFEF;
+  }
+  .page-node-684603 .trading-account-types h1 {
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 34px;
+    padding-bottom: 25px;
+  }
+  .page-node-684603 .trading-account-types .theme-content {
+    padding: 0 45px;
+  }
+  .page-node-684603 .trading-account-types #trading-account-types-phone-version.theme-content {
+    padding: 0;
+  }
+  .page-node-684603 .trading-account-types .phone-version {
+    display: block;
+  }
+  .page-node-684603 .trading-account-types .pc-version,
+  .page-node-684603 .trading-account-types .tablet-version {
+    display: none;
+  }
+  .page-node-684603 .trading-account-types .category-description {
+    display: none;
+  }
+  .page-node-684603 .trading-account-types .category .border-left {
+    border: none;
+  }
+  .page-node-684603 .trading-account-types .slick-slider .slick-list .slick-track .slick-slide.slick-center.account-type .category-with-spreads.customer-support .cell-left {
+    min-height: 57px;
+  }
+  .page-node-684603 .trading-account-types .account-type {
+    margin: 0 10px;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .page-node-684603 .trading-account-types .account-type:nth-last-child(1) {
+    margin: 0 10px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left,
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right {
+    padding: 10px 6px 7px 10px;
+    width: 50%;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads.customer-support .cell-left {
+    min-height: 57px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left {
+    border-right: solid 2px #B2B2B2;
+    position: relative;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left img {
+    float: right;
+    position: absolute;
+    right: 5px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img {
+    width: 13px;
+    height: 13px;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img.yes {
+    background: url("/sites/all/themes/finq/images/Icons/trading-accounts/mobile_yes.png") no-repeat center center;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .img.no {
+    background: url("/sites/all/themes/finq/images/Icons/trading-accounts/mobile_no.png") no-repeat center center;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-left .txt {
+    display: block;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 30%;
+  }
+  .page-node-684603 .trading-account-types .account-type .category-with-spreads .cell-right .instrument-name {
+    padding-top: 0;
+  }
+  .page-node-684603 .trading-account-types .open-account .btn.btn-gold {
+    font-size: 18px;
+  }
+  .page-node-684603 .trading-account-types p.notes {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+}
+/*# sourceMappingURL=Trading-Account-Types.css.map */

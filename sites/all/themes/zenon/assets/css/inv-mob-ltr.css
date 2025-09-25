@@ -1,0 +1,85 @@
+
+/*.newBtn {
+        -moz-user-select: none !important;
+        background-image: none !important;
+        cursor: pointer !important;
+        display: inline-block !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        line-height: 1.42857 !important;
+        margin-bottom: 10px !important;
+        padding: 5px 15px !important;
+        text-align: center !important;
+        text-transform: uppercase !important;
+        vertical-align: middle !important;
+        white-space: nowrap !important;
+        border-radius: 3px !important;
+        text-align: left !important;
+        margin: 0 1px !important;
+        border: none !important;
+        background: #000000 none repeat scroll 0 0 !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }*/
+
+/*.newBtn.toggled {
+        background-color: #1cbb4b !important;
+        color: #fff !important;
+        text-decoration: none !important;
+    }
+
+.newBtn.toggled:hover,
+.newBtn.toggled:focus {
+        background-color: #449d44 !important;
+    }
+
+
+.newBtn:hover,
+.newBtn:focus {
+        background: #111111 none repeat scroll 0 0 !important;
+        color: #fff !important;
+    }*/
+
+/*.radioTextBottonCanvas .centerNewBtnFirstRadioText{background-position:0 0 ; background:red !important;}*/
+
+.radioTextBottonsCanvas table .newBtn
+ {
+        -moz-user-select: none !important;
+        background-image: none !important;
+        cursor: pointer !important;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5 !important;
+        margin-bottom: 10px !important;
+        padding: 5px 15px !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        white-space: nowrap !important;
+        border-radius: 3px !important;
+        text-align: left !important;
+        margin: 0 1px !important;
+        background: #fff none repeat scroll 0 0 !important;
+        color: #111;
+        box-shadow: none !important;
+        text-decoration: none !important;
+        text-shadow: none;
+        border: 1px solid #808792;
+}
+
+
+.radioTextBottonsCanvas table .selectedRadioTextBottonCanvas .newBtn {
+    background: #808792 none repeat scroll 0 0  !important;
+    color: #fff;
+}
+
+.radioTextBottonsCanvas table .selectedRadioTextBottonCanvas .newBtn:hover,
+.radioTextBottonsCanvas table .selectedRadioTextBottonCanvas .newBtn:focus {
+        background:  #808792 none repeat scroll 0 0  !important;
+}
+
+
+.radioTextBottonsCanvas table .newBtnLeft,
+.radioTextBottonsCanvas table .newBtnRight {
+    display: none !important;
+}

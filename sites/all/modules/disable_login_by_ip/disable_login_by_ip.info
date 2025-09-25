@@ -1,0 +1,6 @@
+name = Disable login by ip
+description = Disable login page by IP, available only through office ip
+core = 7.x
+package = "LCM"
+
+version = "6.x-X.X"

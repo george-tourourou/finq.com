@@ -1,0 +1,652 @@
+#node-667737 {
+  background-color: #5d5d5d;
+}
+body .malaysian-blog {
+  background-color: #5d5d5d;
+}
+body .malaysian-blog h1 {
+  color: #fff;
+  font-size: 63px;
+  font-weight: 900;
+}
+body .malaysian-blog h1 span {
+  color: #dbac5b;
+}
+body .malaysian-blog h2 {
+  font-size: 61px;
+  font-weight: 500;
+  color: #fff;
+}
+body .malaysian-blog p {
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+}
+body .malaysian-blog .phone-version {
+  display: none;
+}
+body .malaysian-blog .banner1 {
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/banner1.jpg") no-repeat scroll top center / cover;
+  padding-top: 105px;
+  padding-bottom: 60px;
+  border-bottom: 18px solid #DBAC5A;
+}
+body .malaysian-blog .banner1 .row-1 {
+  padding-bottom: 105px;
+}
+body .malaysian-blog .banner1 .row-1 .col-6_12 {
+  float: right;
+  border-top: 2px solid #dbac5b;
+  border-left: 2px solid #dbac5b;
+  border-bottom: 2px solid #dbac5b;
+  padding: 25px 0 30px 42px;
+  text-align: left;
+}
+body .malaysian-blog .banner1 .col-6_12,
+body .malaysian-blog .banner1 .col-4_12 {
+  text-align: center;
+}
+body .malaysian-blog .banner1 .row-2 {
+  border-bottom: 1px dashed #fff;
+}
+body .malaysian-blog .banner1 .row-2 .col-6_12 {
+  padding-bottom: 35px;
+}
+body .malaysian-blog .banner1 .row-2 .goals {
+  border-right: 1px dashed #fff;
+}
+body .malaysian-blog .banner1 .row-2 .goals img {
+  padding-top: 15px;
+}
+body .malaysian-blog .banner1 .row-3 {
+  padding-top: 27px;
+}
+body .malaysian-blog .banner1 .row-3 .img2 {
+  padding-top: 12px;
+}
+body .malaysian-blog .banner2 {
+  padding-top: 40px;
+  border-bottom: 18px solid #DBAC5A;
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/banner2.jpg") no-repeat scroll top center / cover;
+}
+body .malaysian-blog .banner2 h2 {
+  padding-top: 38px;
+}
+body .malaysian-blog .banner2 .col-6_12,
+body .malaysian-blog .banner2 .col-4_12,
+body .malaysian-blog .banner2 .col-8_12 {
+  text-align: center;
+}
+body .malaysian-blog .banner2 .col-6_12 {
+  padding-bottom: 42px;
+}
+body .malaysian-blog .banner2 .row-1 {
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 35px;
+}
+body .malaysian-blog .banner2 .col-6_12 {
+  padding-top: 38px;
+}
+body .malaysian-blog .banner2 .col-6_12.row-2 {
+  border-right: 1px dashed #fff;
+}
+body .malaysian-blog .banner2 .col-6_12.row-2 img {
+  padding-top: 13px;
+}
+body .malaysian-blog .banner3 {
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/banner3.jpg") no-repeat scroll top center / cover;
+  padding-bottom: 52px;
+  border-bottom: 18px solid #DBAC5A;
+}
+body .malaysian-blog .banner3 .col-6_12,
+body .malaysian-blog .banner3 .col-4_12,
+body .malaysian-blog .banner3 .col-8_12 {
+  text-align: center;
+}
+body .malaysian-blog .banner3 .row-1 {
+  border-bottom: 1px dashed #fff;
+}
+body .malaysian-blog .banner3 .row-1 .img1 {
+  border-right: 1px dashed #fff;
+}
+body .malaysian-blog .banner3 .row-1 .col-6_12 {
+  padding-top: 57px;
+  padding-bottom: 46px;
+}
+body .malaysian-blog .banner3 .row-2 {
+  padding-top: 58px;
+}
+body .malaysian-blog .banner3 .row-2 .col-8_12 {
+  padding-top: 21px;
+}
+body .malaysian-blog .banner4 {
+  background-color: black;
+  padding-top: 71px;
+  padding-bottom: 88px;
+}
+body .malaysian-blog .banner4 p {
+  padding-right: 63px;
+  padding-left: 63px;
+  padding-top: 45px;
+  text-align: justify;
+}
+body .malaysian-blog .banner4 .col-7_12 {
+  border-top: 2px solid #dbac5b;
+  border-right: 2px solid #dbac5b;
+  border-bottom: 2px solid #dbac5b;
+  padding: 25px 0 30px 45px;
+  text-align: left;
+}
+body .malaysian-blog .banner4 .row-3 p span {
+  font-weight: 700;
+  color: #fff;
+}
+body .malaysian-blog .banner4 .row-3 p span.website img {
+  margin-bottom: -7px;
+}
+body .malaysian-blog .banner4 .row-3 p span.email img {
+  margin-bottom: -2px;
+}
+body .malaysian-blog .banner4 .row-3 p span.phone img {
+  margin-bottom: -6px;
+}
+body .malaysian-blog-2 {
+  background-color: #5d5d5d;
+}
+body .malaysian-blog-2 h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  padding-left: 53px;
+  line-height: 1;
+}
+body .malaysian-blog-2 h1 span {
+  color: #dbac5b;
+}
+body .malaysian-blog-2 h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+}
+body .malaysian-blog-2 h3 {
+  font-size: 22px;
+  color: #fff;
+}
+body .malaysian-blog-2 p {
+  color: #fff;
+  line-height: 1.2;
+}
+body .malaysian-blog-2 .phone-version {
+  display: none;
+}
+body .malaysian-blog-2 .tablet-version {
+  display: none;
+}
+body .malaysian-blog-2 .banner2 h2,
+body .malaysian-blog-2 .banner4 h2,
+body .malaysian-blog-2 .banner6 h2 {
+  font-weight: 700;
+  padding: 9px 38px 13px 43px;
+}
+body .malaysian-blog-2 .banner1 {
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/part2/banner1.jpg") no-repeat scroll top center / cover;
+  padding-top: 80px;
+  padding-bottom: 390px;
+}
+body .malaysian-blog-2 .banner2 {
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/part2/banner2.jpg") no-repeat scroll top center / cover;
+}
+body .malaysian-blog-2 .banner2 h2 {
+  text-align: right;
+}
+body .malaysian-blog-2 .banner3 {
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/part2/banner3.jpg") no-repeat scroll top center / 100% 100%;
+  padding: 42px 140px 142px;
+}
+body .malaysian-blog-2 .banner3 p {
+  font-size: 35px;
+  text-align: center;
+  color: black;
+}
+body .malaysian-blog-2 .banner4 {
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/part2/banner4.jpg") no-repeat scroll top center / cover;
+}
+body .malaysian-blog-2 .banner5 {
+  position: relative;
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/part2/banner5.jpg") no-repeat scroll top center / cover;
+}
+body .malaysian-blog-2 .banner5 p {
+  font-size: 18px;
+}
+body .malaysian-blog-2 .banner5 img.full-img {
+  position: absolute;
+  top: 80px;
+  left: 322px;
+}
+body .malaysian-blog-2 .banner5 .col-12_12 .radius-area {
+  border-radius: 80px;
+}
+body .malaysian-blog-2 .banner5 .row-1 {
+  margin-top: 105px;
+}
+body .malaysian-blog-2 .banner5 .row-1 .radius-area {
+  float: right;
+  background-color: #282567cc;
+  margin-right: 100px;
+  padding: 13px 100px 17px 195px ;
+}
+body .malaysian-blog-2 .banner5 .row-2 {
+  margin-top: 90px;
+}
+body .malaysian-blog-2 .banner5 .row-2 .radius-area {
+  margin-left: 100px;
+  background-color: #006186cc;
+  padding: 36px 50px 40px ;
+}
+body .malaysian-blog-2 .banner5 .row-3 {
+  margin-top: 55px;
+}
+body .malaysian-blog-2 .banner5 .row-3 .radius-area {
+  margin-right: 100px;
+  float: right;
+  background-color: #0083ABcc;
+  padding: 22px 50px 25px 195px;
+}
+body .malaysian-blog-2 .banner5 .row-4 {
+  margin-top: 52px;
+  margin-bottom: 137px;
+}
+body .malaysian-blog-2 .banner5 .row-4 .radius-area {
+  margin-left: 100px;
+  background-color: #57A2A6cc;
+  padding: 26px 190px 25px 50px;
+}
+body .malaysian-blog-2 .banner6 {
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/part2/banner6.jpg") no-repeat scroll top center / cover;
+  text-align: right;
+}
+body .malaysian-blog-2 .banner7 {
+  background: #fff url("/sites/all/themes/finq/images/v2.0/malaysian/part2/banner7.jpg") no-repeat scroll top center / cover;
+  padding-top: 80px;
+  padding-bottom: 54px;
+}
+body .malaysian-blog-2 .banner7 .row-2 .row-2-1,
+body .malaysian-blog-2 .banner7 .row-3 .row-2-1,
+body .malaysian-blog-2 .banner7 .row-2 .row-3-1,
+body .malaysian-blog-2 .banner7 .row-3 .row-3-1 {
+  border-right: 1px solid #fff;
+  padding-left: 140px;
+}
+body .malaysian-blog-2 .banner7 .row-2 .row-2-1 h3,
+body .malaysian-blog-2 .banner7 .row-3 .row-2-1 h3,
+body .malaysian-blog-2 .banner7 .row-2 .row-3-1 h3,
+body .malaysian-blog-2 .banner7 .row-3 .row-3-1 h3 {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  background: url("/sites/all/themes/finq/images/v2.0/malaysian/part2/gold-bar-left.png") no-repeat scroll center / 350px;
+}
+body .malaysian-blog-2 .banner7 .row-2 .row-2-1 p,
+body .malaysian-blog-2 .banner7 .row-3 .row-2-1 p,
+body .malaysian-blog-2 .banner7 .row-2 .row-3-1 p,
+body .malaysian-blog-2 .banner7 .row-3 .row-3-1 p {
+  text-align: right;
+}
+body .malaysian-blog-2 .banner7 .row-2 .row-2-2,
+body .malaysian-blog-2 .banner7 .row-3 .row-2-2,
+body .malaysian-blog-2 .banner7 .row-2 .row-3-2,
+body .malaysian-blog-2 .banner7 .row-3 .row-3-2 {
+  padding-right: 140px;
+}
+body .malaysian-blog-2 .banner7 .row-2 .row-2-2 h3,
+body .malaysian-blog-2 .banner7 .row-3 .row-2-2 h3,
+body .malaysian-blog-2 .banner7 .row-2 .row-3-2 h3,
+body .malaysian-blog-2 .banner7 .row-3 .row-3-2 h3 {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  background: url("/sites/all/themes/finq/images/v2.0/malaysian/part2/gold-bar-right.png") no-repeat scroll center / 350px;
+}
+body .malaysian-blog-2 .banner7 .col-6_12 {
+  padding: 20px 45px;
+}
+body .malaysian-blog-2 .banner7 h3 {
+  text-align: center;
+}
+body .malaysian-blog-2 .banner7 p {
+  font-size: 20px;
+  padding-top: 11px;
+}
+body .malaysian-blog-2 .banner7 .row-1 {
+  text-align: center;
+}
+body .malaysian-blog-2 .banner7 .row-1 .bullet-point {
+  display: block;
+  margin: auto;
+  margin-bottom: -20px;
+}
+body .malaysian-blog-2 .banner7 .row-1 .bullet-point-2 {
+  display: block;
+  margin: auto;
+  margin-top: -18px;
+}
+body .malaysian-blog-2 .banner7 .row-1 .line-1 {
+  margin-bottom: -105px;
+}
+body .malaysian-blog-2 .banner7 .row-1 .line-2 {
+  margin-top: -160px;
+  margin-bottom: 160px;
+}
+body .malaysian-blog-2 .banner8 {
+  background: url("/sites/all/themes/finq/images/v2.0/malaysian/part2/banner8.jpg") no-repeat scroll center / cover;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+body .malaysian-blog-2 .banner8 p {
+  font-size: 25px;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+}
+body .malaysian-blog-2 .banner8 p span {
+  color: #FFF;
+}
+body .malaysian-blog-2 .banner8 p span.website img {
+  margin-bottom: -7px;
+}
+body .malaysian-blog-2 .banner8 p span.email img {
+  margin-bottom: -2px;
+}
+body .malaysian-blog-2 .banner8 p span.phone img {
+  margin-bottom: -6px;
+}
+body .malaysian-blog-2 .banner8 p.p2 {
+  padding-top: 15px;
+}
+@media only screen and (max-width: 1024px) {
+  body .malaysian-blog .theme-content {
+    width: 100%;
+  }
+  body .malaysian-blog h1 {
+    font-size: 58px;
+  }
+  body .malaysian-blog h2 {
+    font-size: 54px;
+    text-align: center;
+  }
+  body .malaysian-blog p {
+    text-align: center;
+  }
+  body .malaysian-blog .banner4 {
+    font-size: 48px;
+  }
+  body .malaysian-blog-2 .theme-content {
+    width: 100%;
+    padding: 0;
+  }
+  body .malaysian-blog-2 .pc-version {
+    display: none;
+  }
+  body .malaysian-blog-2 .tablet-version {
+    display: block;
+  }
+  body .malaysian-blog-2 .banner5 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  body .malaysian-blog-2 .banner5 > img {
+    display: none;
+  }
+  body .malaysian-blog-2 .banner5 .col-12_12 .radius-area {
+    margin-top: 50px;
+  }
+  body .malaysian-blog-2 .banner5 .row-1 .radius-area {
+    margin-right: 0px;
+    z-index: 1;
+  }
+  body .malaysian-blog-2 .banner5 .row-1 .col-mg-6_15 {
+    z-index: 2;
+    position: absolute;
+  }
+  body .malaysian-blog-2 .banner5 .row-1 .col-mg-6_15 img {
+    margin-right: -110px;
+    float: right;
+  }
+  body .malaysian-blog-2 .banner5 .row-2 .radius-area {
+    margin-left: 0px;
+  }
+  body .malaysian-blog-2 .banner5 .row-2 .col-mg-6_15 img {
+    margin-left: -110px;
+  }
+  body .malaysian-blog-2 .banner5 .row-3 .radius-area {
+    margin-right: 0px;
+    z-index: 1;
+  }
+  body .malaysian-blog-2 .banner5 .row-3 .col-mg-6_15 {
+    z-index: 2;
+    position: absolute;
+  }
+  body .malaysian-blog-2 .banner5 .row-3 .col-mg-6_15 img {
+    float: right;
+    margin-right: -110px;
+  }
+  body .malaysian-blog-2 .banner5 .row-4 .radius-area {
+    margin-left: 0px;
+  }
+  body .malaysian-blog-2 .banner5 .row-4 .col-mg-6_15 img {
+    margin-left: -110px;
+  }
+  body .malaysian-blog-2 .banner7 .row-2 .row-2-1,
+  body .malaysian-blog-2 .banner7 .row-3 .row-2-1,
+  body .malaysian-blog-2 .banner7 .row-2 .row-3-1,
+  body .malaysian-blog-2 .banner7 .row-3 .row-3-1 {
+    padding-left: 40px;
+  }
+  body .malaysian-blog-2 .banner7 .row-2 .row-2-2,
+  body .malaysian-blog-2 .banner7 .row-3 .row-2-2,
+  body .malaysian-blog-2 .banner7 .row-2 .row-3-2,
+  body .malaysian-blog-2 .banner7 .row-3 .row-3-2 {
+    padding-right: 40px;
+  }
+  body .malaysian-blog-2 .phone-version {
+    display: none;
+  }
+}
+@media only screen and (max-width: 959px) {
+  body .malaysian-blog .theme-content {
+    padding: 0;
+  }
+  body .malaysian-blog .banner1,
+  body .malaysian-blog .banner2,
+  body .malaysian-blog .banner3,
+  body .malaysian-blog .banner4 {
+    padding: 10px;
+  }
+  body .malaysian-blog .banner1 h2 {
+    padding-top: 28px;
+  }
+  body .malaysian-blog .banner1 .row-1 .col-6_12 {
+    width: 75%;
+  }
+  body .malaysian-blog .banner1 .row-2 .goals {
+    border-bottom: 1px dashed #fff;
+    border-right: 0;
+  }
+  body .malaysian-blog .banner1 .row-2 .col-6_12 {
+    width: 100%;
+    padding-top: 35px;
+  }
+  body .malaysian-blog .banner1 .row-3 .col-4 {
+    width: 100%;
+  }
+  body .malaysian-blog .banner2 .row-1 .col-4_12,
+  body .malaysian-blog .banner2 .row-1 .col-8_12 {
+    width: 100%;
+  }
+  body .malaysian-blog .banner2 .row-2,
+  body .malaysian-blog .banner2 .row-3 {
+    width: 100%;
+  }
+  body .malaysian-blog .banner2 .col-6_12.row-2 {
+    border-bottom: 1px dashed #fff;
+    border-right: 0;
+  }
+  body .malaysian-blog .banner3 .row-1 .col-6_12 {
+    width: 100%;
+  }
+  body .malaysian-blog .banner3 .row-1 .img1 {
+    border-bottom: 1px dashed #fff;
+    border-right: 0;
+  }
+  body .malaysian-blog .banner3 .row-2 .col-4_12,
+  body .malaysian-blog .banner3 .row-2 .col-8_12 {
+    width: 100%;
+  }
+  body .malaysian-blog .banner4 .col-7_12 {
+    width: 75%;
+  }
+  body .malaysian-blog-2 .banner5 .col-12_12 .col-mg-9_15 {
+    width: 85%;
+  }
+  body .malaysian-blog-2 .banner5 .col-12_12 .col-mg-6_15 {
+    width: 10%;
+  }
+  body .malaysian-blog-2 .banner5 .row-3 .col-mg-9_15 {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 719px) {
+  body .malaysian-blog h1 {
+    font-size: 32px;
+  }
+  body .malaysian-blog h2 {
+    font-size: 36px;
+  }
+  body .malaysian-blog .banner1 .row-1 {
+    padding: 30px 20px 75px;
+  }
+  body .malaysian-blog .banner1 .row-1 .col-6_12 {
+    width: 100%;
+    border-right: 2px solid #dbac5b;
+  }
+  body .malaysian-blog .banner1 .row-4 .col-6_12 p {
+    text-align: center;
+  }
+  body .malaysian-blog .banner1 .row-4 .col-6_12 h2 {
+    text-align: center;
+  }
+  body .malaysian-blog .banner1 .row-4 .col-6_12 img {
+    padding-top: 25px;
+    width: 70%;
+  }
+  body .malaysian-blog .pc-version {
+    display: none;
+  }
+  body .malaysian-blog .phone-version {
+    display: block;
+  }
+  body .malaysian-blog .banner3 {
+    padding-bottom: 20px;
+  }
+  body .malaysian-blog .banner4 {
+    background-color: black;
+    padding-top: 71px;
+    padding-bottom: 88px;
+  }
+  body .malaysian-blog .banner4 h1 {
+    font-size: 34px;
+  }
+  body .malaysian-blog .banner4 p {
+    font-size: 24px;
+  }
+  body .malaysian-blog .banner4 p {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  body .malaysian-blog .banner4 .col-7_12 {
+    width: 100%;
+    border-left: 2px solid #dbac5b;
+    padding: 25px 20px 30px 20px;
+    text-align: left;
+  }
+  body .malaysian-blog .banner4 p.p1.phone-version {
+    line-height: 2;
+    text-align: center;
+  }
+  body .malaysian-blog-2 h1 {
+    padding-left: 18px;
+    font-size: 34px;
+  }
+  body .malaysian-blog-2 h3 {
+    font-weight: 700;
+  }
+  body .malaysian-blog-2 .banner1 .col-6_12 {
+    width: 100%;
+  }
+  body .malaysian-blog-2 .banner1 .col-6_12 h1 {
+    font-size: 40px;
+  }
+  body .malaysian-blog-2 .banner2 h2 {
+    text-align: left;
+  }
+  body .malaysian-blog-2 .banner3 {
+    padding: 42px 20px 160px;
+  }
+  body .malaysian-blog-2 .banner5 .row-1,
+  body .malaysian-blog-2 .banner5 .row-2,
+  body .malaysian-blog-2 .banner5 .row-3,
+  body .malaysian-blog-2 .banner5 .row-4,
+  body .malaysian-blog-2 .banner5 .row-5 {
+    margin-top: 15px;
+  }
+  body .malaysian-blog-2 .banner5 .col-12_12 .col-mg-9_15 {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  body .malaysian-blog-2 .banner5 .col-12_12 .col-mg-6_15 {
+    display: none;
+  }
+  body .malaysian-blog-2 .banner6 h2 {
+    text-align: left;
+  }
+  body .malaysian-blog-2 .banner7 .row-1 {
+    display: none;
+  }
+  body .malaysian-blog-2 .banner7 .row-2 .row-2-1,
+  body .malaysian-blog-2 .banner7 .row-3 .row-2-1,
+  body .malaysian-blog-2 .banner7 .row-2 .row-3-1,
+  body .malaysian-blog-2 .banner7 .row-3 .row-3-1 {
+    border-right: none;
+  }
+  body .malaysian-blog-2 .banner7 .row-2 .row-2-1 h3,
+  body .malaysian-blog-2 .banner7 .row-3 .row-2-1 h3,
+  body .malaysian-blog-2 .banner7 .row-2 .row-3-1 h3,
+  body .malaysian-blog-2 .banner7 .row-3 .row-3-1 h3 {
+    background: #dbac5b;
+  }
+  body .malaysian-blog-2 .banner7 .row-2 .row-2-1 p,
+  body .malaysian-blog-2 .banner7 .row-3 .row-2-1 p,
+  body .malaysian-blog-2 .banner7 .row-2 .row-3-1 p,
+  body .malaysian-blog-2 .banner7 .row-3 .row-3-1 p {
+    text-align: left;
+  }
+  body .malaysian-blog-2 .banner7 .row-2 .row-2-2 h3,
+  body .malaysian-blog-2 .banner7 .row-3 .row-2-2 h3,
+  body .malaysian-blog-2 .banner7 .row-2 .row-3-2 h3,
+  body .malaysian-blog-2 .banner7 .row-3 .row-3-2 h3 {
+    background: #dbac5b;
+  }
+  body .malaysian-blog-2 .banner7 .row-2 .col-6_12,
+  body .malaysian-blog-2 .banner7 .row-3 .col-6_12 {
+    width: 100%;
+  }
+  body .malaysian-blog-2 .banner8 p.p1.phone-version {
+    line-height: 2;
+  }
+  body .malaysian-blog-2 .pc-version {
+    display: none;
+  }
+  body .malaysian-blog-2 .phone-version {
+    display: block;
+  }
+}
+/*# sourceMappingURL=malaysian.css.map */

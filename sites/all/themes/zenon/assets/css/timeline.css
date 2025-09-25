@@ -1,0 +1,141 @@
+#block-views-timeline-timeline .block-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #008f52;
+    margin: 20px 0;
+}
+#timeline {
+    min-height: 500px;
+    position: relative;
+    padding: 40px 0;
+}
+#timeline:before {
+    content: '';
+    display: block;
+    width: 1px;
+    background: #e1e5e6;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 auto;
+}
+#timeline:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #e1e5e6;
+    border-radius: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+#timeline [class^="timeline"] {
+    position: relative;
+    width: 50%;
+    margin-bottom: 20px;
+}
+#timeline [class$="-0"] {
+    float: left;
+}
+#timeline [class$="-1"] {
+    float: right;
+}
+#timeline .clear {
+    display: block;
+    clear: both;
+}
+#timeline .year {
+    position: absolute;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #e1e5e6;
+    border-radius: 100%;
+    color: #008f52;
+    background: #FFFFFF;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 800;
+    color: #008f52;
+}
+#timeline [class$="-0"] .year {
+    right: -30px;
+}
+#timeline [class$="-1"] .year {
+    left: -30px;
+}
+#timeline .body {
+    width: 90%;
+    border: 1px solid #e1e5e6;
+    padding: 20px;
+    min-height: 100px;
+    position: relative;
+}
+#timeline [class$="-0"] .body {
+    float: left;
+}
+#timeline [class$="-0"] .body:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 9px;
+    position: absolute;
+    top: 45px;
+    right: -6px;
+    background-image: url('../images/timeline_to_right.jpg');
+    background-repeat: no-repeat;
+}
+#timeline [class$="-1"] .body {
+    float: right;
+}
+#timeline [class$="-1"] .body:before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 9px;
+    position: absolute;
+    top: 45px;
+    left: -6px;
+    background-image: url('../images/timeline_to_left.jpg');
+    background-repeat: no-repeat;
+}
+#timeline [class$="-0"] .body .image {
+    float: left;
+}
+#timeline [class$="-1"] .body .image {
+    float: right;
+}
+#timeline .body .image img {
+    height: auto;
+}
+#timeline .body .image.small img {
+    width: 130px;
+}
+#timeline .body .image.large img {
+    width: 100%;
+}
+#timeline .body .content {
+    color: #666666;
+    font-size: 15px;
+    line-height: 20px;
+}
+#timeline .body .content p {
+    margin: 0px;
+    padding: 0px;
+}
+#timeline [class$="-0"] .body .image.small {
+    margin-right: 20px;
+}
+#timeline [class$="-1"] .body .image.small {
+    margin-left: 20px;
+}
+#timeline .body .image.large {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,209 @@
+{
+  "data": {
+    "Spain35": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "France40": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Sweden30": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Amsterdam25": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Oil": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "NaturalGas": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "HongKong45": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "MSCITaiwan": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "India50": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Copper": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "VIXX": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "JPN10yBond": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "GER10YBond": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Japan225": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Cocoa": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Wheat": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Corn": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Soybeans": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Rice": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Coffee": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "US10YNote": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "US30YBond": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Sydney200": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Europe50": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "USA30": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Germany30": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "UK100": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "USA500": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "USTECH100": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "USA2000": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Italy40": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Swiss20": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Poland20": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "SAfrica40": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Palladium": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Gilt10Y": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Sugar": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Platinum": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Cotton": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "Moscow50": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    },
+    "DollarIndex": {
+      "date": "2015-12-23",
+      "nextStart": "1",
+      "nextEnd": "2"
+    }
+  }
+}

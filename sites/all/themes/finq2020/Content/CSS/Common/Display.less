@@ -1,0 +1,29 @@
+@import "Variables";
+
+.display(@name) {
+  .@{name}block {
+    display: block;
+  }
+
+  .@{name}none {
+    display: none;
+  }
+}
+
+.display(d-);
+
+@media (max-width: @GRID_EXTRA_LARGE) {
+  .display(d-xl-);
+}
+
+@media (max-width: @GRID_LARGE) {
+  .display(d-lg-);
+}
+
+@media (max-width: @GRID_MEDIUM) {
+  .display(d-md-);
+}
+
+@media (max-width: @GRID_SMALL){
+  .display(d-sm-);
+}

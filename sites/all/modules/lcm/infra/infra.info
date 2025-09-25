@@ -1,0 +1,11 @@
+name = Infrastructure
+description = Internal functions & some required external libraries for other TFXL modules
+package = TradeFXL
+core = 7.x
+version = "7.x-1.0"
+project = "tfxl"
+
+scripts[] = js/js.cookie.js
+scripts[] = js/mobile-detect.js
+scripts[] = js/infra.js
+

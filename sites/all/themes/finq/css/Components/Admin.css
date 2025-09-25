@@ -1,0 +1,51 @@
+﻿.plain-box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+#regulation-node-form,
+#widget-node-form,
+.region-content {
+  padding: 20px 0 40px 0;
+  margin-right: 40px;
+  margin-left: 40px;
+  background: #fff;
+  position: relative;
+  color: #333;
+}
+#regulation-node-form > div,
+#widget-node-form > div {
+  float: left;
+  width: 70%;
+  border: 1px #ccc solid;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+.tabs {
+  margin: 20px auto 0;
+  width: 1180px;
+  background: #fff;
+  position: relative;
+  color: #333;
+  z-index: 1;
+}
+.tabs .element-invisible {
+  display: none;
+}
+.tabs ul.tabs {
+  float: left;
+  width: 100%;
+}
+.tabs ul.tabs li {
+  float: left;
+  margin-right: 5px;
+  list-style-type: none;
+}
+.tabs ul.tabs li a {
+  padding: 10px;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  color: #656565;
+  text-decoration: none;
+}
+.tabs ul.tabs li a:hover {
+  text-decoration: underline;
+}

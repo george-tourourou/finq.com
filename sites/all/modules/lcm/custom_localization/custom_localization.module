@@ -1,0 +1,519 @@
+<?php
+
+define('CUSTOM_TRANSLATION_GROUP_NAME', 'leadcapital');
+define('COMPANY_RELATED_TRANSLATION_GROUP_NAME', 'leadcapital_cr');
+
+/**
+ * Implements hook_menu_alter().
+ *
+ * Take over the locale translation page.
+ * @param $items - items which will be altered
+ */
+function custom_localization_menu_alter(&$items) {
+  $items['admin/config/regional/translate/edit/%'] = array(
+    'title' => 'Edit string',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array(
+      'custom_localization_locale_translate_edit_form',
+      5,
+    ),
+    'access arguments' => array('translate interface'),
+    'file' => 'custom_localization.pages.inc',
+    'file path' => drupal_get_path('module', 'custom_localization'),
+  );
+
+  $items['admin/config/regional/translate/import'] = array(
+    'title' => 'Import',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_localization_translate_import_form'),
+    'access arguments' => array('translate interface'),
+    'weight' => 20,
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'custom_localization.pages.inc',
+    'file path' => drupal_get_path('module', 'custom_localization'),
+  );
+
+  $items['admin/config/regional/translate/export'] = array(
+    'title' => 'Export',
+    'page callback' => 'custom_localization_translate_export_screen',
+    'access arguments' => array('translate interface'),
+    'weight' => 30,
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'custom_localization.pages.inc',
+    'file path' => drupal_get_path('module', 'custom_localization'),
+  );
+}
+
+/**
+ * Implements hook_locale() - provide information about our custom translation groups
+ * @param string $op
+ * @return array - list of our groups
+ */
+function custom_localization_locale($op = 'groups') {
+  switch ($op) {
+    case 'groups':
+      return array(
+        CUSTOM_TRANSLATION_GROUP_NAME => t(
+          'Custom Leadcapital translations'
+        ),
+        COMPANY_RELATED_TRANSLATION_GROUP_NAME => t(
+          'Company related Leadcapital translations'
+        ),
+      );
+  }
+  return array();
+}
+
+/**
+ * Implements hook_filter_info().
+ */
+function custom_localization_filter_info() {
+  $filters['custom_localization'] = array(
+    'title' => 'Custom Translations',
+    'description' => 'Allow you translate keys in [translate_&#65308;some_key&#65310;] (via native translation interface)',
+    'process callback' => '_custom_localization_filter_process',
+    'tips callback' => '_custom_localization_filter_tips',
+  );
+
+  $filters['auto_link_prefixes'] = array(
+    'title' => 'Auto language link prefixes',
+    'description' => 'Add current language prefixes for all &#65308;a href="..."&#65310; which start from "/"',
+    'process callback' => '_custom_localization_auto_link_prefixes_filter_process',
+    'tips callback' => '_custom_localization_auto_link_prefixes_filter_tips',
+  );
+  return $filters;
+}
+
+/**
+ * Implements callback_filter_process() - search "[translate_<key>]" in text and replace it by related translations.
+ * @param $text - text which will be altered
+ * @return mixed
+ */
+function _custom_localization_filter_process($text) {
+  $result = preg_replace_callback(
+    '/\[(translate_[a-zA-Z_][a-zA-Z0-9_]+)\]/',
+    function ($match) {
+      return tt($match[1]);
+    },
+    $text
+  );
+
+  return $result;
+}
+
+/**
+ * Implements callback_filter_process() - add language prefix for links.
+ * @param $text - text which will be altered
+ * @return mixed
+ */
+function _custom_localization_auto_link_prefixes_filter_process($text) {
+  $result = preg_replace_callback(
+    '/href=([\'\"])(\/.*?)([\'\"])/',
+    function ($match) {
+      global $language;
+      $prefix = ($language->language === 'en') ? '' : '/' . $language->prefix;
+      return "href={$match[1]}{$prefix}{$match[2]}{$match[3]}";
+    },
+    $text
+  );
+
+  return $result;
+}
+
+/**
+ * @param $filter
+ * @param $format
+ * @param bool|false $long
+ * @return null|string
+ */
+function _custom_localization_filter_tips($filter, $format, $long = FALSE) {
+  return t(
+    'You can placed alphanumerical keys in [translate_&#65308;some_key&#65310;] for translate then to current language'
+  );
+}
+
+/**
+ * @param $filter
+ * @param $format
+ * @param bool|false $long
+ * @return null|string
+ */
+function _custom_localization_auto_link_prefixes_filter_tips(
+  $filter,
+  $format,
+  $long = FALSE
+) {
+  return t(
+    'To all links started from "/" will be added current language prefix'
+  );
+}
+
+
+/**
+ * hook_token_info implementation
+ * said that we provide some our own token
+ * @return mixed
+ */
+function custom_localization_token_info() {
+  $info['tokens']['node']['english-language-path'] = array(
+    'name' => t('Custom URL path alias'),
+    'description' => t(
+      'Token used to set URL path alias in English for other languages.'
+    ),
+  );
+  // Language tokens.
+  $info['types']['language'] = array(
+    'name' => t('Language'),
+    'description' => t('Tokens related to site language.'),
+  );
+  $info['tokens']['language']['language-ui'] = array(
+    'name' => t('User Interface'),
+    'description' => t('Tokens related to the active user interface language.'),
+    'type' => 'language-ui',
+  );
+  $info['tokens']['language']['language-content'] = array(
+    'name' => t('Content'),
+    'description' => t('Tokens related to the active content language.'),
+    'type' => 'language-content',
+  );
+  // User interface language tokens.
+  $info['types']['language-ui'] = array(
+    'name' => t('Language UI'),
+    'description' => t('Tokens related to the active user interface language.'),
+    'needs-data' => 'language-ui',
+  );
+  $info['tokens']['language-ui']['language'] = array(
+    'name' => t('Code'),
+    'description' => t('The active user interface language code.'),
+  );
+  $info['tokens']['language-ui']['name'] = array(
+    'name' => t('Name'),
+    'description' => t('The active user interface language name.'),
+  );
+  $info['tokens']['language-ui']['native'] = array(
+    'name' => t('Native name'),
+    'description' => t('The active user interface native language name.'),
+  );
+  // Content language tokens.
+  $info['types']['language-content'] = array(
+    'name' => t('Language Content'),
+    'description' => t('Tokens related to the active content language.'),
+    'needs-data' => 'language-content',
+  );
+  $info['tokens']['language-content']['language'] = array(
+    'name' => t('Code'),
+    'description' => t('The active content language code.'),
+  );
+  $info['tokens']['language-content']['name'] = array(
+    'name' => t('Name'),
+    'description' => t('The active content language name.'),
+  );
+  $info['tokens']['language-content']['native'] = array(
+    'name' => t('Native name'),
+    'description' => t('The active content language native name.'),
+  );
+
+  return $info;
+}
+
+/**
+ * Implementation of hook_tokens
+ * Provide token [node:english-language-path] for specify the same url as source
+ * node url (required for right links for translated nodes)
+ *
+ * @param $type
+ * @param $tokens
+ * @param array $data
+ * @param array $options
+ * @return array
+ */
+function custom_localization_tokens(
+  $type,
+  $tokens,
+  array $data = array(),
+  array $options = array()
+) {
+  $replacements = array();
+  $sanitize = !empty($options['sanitize']);
+
+  if (isset($tokens['english-language-path']) && isset($data['node']) && is_object(
+      $data['node']
+    )
+  ) {
+    if (!empty($data['node']->tnid)) {
+      $path = drupal_get_path_alias('node/' . $data['node']->tnid, 'en');
+      if (is_array($path)) {
+        $path = $path[0];
+        drupal_set_message(
+          "Node {$data['node']->tnid} has more then one alias"
+        );
+      }
+      $replacements['[node:english-language-path]'] = $path;
+    }
+  }
+
+  // Language tokens.
+  if ($type == 'language') {
+    global $language, $language_content;
+    // Handle the top-level language object output.
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        case 'language-content':
+          $replacements[$original] = token_render_array(
+            (array) $language_content
+          );
+          break;
+        case 'language-ui':
+          $replacements[$original] = token_render_array((array) $language);
+          break;
+      }
+    }
+
+    // Content language tokens.
+    if ($language_content_tokens = token_find_with_prefix(
+      $tokens,
+      'language-content'
+    )
+    ) {
+      foreach ($language_content_tokens as $name => $original) {
+        switch ($name) {
+          case 'language':
+            $replacements[$original] = $sanitize ? check_plain(
+              $language_content->language
+            ) : $language_content->language;
+            break;
+          case 'name':
+            $replacements[$original] = $sanitize ? check_plain(
+              $language_content->name
+            ) : $language_content->name;
+            break;
+          case 'native':
+            $replacements[$original] = $sanitize ? check_plain(
+              $language_content->native
+            ) : $language_content->native;
+            break;
+        }
+      }
+    }
+
+    // UI language tokens.
+    if ($language_ui_tokens = token_find_with_prefix($tokens, 'language-ui')) {
+      foreach ($language_ui_tokens as $name => $original) {
+        switch ($name) {
+          case 'language':
+            $replacements[$original] = $sanitize ? check_plain(
+              $language->language
+            ) : $language->language;
+            break;
+          case 'name':
+
+            $replacements[$original] = $sanitize ? check_plain(
+              $language->name
+            ) : $language->name;
+            break;
+          case 'native':
+            $replacements[$original] = $sanitize ? check_plain(
+              $language->native
+            ) : $language->native;
+            break;
+        }
+      }
+    }
+  }
+
+  return $replacements;
+}
+
+
+/**
+ * Our custom function for translation - can translate some key to any language (to english too)
+ * (modified copy of t() function)
+ *
+ * @param $string
+ * A string containing the English string to translate.
+ * @param array $args
+ * An associative array of replacements to make after translation. Based
+ * on the first character of the key, the value is escaped and/or themed.
+ * See format_string() for details.
+ * @param array $options
+ * An associative array of additional options, with the following elements:
+ * - 'langcode' (defaults to the current language): The language code to
+ *   translate to a language other than what is used to display the page.
+ * - 'context' (defaults to the empty context): The context the source string
+ *   belongs to.
+ * @return null|string
+ * The translated string.
+ */
+function tt($string, array $args = array(), array $options = array()) {
+  global $language;
+  static $custom_strings;
+
+  // Merge in default.
+  if (empty($options['langcode'])) {
+    $options['langcode'] = isset($language->language) ? $language->language : 'en';
+  }
+  if (empty($options['context'])) {
+    $options['context'] = '';
+  }
+  if (empty($options['group'])) {
+    $options['group'] = CUSTOM_TRANSLATION_GROUP_NAME;
+  }
+  else {
+    if (!array_key_exists($options['group'], custom_localization_locale())) {
+      $options['group'] = CUSTOM_TRANSLATION_GROUP_NAME;
+    }
+  }
+
+
+  // First, check for an array of customized strings. If present, use the array
+  // *instead of* database lookups. This is a high performance way to provide a
+  // handful of string replacements. See settings.php for examples.
+  // Cache the $custom_strings variable to improve performance.
+  if (!isset($custom_strings[$options['langcode']])) {
+    $custom_strings[$options['langcode']] = variable_get(
+      'locale_custom_strings_' . $options['langcode'],
+      array()
+    );
+  }
+  // Custom strings work for English too, even if locale module is disabled.
+  if (isset($custom_strings[$options['langcode']][$options['context']][$string])) {
+    $string = $custom_strings[$options['langcode']][$options['context']][$string];
+  }
+  // Translate with locale module if enabled.
+  else {
+    $string = _custom_locale(
+      $string,
+      $options['context'],
+      $options['langcode'],
+      $options['group']
+    );
+  }
+  if (empty($args)) {
+    return $string;
+  }
+  else {
+    return format_string($string, $args);
+  }
+}
+
+/**
+ * Customized copy of native drupal locale() function
+ * (required for specify our own group when we use tt() function)
+ * @param null $string
+ * @param null $context
+ * @param null $langcode
+ * @return null
+ * @throws \Exception
+ * @throws \InvalidMergeQueryException
+ */
+function _custom_locale(
+  $string = NULL,
+  $context = NULL,
+  $langcode = NULL,
+  $group = CUSTOM_TRANSLATION_GROUP_NAME
+) {
+  global $language;
+
+  // Use the advanced drupal_static() pattern, since this is called very often.
+  static $drupal_static_fast;
+  if (!isset($drupal_static_fast)) {
+    $drupal_static_fast['locale'] = &drupal_static(__FUNCTION__);
+  }
+  $locale_t = &$drupal_static_fast['locale'];
+
+
+  if (!isset($string)) {
+    // Return all cached strings if no string was specified
+    return $locale_t;
+  }
+
+  $langcode = isset($langcode) ? $langcode : $language->language;
+
+  // Store database cached translations in a static variable. Only build the
+  // cache after $language has been set to avoid an unnecessary cache rebuild.
+  if (!isset($locale_t[$langcode]) && isset($language)) {
+    $locale_t[$langcode] = array();
+    // Disabling the usage of string caching allows a module to watch for
+    // the exact list of strings used on a page. From a performance
+    // perspective that is a really bad idea, so we have no user
+    // interface for this. Be careful when turning this option off!
+    if (variable_get('locale_cache_strings', 1) == 1) {
+      if ($cache = cache_get('locale:' . $langcode, 'cache')) {
+        $locale_t[$langcode] = $cache->data;
+      }
+      elseif (lock_acquire('locale_cache_' . $langcode)) {
+        // Refresh database stored cache of translations for given language.
+        // We only store short strings used in current version, to improve
+        // performance and consume less memory.
+        $result = db_query(
+          "SELECT s.source, s.context, t.translation, t.language FROM {locales_source} s LEFT JOIN {locales_target} t ON s.lid = t.lid AND t.language = :language WHERE s.textgroup = :group AND s.version = :version AND LENGTH(s.source) < :length",
+          array(
+            ':language' => $langcode,
+            ':version' => VERSION,
+            ':length' => variable_get('locale_cache_length', 75),
+            ':group' => (string) $group,
+          )
+        );
+        foreach ($result as $data) {
+          $locale_t[$langcode][$data->context][$data->source] = (empty($data->translation) ? TRUE : $data->translation);
+        }
+        cache_set('locale:' . $langcode, $locale_t[$langcode]);
+        lock_release('locale_cache_' . $langcode);
+      }
+    }
+  }
+
+  // If we have the translation cached, skip checking the database
+  if (!isset($locale_t[$langcode][$context][$string])) {
+
+    // We do not have this translation cached, so get it from the DB.
+    $translation = db_query(
+      "SELECT s.lid, t.translation, s.version FROM {locales_source} s LEFT JOIN {locales_target} t ON s.lid = t.lid AND t.language = :language WHERE s.source = :source AND s.context = :context AND s.textgroup = :group",
+      array(
+        ':language' => $langcode,
+        ':source' => $string,
+        ':context' => (string) $context,
+        ':group' => (string) $group,
+      )
+    )->fetchObject();
+    if ($translation) {
+      // We have the source string at least.
+      // Cache translation string or TRUE if no translation exists.
+      $locale_t[$langcode][$context][$string] = (empty($translation->translation) ? TRUE : $translation->translation);
+
+      if ($translation->version != VERSION) {
+        // This is the first use of this string under current Drupal version. Save version
+        // and clear cache, to include the string into caching next time. Saved version is
+        // also a string-history information for later pruning of the tables.
+        db_update('locales_source')
+          ->fields(array('version' => VERSION))
+          ->condition('lid', $translation->lid)
+          ->execute();
+        cache_clear_all('locale:', 'cache', TRUE);
+      }
+    }
+    else {
+      // We don't have the source string, cache this as untranslated.
+      db_merge('locales_source')
+        ->insertFields(
+          array(
+            'location' => request_uri(),
+            'version' => VERSION,
+          )
+        )
+        ->key(
+          array(
+            'source' => $string,
+            'context' => (string) $context,
+            'textgroup' => (string) $group,
+          )
+        )
+        ->execute();
+      $locale_t[$langcode][$context][$string] = TRUE;
+      // Clear locale cache so this string can be added in a later request.
+      cache_clear_all('locale:', 'cache', TRUE);
+    }
+  }
+
+  return ($locale_t[$langcode][$context][$string] === TRUE ? $string : $locale_t[$langcode][$context][$string]);
+}

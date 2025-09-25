@@ -1,0 +1,194 @@
+<?php
+/**
+ * @file
+ * custom_meta. hansdotcom@gmail.com
+ */
+
+/**
+ * Implements hook_permission().
+ *
+ */
+function custom_meta_permission() {
+  return array(
+    'administer custom meta settings' => array(
+      'title' => t('administer custom meta settings')
+    )
+  );
+}
+
+/**
+ * Implements hook_init.
+ * Places defined custom meta tags in the head of the document for non-administration pages.
+ * Exposes tokens for use in the tag creation.
+ *
+ */
+function custom_meta_init() {
+  global $user;
+
+  $markup = '';
+  $token_data = array();
+  $meta_tags = custom_meta_get_tags(NULL);
+
+  // Place tags in html head if not in admin section and the path pattern
+  // is empty or matches current path.
+  if ($meta_tags && arg(0) != 'admin') {
+    $token_data['node'] = menu_get_object();
+    $token_data['user'] = $user;
+    $token_data['term'] = (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) ? taxonomy_term_load(arg(2)) : NULL;
+    foreach ($meta_tags as $key => $meta_tag) {
+      $valid_path = _custom_meta_check_path($meta_tag['meta_pages']);
+      if ($valid_path) {
+        $tag = '<meta ' . check_plain($meta_tag['meta_attr']) . '="' . check_plain($meta_tag['meta_attr_value']) . '" content="' . check_plain($meta_tag['meta_content']) . '"/>';
+        $tag = token_replace($tag, array('node' => $token_data['node'], 'user' => $token_data['user'], 'term' => $token_data['term']), array('sanitize' => TRUE, 'clear' => TRUE));
+        $markup .= $tag;
+      }
+    }
+  }
+
+  $all_tags = array(
+    '#type' => 'markup',
+    '#markup' => $markup
+  );
+
+  drupal_add_html_head($all_tags, 'custom_meta_tags');
+}
+
+/**
+ * Implements hook_html_head_alter().
+ * Check for duplicate meta tags.
+ * @param $elements (arr) head elements, passed by ref.
+ */
+function custom_meta_html_head_alter(&$elements) {
+  $meta_tags = custom_meta_get_tags(NULL);
+  if ($meta_tags) {
+    foreach ($meta_tags as $custom) {
+      if (_custom_meta_check_path($custom['meta_pages'])) {
+        _custom_meta_remove_custom_tag($custom, $elements);
+      }
+    }
+  }
+}
+
+/**
+ * Removes dupe meta tag from elements in the html head section.
+ * @param $tag (arr) meta tag to check.
+ * @param $elements (arr) head elements, passed by ref.
+ */
+function _custom_meta_remove_custom_tag($tag, &$elements) {
+  foreach ($elements as $key => $element) {
+    if (isset($element['#name']) && $element['#name'] == $tag['meta_attr_value']) {
+      unset($elements[$key]);
+    }
+  }
+}
+
+/**
+ * Checks current path against a set of path patterns.
+ * @param $pages (str) paths that should insert meta tags.
+ */
+function _custom_meta_check_path($pages = '') {
+  if (empty($pages)) {
+    return TRUE;
+  }
+  $pages = drupal_strtolower($pages);
+  $path = drupal_strtolower(drupal_get_path_alias($_GET['q']));
+  // Compare the lowercase internal and lowercase path alias (if any).
+  $page_match = drupal_match_path($path, $pages);
+  if ($path != $_GET['q']) {
+    $page_match = $page_match || drupal_match_path($_GET['q'], $pages);
+  }
+  return $page_match;
+}
+
+/**
+ * Implements hook_menu().
+ *
+ */
+function custom_meta_menu() {
+  $items = array();
+
+  $items['admin/config/search/custom_meta'] = array(
+    'type' => MENU_NORMAL_ITEM,
+    'title' => 'Custom Meta Tag Settings',
+    'description' => 'Settings for custom_meta',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_meta_form'),
+    'file' => 'custom_meta.admin.inc',
+    'access callback' => 'user_access',
+    'access arguments' => array('administer custom meta settings'),
+  );
+
+  $items['admin/config/search/custom_meta/edit/%'] = array(
+    'title' => 'Meta Settings Edit Tag',
+    'description' => 'Re-configure existing tags.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_meta_edit_form', 5),
+    'file' => 'custom_meta.admin.inc',
+    'access arguments' => array('administer custom meta settings'),
+    'type' => MENU_CALLBACK,
+  );
+
+  $items['admin/config/search/custom_meta/remove/%'] = array(
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_meta_remove_tag', 5),
+    'file' => 'custom_meta.admin.inc',
+    'access arguments' => array('administer custom meta settings'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * custom_meta_get_tags
+ * Get a single tag or all custom tags from the db.
+ *
+ * @param $id (int) unique id of a tag in the db.
+ * @return returns array of specified tag or all tags.
+ */
+function custom_meta_get_tags($id = '') {
+  if ($id) {
+    $result = db_query("SELECT * FROM {custom_meta} WHERE meta_uid=:id", array(':id' => $id));
+    return $result->fetchAssoc();
+  }
+  else {
+    $return = array();
+    $result = db_query("SELECT * FROM {custom_meta}");
+    while ($row = $result->fetchAssoc()) {
+      $return[] = $row;
+    }
+    return $return;
+  }
+}
+
+/**
+ * custom_meta_set_tag
+ * Set the custom tags to the db.
+ *
+ * @param $attr
+ * @param $attr_value
+ * @param $meta_content
+ */
+function custom_meta_set_tag($attr, $attr_value, $meta_content, $meta_pages) {
+  db_insert('custom_meta')
+    ->fields(array(
+      'meta_attr' => $attr,
+      'meta_attr_value' => $attr_value,
+      'meta_content' => $meta_content,
+      'meta_pages' => $meta_pages,
+    ))
+    ->execute();
+}
+
+/**
+ * custom_meta_remove_tag
+ * Deletes the tag from the database.
+ */
+function custom_meta_remove_tag() {
+  $id = arg(5);
+  db_delete('custom_meta')
+    ->condition('meta_uid', $id)
+    ->execute();
+  drupal_set_message(t('Tag removed.'));
+  drupal_goto('admin/config/search/custom_meta');
+}

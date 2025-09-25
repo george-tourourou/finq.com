@@ -1,0 +1,9 @@
+name = Markets.com specific features
+description = Provide new markets.com specific features (like blocks & their settings)
+package = TradeFXL
+core = 7.x
+version = "7.x-1.0"
+project = "tfxl"
+dependencies[] = variable
+scripts[] = js/markets.js
+

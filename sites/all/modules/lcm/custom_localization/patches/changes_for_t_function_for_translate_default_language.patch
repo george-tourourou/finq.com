@@ -1,0 +1,16 @@
+Index: includes/bootstrap.inc
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- includes/bootstrap.inc	(revision 24a20835bf861996126a62940d5a28f44efafd2b)
++++ includes/bootstrap.inc	(revision )
+@@ -1480,7 +1480,7 @@
+     $string = $custom_strings[$options['langcode']][$options['context']][$string];
+   }
+   // Translate with locale module if enabled.
+-  elseif ($options['langcode'] != 'en' && function_exists('locale')) {
++  elseif (function_exists('locale')) {
+     $string = locale($string, $options['context'], $options['langcode']);
+   }
+   if (empty($args)) {

@@ -1,0 +1,1642 @@
+﻿html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/****/
+/* vietnamese */
+@font-face {
+  font-family: 'MontserratLight';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v10/IVeH6A3MiFyaSEiudUMXE_oTkEokFSrSpvYSpZOeZRs.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'MontserratLight';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v10/IVeH6A3MiFyaSEiudUMXE0_0lycXMw8PhobHtu2Qgco.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'MontserratLight';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v10/IVeH6A3MiFyaSEiudUMXE8u2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'MontserratRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v10/SKK6Nusyv8QPNMtI4j9J2yEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'MontserratRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v10/gFXtEMCp1m_YzxsBpKl68iEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'MontserratRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'MontserratBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcjh33M2A-6X0bdu871ruAGs.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'MontserratBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fchHJTnCUrjaAm2S9z52xC3Y.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'MontserratBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/****/
+html {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q,
+blockquote {
+  quotes: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+a {
+  color: #099ccd;
+  cursor: pointer;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+.clear {
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: transparent;
+}
+body {
+  width: 100%;
+  margin: .75em auto;
+  display: block;
+  font-family: 'MontserratRegular';
+  font-size: 1em;
+  line-height: 1.4em;
+  font-weight: normal;
+}
+table,
+tr,
+td,
+th,
+a,
+p {
+  font-family: 'MontserratRegular';
+}
+fieldset {
+  margin: 10px 0;
+}
+#new_cc_div,
+#edit_cc_div,
+#cc_deposit {
+  margin: 20px 0;
+}
+h1 {
+  font-size: 26px;
+  color: #0077a2; 
+  font-family: 'MontserratBold';
+  margin: 0px auto 30px auto;
+}
+#back_menu {
+  display: none;
+  padding: 20px;
+}
+#back_menu a {
+  text-decoration: none;
+}
+#back_menu a span {
+  width: 15px;
+  background-size: contain !important;
+  display: inline-block;
+}
+
+#sidebar {
+	float: left;
+	display: block;
+	width: 25%;
+	padding: 20px;
+	margin-top: 80px;
+}
+
+#sidebar ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+#sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+#sidebar ul li a:hover,
+#sidebar ul li a:active {
+  color: #0077a2;
+}
+#sidebar ul li a.active-trail {
+  color: #0077a2;
+  text-decoration: underline;
+}
+#sidebar .reports_button_sidebar {
+  display: block;
+  width: 190px;
+  height: 215px;
+}
+#content.myaccount_content_wrapper {
+  float: left;
+  display: block;
+  width: 75%;
+  padding: 20px;
+  min-height: 500px;
+}
+/* buttons */
+#content .quiz_link {
+  background: none repeat scroll 0 0 #006699;
+  border: 1px solid #fff;
+  /*border-radius: 10px;*/
+  color: #fff;
+  font-family: 'MontserratRegular';
+  font-size: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+  float: left;
+}
+#content .demo_table_title,
+#content .live_table_title {
+  /*
+    visibility:hidden;
+    display: none;
+    */
+  font-size: 20px;
+  color: #0077a2;
+  font-family: 'MontserratBold';
+  margin: 0px auto 30px auto;
+}
+table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  float: left !important;
+  border: 1px solid #000 !important;
+  padding: 10px !important;
+}
+table td,
+table th {
+  text-align: center !important;
+  border: 1px solid #000 !important;
+  padding: 10px !important;
+  font-size: 16px !important;
+  background: transparent !important;
+}
+table td {
+  color: #000 !important;
+}
+table th,
+table th * {
+  color: #0077a2 !important;
+}
+#account_summary {
+  margin-bottom: 40px;
+}
+#account_summary table .pid {
+  text-align: center;
+}
+#account_summary table .change-leverage {
+  text-align: center;
+}
+#account_summary table .reports_button {
+  color: #099ccd;
+  display: block;
+  text-align: center;
+}
+#account_summary table .reports_button:hover {
+  color: #066382;
+}
+#account_summary table .platformLink {
+  text-align: center;
+  color: #099ccd;
+}
+#account_summary table .fund a,
+#account_summary table a.platform_btn_mt4 {
+  display: none !important;
+}
+#account_summary table .downloadLink a,
+#account_summary table .fund a,
+#account_summary table a.platform_btn_mt4 {
+  text-align: center;
+  color: #1aa249;
+  padding: 10px 15px;
+  border: 1px solid #1aa249;
+  display: block;
+  margin: 10px auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+#account_summary table .downloadLink a:hover,
+#account_summary table .fund a:hover,
+#account_summary table a.platform_btn_mt4:hover {
+  color: #fff;
+  background: #1aa249;
+}
+#account_summary .mt4_table_status {
+  text-align: center;
+}
+#account_summary .mt4_account_type {
+  color: #1aa249;
+}
+#account_summary .mt4_account_name {
+  text-align: center;
+  margin-top: 35px;
+}
+#account_summary .mt4_table_fundsmanagement {
+  vertical-align: top;
+}
+#account_summary .balance,
+#account_summary .withdrawal,
+#account_summary .bonuses,
+#account_summary .pending_deposit {
+  clear: left;
+  line-height: 17px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#account_summary .balance .key,
+#account_summary .withdrawal .key,
+#account_summary .bonuses .key,
+#account_summary .pending_deposit .key {
+  float: left;
+}
+#account_summary .pending_deposit .key {
+  text-decoration: underline;
+  -moz-text-decoration-style: dashed;
+  cursor: pointer;
+  color: #099ccd;
+}
+#account_summary .balance .val,
+#account_summary .withdrawal .val,
+#account_summary .bonuses .val,
+#account_summary .pending_deposit .val {
+  float: right;
+}
+.ar #account_summary .balance .key,
+.ar #account_summary .withdrawal .key,
+.ar #account_summary .bonuses .key,
+.ar #account_summary .pending_deposit .key {
+  float: right;
+}
+.ar #account_summary .balance .val,
+.ar #account_summary .withdrawal .val,
+.ar #account_summary .bonuses .val,
+.ar #account_summary .pending_deposit .val {
+  float: left;
+}
+#content a.add-new-account-link,
+#content .submit_btn {
+  text-align: center;
+  color: #4fa1bf;
+  background: #fff;
+  padding: 10px 40px;
+  border: 1px solid #4fa1bf;
+  display: block;
+  margin: 10px auto;
+  text-decoration: none;
+  float: right;
+  width: auto;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'MontserratRegular';
+}
+#content a.add-new-account-link {
+  color: #fff;
+  background: #4fa1bf;
+}
+/*
+#content .submit_btn{
+    float: none;
+}
+*/
+#content a.add-new-account-link {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+#content a.add-new-account-link span {
+  font-size: 32px;
+  font-family: MontserratLight;
+  top: 4px;
+  line-height: 16px;
+  position: relative;
+}
+#content .submit_btn:hover {
+  color: #fff;
+  background: #4fa1bf;
+}
+#content a.add-new-account-link:hover {
+  color: #4fa1bf;
+  background: #fff;
+}
+.form_row {
+  height: auto;
+  clear: both;
+  display: inline-block;
+  margin: 0 0 5px 0;
+  padding: 0;
+  /* error case 1 */
+  position: relative;
+  width: 100%;
+}
+.form_row label {
+  color: #333;
+  float: left;
+  text-align: left;
+  width: 145px;
+  /*margin: 10px 20px 20px 0;*/
+  margin-right: 20px;
+}
+.form_row .form-required {
+  float: left;
+  color: red;
+  margin: 2px 3px 0 -13px;
+  width: 10px;
+  position: relative;
+}
+.legend {
+  font-size: 19px;
+  margin: 0 0 10px 0px;
+  color: #000;
+}
+#deposit_languages_form label,
+#product_selection #real_products_label,
+#deposit_producs_form label {
+  /*background: url(../images/skin_markets/markets_myaccount_upload_arrow.png) 0 3px no-repeat;*/
+  padding: 0px 10px 2px 0px;
+  color: #000;
+  margin: 8px 0 0 0;
+  min-width: 400px;
+}
+.payment_method_desc {
+  color: #000;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 30px;
+}
+.form_row input {
+  float: left;
+  width: 75%;
+  height: 42px;
+  padding: 0 12px;
+  background: #ffffff;
+  border: 1px solid #5c5c5e;
+  outline: none;
+  font-size: 16px;
+  color: #9b9b9b;
+}
+.form_row select,
+#content .solidpayments .wt_dropdown {
+  width: 75%;
+  float: left;
+  height: 40px;
+  padding: 0 12px;
+  background: #fff;
+  border: 1px solid #5c5c5e;
+  outline: none;
+  color: #5c5c5e;
+  width: auto;
+  font-size: 16px;
+  cursor: pointer;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+}
+#content .solidpayments #wt_currency:disabled {
+  background-image: none;
+  border: 0;
+}
+.form_row input,
+.form_row select,
+.submit_wrapper input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+.form_row .description {
+  margin: 0 0 18px 0;
+  display: block;
+  color: #000;
+  font-size: 11px;
+  clear: both;
+}
+.form_row input[type=checkbox] {
+  font-size: 13px;
+  margin: 0px 10px 5px 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #888;
+}
+.form_row input[type=radio] {
+  width: 18px;
+  height: 18px;
+}
+.form_row label#originoffunds_label {
+  display: inline-block;
+}
+.form_row ul.checkbox_list {
+  display: inline-block;
+}
+.form_row ul.checkbox_list li,
+.form_row ul.radio_list li {
+  min-height: 30px;
+}
+.form_row ul.checkbox_list label {
+  float: none;
+}
+#terms_row label.terms {
+  width: 100%;
+}
+#newproduct select {
+  min-width: 280px;
+}
+#deposit_languages_form #deposit_country_country,
+#deposit_producs_form #deposit_products_real_products {
+  min-width: 280px;
+  width: 43%;
+}
+#country_row {
+  margin-top: 10px;
+}
+#staquiz_form .legend {
+  margin-left: 10px;
+}
+#staquiz_form .form_row label {
+  margin-left: 10px;
+  display: inline-block;
+  width: 100%;
+}
+#staquiz_form .form_row ul {
+  /*width: 450px;
+    float: left;*/
+}
+#staquiz_form .form_row li {
+  display: block;
+  clear: both;
+}
+#staquiz_form .form_row li input[type="radio"] {
+  height: inherit;
+  width: 25px;
+  margin-left: 20px;
+}
+#staquiz_form .form_row li label {
+  /*float: left;*/
+  float: none;
+  /*width: 380px;*/
+  display: inline;
+  width: auto;
+}
+label.radiobox {
+  margin: inherit;
+  /* removed */
+}
+#staquiz_form .form_row .error_list {
+  width: 211px;
+  /*float: right;*/
+}
+#registration_date_of_birth_day,
+#newproduct_date_of_birth_day {
+  width: 65px !important;
+}
+#registration_date_of_birth_month,
+#newproduct_date_of_birth_month {
+  width: 138px !important;
+  margin: 0px 13px 0px 15px;
+}
+#registration_date_of_birth_year,
+#newproduct_date_of_birth_year {
+  width: 113px !important;
+}
+#fatcaradiobox_row .form_row li {
+  margin-bottom: 10px;
+}
+#fatcaradiobox_row .form_row label {
+  margin: 0 4px;
+}
+#fatcaradiobox_row .form_row input {
+  width: 15px;
+  height: 15px;
+}
+#withdrawal_form {
+  margin: 40px 10px 40px 17px;
+}
+form#transfer {
+  margin: 40px 10px 40px 17px;
+}
+#transfer select,
+#transfer input {
+  width: 50%;
+}
+#transfer .form_row label {
+  /*width: 25%;*/
+  min-width: 200px;
+  margin: 8px 0 0 0;
+}
+#withdrawal_form select,
+#withdrawal_form input,
+#withdrawal_form textarea {
+  width: 300px;
+}
+#withdrawal_form label {
+  width: 180px;
+}
+.withdrawal_note {
+  color: #979797;
+  font-size: 13px;
+  line-height: 14px;
+}
+#trading_risk_warning {
+  padding: 13px;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+}
+.compliance_notice {
+  color: #878787;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+#newproduct #newproduct_date_of_birth_day,
+#newproduct #newproduct_date_of_birth_month,
+#newproduct #newproduct_date_of_birth_year {
+  min-width: inherit;
+}
+.question {
+  /*background: url(../images/skin_markets/markets_lp_question.png) no-repeat;*/
+  cursor: pointer;
+  display: inline-block;
+  height: 27px;
+  width: 28px;
+  position: relative;
+  top: 5px;
+  left: 6px;
+  color: #2783aa;
+  line-height: 26px;
+  text-align: center;
+  /*
+    background-color: #BCDBEA;
+    border-radius: 50%;
+    */
+}
+.question:before {
+  content: '?';
+  /*
+    font-weight: bold;
+    */
+  font-size: 26px;
+  color: #2783aa;
+}
+#account_summary .question {
+  top: 0px;
+  left: 2px;
+}
+#account_summary .question:before {
+  font-size: inherit;
+  font-weight: bold;
+}
+.tooltip,
+.wrap_tooltip {
+  z-index: 999999;
+  /*background: url('../images/tooltip3.png') right 100% no-repeat;*/
+  background: #fff;
+  border: 1px solid #2783aa;
+  width: 222px;
+  /*height: 99px;*/
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 25px;
+}
+.tooltip span {
+  text-align: left;
+  font-size: 12px;
+  line-height: 14px;
+  color: #717171;
+  display: block;
+  padding: 8px;
+  width: 90%;
+}
+.wrap_tooltip {
+  text-align: left;
+  font-size: 12px;
+  line-height: 14px;
+  color: #717171;
+  display: block;
+  padding: 8px;
+  width: 200px;
+}
+.tooltip:before,
+.wrap_tooltip:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left-color: #2783aa;
+  top: 10px;
+  right: -12px;
+}
+.tooltip:after,
+.wrap_tooltip:after {
+  width: 100%;
+  height: 40px;
+  content: '';
+  position: absolute;
+  right: -40px;
+}
+#account_summary .tooltip h4 {
+  color: #006699;
+  font-weight: bold;
+  padding-top: 2px;
+}
+.form_help {
+  clear: both;
+  display: inline;
+  float: right;
+  margin: 4px 0 5px 180px;
+  width: 400px;
+  color: #696969;
+  font-size: 77%;
+}
+#edit_cc_expiration_date_month {
+  margin-right: 4px;
+}
+#promt_to_create_mt4 {
+  color: #979797;
+}
+/* CC Verification */
+#upload_credit_card_wrapper label#credit_card_label {
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 8px;
+  width: 113px;
+  height: 32px;
+}
+.dd-container {
+  position: relative;
+}
+#credit_card_document_id.dd-container {
+  margin-left: 125px;
+}
+.CreditCardVerificationDocuments_action div.dd-select {
+  height: 32px;
+}
+.dd-select {
+  border-radius: 2px;
+  border: solid 1px #ccc;
+  position: relative;
+  cursor: pointer;
+}
+.CreditCardVerificationDocuments_action a.dd-selected {
+  position: absolute;
+}
+.dd-selected {
+  overflow: hidden;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+.dd-option-image,
+.dd-selected-image {
+  vertical-align: middle;
+  float: left;
+  margin-right: 5px;
+  max-width: 64px;
+}
+.CreditCardVerificationDocuments_action label.dd-selected-text,
+.CreditCardVerificationDocuments_action label.dd-option-text {
+  display: inline;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: none;
+  width: auto;
+  color: #000;
+  line-height: 13px !important;
+}
+.dd-pointer {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -3px;
+}
+.dd-pointer-down {
+  border: solid 5px transparent;
+  border-top: solid 5px #000;
+}
+.CreditCardVerificationDocuments_action #credit_card_row {
+  clear: both;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.CreditCardVerificationDocuments_action #credit_card_frontside_file_row {
+  display: block;
+  background-image: url(../images/skin_markets/upload_credit_card/bg_credit_card_front.png);
+  background-repeat: no-repeat;
+  background-position: 0px 40px;
+  float: left;
+  width: 249px;
+  height: 275px;
+  clear: none;
+}
+.CreditCardVerificationDocuments_action #credit_card_backside_file_row {
+  display: block;
+  background-image: url(../images/skin_markets/upload_credit_card/bg_credit_card_back.png);
+  background-repeat: no-repeat;
+  background-position: 0px 40px;
+  float: left;
+  width: 249px;
+  height: 275px;
+  clear: none;
+  margin-left: 50px;
+}
+.CreditCardVerificationDocuments_action .wrap_file_input {
+  /*background-image: url(../images/skin_markets/upload_credit_card/bg_browse_btn.png);
+    width: 89px;
+    height: 20px;*/
+  display: block;
+  margin-top: 205px;
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+  /*padding-top: 5px;*/
+  font-size: 13px;
+  border: 1px solid #2783aa;
+  width: 100px;
+}
+/*
+.CreditCardVerificationDocuments_action .wrap_file_input:hover {
+    background: #2783aa;
+}
+*/
+.CreditCardVerificationDocuments_action #credit_card_frontside_file_row input[type="file"],
+.CreditCardVerificationDocuments_action #credit_card_backside_file_row input[type="file"] {
+  border: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  margin-top: -20px;
+  height: 0px;
+  padding-top: 18px;
+  cursor: pointer;
+  width: 224px;
+}
+.CreditCardVerificationDocuments_action .name_of_file {
+  position: absolute;
+  max-width: 160px;
+  margin-left: 100px;
+  margin-top: -20px;
+  font-size: 10px;
+  color: #000;
+  font-weight: bold;
+  cursor: default;
+  overflow: hidden;
+  height: 20px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.CreditCardVerificationDocuments_action .status_of_file {
+  position: absolute;
+  /*margin-left: 100px;
+    margin-top: -20px;*/
+  font-size: 10px;
+  color: #000;
+  font-weight: bold;
+  cursor: default;
+}
+.CreditCardVerificationDocuments_action .question {
+  top: -229px;
+  display: block;
+}
+.CreditCardVerificationDocuments_action .form-required,
+.CreditCardVerificationDocuments_action .form_help {
+  display: none;
+}
+.CreditCardVerificationDocuments_action #credit_card_frontside_file_row label,
+.CreditCardVerificationDocuments_action #credit_card_backside_file_row label {
+  margin-left: 40px;
+  width: inherit;
+}
+#upload_credit_cardcredit_card_frontside_file_error,
+#upload_credit_cardcredit_card_backside_file_error {
+  position: absolute;
+  line-height: 14px;
+  margin-top: 8px;
+}
+#popup-html-msg button.submit {
+  height: auto;
+}
+/* hide last row border for add new credit card button imitation */
+#deposit-cc-select #new td {
+  border: none;
+  height: 60px;
+}
+#deposit-cc-select td.cnew {
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0090DA;
+}
+#deposit-cc-select td.cedit {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0090DA;
+}
+/* @@ Flash messages @@ */
+.flash_message,
+.flash_notice,
+.flash_error,
+.flash_info,
+.flash_wrap {
+  margin: 10px 0;
+  padding: 10px;
+}
+.flash_error {
+  color: #CC0000;
+}
+.flash_message {
+  color: #1aa249;
+}
+.flash_notice {
+  color: #0077a2;
+}
+#popup-html-msg.bonus_popup .submit-row {
+  display: block;
+  margin: 5px 15px 15px 15px;
+}
+/* Override popup design */
+html #popup-html-msg .title-wraper {
+  background: inherit;
+  padding: 10px 10px;
+}
+html #popup-html-msg {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-family: inherit;
+}
+html #popup-html-msg .title {
+  text-align: center;
+  margin-top: 28px;
+}
+html #popup-html-msg .content {
+  font-family: inherit;
+  margin-top: 0px;
+  padding-top: 5px;
+}
+html #popup-html-msg button {
+  background-image: none;
+  border: 1px solid #4fa1bf;
+  color: #4fa1bf;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 14px;
+  height: auto;
+  margin: 0 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+html #popup-html-msg button:hover {
+  background: #4fa1bf;
+  color: #ffffff;
+}
+html #popup-html-msg button#popup-html-ok {
+  background: #4fa1bf;
+  color: #ffffff;
+}
+html #popup-html-msg button#popup-html-ok:hover {
+  background: none;
+  color: #4fa1bf;
+}
+html #popup-html-msg button.submit {
+  height: auto;
+}
+html #popup-html-msg button.reset {
+  background: none;
+}
+html #popup-html-msg button.reset:hover {
+  background: #4fa1bf;
+  color: #ffffff;
+}
+body .bg {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* SolidPayments styles */
+#content .solidpayments #new_cc_div {
+  margin: 0;
+}
+#content .solidpayments #trading_risk_warning {
+  display: block;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#content .solidpayments form .submit_btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #5cb85c;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  float: left;
+  margin-right: 10px;
+  width: 275px;
+}
+#content .solidpayments form .submit_btn:hover {
+  background: #219b21;
+  text-decoration: none;
+  cursor: pointer;
+}
+#content .solidpayments #submit_solidpayments:disabled {
+  background: #b8b9b8;
+}
+#content .solidpayments h2 {
+  font-size: 16px;
+  color: #0099ff;
+}
+#content .solidpayments h2.sp-h2 {
+  padding: 0px 16px 10px 30px;
+  background: url('../images/icon-bank-card.png') no-repeat;
+  margin-left: 30px;
+}
+#content .solidpayments h2.wt-h2 {
+  padding: 2px 16px 10px 30px;
+  background: url('../images/icon-refresh.png') no-repeat;
+  margin-left: 30px;
+}
+#content .solidpayments #amount_label {
+  text-align: center;
+  color: #0099ff;
+}
+#content .solidpayments .payment-block {
+  border: 1px solid #0099ff;
+  margin: 0px 30px 30px 30px;
+  padding: 14px 20px 5px 12px;
+}
+.solidpayments .payment-block b {
+  font-weight: bold;
+}
+#content .solidpayments .cc_deposit_text {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#content .solidpayments #deposit_user_info_amount {
+  color: #0099ff;
+  width: 155px;
+  height: 32px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #0099ff;
+  padding: 0 5px 0 5px;
+  float: left;
+  font-family: 'MontserratLight';
+  font-size: 16px;
+  -webkit-box-shadow: 0px 0px 0px 0px #6e6e6f;
+  -moz-box-shadow: 0px 0px 0px 0px #6e6e6f;
+  box-shadow: 0px 0px 0px 0px #6e6e6f;
+}
+#content .solidpayments .form_row .form-required {
+  margin: 2px 3px 0 0px;
+}
+#content .solidpayments .wt_dropdown {
+  width: 130px;
+  height: 34px;
+  border-radius: 5px;
+  font-family: 'MontserratLight';
+  font-size: 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.solidpayments .how_much_deposit {
+  margin: 0 0 10px 0;
+  /*
+    font-size: 12px;
+    font-weight: bold;
+    color: #878787;
+    */
+}
+.solidpayments .button-description {
+  /*color: #bababa;*/
+  font-family: 'MontserratLight';
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.solidpayments .input-amount-description {
+  /*color: #bababa;*/
+  font-family: 'MontserratLight';
+  font-size: 12px;
+  display: block;
+  margin-left: 120px;
+  margin-top: -5px;
+}
+.solidpayments .text-muted {
+  /*color: #bababa;*/
+}
+#content .solidpayments {
+  font-family: 'MontserratLight';
+  margin-bottom: 50px;
+}
+#content .solidpayments .styled-select {
+  height: 34px;
+  overflow: hidden;
+}
+.solidpayments .row {
+  margin-bottom: 15px;
+}
+.solidpayments .wt-input-description {
+  margin-top: 7px;
+  float: left;
+  width: 90px;
+}
+.solidpayments #wt-form {
+  float: left;
+  width: 35%;
+  margin-top: 20px;
+}
+.solidpayments #wt-adress {
+  font-size: 12px;
+  margin-top: 15px;
+  width: 64%;
+  display: inline-block;
+}
+.solidpayments #wt-adress p {
+  margin-top: 5px;
+  /*color: #636363;*/
+  line-height: 16px;
+}
+.solidpayments .wt-subheader {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+.solidpayments form .form_row label {
+  width: 100px;
+}
+.solidpayments #wiretransfer-block {
+  display: none;
+}
+.solidpayments #wiretranswer-switcher {
+  cursor: pointer;
+}
+
+#sidebar ul li:nth-child(3) {
+	display: none;
+}
+
+
+@media (max-width: 980px) {
+  #date_of_birth_label {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  #back_menu {
+    display: block;
+  }
+  #sidebar {
+	margin-top: 40px;
+    display: none;
+    /* should show this menu only after click on "Back" button */
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    text-align: center;
+    float: none;
+  }
+  #sidebar ul li {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+  }
+  #sidebar .reports_button_sidebar {
+    width: 100%;
+    background-position: center center;
+  }
+  #content {
+    width: 100%;
+  }
+  #content a.add-new-account-link {
+    top: 40px;
+  }
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* force scroll on deposit wrapper*/
+  #deposit_wrapper,
+  #cc_deposit {
+    overflow-x: auto;
+  }
+  /* Force table to not be like tables anymore */
+  #account_summary table,
+  #account_summary thead,
+  #account_summary tbody,
+  #account_summary th,
+  #account_summary td,
+  #account_summary tr {
+    display: block;
+  }
+  #account_summary table {
+    border: none;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #account_summary thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #account_summary tr {
+    /*border: 1px solid #ccc;*/
+    margin-bottom: 30px;
+  }
+  #account_summary td {
+    /* Behave  like a "row" */
+    /*border: none;*/
+    border: 1px solid #000;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 10px;
+  }
+  #account_summary td:before {
+    /* Now like a table header */
+    display: block;
+    padding: 0 0 8px 10px;
+    white-space: nowrap;
+    color: #0077a2;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+  }
+  #account_summary .mt4_account_name {
+    margin-top: 0;
+  }
+  #account_summary .mt4_account_status,
+  #account_summary .mt4_account_type {
+    display: inline;
+  }
+  #account_summary .mt4_account_status:after {
+    content: ' - ';
+  }
+  #account_summary table .pid,
+  #account_summary table .change-leverage,
+  #account_summary .mt4_account_name {
+    text-align: left;
+  }
+  #account_summary td.mt4_table_account {
+    padding: 0;
+    border: none;
+  }
+  #account_summary td.mt4_table_status {
+    text-align: left;
+  }
+  #account_summary .mt4_account_type {
+    color: #000;
+  }
+  #content a.add-new-account-link,
+  #content .submit_btn {
+    padding: 10px;
+  }
+  /*
+    #content .submit_btn{
+        float: right;
+    }
+    */
+  #newproduct select {
+    width: 100%;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0px auto 20px auto;
+  }
+  #content {
+    padding: 10px;
+  }
+  #back_menu {
+    padding: 10px;
+  }
+  #trading_risk_warning {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #deposit_languages_form label,
+  #product_selection #real_products_label,
+  #deposit_producs_form label,
+  #edit_cc_div label,
+  #new_cc_div label {
+    /*background: none;
+        padding-left: 0;
+        font-weight: normal;
+        font-size: inherit;*/
+    margin-bottom: 8px;
+    min-width: 100%;
+  }
+  .payment_method_desc {
+    display: none;
+  }
+  .compliance_notice_cashier {
+    color: #878787;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .compliance_notice_cashier .list_of_items {
+    margin-bottom: 15px;
+  }
+  /* try to move up deposit`s countries form */
+  .compliance_notice_cashier {
+    position: absolute;
+    margin-top: 100px;
+  }
+  #safecharge_div {
+    margin-top: 125px;
+  }
+  #country_row {
+    margin-top: 0;
+  }
+  /* \\\ */
+  form#transfer,
+  form#withdrawal_form {
+    margin: 20px 0px 40px 0px;
+  }
+  .form_row label {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  #transfer .form_row label,
+  #withdrawal_form label,
+  #bg_cc_deposit_div label {
+    /*min-width: 300px;*/
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .form_row .form-required {
+    margin-left: 0px;
+  }
+  #transfer .form_row label .form-required,
+  #withdrawal_form label .form-required {
+    display: none;
+  }
+  #transfer select,
+  #transfer input,
+  #deposit_languages_form #deposit_country_country,
+  #deposit_producs_form #deposit_products_real_products,
+  #withdrawal_form select,
+  #withdrawal_form input,
+  #withdrawal_form textarea,
+  #new_cc_div select,
+  #new_cc_div input {
+    width: 100%;
+    padding: 13px 12px;
+    height: auto;
+  }
+  #new_cc_div #new_cc_expiration_date_month,
+  #new_cc_div #new_cc_expiration_date_year {
+    width: auto;
+    padding-right: 35px;
+    margin-right: 5px;
+  }
+  #transfer .question,
+  #withdrawal_form .question {
+    position: absolute;
+    right: 6px;
+    left: inherit;
+  }
+  #transfer .question:before,
+  #withdrawal_form .question:before {
+    font-size: 20px;
+  }
+  #transfer #submit_transfer,
+  #withdrawal_form #submit_withdrawal_form {
+    width: 100%;
+  }
+  /*
+    Label the data
+    */
+  /*td:nth-of-type(1):before { content: "Account"; }*/
+  #account_summary td:nth-of-type(2):before {
+    content: "Funds Management";
+  }
+  #account_summary td:nth-of-type(3):before {
+    content: "Status";
+  }
+  /*
+    Popups for mobile
+    */
+  #popup-html-msg {
+    width: 100% !important;
+    left: 0 !important;
+  }
+  /* CC Upload for mobile */
+  .CreditCardVerificationDocuments_action #credit_card_frontside_file_row,
+  .CreditCardVerificationDocuments_action #credit_card_backside_file_row {
+    width: 100%;
+    margin-left: 0;
+  }
+  .wrap_tooltip {
+    left: 25px;
+  }
+  .wrap_tooltip:before {
+    border-right-color: #2783aa;
+    border-left-color: transparent;
+    top: 10px;
+    right: inherit;
+    left: -12px;
+  }
+  .form_help {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* hide columns in wide tables for mobile version to prevent horisontal scroll */
+  #deposit-cc-select th:nth-of-type(2),
+  #deposit-cc-select td:nth-of-type(2),
+  #deposit-cc-select th:nth-of-type(4),
+  #deposit-cc-select td:nth-of-type(4) {
+    display: none;
+  }
+  #deposit-cc-select #new td:nth-of-type(2) {
+    display: inherit;
+  }
+  #deposit_wrapper table th:nth-of-type(1),
+  #deposit_wrapper table td:nth-of-type(1),
+  #deposit_wrapper table th:nth-of-type(3),
+  #deposit_wrapper table td:nth-of-type(3) {
+    display: none;
+  }
+  #content .solidpayments .payment-block {
+    margin: 0px 2px 30px 2px;
+  }
+  #content .solidpayments #deposit_user_info_amount {
+    width: 100%;
+  }
+  .solidpayments .input-amount-description {
+    margin-left: 0;
+  }
+  .solidpayments #wt-form,
+  .solidpayments #wt-adress {
+    width: 100%;
+  }
+}
+/* error case 1 */
+/*.error_list {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    padding: 0 0 0 12px;
+    background: url(../images/skin_2/error.png) left 6px no-repeat;
+}*/
+.error_item {
+  color: #FF0000;
+  font-size: 12px;
+}
+/* error case 2 */
+.error_list {
+  clear: both;
+  padding: 0 0 0 12px;
+  background: url(../images/skin_2/error.png) left 6px no-repeat;
+}
+.mobile-verification-center-link {
+  text-align: center;
+}
+.mobile-verification-center-link a {
+  color: #fff !important;
+  background: #4fa1bf !important;
+  text-align: center !important;
+  float: none !important;
+  width: 50% !important;
+  margin-top: 30px !important;
+}
+.change-leverage .top-content {
+  margin-bottom: 20px;
+}
+.change-leverage .bottom-content {
+  margin-top: 20px;
+  clear: both;
+}
+.change-leverage label {
+  width: 180px;
+  margin-top: 8px;
+}
+.change-leverage input,
+.change-leverage select {
+  width: 300px;
+}
+/* Withdrawal amount control */
+#withdrawal_form #validation_message_withdrawal_amount_limit {
+  font-size: 12px;
+  color: #ff0000;
+}
+#content.myaccount_content_wrapper.mt4report_action {
+  width: 1200px;
+  float: none;
+  min-height: auto;
+  padding: 0;
+  display: block;
+  margin: 70px auto 0;
+}
+#content.myaccount_content_wrapper.mt4report_action .after_table {
+  display: none;
+}
+#content.myaccount_content_wrapper.mt4report_action h1,
+#content.myaccount_content_wrapper.mt4report_action h2 {
+  background: none;
+  color: #0077a2;
+  font-family: 'MontserratBold';
+  margin: 0 0 10px;
+  float: left;
+  width: 100%;
+  padding: 20px 0 0;
+  height: auto;
+}
+#content.myaccount_content_wrapper.mt4report_action h1 {
+  font-size: 25px;
+}
+#content.myaccount_content_wrapper.mt4report_action h2 {
+  font-size: 20px;
+}
+#content.myaccount_content_wrapper.mt4report_action #platform-report-wrapper {
+  padding-top: 40px;
+  float: left;
+  width: 100%;
+}
+#content.myaccount_content_wrapper.mt4report_action .mt4-wrapper {
+  margin: 0;
+  width: 100%;
+}

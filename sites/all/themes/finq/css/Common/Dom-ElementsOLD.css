@@ -1,0 +1,194 @@
+.plain-box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.messages.error {
+  display: none;
+}
+.submitted {
+  display: none;
+}
+/* RESET DOM ELEMENTS - START
+*/
+/* RESET DOM ELEMENTS 
+    START
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  color: #000000;
+}
+button:hover,
+.button:hover {
+  cursor: pointer;
+}
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* END */
+/* END */
+h1,
+h2,
+h3,
+h4 {
+  color: #000000;
+  font-weight: normal;
+}
+h1 {
+  /*font-size: 50px;*/
+  font-size: 45px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 27px;
+  font-weight: normal;
+  font-weight: 500;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 16px;
+}
+p,
+li {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.8;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+.italic {
+  font-style: italic;
+}
+table {
+  float: left;
+  width: 100%;
+  text-align: center;
+  direction: ltr;
+  border: 1px solid #dfdfdf;
+}
+table tr th {
+  background: #f2f2f2;
+  color: #aeaeae;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+table tr td {
+  padding: 35px;
+  font-size: 15px;
+  background-color: #ffffff;
+}
+ol {
+  box-sizing: border-box;
+  float: left;
+  padding: 10px 0 0 15px;
+  width: 100%;
+}
+.cc-message {
+  color: #a9a9a9;
+}
+@media all and (max-width: 650px) {
+  table tr td,
+  table tr th {
+    padding: 10px;
+  }
+}
+@media all and (max-width: 500px) {
+  h2 {
+    font-weight: bold;
+  }
+}

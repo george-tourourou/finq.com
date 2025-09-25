@@ -1,0 +1,101 @@
+body {
+  font-family: Arial;
+  background: #fff;
+}
+body h2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+body p,
+body span {
+  font-size: 11px;
+  color: #000;
+  font-weight: 600;
+}
+body a {
+  font-size: 10px;
+  color: #1869A0;
+  font-weight: 300;
+  height: auto;
+  max-height: none;
+}
+body .header {
+  display: none;
+}
+body .container .summary,
+body .container .form,
+body .container .box,
+body .container .receipt {
+  border: 0 solid #fff;
+}
+body .container .form .summary-title,
+body .container .summary .summary-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  width: 100%;
+}
+body .container .form .summary-total,
+body .container .summary .summary-total {
+  font-size: 11px;
+}
+body .container .form .summary-description,
+body .container .summary .summary-description {
+  display: none;
+}
+body .container .form div {
+  max-width: 100%;
+  width: 100%;
+}
+body .container .form div .col-card-image {
+  width: 60%;
+  max-width: 60%;
+}
+body .container .form h2 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  width: 100%;
+}
+body .container .form li .form-label,
+body .container .form li label {
+  font-size: 11px;
+  color: #000;
+  font-weight: 600;
+}
+body .container .form-li-buttons {
+  background-color: #ffffff;
+}
+body .container .form-li-buttons .col-secure {
+  display: none;
+}
+body .container .form-li-buttons .col-12.col-buttons.justify-content-center {
+  text-align: left;
+  justify-content: left !important;
+  max-width: 100%;
+  width: 100%;
+}
+body .container .form-li-buttons .col-12.col-buttons.justify-content-center h2 {
+  width: 100%;
+}
+body select,
+body input {
+  font-size: 12.5px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 10px 15px;
+}
+body input.form-button-ok {
+  background: #dcad54;
+  color: #1e1e1e;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: 900;
+  border: 1px solid #dcad54;
+  border-radius: 0;
+  height: auto;
+  max-height: none;
+}

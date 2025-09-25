@@ -1,0 +1,360 @@
+.ddsCustom .dd-select {
+
+	border: none;
+
+	background: none !important;
+
+	border-radius: 0;
+
+	cursor: pointer;
+
+	position: relative;
+
+}
+
+.ddsCustom .dd-desc {
+
+	color: #AAAAAA;
+
+	display: block;
+
+	font-weight: normal;
+
+	line-height: 1.4em; 
+
+	overflow: hidden;
+
+}
+
+.ddsCustom .dd-selected {
+
+	display: inline-block;
+
+	font-weight: normal;
+
+	overflow: hidden;
+
+	padding: 0px 20px 0px 20px;
+
+	color: #757575 !important;
+
+	text-decoration: none;
+
+}
+
+.ddsCustom .dd-selected label {
+
+	line-height: 17px !important;
+
+	font-weight: normal;
+
+	font-size: 14px;
+
+	color: #757575;
+
+	float: right;
+
+	display: inline-block;
+
+	margin: 0;
+
+	cursor: pointer;
+
+}
+
+.ddsCustom .dd-selected:hover {
+
+	text-decoration: none;
+
+	color: #000;
+
+}
+
+.ddsCustom .dd-pointer {
+
+	height: 40px;
+
+	margin-top: 0;
+
+	position: absolute;
+
+	right: 10px;
+
+	top: 0;
+
+	width: 9px;
+
+	display: none;
+
+}
+
+.ddsCustom .dd-pointer-down {
+
+	-moz-border-bottom-colors: none;
+
+	-moz-border-left-colors: none;
+
+	-moz-border-right-colors: none;
+
+	-moz-border-top-colors: none;
+
+	border-color: #000000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+
+	border-image: none;
+
+	border-right: none;
+
+	border-style: none;
+
+	border-width: 0;
+
+	background: url(../images/langddimg.png) center center no-repeat;
+
+}
+
+.ddsCustom .dd-pointer-up {
+
+	-moz-border-bottom-colors: none !important;
+
+	-moz-border-left-colors: none !important;
+
+	-moz-border-right-colors: none !important;
+
+	-moz-border-top-colors: none !important;
+
+	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) !important;
+
+	border-image: none !important;
+
+	border-style: none;
+
+	border-width: 0;
+
+	margin-top: 0;
+
+	background: url(../images/langddimg2.png) center center no-repeat;
+
+}
+
+.ddsCustom .dd-options {
+
+	-moz-border-bottom-colors: none;
+
+	-moz-border-left-colors: none;
+
+	-moz-border-right-colors: none;
+
+	-moz-border-top-colors: none;
+
+	background: none repeat scroll 0 0 #FFFFFF;
+
+	border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+
+	border-image: none;
+
+	border-right: 1px solid #CCCCCC;
+
+	border-style: none solid solid;
+
+	border-width: medium 1px 1px;
+
+	box-shadow: 0 1px 5px #DDDDDD;
+
+	display: none;
+
+	list-style: none outside none;
+
+	margin: 0;
+
+	overflow: auto;
+
+	padding: 0 !important;
+
+	position: absolute;
+
+	z-index: 2000;
+
+}
+
+.ddsCustom .dd-option:hover {
+
+	text-decoration: none;
+
+}
+
+.ddsCustom .dd-option img,  .ddsCustom .dd-selected img {
+
+	width: 20px;
+
+	height: 17px;
+
+	float: left;
+
+	padding: 0;
+
+	margin: 0 10px 0 0;
+
+}
+
+.ddsCustom .dd-option {
+
+	border-bottom: none;
+
+	color: #333333;
+
+	cursor: pointer;
+
+	display: block;
+
+	overflow: hidden;
+
+	padding: 5px 20px 5px 20px;
+
+	text-decoration: none;
+
+	transition: all 0.25s ease-in-out 0s;
+
+}
+
+.ddsCustom .dd-options > li:last-child > .dd-option {
+
+	border-bottom: medium none;
+
+}
+
+.ddsCustom .dd-option:hover {
+
+	background: none repeat scroll 0 0 #F3F3F3;
+
+	color: #000000;
+
+}
+
+.ddsCustom .dd-selected-description-truncated {
+
+	text-overflow: ellipsis;
+
+	white-space: nowrap;
+
+}
+
+.ddsCustom .dd-option-selected {
+
+	background: none;
+
+}
+
+.ddsCustom .dd-option-image, .dd-selected-image {
+
+	float: left;
+
+	margin-right: 5px;
+
+	max-width: 64px;
+
+	vertical-align: middle;
+
+}
+
+.ddsCustom .dd-image-right {
+
+	float: right;
+
+	margin-left: 5px;
+
+	margin-right: 15px;
+
+}
+
+.ddsCustom .dd-container {
+
+	position: relative;
+
+	width: auto !important;
+
+	display: inline-block;
+
+}
+
+​.ddsCustom .dd-selected-text {
+
+	font-weight: bold;
+
+}
+
+#block-menu-menu-top-menu-logged-in, #block-menu-menu-top-menu-logged-out{
+
+	/*width:auto;*/
+
+	padding-right:0;
+
+	padding-left:0;
+	left:0px;
+
+	/* border-right: thin solid #e0e0e0; */
+
+	/* border-left: thin solid #e0e0e0; */
+
+}
+#block-menu-menu-top-menu-logged-out .menu {
+	float: right;
+}
+
+.region-header-top-right {
+	top: -35px;
+}
+
+.i18n-ru #block-lang-dropdown-language {
+	/*top: 0 !important;*/
+}
+
+#block-lang-dropdown-language{
+
+	padding-left:0;
+
+	padding-right:0;
+
+	float: right;
+
+	border-left: thin solid #4d4d4d;
+
+	margin-left: 10px;
+
+	border-color: #4d4d4d !important;
+
+	margin-top: 10px;
+
+}
+
+.ddsCustom .form-group{
+
+	margin-bottom:0;
+
+	line-height: 9px;
+
+}
+
+.ddsCustom .dd-option label {
+
+	line-height: 17px !important;
+
+	font-weight: normal;
+
+	font-size: 14px;
+
+	color: #757575;
+
+	display: inline-block;
+
+	margin: 0;
+
+	cursor: pointer;
+
+}
+
+.ddsCustom .dd-click-off-close{
+
+	height:auto !important;
+
+}
+

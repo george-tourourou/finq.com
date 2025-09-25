@@ -1,0 +1,8 @@
+name = Custom localization
+description = Provide functionality for translate default language and use placeholders for translation
+package = TradeFXL
+core = 7.x
+dependencies[] = i18n_string
+dependencies[] = locale
+version = "7.x-1.x-dev"
+project = "tfxl"

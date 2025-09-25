@@ -1,0 +1,18 @@
+# Slovak translation of Compact Forms (7.x-1.0)
+# Copyright (c) 2011 by the Slovak translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Compact Forms (7.x-1.0)\n"
+"POT-Creation-Date: 2011-01-09 06:36+0000\n"
+"PO-Revision-Date: 2009-10-31 18:00+0000\n"
+"Language-Team: Slovak\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1)?(0):(((n>=2)&&(n<=4))?(1):2));\n"
+
+msgid "User interface"
+msgstr "Používateľské rozhranie"
+msgid "characters"
+msgstr "znaky"

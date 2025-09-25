@@ -1,0 +1,125 @@
+﻿@import "../Common/Variables";
+
+.contact-us {
+  /*background-color: @GRAY_COLOR;*/
+  padding-bottom: 120px;
+  h1 {
+    margin-top: 30px;
+  }
+
+  .alert {
+    margin: 20px 0 0;
+    background-color: #ededed;
+    padding: 45px 25px;
+
+    p, b {
+      font-size: 18px;
+    }
+
+    .info, .numbers-content {
+      > div > div {
+        margin-bottom: 30px;
+
+        b {
+          margin-bottom: 20px;
+        }
+      }
+
+      //border-bottom: 1px solid #d6dadd;
+    }
+
+    .numbers-content {
+      border: none;
+
+      > div {
+        background: #fff;
+        padding: 30px;
+        margin-bottom: 20px;
+
+        img {
+          max-width: 35px
+        }
+      }
+    }
+
+    .numbers .note p {
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    .img {
+      width: 20%;
+      float: left;
+
+      img {
+        float: left;
+        max-width: 100%;
+      }
+    }
+    //.info .col-mg-5_15:nth-child(3) .text {
+    //  margin-top: -4px;
+    //}
+
+    .text {
+      width: 80%;
+      float: left;
+      padding-top: 5px;
+    }
+    .email .text {
+      padding-top: 23px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin: 50px 0 30px;
+    }
+  }
+  .chat{
+    //background-color: @GRAY_B_COLOR;
+    background: #fff0 url("/sites/all/themes/finq/images/v2.0/contact-us/chat-banner.jpg") no-repeat scroll center center/cover;
+    //padding-bottom: 103px;
+    //padding-top: 90px;
+    padding: 65px 30px;
+    .title{
+      color: #000;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .sub-title{
+      font-size: 20px;
+      font-weight: 300;
+      color: #000;
+      padding-bottom: 17px;
+    }
+    .btn-chat{
+      color: #000!important;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 10px 20px;
+      //text-transform: uppercase;
+    }
+  }
+}
+
+@media all and (max-width:500px) {
+  .contact-us .alert {
+    .img {
+      float: left;
+      width: 100%;
+
+      img {
+        display: block;
+        float: none;
+        margin: 0 auto 15px;
+      }
+    }
+
+    .text {
+      float: left;
+      width: 100%;
+      margin: 0 0 30px;
+      text-align: center;
+    }
+  }
+}

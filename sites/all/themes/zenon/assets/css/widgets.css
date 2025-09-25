@@ -1,0 +1,2608 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-kerning: inherit;
+    font-language-override: inherit;
+    font-size: 100%;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-synthesis: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+@font-face {
+    font-family: "robotolight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("webfonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/Roboto-Light-webfont.woff") format("woff"), url("webfonts/Roboto-Light-webfont.ttf") format("truetype"), url("webfonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+}
+@font-face {
+    font-family: "robotoregular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("webfonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/Roboto-Regular-webfont.woff") format("woff"), url("webfonts/Roboto-Regular-webfont.ttf") format("truetype"), url("webfonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+}
+@font-face {
+    font-family: "robotobold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("webfonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/Roboto-Bold-webfont.woff") format("woff"), url("webfonts/Roboto-Bold-webfont.ttf") format("truetype"), url("webfonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+}
+html {
+    line-height: 1;
+}
+ol, ul {
+    list-style: outside none none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+}
+q, blockquote {
+    quotes: none;
+}
+q::before, q::after, blockquote::before, blockquote::after {
+    content: none;
+}
+a img {
+    border: medium none;
+}
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
+    display: block;
+}
+.clear {
+    clear: both;
+}
+body {
+    background-color: transparent;
+    overflow-x: hidden;
+}
+#content {
+    color: #333;
+    font-family: "robotolight";
+    height: 100%;
+    margin: auto;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#content.verify {
+    width: 560px;
+}
+#content.verify .flash_wrap {
+    padding-top: 30px;
+}
+#content.forgotlogin .flash_message {
+    color: #02a62a;
+    font-family: robotobold;
+    margin: 10px auto;
+    max-width: 330px;
+    width: calc(100% - 20px);
+}
+#content.registration {
+    width: auto;
+}
+#content a {
+    color: #006fb6;
+    font-family: robotoregular;
+}
+#content .center-inner {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+}
+.centered {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+}
+#cosmos-popup {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #038abb;
+    border-radius: 6px;
+    font-family: "Trebuchet MS",sans-serif;
+    width: 800px;
+}
+#cosmos-popup.centered {
+    margin-left: -400px;
+    margin-top: -200px;
+}
+#cosmos-popup .header .popup-title {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/popup-title-background.png") repeat-x scroll 0 0;
+    height: 20px;
+}
+#cosmos-popup .header .popup-title .close-button {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/close-button.png") no-repeat scroll 0 0;
+    float: right;
+    height: 48px;
+    width: 47px;
+    z-index: 10;
+}
+#cosmos-popup .header .popup-header {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/popup-header-background.png") repeat-x scroll 0 0;
+    height: 59px;
+    margin-top: 2px;
+}
+#cosmos-popup .header .popup-header .arrow {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/rounded-arrow-right.png") no-repeat scroll 0 0;
+    float: left;
+    height: 24px;
+    margin: 14px 0 0 20px;
+    width: 24px;
+}
+#cosmos-popup .header .popup-header .title {
+    color: white;
+    float: left;
+    margin: 12px 0 0 20px;
+}
+#cosmos-popup .header .popup-header .title .first-line {
+    font-size: 80%;
+}
+#cosmos-popup .header .popup-header .title .second-line {
+    font-weight: bold;
+    margin-top: 3px;
+}
+#cosmos-popup .header .popup-header .logo {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/logo_markets.png") repeat scroll 0 0;
+    cursor: pointer;
+    float: right;
+    height: 28px;
+    left: 25px;
+    position: relative;
+    top: 11px;
+    width: 156px;
+}
+#cosmos-popup .content {
+    background: #314954 none repeat scroll 0 0;
+    max-height: 295px;
+    min-height: 200px;
+    overflow: auto;
+    padding: 20px;
+}
+textarea:focus, input:focus {
+    outline: medium none;
+}
+form .form_row {
+    clear: both;
+    color: #333;
+    font-size: 78%;
+    height: 32px;
+    margin: 0 auto 16px;
+    position: relative;
+    width: 500px;
+}
+form .form_row label {
+    color: #999;
+    float: left;
+    font-family: "robotolight";
+    font-size: 14px;
+    left: 40px;
+    margin: 10px 10px 5px 0;
+    padding-bottom: 5px;
+    position: absolute;
+    text-align: left;
+}
+.ar form .form_row label {
+    left: inherit;
+    right: 40px;
+}
+.ar form .radio_list label {
+    right: 0;
+}
+form#login .form_row label {
+    margin-right: 20px;
+}
+form .form_row label .form-required {
+    color: red;
+    display: none;
+    margin-right: 3px;
+}
+form .form_row input {
+    background: #fff none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color #cccccc;
+    border-style: none none solid;
+    border-width: medium medium 2px;
+    clear: left;
+    color: #333;
+    float: left;
+    font-family: "robotolight";
+    font-size: 13px;
+    height: 32px;
+    margin-left: 40px;
+    padding: 0 5px;
+    width: 455px;
+}
+form .form_row input.valid[type="text"], form .form_row input.valid[type="password"] {
+    border-bottom: 2px solid #1cbb4b;
+}
+form .form_row input[type="password"] {
+    font: medium Verdana,sans-serif;
+    letter-spacing: 1px;
+}
+form .form_row input.with-error {
+    border-color: red;
+}
+form .form_row select {
+    background: #141416 none repeat scroll 0 0;
+    border: 0 none;
+    box-shadow: 0 1px 0 0 rgba(110, 110, 111, 1);
+    color: #fff;
+    font-family: "robotolight";
+    font-size: 14px;
+}
+form .form_row .question {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/question-button.png") repeat scroll 0 0;
+    cursor: pointer;
+    display: none;
+    height: 24px;
+    left: 380px;
+    margin: 5px 0 0 10px;
+    position: absolute;
+    width: 23px;
+}
+form .form_row .question:hover {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/question-button-selected.png") repeat scroll 0 0;
+}
+form .error_list {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/error-arrow.png") no-repeat scroll left 5px;
+    clear: left;
+    color: #ff372f;
+    display: block;
+    font-size: 100%;
+    padding: 4px 0 0 10px;
+    text-align: left;
+}
+.flash_error {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/error-arrow.png") no-repeat scroll left 2px;
+    color: #ff372f;
+    float: none;
+    font-family: "robotolight";
+    margin: 18px auto -18px;
+    padding: 0 0 0 12px;
+    width: 50%;
+}
+form .error_list .error_item {
+    display: block;
+    font-family: "robotolight";
+    font-size: 12px;
+}
+form #main_error.error_list {
+    float: none;
+    margin: 18px auto 0;
+}
+form #main_error .error_item {
+    font-size: 13px;
+}
+form .submit_btn, form .button {
+    cursor: pointer;
+}
+form#registration {
+    margin: auto;
+    padding-bottom: 0;
+    text-align: center;
+    width: 500px;
+}
+form#registration .legend {
+    color: #fff;
+    font-family: "robotoregular";
+    font-size: 18px;
+    margin: 20px 0 30px 30px;
+}
+form#registration .phone_label_country, form#registration .phone_label_area, form#registration .phone_label_number {
+    display: none;
+}
+form#registration .phone_input_wrapper {
+    float: left;
+}
+form#registration .phone_input_wrapper input {
+    width: 40px;
+}
+form#registration .phone_input_wrapper input.phone_main {
+    width: 114px;
+}
+form#registration .phone_input_wrapper .phone-plus, form#registration .phone_input_wrapper .phone-minus {
+    float: left;
+    margin: 10px 2px 0;
+}
+form#registration #opt_in_row {
+    display: none;
+}
+form#registration #submit_registration {
+    background: #1cbb4b none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+    color: #fff;
+    font-family: robotoregular;
+    font-size: 20px;
+    height: 44px;
+    margin: 30px auto 0;
+    width: 300px;
+}
+form#registration #submit_registration:hover {
+    border: 1px solid #fff;
+}
+.login {
+    font-family: "Trebuchet MS",sans-serif;
+}
+.login .centered {
+    margin-left: -150px;
+    margin-top: -260px;
+}
+.login .header {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/logo_markets_login_new.png") no-repeat scroll center top;
+    height: 58px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.login ul.registration-links {
+    list-style: inside url("../images/skin_cosmos/arrow-yellow-right.png") disc;
+}
+.login aside {
+    color: white;
+    font-size: 80%;
+    margin-top: 40px;
+}
+.login aside li {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.login aside li a, .login aside li a:link, .login aside li a:visited, .login aside li a:active, .login aside li a:hover {
+    color: #46ccff;
+}
+form#login_form {
+    padding-top: 20px;
+}
+form#login .question, form#login .form-required {
+    display: none;
+}
+form.forgot_password {
+    text-align: center;
+}
+form.forgot_password .submit_btn {
+    background: #1cbb4b none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    font-family: robotobold;
+    font-size: 18px;
+    height: 40px;
+    margin: 30px auto 85px;
+    max-width: 330px;
+    width: calc(100% - 20px);
+}
+form.forgot_password .submit_btn:hover {
+    border: 1px solid #fff;
+}
+.account_summary {
+    color: white;
+}
+.account_summary .msg_place {
+    color: red;
+    line-height: 1.5;
+    margin: 0 0 0 50px;
+    width: 650px;
+}
+.account_summary .products {
+}
+.account_summary .products_list {
+    margin: 0 0 50px 50px;
+    width: 650px;
+}
+.account_summary .products_list .title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.account_summary .products_list.last {
+    margin-bottom: 10px;
+}
+.account_summary .products_list .list .thead {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/bg_table_header.png") no-repeat scroll center top;
+    font-size: 14px;
+    font-weight: bold;
+    height: 37px;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+.account_summary .products_list .list .thead div, .account_summary .products_list .list .tbody .row div {
+    float: left;
+    margin-top: 12px;
+    text-align: center;
+    width: 190px;
+}
+.account_summary .products_list .list .thead div.align-left, .account_summary .products_list .list .tbody .row div.align-left {
+    text-align: left;
+}
+.account_summary .products_list .list .tbody {
+    background-color: white;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.account_summary .products_list .list .tbody .row {
+    border-top: 1px solid black;
+    color: black;
+    font-size: 15px;
+    height: 40px;
+    margin: 0 20px;
+    padding-left: 20px;
+}
+.account_summary .products_list .list .tbody .row.first {
+    border-top: 0 none;
+}
+.account_summary a.platform_btn_cosmos, .account_summary a.platform_btn_add_cosmos {
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+.account_summary a.platform_btn_cosmos {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_login/en.png") no-repeat scroll 0 0;
+    height: 26px;
+    margin: -5px 0 0 45px;
+    width: 100px;
+}
+.account_summary a.platform_btn_add_cosmos {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_login/en.png") no-repeat scroll 0 0;
+    height: 26px;
+    margin-top: 10px;
+    width: 154px;
+}
+#account_type_row input[type="radio"] {
+    display: none;
+}
+#account_type_row input[type="radio"] + label {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+    color: #999999;
+    cursor: pointer;
+    font-family: "robotoregular";
+    font-size: 20px;
+    height: 20px;
+    left: 0;
+    margin: 0 !important;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 248px !important;
+}
+#account_type_row input[type="radio"]:checked + label {
+    border: 1px solid #006fb6;
+    color: #006fb6;
+    font-family: "robotoregular";
+}
+#username_row, #email_row {
+    background: rgba(0, 0, 0, 0) url("../images/skin_markets2/email-icon.png") no-repeat scroll 0 9px;
+    border-bottom: 2px solid #cccccc;
+    display: block;
+    margin-top: 60px;
+}
+#password_row, #verify_password_row {
+    background: rgba(0, 0, 0, 0) url("../images/skin_markets2/password-icon.png") no-repeat scroll 0 4px;
+    border-bottom: 2px solid #cccccc;
+    display: block;
+    margin: 30px 0;
+}
+#verify_password_row {
+    margin: 0;
+}
+#promotion_code_row {
+    background: rgba(0, 0, 0, 0) url("../images/skin_markets2/promocode-icon.png") no-repeat scroll 0 4px;
+    border-bottom: 2px solid #cccccc;
+    display: block;
+    margin: 30px 0 16px;
+}
+.ar #username_row, .ar #email_row {
+    background-position: right 9px;
+}
+.ar #password_row, .ar #verify_password_row {
+    background-position: right 4px;
+}
+#cosmos_login {
+    text-align: center;
+}
+form#login {
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 500px;
+}
+form#login #submit_login {
+    background: #1cbb4b none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "robotoregular";
+    font-size: 20px;
+    height: 44px;
+    margin-top: 50px;
+    width: 300px;
+}
+form#login #submit_login span {
+    font-family: "robotoregular";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+form#login #submit_login:hover {
+    border: 1px solid #fff;
+}
+.reg-link {
+    color: #006699;
+    float: left;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+}
+.new_user_link {
+    font-family: robotoregular;
+    font-size: 13px;
+    margin: 10px auto 60px;
+}
+#new_user {
+    padding: 0 5px;
+}
+#new_user, a.forgot_password, .login_link {
+    clear: both;
+    font-family: robotoregular;
+    font-size: 14px;
+    padding: 10px 0 2px;
+    text-decoration: underline;
+}
+.reset-password-message {
+    color: #666;
+    font-family: robotoregular;
+    margin: 20px auto 30px;
+    width: 500px;
+}
+.reset-password-message span {
+    float: left;
+}
+.ar .reset-password-message span {
+    float: right;
+}
+.already, .login_link {
+    margin: 10px auto 50px;
+    text-align: center;
+}
+.chat_link {
+    float: right;
+    margin: 20px 20px 0 0;
+}
+.chat_link a {
+    background: rgba(0, 0, 0, 0) url("../images/skin_markets2/live-chat.png") no-repeat scroll left center;
+    font-family: robotoregular;
+    padding-left: 25px;
+    text-decoration: none;
+}
+a.already_registered {
+    display: inline-block;
+    font-family: robotoregular;
+    font-size: 14px;
+    margin: 10px auto 0;
+    padding-bottom: 2px;
+    text-decoration: underline;
+}
+.app_link {
+    border-top: 1px solid #999;
+    font-family: "robotolight";
+    font-size: 13px;
+    margin: 0 auto 10px;
+    padding-top: 30px;
+    text-align: center;
+    width: 330px;
+}
+.device-links {
+    clear: left;
+    margin-top: 20px;
+}
+.app_link #also-icon-ios {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/icon-ios.png") no-repeat scroll left center;
+    padding: 15px 0 15px 35px;
+}
+.app_link #also-icon-android {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/icon-android.png") no-repeat scroll left center;
+    padding: 15px 0 15px 35px;
+}
+.app-or {
+    border-left: 2px solid #999;
+    color: #fff;
+    margin: 0 3px 0 15px;
+}
+#account_type_row {
+    margin-top: 30px;
+}
+#account_type_row ul li {
+    float: left;
+    width: 250px;
+}
+.styled-select select {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    font-size: 16px;
+    height: 34px;
+    line-height: 1;
+    padding: 5px;
+    width: 268px;
+}
+.styled-select {
+    height: 31px;
+    overflow: hidden;
+}
+#date_of_birth_row .styled-select {
+    background-position: 60px 13px !important;
+    float: left;
+    margin-right: 5px;
+    width: 103px !important;
+}
+#date_of_birth_row .styled-select select {
+    float: left;
+    width: 120px !important;
+}
+#date_of_birth_row .styled-select .arrow {
+    left: 80px !important;
+}
+#date_of_birth_row .styled-select:nth-child(4) {
+    margin-right: 0;
+}
+#country_row .styled-select {
+    background-position: 60px 13px;
+    float: left;
+    width: 318px;
+}
+#country_row .styled-select select {
+    float: left;
+    margin-right: 5px;
+    width: 335px;
+}
+#country_row .styled-select .arrow {
+    left: 298px;
+}
+.intl-tel-input.pretty .flag-dropdown .selected-flag .arrow {
+    border-right-width: 4px !important;
+    border-top-color: #fff !important;
+}
+.styled-select .arrow {
+    border-left: 3px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    height: 0;
+    left: 20px;
+    margin-top: -2px;
+    position: relative;
+    top: 50%;
+    width: 0;
+}
+.intl-tel-input.pretty .flag-dropdown .country-list .flag, .intl-tel-input.pretty .flag-dropdown .country-list .country-name {
+    color: #fff !important;
+}
+.intl-tel-input.pretty .flag-dropdown .country-list {
+    background-color: #000 !important;
+}
+#gross_income_row, #trading_frequency_row {
+    display: none;
+}
+#description {
+    display: none;
+}
+.ar .smsframe .title {
+    margin-right: 250px;
+    text-align: right;
+}
+.ar .phone_button {
+    margin: 50px 0 0 316px;
+}
+.ar .phone_input label {
+    direction: rtl;
+    float: right;
+    margin-left: 24px;
+    margin-right: 80px;
+}
+.ar .phone_input_wrapper {
+    float: right;
+}
+.ar .phone_labels {
+    margin-left: 290px;
+}
+.ar .phone_labels span:first-child {
+    margin-left: 150px;
+    margin-right: 0;
+}
+.ar .phone_labels span:last-child {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.ar .error1, .ar .error2, .ar .failed, .ar .errorValid {
+    direction: rtl;
+    margin-right: 235px;
+    text-align: right;
+}
+.ar .enter-code {
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+}
+.ar .sended {
+    text-align: right;
+    width: 340px;
+}
+.ar .edit_phone {
+    float: right;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+.ar .registration_opt_in #checkbox_label {
+    direction: rtl;
+    float: right;
+    margin-right: 250px;
+}
+.ar .verifyCodeBG label {
+    direction: rtl;
+    float: right;
+    margin-right: 70px;
+}
+.ar #verification_code {
+    float: right;
+    margin-right: 45px;
+}
+.ar .skip_button {
+    direction: rtl;
+    margin-left: 338px;
+    text-align: right;
+}
+#step1_continue, #step1_voice_continue {
+    font-family: arial;
+    font-size: 18px;
+    min-width: 235px;
+    padding: 5px 40px;
+}
+.smsframe {
+    height: 400px;
+    padding-left: 98px;
+    padding-top: 30px;
+}
+.verify_phone_form .smsframe {
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.smsframe_header {
+    padding: 30px 0 0;
+}
+.smsframe_header .title {
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+}
+#forgot_wrapper .legend div, .new_account_title, .title {
+    font-family: "robotolight";
+    font-size: 24px;
+    margin: 30px auto;
+    text-align: center;
+}
+#account_type_row {
+    margin: 30px auto;
+}
+.smsframe_header .personal_info {
+    color: #fff;
+    font-family: "robotolight";
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.smsframe label {
+    color: #fff;
+    float: left;
+    font-family: "robotolight";
+    font-size: 14px;
+    margin: 5px 10px 0 0;
+    padding-top: 2px;
+    text-align: right;
+    width: 130px;
+}
+.phone_input_wrapper {
+    float: left;
+}
+.verifyCodeBG .verify_button {
+    margin-left: 120px;
+    text-align: left;
+}
+#main_phone {
+    background: #141416 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(110, 110, 111, 1);
+    color: white;
+    float: left;
+    font-family: "robotolight";
+    font-size: 13px;
+    height: 32px;
+    margin-right: 10px;
+    padding: 0 5px;
+    width: 250px;
+}
+.verify_phone_form #main_phone {
+    margin-right: 0;
+    width: 180px;
+}
+.phone_labels {
+    font-family: Arial;
+    font-size: 14px;
+    margin-left: 170px;
+    padding-top: 20px;
+}
+.phone_labels span {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-right: 125px;
+}
+.phone_button {
+    margin: 40px 0 20px 172px;
+}
+.verify_phone_form .phone_button {
+    margin: 40px auto 20px;
+}
+.verify_phone_form .mrt10 {
+    margin-top: 10px;
+}
+#step1_continue, #step1_voice_continue {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #5f5f61;
+    border-radius: 5px;
+    color: #797979;
+    font-family: "robotoregular";
+    font-size: 16px;
+    padding: 5px 40px;
+}
+#step1_continue.hover, #step1_voice_continue.hover {
+    border: 1px solid #a0a0a2;
+    color: #fff;
+}
+#step1_continue.hover:hover, #step1_voice_continue.hover:hover {
+    background: #3c3c42 none repeat scroll 0 0;
+}
+.verifyCodeBG {
+    margin-top: 50px;
+}
+#verification_code {
+    background: #141416 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(110, 110, 111, 1);
+    color: white;
+    float: left;
+    font-family: "robotoregular";
+    font-size: 13px;
+    height: 32px;
+    margin-right: 18px;
+    overflow: hidden;
+    padding: 0 5px;
+    width: 75px;
+}
+.verify_block #verification_code {
+    float: left;
+    margin: 10px auto 0;
+    width: 235px;
+}
+.verify_block .verifyCode {
+    margin-left: auto;
+}
+.verify_block .verifyCodeBG {
+    margin-top: 20px;
+}
+.verification_code_text {
+    font-size: 14px;
+    text-align: left;
+}
+.enter-code {
+    color: #fff;
+    display: none;
+    float: left;
+    font-family: "robotolight";
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 350px;
+}
+.verify_block .enter-code {
+    float: none;
+    margin-left: 260px;
+    margin-top: 10px;
+    text-align: left;
+    width: 235px;
+}
+.error1, .error2, .failed, .errorValid {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/error-arrow.png") no-repeat scroll 0 4px;
+    color: #ff372f;
+    font-family: "robotolight";
+    padding-left: 10px;
+}
+.message, .message2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.verifyCode {
+    background: #0077a2 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: robotobold;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 50px;
+    width: 270px;
+}
+.verifyCode:hover {
+    background: #0a88b5 none repeat scroll 0 0;
+    border: 1px solid #fff;
+}
+.verifyCode.disabled {
+    background: #676769 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+}
+.verifyCode.disabled:hover {
+    background: #676769 none repeat scroll 0 0;
+    cursor: default;
+}
+.animated {
+    background: rgba(0, 0, 0, 0) url("../images/process-thinker.gif") no-repeat scroll 0 0;
+    color: #505050;
+    display: none;
+    font-size: 14px;
+    height: 0;
+    margin: 30px auto;
+    padding: 115px 0 0 5px;
+    width: 135px;
+}
+.phone-security {
+    color: #fff;
+    font-family: "robotolight";
+    font-size: 13px;
+    line-height: 16px;
+    margin: 10px 140px;
+    width: 310px;
+}
+.verify_phone_form .phone-security {
+    float: left;
+    margin: 0 auto;
+    padding-left: 10px;
+    text-align: left;
+    width: 250px;
+}
+.verify_phone_form .terms_and_conditions {
+    float: left;
+    margin-top: 30px;
+}
+.terms_and_conditions label {
+    margin-left: 5px;
+    text-align: left;
+    width: 450px;
+}
+#terms-and-conditions {
+    float: left;
+}
+.explain_upload li {
+    color: #fff;
+    font-family: "robotoregular";
+    font-size: 14px;
+    line-height: 19px;
+}
+.explain_upload li span {
+    font-family: "robotolight";
+}
+.myaccount_content_wrapper .h1-wrap h1 {
+    display: none;
+}
+.ex_content li {
+    padding: 0 0 20px;
+}
+.ex_title {
+    color: #fff;
+    font-family: "robotobold";
+    font-size: 18px;
+}
+.ex_content {
+    clear: both;
+    color: #fff;
+    float: left;
+    font-family: "robotolight";
+    font-size: 16px;
+    height: auto;
+    margin: 0 0 25px;
+    text-align: left;
+}
+form#upload_document #submit_document {
+    background: #0077a2 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    font-family: robotobold;
+    font-size: 20px;
+    height: 40px;
+    margin-left: 210px;
+    width: 160px;
+}
+form#upload_document #submit_document:hover {
+    background: #0a88b5 none repeat scroll 0 0;
+}
+.fileUpload {
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.fileUpload input#document_document_file {
+    cursor: pointer;
+    font-size: 20px;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+.fileUpload span {
+    background: #0077a2 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-family: "robotobold";
+    font-size: 14px;
+    height: 18px;
+    margin: 5px 0 0 4px;
+    padding: 5px 0 0;
+    text-align: center;
+    width: 80px;
+}
+.fileUpload span:hover {
+    background: #0a88b5 none repeat scroll 0 0;
+    border: 1px solid #fff;
+}
+#document_file_error {
+    margin-left: 210px;
+    width: 330px;
+}
+#document_comment_row {
+    height: 120px;
+}
+.form_row_submit {
+    height: 40px !important;
+}
+.form_row_submit input {
+    box-shadow: none !important;
+}
+#document_file_help {
+    float: left;
+    margin: 0 0 10px 210px;
+}
+#document_type_row .styled-select {
+    background-position: 60px 13px;
+    float: left;
+    margin-right: 5px;
+    width: 320px;
+}
+#document_type_row .styled-select select {
+    float: left;
+    margin-right: 5px;
+    width: 337px;
+}
+#document_type_row .styled-select .arrow {
+    left: 300px;
+}
+#document_document_comment {
+    background: #141416 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(110, 110, 111, 1);
+    color: #fff;
+    font-family: "robotolight";
+    font-size: 13px;
+    padding: 5px;
+    width: 310px;
+}
+#real_products_row .styled-select {
+    background-position: 60px 13px;
+    float: left;
+    margin-right: 5px;
+    width: 320px;
+}
+#real_products_row .styled-select select {
+    float: left;
+    margin-right: 5px;
+    width: 337px;
+}
+#real_products_row .styled-select .arrow {
+    left: 300px;
+}
+#deposit_languages_form, #deposit_producs_form {
+    margin: 0 0 5px;
+}
+#deposit_languages_form .form_row, #deposit_producs_form .form_row {
+    min-width: 656px;
+}
+.payment_method_desc {
+    margin: 10px 0 20px;
+}
+.demo_table_title, .live_table_title {
+    height: 22px;
+    margin: 0 0 10px;
+    padding: 8px 0 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+table {
+    margin: 0 0 30px;
+    padding: 0;
+    width: 100%;
+}
+table thead th {
+    border: 1px solid #fff;
+    font-family: "robotoregular";
+    padding: 15px 0;
+    text-align: center;
+}
+table tbody td.valign {
+    border-left: 1px solid #9f9d9e;
+    border-right: 1px solid #9f9d9e;
+    height: 75px;
+    vertical-align: middle;
+}
+table tbody td {
+    border-bottom: 1px solid #9f9d9e;
+    padding: 10px 0;
+    text-align: center;
+}
+form#change_password #submit_change_password {
+    background: #0077a2 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    font-family: robotobold;
+    font-size: 20px;
+    height: 40px;
+    margin-left: 210px;
+    width: 160px;
+}
+form#change_password #submit_change_password:hover {
+    background: #0a88b5 none repeat scroll 0 0;
+    border: 1px solid #fff;
+}
+.withdrawal_form_fields .styled-select {
+    background-position: 60px 13px;
+    float: left;
+    margin-right: 5px;
+    width: 320px;
+}
+.withdrawal_form_fields .styled-select select {
+    float: left;
+    margin-right: 5px;
+    width: 337px;
+}
+.withdrawal_form_fields .styled-select .arrow {
+    left: 300px;
+}
+form#withdrawal_form #submit_withdrawal_form {
+    background: #0077a2 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    font-family: robotobold;
+    font-size: 20px;
+    height: 40px;
+    margin-left: 210px;
+    width: 160px;
+}
+form#withdrawal_form #submit_withdrawal_form:hover {
+    background: #0a88b5 none repeat scroll 0 0;
+    border: 1px solid #fff;
+}
+.withdrawal_note {
+    font-family: "robotolight";
+    font-size: 11px;
+    margin: 30px 0 0;
+}
+.bullet_title {
+    font-family: "robotolight";
+    line-height: 17px;
+    margin: 0 0 30px;
+}
+#withdrawal_comment {
+    background: #141416 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(110, 110, 111, 1);
+    color: #fff;
+    font-family: "robotolight";
+    font-size: 13px;
+    padding: 5px;
+    width: 310px;
+}
+#comment_row {
+    height: 105px;
+}
+#withdrawal_form .submit_wrapper {
+    float: left;
+}
+#withdrawal_form .back_wrapper {
+    float: left;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+#forgot_wrapper {
+    font-size: 14px;
+    text-align: center;
+}
+#forgot_password {
+    margin-top: 20px;
+}
+form#forgot_password .form_row input {
+}
+form#forgot_password .submit_btn {
+    background: #1cbb4b none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    font-family: robotoregular;
+    font-size: 20px;
+    height: 44px;
+    margin-top: 20px;
+    width: 300px;
+}
+form#forgot_password .submit_btn:hover {
+    border: 1px solid #fff;
+}
+#forgot_password #main_error.error_list {
+    width: 490px;
+}
+form#complete_registration #submit_complete_registration {
+    background: #0077a2 url("../images/skin_cosmos/next_arrows.png") no-repeat scroll 130px center;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    font-family: robotobold;
+    font-size: 20px;
+    height: 40px;
+    margin-left: 210px;
+    width: 330px;
+}
+form#complete_registration #submit_complete_registration:hover {
+    background: #0a88b5 url("../images/skin_cosmos/next_arrows.png") no-repeat scroll 130px center;
+    border: 1px solid #fff;
+}
+#leveraged_trading_row {
+    height: auto;
+}
+#leveraged_trading_row > div {
+    display: inline-block;
+    font-size: 13px;
+    margin: -10px 0 0 30px;
+    width: 500px;
+}
+.ar #leveraged_trading_row > div {
+    float: right;
+    margin: -28px 0 0;
+    text-align: right;
+}
+form#complete_registration .legend {
+    font-family: robotoregular;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: right;
+    width: 200px;
+}
+.ar form#complete_registration .legend {
+    float: right;
+    text-align: left;
+    width: 210px;
+}
+form#complete_registration .radio_list {
+    float: left;
+    margin-top: 6px;
+}
+form#complete_registration #tequalificationradiobox_row .radio_list {
+    margin-top: 16px;
+}
+form#complete_registration .radio_list li {
+    float: left;
+}
+form#complete_registration input[type="radio"] {
+    box-shadow: none;
+    color: red;
+    display: inline;
+    height: 20px;
+    margin: 0 10px 0 20px;
+    width: 20px;
+}
+form#complete_registration input[type="radio"] + label {
+    border: medium none;
+    font-family: "robotolight";
+    font-size: 14px;
+    height: auto;
+    margin: 0 !important;
+    padding: 2px 0 0;
+    text-align: left;
+    width: auto !important;
+}
+form#complete_registration input[type="radio"]:checked + label {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
+}
+form#complete_registration input[type="checkbox"] {
+    box-shadow: none;
+    height: 20px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 20px;
+}
+form#complete_registration #checkbox_label {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    cursor: pointer;
+    font-size: 13px;
+    height: auto;
+    line-height: 15px;
+    margin-left: 0;
+    margin-right: 5px;
+    padding-left: 30px;
+    position: relative;
+    vertical-align: middle;
+    width: 500px;
+}
+form#complete_registration .form_row .question {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/question-icon.png") repeat scroll 0 0;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    left: 530px;
+    margin: 4px 0 0 10px;
+    position: absolute;
+    width: 16px;
+}
+form#complete_registration .form_row.with-error .question {
+    display: none;
+}
+.ar form#complete_registration .form_row .question {
+    left: 200px;
+}
+form#complete_registration .form_row .question:hover {
+}
+.tooltip {
+    background-color: #5c5c5c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: default;
+    font-family: "robotoregular";
+    font-size: 10px;
+    left: 35px;
+    min-height: 45px;
+    overflow-wrap: break-word;
+    padding: 7px 10px 5px;
+    position: absolute;
+    top: -5px;
+    width: 170px;
+}
+.ar .tooltip {
+    left: -185px;
+}
+.tooltip::before {
+    border-color: transparent transparent #5c5c5c;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    content: "";
+    height: 0;
+    left: -10px;
+    position: absolute;
+    transform: rotate(360deg);
+    width: 0;
+}
+.ar .tooltip::before {
+    border-color: transparent transparent transparent #5c5c5c;
+    border-width: 10px 0 0 10px;
+    height: 0;
+    left: 170px;
+    width: 0;
+}
+#tequalificationradiobox_label {
+    display: block;
+    text-align: left;
+    width: 370px;
+}
+#termsadditional_row {
+    display: none;
+}
+#termsadditional_row #checkbox_label {
+    margin-bottom: 16px;
+}
+form#complete_registration #terms_row {
+    margin-bottom: 16px;
+}
+form#complete_registration #terms_additional_error {
+    left: 540px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+}
+form#complete_registration .styled-select {
+    background-position: 60px 13px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(110, 110, 111, 1);
+    float: left;
+    margin-right: 5px;
+    width: 320px;
+}
+form#complete_registration .intl-tel-input.inside input[type="text"] {
+    width: 272px;
+}
+form#complete_registration .styled-select select {
+    float: left;
+    margin-right: 5px;
+    width: 340px;
+}
+form#complete_registration .styled-select .arrow {
+    left: 300px;
+}
+form#complete_registration .description {
+    display: none;
+}
+form#complete_registration .form_row {
+    margin-bottom: 10px;
+}
+form#complete_registration #fatcaradiobox_row .form_row {
+    float: left;
+    margin: 0;
+    width: 535px;
+}
+form#complete_registration #tetradingeducationlevel_row {
+    padding-top: 15px;
+}
+.fatca_info_link {
+    float: left;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+#fiindustrydetails_row, #fisourceofincomedetails_row, #fisourceofincome_row, #tetradingstudydetails_row {
+    display: none;
+}
+.ar .fatca_info_link {
+    float: right;
+}
+.ar form#complete_registration .radio_list {
+    float: right;
+}
+.ar #tequalificationradiobox_label {
+    float: right;
+    margin: 0;
+    padding-left: 0;
+    text-align: right;
+    width: 380px;
+}
+.ar form#complete_registration #terms_additional_error {
+    left: -230px;
+}
+.ar form#complete_registration #fatcaradiobox_row .form_row {
+    float: right;
+    width: 545px;
+}
+.ar form#complete_registration input[type="radio"] + label {
+    text-align: right;
+}
+.ar form#complete_registration #checkbox_label {
+    margin-left: 5px;
+    margin-right: 0;
+    text-align: right;
+    width: 500px;
+}
+.ar form#complete_registration .styled-select {
+    margin-right: 0;
+}
+#fin_row .styled-select {
+    background-position: 60px 13px;
+    float: left;
+    margin-right: 5px;
+    width: 320px;
+}
+#fin_row .styled-select select {
+    float: left;
+    margin-right: 5px;
+    width: 337px;
+}
+#fin_row .styled-select .arrow {
+    left: 300px;
+}
+#fin_row .description {
+    display: none;
+}
+.finance_row .styled-select {
+    background-position: 60px 13px;
+    float: left;
+    margin-right: 5px;
+    width: 320px;
+}
+.finance_row .styled-select select {
+    float: left;
+    margin-right: 5px;
+    width: 337px;
+}
+.finance_row .styled-select .arrow {
+    left: 300px;
+}
+.finance_row .description {
+    display: none;
+}
+.finance_row {
+    clear: both;
+}
+#reg_terms {
+    width: 30px;
+}
+#checkbox_label {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 210px;
+    text-align: left;
+    width: 300px;
+}
+#terms_row {
+    margin-bottom: 60px;
+    padding-top: 10px;
+}
+#reg_phone_main_phone {
+    width: 270px;
+}
+.skip_button {
+    display: inline-block;
+    font-size: 16px !important;
+    margin-left: 160px;
+    margin-top: 40px;
+}
+#forgot_wrapper p {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 30px auto 0;
+    max-width: 330px;
+    text-align: justify;
+    width: calc(100% - 10px);
+}
+.forgotlogin form .form_row label {
+}
+.select-language {
+    clear: right;
+    float: right;
+}
+.myaccount .select-language {
+    margin-top: 0;
+}
+#reg_terms {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+#reg_terms + #checkbox_label {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    height: 20px;
+    line-height: 15px;
+    padding-left: 40px;
+    vertical-align: middle;
+}
+#reg_terms:checked + #checkbox_label {
+    background-position: 0 -20px;
+}
+#checkbox_label {
+    background-image: url("../images/skin_cosmos/checkbox-sprite.png");
+}
+#terms_error {
+    width: 200px;
+}
+.loader--splasher {
+    display: none;
+    left: 278px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+}
+.loader--splasher i {
+    background: rgba(0, 0, 0, 0) url("../images/skin_trade/cosmos-loader-logo.png") no-repeat scroll center center;
+    display: inline-block;
+    height: 55px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    width: 55px;
+}
+.loader--splasher .loader--text {
+    color: #000;
+    display: flex;
+    font-family: "robotoregular";
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    vertical-align: middle;
+}
+@keyframes blinking {
+50% {
+    opacity: 0;
+}
+}
+@keyframes blinking {
+50% {
+    opacity: 0;
+}
+}
+@keyframes blinking {
+50% {
+    opacity: 0;
+}
+}
+.loader--splasher .loader--text {
+    animation: 1s ease 0s normal none infinite running blinking;
+}
+form .error_list.account-creation {
+    display: none;
+}
+.cosmosError_action {
+    min-width: 1000px;
+    padding: 0 !important;
+    width: 100% !important;
+}
+.cosmosError_action .footer {
+    height: 100%;
+    min-height: 50px;
+}
+.cosmos-platform-error {
+    margin-top: 20px;
+    min-height: 500px;
+    min-width: 1000px;
+    width: 100%;
+}
+.cosmosError_action .h1-wrap h1 {
+    display: block;
+    height: 20px;
+}
+.cosmos-platform-error .content {
+    padding-left: 5%;
+    padding-top: 30px;
+    width: 550px;
+}
+.cosmos-platform-error .content h1 {
+    font-size: 34px;
+}
+.cosmos-platform-error .content p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 60px;
+    width: 520px;
+}
+.cosmos-platform-error .content .proceed-account {
+    font-size: 16px;
+    margin-top: 50px;
+}
+.cosmos-platform-error .content .contacts {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/contact-icons.png") no-repeat scroll 0 3px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 300px;
+}
+.cosmos-platform-error .content .contacts ul li {
+    font-size: 16px;
+    height: 55px;
+    margin-left: 40px;
+}
+.ar .cosmos-platform-error .content {
+    direction: rtl;
+    text-align: right;
+}
+.ar .cosmos-platform-error .content p {
+    width: 550px;
+}
+.ar .cosmos-platform-error .content .contacts {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/contact-icons.png") no-repeat scroll right 3px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 60px;
+    width: 200px;
+}
+.ar .cosmos-platform-error .content .contacts ul li {
+    font-size: 16px;
+    height: 55px;
+    margin-right: 40px;
+}
+.ar .app_link #also-icon-ios {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/icon-ios.png") no-repeat scroll right center;
+    padding: 15px 35px 15px 0;
+}
+.ar .app_link #also-icon-android {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/icon-android.png") no-repeat scroll right center;
+    padding: 15px 35px 15px 0;
+}
+.ar .form_row label {
+    direction: rtl;
+    float: right !important;
+    text-align: right;
+}
+.ar .form_row .form-required {
+    float: right;
+    margin: 2px -13px 0 3px;
+}
+.ar .form_row input {
+    float: right;
+    margin-right: 40px;
+    padding-left: 0;
+    text-align: right;
+}
+.ar .styled-select {
+    float: right !important;
+}
+.ar #editContact_wrapper .intl-tel-input {
+    margin-right: 0 !important;
+}
+.ar #reg_phone_main_phone {
+    text-align: left;
+}
+.ar #date_of_birth_row .styled-select {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.ar #date_of_birth_row .styled-select:nth-child(4) {
+    margin-left: 0;
+}
+.ar #reg_terms + #checkbox_label {
+    background-position: right 0;
+}
+.ar #reg_terms:checked + #checkbox_label {
+    background-position: right -20px;
+}
+.ar #reg_terms + #checkbox_label {
+    padding-right: 40px;
+}
+.ar #checkbox_label {
+    margin-right: 230px;
+    text-align: right;
+    width: 280px;
+}
+.ar .error_list {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/error-arrow-ar.png") no-repeat scroll right 2px;
+    float: right;
+    margin: 5px 8px 5px 0;
+    padding: 0 12px 0 0;
+    text-align: right;
+}
+.ar form#complete_registration #submit_complete_registration {
+    background: #0077a2 url("../images/skin_cosmos/next_arrows_ar.png") no-repeat scroll 20px center;
+    margin-right: 210px;
+    text-align: center;
+}
+.ar #new_user {
+    margin-right: 8px;
+}
+.ar .reg-link {
+    direction: rtl;
+}
+.ar .form_row .radio_list label {
+    text-align: center;
+}
+.ar #account_type_row ul li {
+    float: right;
+}
+.ar #account_type_row ul li:last-child label {
+    border-radius: 4px 0 0 4px;
+}
+.ar #forgot_wrapper p {
+    margin-bottom: 20px;
+    text-align: right;
+}
+.ar .legend {
+    text-align: right;
+}
+.ar .bullet_title {
+    text-align: right;
+}
+.ar #withdrawal_comment, .ar #document_document_comment {
+    float: right;
+}
+.ar .withdrawal_note {
+    text-align: right;
+}
+.ar .fileUpload span {
+    float: right;
+    margin: 5px 4px 0 0;
+}
+.ar #document_file_help {
+    float: right;
+    margin: 0 225px 10px 0;
+}
+.ar form#upload_document #submit_document {
+    margin-left: 0;
+    margin-right: 225px;
+    text-align: center;
+}
+.ar #document_file_error {
+    margin-right: 225px;
+}
+.ar .ex_content {
+    float: right;
+}
+.ar form#change_password #submit_change_password {
+    float: right;
+    margin-right: 225px;
+}
+.ar .phone_button {
+    margin: 50px 0 0 150px;
+}
+.ar .smsframe label {
+    text-align: left;
+}
+.ar .phone-security {
+    margin: 10px 105px;
+    text-align: right;
+}
+.ar .verifyCode {
+    float: right;
+    margin-right: 250px;
+}
+.ar .error1, .ar .error2, .ar .failed, .ar .errorValid {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/error-arrow-ar.png") no-repeat scroll right 4px;
+    float: right;
+    margin-right: 10px;
+    max-width: 300px;
+    padding-right: 10px;
+    width: 150px;
+}
+.empty_bonus h1, .welcome_bonus h1 {
+    color: #32aedc;
+    font-family: "robotoregular";
+    font-size: 28px;
+    letter-spacing: 0.03em;
+    margin: 0 auto 14px;
+    text-align: center;
+}
+.empty_bonus h2, .welcome_bonus h2 {
+    color: #bcbcbc;
+    font-family: "robotolight";
+    font-size: 15px;
+    margin-bottom: 32px;
+    margin-top: -22px;
+    text-align: center;
+}
+.welcome_bonus input[type="radio"] {
+    display: none;
+}
+.welcome_bonus .table {
+    line-height: 1.2em;
+    margin-bottom: 27px;
+    margin-top: 10px;
+    width: 600px;
+}
+.welcome_bonus .table tr {
+}
+.welcome_bonus .table tr:nth-child(2n+1) {
+    background: #2e2e31 none repeat scroll 0 0;
+}
+.welcome_bonus .table tr:nth-child(2n+1) td {
+    background: #2e2e31 none repeat scroll 0 0;
+    padding: 10px 0;
+}
+.welcome_bonus .table td {
+    border: medium none;
+    color: #ffffff;
+    font-family: "robotolight";
+    font-size: 16px;
+    padding: 14px 0;
+    text-align: left;
+}
+.welcome_bonus .table td:first-child {
+    padding-left: 35px;
+    width: 42px;
+}
+.welcome_bonus .table tr:nth-child(2n+1) td:first-child {
+    padding-left: 35px;
+    width: 42px;
+}
+.welcome_bonus .table b {
+    color: #fff;
+    font-family: "robotomedium";
+    font-size: 17px;
+}
+.welcome_bonus .table label {
+    cursor: pointer;
+}
+.welcome_bonus .table .bonus_word {
+    color: #fff;
+    font-family: "robotomedium";
+    font-size: 16px;
+}
+.welcome_bonus .table td.biggest_bonus {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/biggest_bonus.png") no-repeat scroll 2px 0;
+    color: #fff;
+    font-family: "robotoregular";
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 10px;
+    text-align: center;
+    width: 130px;
+}
+.ar .welcome_bonus .table td.biggest_bonus {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/biggest_bonus_rtl.png") no-repeat scroll 0 0;
+}
+.es .welcome_bonus .table td.biggest_bonus {
+    font-size: 13px;
+}
+.fr .welcome_bonus .table td.biggest_bonus {
+    font-size: 13px;
+}
+.lt .welcome_bonus .table td.biggest_bonus {
+    font-size: 13px;
+}
+.sr .welcome_bonus .table td.biggest_bonus {
+    font-size: 12px;
+}
+.sk .welcome_bonus .table td.biggest_bonus {
+    font-size: 13px;
+}
+.pl .welcome_bonus .table td.biggest_bonus {
+    font-size: 13px;
+}
+.bg .welcome_bonus .table td.biggest_bonus {
+    font-size: 11px;
+}
+.sl .welcome_bonus .table td.biggest_bonus {
+    font-size: 14px;
+}
+.welcome_bonus .table td.most_popular {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/most_popular.png") no-repeat scroll 2px 0;
+    color: #fff;
+    font-family: "robotoregular";
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 10px;
+    text-align: center;
+    width: 130px;
+}
+.ar .welcome_bonus .table td.most_popular {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/most_popular_rtl.png") no-repeat scroll 0 0;
+}
+.es .welcome_bonus .table td.most_popular {
+    font-size: 13px;
+}
+.fr .welcome_bonus .table td.most_popular {
+    font-size: 13px;
+}
+.lt .welcome_bonus .table td.most_popular {
+    font-size: 13px;
+}
+.sr .welcome_bonus .table td.most_popular {
+    font-size: 12px;
+}
+.sk .welcome_bonus .table td.most_popular {
+    font-size: 13px;
+}
+.pl .welcome_bonus .table td.most_popular {
+    font-size: 13px;
+}
+.bg .welcome_bonus .table td.most_popular {
+    font-size: 11px;
+}
+.sl .welcome_bonus .table td.most_popular {
+    font-size: 14px;
+}
+.welcome_bonus input[type="radio"] + label {
+    border: medium none;
+    color: transparent;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+}
+.welcome_bonus input[type="radio"]:checked + label {
+    background: transparent none repeat scroll 0 0;
+}
+.welcome_bonus input[type="radio"] + label span {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/check_radio_sheet.png") no-repeat scroll -38px top;
+    cursor: pointer;
+    display: inline-block;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    width: 19px;
+}
+.welcome_bonus input[type="radio"]:checked + label span {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/check_radio_sheet.png") no-repeat scroll -57px top;
+}
+.welcome_bonus .events_buttons {
+    margin: 0 auto 0 128px;
+    width: 340px;
+}
+.welcome_bonus .events_buttons input[type="button"] {
+    background: #222226 none repeat scroll 0 0;
+    border: 1px solid #6e6e6f;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "robotoregular";
+    font-size: 15px;
+    height: 32px;
+    margin-right: 16px;
+    width: 137px;
+}
+.welcome_bonus .events_buttons input[type="button"]:hover {
+    border: 1px solid #777777;
+}
+.welcome_bonus .events_buttons input.deposit_now[type="button"] {
+    background: #087096 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+}
+.welcome_bonus .events_buttons input.deposit_now[type="button"]:hover {
+    background: #0a88b5 none repeat scroll 0 0;
+    border: 1px solid #ffffff;
+}
+.welcome_bonus_wrap {
+    background: #29292d none repeat scroll 0 0;
+    color: #fff;
+    font-family: "robotolight";
+    height: 100%;
+    padding-bottom: 32px;
+    padding-top: 16px;
+    position: relative;
+    width: 600px;
+}
+.ar .welcome_bonus_wrap {
+    padding-left: 0;
+    padding-right: 0;
+    width: 600px;
+}
+.empty_bonus hr, .welcome_bonus hr {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/hr_bonus_bg.png") no-repeat scroll 0 0;
+    border-width: 0;
+    color: #444;
+    height: 2px;
+    line-height: 0;
+    margin: 0.5em 10px 1.8571em;
+    page-break-after: always;
+    text-align: center;
+}
+.empty_bonus hr {
+    margin-bottom: 160px;
+    margin-left: 144px;
+}
+.empty_bonus hr::after, .welcome_bonus hr::after {
+    font-size: 1.25em;
+}
+.ar .welcome_bonus_wrap {
+    direction: rtl;
+}
+.ar form#login .form_row .error_list {
+    width: 80px;
+}
+#content.deposit_action {
+    background: #eaeaea none repeat scroll 0 0;
+    color: black;
+    padding: 0;
+}
+#popup-msg .title {
+    text-align: center;
+}
+#popup-msg .desc {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 40px 40px;
+}
+#popup-msg .ok {
+    text-align: center;
+}
+#popup-msg #thankyou_submit {
+    background: #0077a2 none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-family: robotobold;
+    font-size: 20px;
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    width: auto;
+}
+#popup-msg #thankyou_submit:hover, #popup-msg #thankyou_submit:link {
+    background: #0a88b5 none repeat scroll 0 0;
+    border: 1px solid #fff;
+}
+.myaccount_content_wrapper.cosmosPreregComplete_action {
+    height: 396px !important;
+    width: 620px !important;
+}
+.questionnaire_action .compliance_notice {
+    display: none;
+}
+#content.CosmosBonusProposal {
+    min-height: 455px;
+    padding: 0;
+    width: 805px;
+}
+.table .tabs {
+    background-color: #1f1f23;
+    padding: 20px 20px 0;
+}
+.table .tab {
+    background-color: #29292d;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: "robotoregular";
+    font-size: 13px;
+    height: 29px;
+    padding-top: 15px;
+    text-align: center;
+    width: 150px;
+}
+.blocked_by_jurisdiction {
+    height: 290px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 310px;
+}
+.blocked_by_jurisdiction #blocked_img {
+    height: 58px;
+}
+.blocked_by_jurisdiction #blocked_msg {
+    margin-bottom: 20px;
+}
+.blocked_by_jurisdiction #contact_to_support {
+    margin-bottom: 40px;
+}
+.blocked_by_jurisdiction #contact_to_support a {
+    color: #0077a2;
+}
+.blocked_by_jurisdiction #contact_to_support a:hover {
+    text-decoration: none;
+}
+.blocked_by_jurisdiction #back_to_login {
+    background: #0077a2 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    float: left;
+    font-family: robotobold;
+    font-size: 18px;
+    height: 38px;
+    line-height: 18px;
+    margin-left: 70px;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+}
+.blocked_by_jurisdiction #back_to_login span {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.blocked_by_jurisdiction #back_to_login:hover {
+    background: #0a88b5 none repeat scroll 0 0;
+    border: 1px solid #fff;
+}
+#registrationreasondetails_row, #natureoftransactionsdetails_row {
+    display: none;
+}
+#registration_registrationreasondetails, #registration_natureoftransactionsdetails {
+    width: 310px;
+}
+#originoffunds_row ul {
+    float: left;
+    width: 280px;
+}
+#originoffunds_row ul li label {
+    float: none;
+    margin: 0;
+    width: inherit;
+}
+#originoffunds_row ul li input {
+    float: none;
+    height: inherit !important;
+    margin-right: 5px !important;
+    position: inherit !important;
+    vertical-align: middle;
+    width: inherit !important;
+}
+#tradingservicefamiliarity_row ul {
+    float: left;
+    width: 280px;
+}
+#tradingservicefamiliarity_row ul li, #originoffunds_row ul li {
+    padding: 5px 0;
+}
+#tradingservicefamiliarity_row ul li label {
+    float: none;
+    margin: 0;
+    width: inherit;
+}
+#tradingservicefamiliarity_row ul li input {
+    float: none;
+    height: inherit !important;
+    margin-right: 5px !important;
+    position: inherit !important;
+    vertical-align: middle;
+    width: inherit !important;
+}
+#complete_registration #leveraged_trading_row {
+    display: block;
+    padding-top: 30px;
+}
+#originoffunds_row {
+    margin-bottom: 50px !important;
+}
+.ar #originoffunds_row ul, .ar #tradingservicefamiliarity_row ul {
+    float: right;
+}
+.ar #originoffunds_row ul li input, .ar #tradingservicefamiliarity_row ul li input {
+    float: right;
+}
+.ar #originoffunds_row ul li label, .ar #tradingservicefamiliarity_row ul li label {
+    margin-right: 10px;
+}
+.accept_bonus_container {
+    height: 40px;
+    margin: 0 0 25px 38px;
+    width: 550px;
+}
+.accept_bonus_container input[type="checkbox"] {
+    display: none;
+}
+.accept_bonus_container a {
+    color: #33b5e5;
+}
+.accept_bonus_container input[type="checkbox"]:checked + label span {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/bonus_check.png") no-repeat scroll 2px top;
+}
+.accept_bonus_container input[type="checkbox"] + label span {
+    background: rgba(0, 0, 0, 0) url("../images/skin_cosmos/btn_checkbox_radio_bonus/bonus_check.png") no-repeat scroll -14px top;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 19px;
+    margin: 3px 8px 0 0;
+    width: 19px;
+}
+.accept_bonus_container div {
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    width: 480px;
+}
+#selectbetweensites_bg {
+    background-color: #999;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+#selectbetweensites_wrapper {
+    background-color: #fefefe;
+    height: 440px;
+    margin: 50px auto 0;
+    position: relative;
+    width: 710px;
+}
+#selectbetweensites_wrapper .square {
+    background: #ececec none repeat scroll 0 0;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    float: left;
+    height: 90px;
+    margin: 0 40px 50px;
+    width: 628px;
+}
+#selectbetweensites_wrapper #square_mt4_site.square {
+    margin-top: 70px;
+}
+#square_mt4_site .logo {
+    background-image: url("../images/skin_markets1/select_sites/markets-logo-mt4.png");
+    float: left;
+    height: 86px;
+    margin: 3px 30px 0 20px;
+    width: 85px;
+}
+#square_cosmos_account .logo {
+    background-image: url("../images/skin_trade/trade-logo.png");
+    float: left;
+    height: 86px;
+    margin: 3px 30px 0 20px;
+    width: 85px;
+}
+#selectbetweensites_wrapper .text {
+    color: #006699;
+    float: left;
+    font-family: robotoregular;
+    font-size: 19px;
+    margin: 0 auto;
+    padding-top: 33px;
+    text-align: center;
+    width: auto;
+}
+#selectbetweensites_wrapper .button {
+    background-color: #1cbb4b;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-family: robotoregular;
+    line-height: 36px;
+    margin: 25px 30px 25px 0;
+    padding: 0 40px;
+    text-align: center;
+}
+#selectbetweensites_wrapper .cosmos_account .button {
+    margin-top: 15px;
+}
+#selectbetweensites_wrapper .button a {
+    color: #fff;
+    text-decoration: none;
+}
+#selectbetweensites_wrapper #encourage {
+    clear: both;
+    color: #006699;
+    font-family: robotoregular;
+    margin: auto;
+    padding: 0 0 20px;
+}
+#selectbetweensites_wrapper #encourage h1 {
+    color: #006699;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+#selectbetweensites_wrapper .btn_desc {
+    clear: right;
+    color: #000;
+    float: right;
+    font-family: robotoregular;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 30px;
+    margin-top: -23px;
+    padding: 0 10px;
+    text-align: center;
+    width: 140px;
+}
+#selectbetweensites_wrapper h1 {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#selectbetweensites_wrapper h2 {
+    font-size: 18px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.risk_warning {
+    color: #000;
+    font-family: robotoregular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 20px auto 0;
+    padding-top: 15px;
+    text-align: center;
+}
+.ar #selectbetweensites_wrapper .square {
+    float: right;
+}
+.ar #square_mt4_site .logo {
+    float: right;
+    margin: 3px 20px 0 30px;
+}
+.ar #square_cosmos_account .logo {
+    float: right;
+    margin: 3px 20px 0 30px;
+}
+.ar #selectbetweensites_wrapper .text {
+    float: right;
+}
+.ar #selectbetweensites_wrapper .button {
+    float: left;
+    margin: 25px 0 25px 30px;
+}
+.ar #selectbetweensites_wrapper .cosmos_account .button {
+    margin-top: 15px;
+}
+.ar #selectbetweensites_wrapper .btn_desc {
+    clear: left;
+    float: left;
+    margin-left: 30px;
+    margin-right: auto;
+}
+.ar .accept_bonus_container {
+    margin-right: 18px;
+}
+.ar .accept_bonus_container input[type="checkbox"] + label span {
+    float: right;
+    margin: 3px 3px 0 10px;
+}
+.ar .accept_bonus_container div {
+    float: right;
+}
+.content-block {
+    border: 1px solid #cccccc;
+    height: 100%;
+}
+#cosmoscreated_wrapper {
+    background-color: #ebebeb;
+    height: 218px;
+    left: 50%;
+    margin: 50px auto 0 -220px;
+    position: absolute;
+    top: 20px;
+    width: 440px;
+}
+#cosmoscreated_wrapper .youraccount-title {
+    color: #0077a2;
+    font-family: "robotoregular";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0 15px;
+}
+#cosmoscreated_wrapper .youraccount-text {
+    color: #000;
+    font-family: "robotoregular";
+    font-size: 16px;
+    line-height: 18px;
+}
+#cosmoscreated_wrapper .youraccount-button {
+    background: #0077a2 none repeat scroll 0 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "robotoregular";
+    font-size: 18px;
+    height: 22px;
+    margin: 25px auto;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 200px;
+}
+#currency_label {
+    display: none;
+}
+.form29 #account_currency_label {
+    font-size: 12px;
+    left: 0;
+    margin-top: 1px;
+}
+.form29 #account_currency_row ul.radio_list {
+    display: none;
+    margin-left: 100px;
+}
+.form29 #account_currency_row ul.radio_list li {
+    float: left;
+}
+.form29 #account_currency_row ul.radio_list li label {
+    float: right;
+    font-size: 11px;
+    left: 0;
+    margin: 1px 6px 0 0;
+    position: relative;
+}
+.form29 #account_currency_row ul.radio_list li input {
+    margin: 0 0 0 4px;
+    opacity: 0;
+    padding: 0;
+    width: 15px;
+}
+.form29 #account_currency_row ul.radio_list li input + label {
+    background: rgba(0, 0, 0, 0) url("../images/skin_markets2/sprite_currency.png") no-repeat scroll 0 -6px;
+    display: inline-block;
+    line-height: 15px;
+    margin-left: -22px;
+    padding-left: 22px;
+}
+.form29 #account_currency_row ul.radio_list li input:checked + label {
+    background-position: 0 -29px;
+}
+.form29 #account_currency_row .currency-selected {
+    margin-left: 5px;
+}
+.form29 #account_currency_row .currency-change {
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.ar .form29 #account_currency_label {
+    right: 0;
+}
+.ar .form29 #account_currency_row ul.radio_list {
+    margin-right: 100px;
+}
+.ar .form29 #account_currency_row .currency-selected {
+    margin-right: 5px;
+}
+.ar .form29 #account_currency_row .currency-change {
+    margin-right: 5px;
+}
+.ar .form29 #account_currency_row ul.radio_list li {
+    float: right;
+}
+.nl .form29 #account_currency_row ul.radio_list, .el .form29 #account_currency_row ul.radio_list {
+    margin-left: 125px;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-color: transparent;
+		float: left;
+		overflow-x: hidden;
+		width: 100%;
+	}
+
+
+	.content-block {
+		box-sizing: border-box;
+		float: left;
+		padding: 10px 20px;
+		width: 100%;
+	}
+	
+	#account_type_row ul li {
+		float: left;
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

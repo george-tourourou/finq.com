@@ -1,0 +1,457 @@
+<?php
+
+require_once('instruments_settings.inc');
+
+/**
+ * Implementation of hook_menu
+ * @return array - urls which module process
+ */
+function instruments_menu() {
+  $items = array();
+
+  $items['assets'] = array(
+    'title' => 'CFDs',
+    'page callback' => '_instruments_list_page',
+    'access callback' => TRUE,
+    'file' => 'instruments_dealing_data.inc',
+  );
+
+  $items['instruments/%'] = array(
+    'title' => 'Instrument Info page',
+    'page callback' => '_instrument_info_page',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+    'file' => 'instruments_dealing_data.inc',
+  );
+
+  $items['cfds/rollovers-dates'] = array(
+    'title' => tt('translate_cfds_rollovers_dates_title'),
+    'page callback' => '_rollovers_list_page',
+    'access callback' => TRUE,
+    'file' => 'instruments_rollovers.inc',
+  );
+
+  $items['cfds/rollovers-weekly'] = array(
+    'title' => tt('translate_cfds_rollovers_weekly_title'),
+    'page callback' => '_rollovers_weekly_page', 
+    'access callback' => TRUE,
+    'file' => 'instruments_rollovers.inc',
+  );
+
+  $items['admin/config/tradefxl/instruments-refill'] = array(
+    'title' => 'Force instruments refresh page',
+    'description' => 'Refill instrument data by force',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('instruments_force_refresh_confirmation_form'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'instruments_admin.inc',
+  );
+
+  $items['admin/config/tradefxl/rollovers-refill'] = array(
+    'title' => 'Force instruments rollovers refresh page',
+    'description' => 'Refill rollovers data by force',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('instruments_rollovers_force_refresh_confirmation_form'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'instruments_admin.inc',
+  );
+
+  $items['admin/config/tradefxl/instruments-variables'] = array(
+    'title' => 'Instruments pages configuration',
+    'description' => 'Data providers for instruments pages',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('variable_module_form', 'instruments'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'instruments_dealing_data.inc',
+  );
+
+  $items['instruments-widget'] = array(
+    'title' => 'Instrument Widget',
+    'page callback' => '_instrument_widget_page',
+    'access callback' => TRUE,
+    'file' => 'instruments_dealing_data.inc',
+  );
+
+  $items['instruments-data'] = array(
+    'title' => 'Get instruments array',
+    'page callback' => '_instruments_get_data',
+    'access callback' => TRUE,
+    'file' => 'instruments_dealing_data.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * hook_cron implementation - periodically read instruments data  from API server
+ */
+function instruments_cron() {
+  //dealing data updates
+  $interval = variable_get_value('instruments_read_external_data_interval');
+  // We don't want to act every time cron runs so keep a time for the next run in a variable
+  if (time() >= variable_get_value(
+      'instruments_read_external_data_next_execution'
+    )
+  ) {
+    module_load_include('inc', 'instruments', 'instruments_api');
+
+    if (_instruments_get_dealing_data_from_api()) {
+      // warm the cache if successfully read data
+      _instruments_get_dealing_data(TRUE);
+      variable_set_value(
+        'instruments_read_external_data_next_execution',
+        time() + $interval
+      );
+    }
+  }
+
+  //rollovers data updates - do it when date changed
+  $current_date = date('Ymd');
+  if ($current_date != variable_get_value(
+      'instruments_rollovers_last_request_date'
+    )
+  ) {
+    module_load_include('inc', 'instruments', 'instruments_api');
+
+    if (_instruments_get_all_rollovers_from_api() !== FALSE) {
+      variable_set_value(
+        'instruments_rollovers_last_request_date',
+        $current_date
+      );
+    }
+  }
+}
+
+/**
+ * Functionality related with blocks
+ */
+
+/**
+ * hook_block_info implementation
+ * @return array - module's blocks info
+ */
+function instruments_block_info() {
+  $blocks = array();
+  $blocks['instruments_search'] = array(
+    'info' => 'Instruments search',
+  );
+
+  return $blocks;
+}
+
+/**
+ * hook_block_view implementation
+ * @param string $delta - block ID
+ * @return array - information of required block
+ */
+function instruments_block_view($delta = '') {
+
+  $block = array();
+
+  switch ($delta) {
+    case 'instruments_search':
+      $block['content'] = drupal_get_form('instruments_search_form');
+      break;
+  }
+
+  $block['content']['#attached']['css'] = array(
+    path_to_theme() . '/css/instruments-search.css',
+  );
+  $block['content']['#attached']['js'] = array(
+    drupal_get_path(
+      'module',
+      'instruments'
+    ) . '/js/instruments-search.js',
+  );
+
+  return $block;
+}
+
+/**
+ * Provide rendered block with risk warning message
+ * @return string - rendered block
+ */
+function _get_risk_warning_block() {
+  $block = block_load('block', 86);
+  $renderable_array = _block_get_renderable_array(
+    _block_render_blocks(array($block))
+  );
+  return drupal_render(
+    $renderable_array
+  );
+}
+
+function _get_intro_block() {
+  $block = block_load('block', 87);
+  $renderable_array = _block_get_renderable_array(
+    _block_render_blocks(array($block))
+  );
+  return drupal_render(
+    $renderable_array
+  );
+}
+
+/**
+ * End of functionality related with blocks
+ */
+
+/**
+ * hook_js_variables implementation - It's hook of dynamic content module which
+ * provide ability to push some variables to JS frontend.
+ * Here we prepare JS variables with instruments & translations of their names
+ * to current language.
+ * @return array
+ */
+function instruments_publish_js_variables() {
+  global $language, $environment_config;
+
+  $cache_en = cache_get('instruments_search_data_en');
+  $cache_current = cache_get('instruments_search_data_' . $language->language);
+  // Check if cache doesn't exist
+  if (!isset($cache_en->data) || $cache_en->data == 'null') {
+    module_load_include('inc', 'instruments', 'instruments_api');
+    $interval = variable_get_value('instruments_read_external_data_interval');
+    if (_instruments_get_dealing_data_from_api()) {
+      // warm the cache if successfully read data
+      _instruments_get_dealing_data(TRUE);
+      variable_set_value(
+        'instruments_read_external_data_next_execution',
+        time() + $interval
+      );
+      $cache_en = cache_get('instruments_search_data_en');
+      $cache_current = cache_get(
+        'instruments_search_data_' . $language->language
+      );
+    }
+    else {
+      watchdog(
+        'instruments',
+        'Error during get dealing data from api',
+        array(),
+        WATCHDOG_CRITICAL
+      );
+    }
+  }
+
+  if (isset($cache_en->data) && $cache_en->data != 'null') {
+    if (isset($cache_current->data) && $cache_current->data != 'null') {
+      $instrumentsSearchData = drupal_json_encode(
+        array_merge(
+          drupal_json_decode($cache_en->data),
+          drupal_json_decode($cache_current->data)
+        )
+      );
+    }
+    else {
+      $instrumentsSearchData = $cache_en->data;
+    }
+  }
+  $data = array(
+    'instruments' => array(
+      'instrumentsRealTimeData' => (isset($environment_config['instruments_quotes_data_path'])) ? $environment_config['instruments_quotes_data_path'] : variable_get_value(
+        'instruments_quotes_data_path'
+      ),
+      'instrumentsChartsData' => (isset($environment_config['instruments_charts_data_path'])) ? $environment_config['instruments_charts_data_path'] : variable_get_value(
+        'instruments_charts_data_path'
+      ),
+      'instrumentSearchDataPath' => 'instruments-data',
+    ),
+  );
+
+  return $data;
+}
+
+/**
+ * Form for search instruments
+ */
+
+/**
+ * Provide instruments search form
+ * @return array() - form information
+ */
+function instruments_search_form() {
+  $form = array();
+  $form['instrument'] = array(
+    '#type' => 'textfield',
+    '#title' => '',
+    '#maxlength' => 128,
+    '#attributes' => array(
+      'placeholder' => tt("translate_kw_search_our_instruments"),
+    ),
+    ///@TODO for now we does not use async loading data from server, so, we should remove this attribute
+    '#autocomplete_path' => '<front>',
+  );
+  $form['#attributes']['class'][] = 'instruments-search-form';
+
+  return $form;
+}
+
+/**
+ * override misc/autocomplete.js with own
+ * @param $javascript - string for search
+ */
+function instruments_js_alter(&$javascript) {
+  $file = drupal_get_path('module', 'instruments') . '/js/autocomplete.js';
+  $javascript['misc/autocomplete.js'] = drupal_js_defaults($file);
+}
+
+/**
+ * Update sitemapxml table according to current dealing data
+ */
+function _instruments_update_sitemapxml() {
+  watchdog('instruments', 'Starting update of sitemapXML table', array(), WATCHDOG_INFO);
+  instruments_run_unprogressive_batch('instruments_check_xmlsitemap');
+}
+
+/**
+ * Run unprogressive (background) batch operation
+ * @return bool
+ */
+function instruments_run_unprogressive_batch() {
+  $batch = batch_get();
+  if (!empty($batch)) {
+    // If there is already something in the batch, don't run.
+    watchdog(
+      'instruments',
+      'Some batch operation already running... Aborting...',
+      array(),
+      WATCHDOG_INFO
+    );
+    return FALSE;
+  }
+
+  $args = func_get_args();
+  $batch_callback = array_shift($args);
+
+  if (!lock_acquire($batch_callback)) {
+    watchdog('instruments', 'Got lock... Aborting...', array(), WATCHDOG_INFO);
+    return FALSE;
+  }
+
+  drupal_set_time_limit(300);
+  $batch = call_user_func_array($batch_callback, $args);
+  batch_set($batch);
+  $batch =& batch_get();
+  $batch['progressive'] = FALSE;
+  batch_process();
+  lock_release($batch_callback);
+  return TRUE;
+}
+
+/**
+ * Prepare batch operation for running
+ * @return array
+ */
+function instruments_check_xmlsitemap() {
+  $batch = array(
+    'operations' => array(),
+    'finished' => 'instruments_check_xmlsitemap_finished',
+    'title' => t('Actualization of instruments for XMLSitemap'),
+  );
+
+  $languages = language_list('enabled');
+  $languages = $languages[1];
+  foreach ($languages as $language) {
+    $batch['operations'][] = array(
+      '_instruments_check_xmlsitemap',
+      array($language->language),
+    );
+  }
+
+  return $batch;
+}
+
+/**
+ * Check instruments in sitemapXML for specific language
+ * @param $language
+ * @param array $context
+ */
+function _instruments_check_xmlsitemap($language, array &$context) {
+  if (!isset($context['results']['changed'])) {
+    $context['results']['changed'] = 0;
+  }
+  if (!isset($context['results']['spent_time'])) {
+    $context['results']['spent_time'] = $timer = microtime(TRUE);
+    $context['results']['spent_memory'] = $timer = memory_get_usage(TRUE);
+  }
+
+  //get dealing data
+  $dealing_data = cache_get('instruments_search_data_en');
+  $dealing_data_array = json_decode($dealing_data->data);
+  $locations = array();
+  foreach ($dealing_data_array as $instrument_data) {
+    $locations["instruments/" . $instrument_data->value] = $instrument_data->value;
+  }
+
+  //get all sitemapXML data for current language
+  $data = db_select("xmlsitemap", "x")
+    ->fields('x', array("id", "loc"))
+    ->condition('language', $language)
+    ->execute()
+    ->fetchAllAssoc('id');
+
+  //ids for removing from sitemapXML
+  $for_delete = array();
+
+  foreach ($data as $instrument_id => $instrument) {
+    //if instrument still presented in dealing data
+    if (isset($locations[$instrument->loc])) {
+      unset($locations[$instrument->loc]);
+    }
+    else {
+      $for_delete[] = $instrument_id;
+    }
+  }
+
+  //if there is new instruments
+  if ($locations) {
+    $now = time();
+
+    $query = db_select("xmlsitemap", "x")
+      ->fields('x', array("id"))
+      ->orderBy('id', 'DESC')
+      ->range(0, 1);
+    $last_id = $query->execute()->fetchField();
+
+    foreach ($locations as $location => $instrument_id) {
+      $link = array(
+        'id' => ++$last_id,
+        'type' => 'instrument',
+        'loc' => drupal_get_normal_path($location, $language),
+        'priority' => '0.5',
+        'language' => $language,
+        'lastmod' => $now,
+        'changefreq' => XMLSITEMAP_FREQUENCY_HOURLY,
+      );
+      xmlsitemap_link_save($link);
+    }
+
+    $context['results']['changed'] += count($locations);
+  }
+
+  if ($for_delete) {
+    db_delete('xmlsitemap')
+      ->condition('id', $for_delete, 'IN')
+      ->execute();
+    $context['results']['changed'] += count($for_delete);
+  }
+}
+
+function instruments_check_xmlsitemap_finished(
+  $success,
+  $results,
+  $operations,
+  $elapsed
+) {
+  if ($success) {
+    $spend = number_format(microtime(TRUE) - $results['spent_time'], 4);
+    $m_spend = (memory_get_usage(TRUE) - $results['spent_memory'])/1024/1024;
+    if($results['changed']){
+      variable_set('xmlsitemap_regenerate_needed', TRUE);
+    }
+    watchdog('instruments', "Operation was succeed (Updated {$results['changed']} records, spent {$spend} seconds and {$m_spend} Mb of memory)", array(), WATCHDOG_INFO);
+  }
+  else {
+    watchdog('instruments', 'Operation was NOT succeed', WATCHDOG_ERROR);
+  }
+}

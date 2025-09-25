@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Implements hook_update_N().
+ */
+/*function markets_update_7001() {
+ //good article - http://www.metaltoad.com/blog/how-write-drupal-update-scripts
+  //modify blocks settings
+  $ids = array();
+  $blocks_pages = db_select('block', 'b')
+    ->condition('b.id', $ids, 'IN')
+    ->fields('b', array('pages'))
+    ->execute()
+    ->fetchCol();
+
+
+
+  db_update('block')
+    ->fields(array(
+      'pages' => $pages,
+    ))
+    ->condition('module', 'views')
+    ->condition('delta', 'marquee-block_2')
+    ->execute();
+
+
+  menu_rebuild();
+}*/

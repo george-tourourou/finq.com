@@ -1,0 +1,28 @@
+# Hungarian translation of Upload default avatar (user picture) (7.x-1.1)
+# Copyright (c) 2014 by the Hungarian translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Upload default avatar (user picture) (7.x-1.1)\n"
+"POT-Creation-Date: 2014-02-28 15:27+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Hungarian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "<none>"
+msgstr "< nincs >"
+msgid "Anonymous"
+msgstr "Névtelen"
+msgid "View user profile."
+msgstr "Felhasználói profil megtekintése."
+msgid "@user's picture"
+msgstr "@user képe"
+msgid ""
+"Failed to upload the picture image; the %directory directory doesn't "
+"exist or is not writable."
+msgstr ""
+"%directory könyvtár nem létezik vagy nem írható. A kép nem lett "
+"feltöltve."

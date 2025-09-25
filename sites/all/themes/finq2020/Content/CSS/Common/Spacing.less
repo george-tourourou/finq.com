@@ -1,0 +1,32 @@
+@import "Variables";
+
+@MARGIN_COUNT: 100;
+
+.margin (@i; @class_name; @pos) when (@i < @MARGIN_COUNT) {
+  .@{class_name}-@{i} {
+    margin-@{pos}: (@i + 0px) !important;
+  }
+
+  .margin(@i + 5; @class_name; @pos);
+}
+.margin (0; mt; top);
+.margin (0; mb; bottom);
+
+@media (max-width: @GRID_EXTRA_LARGE) {
+  .margin (0; mt-xl; top);
+  .margin (0; mb-xl; bottom);
+}
+
+@media (max-width: @GRID_LARGE) {
+  .margin (0; mt-lg; top);
+  .margin (0; mb-lg; bottom);
+}
+@media (max-width: @GRID_MEDIUM) {
+  .margin (0; mt-md; top);
+  .margin (0; mb-md; bottom);
+}
+
+@media (max-width: @GRID_SMALL){
+  .margin (0; mt-sm; top);
+  .margin (0; mb-sm; bottom);
+}

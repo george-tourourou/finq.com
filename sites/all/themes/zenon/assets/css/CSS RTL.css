@@ -1,0 +1,1388 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:, blockquote:after,q:, q:after {content:'';	content:none;}
+table {border-collapse:collapse; border-spacing:0;}
+/* /RESET */
+
+BODY {text-align:left; background:none;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333; margin:0; padding:2px 0 0; background-color:#FFF;}
+INPUT:focus, TEXTAREA:focus {outline:none;}
+DIV, TABLE, TR, TD, UL, OL, LI, FORM, INPUT, SELECT {margin:0; padding:0;}
+INPUT {vertical-align: middle;}
+A {text-decoration:none; color:#1256A0; outline:none;}
+A:hover {text-decoration:underline;}
+
+.arial_10 {font-size:10px;}
+.arial_11 {font-size:11px;}
+.arial_12 {font-size:12px;}
+.arial_14 {font-size:14px;}
+.arial_15 {font-size:15px;}
+.arial_16 {font-size:16px;}
+.arial_24 {font-size:24px;}
+
+.lightgrayFont {color:#808080;}
+.greenFont {color:#0EA600}
+.redFont {color:#FF0000;}
+.neutralFont {color:#808080;}
+.blackFont {color:#000;}
+
+.bold {font-weight:bold;}
+
+.text_align_lang_base_1{text-align:left;}
+.text_align_lang_base_2{text-align:right;}
+.align_center{text-align:center;}
+.align_right{text-align:right;}
+.align_left{text-align:left;}
+
+.dirLtr{direction:ltr;}
+.dirRtl{direction:rtl;}
+.dir_lang_base_1 {direction:ltr;}
+.dir_lang_base_2 {direction:rtl;}
+
+.fLeft{float:left;}
+.fRight{float:right;}
+.float_lang_base_1 {float:left;}
+.float_lang_base_2 {float:right;}
+.clear {clear:both;}
+.auto {margin:0 auto;}
+
+.inline {display:inline;}
+.block {display:block;}
+.displayNone {display:none;}
+.inlineblock {display:inline-block; *display:inline; zoom:1;}
+.hidden {visibility:hidden;}
+.visible {visibility:visible;}
+.vertical, .middle {vertical-align:middle !important;}
+.top, .alignTop {vertical-align:top !important;}
+.alignBottom {vertical-align:bottom !important;}
+.arrows {background-image:url('http://glocdn.investing.com/arrows_v10.png'); background-repeat:no-repeat;}
+.darkGrayDownArrow {background-position:0 -336px; padding:0 4px 0 0; margin:3px 3px 0; height:10px;}
+.wordBreak {word-wrap:break-word;}
+.uppercaseText {text-transform:uppercase;}
+
+.newSiteIconsSprite {background-image: url("http://glocdn.investing.com/newSiteIconsSprite_v26t.png");}
+.downArrow {background-position:-96px -478px; width:21px; height:21px; margin:9px 9px 0 -1px;}
+.noneArrow {background-position:-121px -478px; width:21px; height:21px; margin:9px 9px 0 -1px;}
+.upArrow {background-position:-70px -478px; width:22px; height:21px; margin:9px 9px 0 -1px;}
+.greenClockIcon {background-position:-33px -42px; padding:0 0 3px 10px;}
+.redClockIcon {background-position:-33px -20px; padding:0 0 3px 10px;}
+.datePickerIcon {background-position:-73px -718px; width:15px; height:13px; margin-top:3px;}
+.audioIconNew {background-position:-72px -581px; padding:1px 11px 3px;}
+.diamondNewIcon {background-color:#edb23b; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; width:7px; height:7px;}
+.sandClock {background-position:-115px -582px; padding:0 6px;}
+.smallGrayP {background-position:-98px -583px; padding:0 6px;}
+.grayClockIcon {background-position:-136px -643px; width: 12px; height: 13px; display:inline-block;}
+.dropDownArrowGray {background-position:-111px -107px; width: 9px; height: 10px; display:inline-block;}
+.searchGlassIcon {background-position: 3px -40px; border-left: 1px solid #0D416F; margin: 2px 0 0; padding: 0; width: 16px; height: 16px;}
+.ecoSearchBox .searchGlassIcon {border-left: none; margin: 0; background-position: -130px -1057px; padding: 1px 13px 0 4px;}
+.ecoFilterRestoreIcon {background-position:-130px -1073px; padding:0 7px; margin-right:5px;}
+/* Flags */
+.ceFlags{
+	width: 16px;
+	height: 15px;
+	background-image: url('http://glocdn.investing.com/ce_flags_v3.png');
+	background-repeat: no-repeat;
+	padding: 0;
+	display: inline-block;
+	}
+.ASEAN{background-position:0 0;} 
+.Afghanistan{background-position:0 -17px;} 
+.AfricanUnion{background-position:0 -34px;} 
+.Albania{background-position:0 -51px;} 
+.Algeria{background-position:0 -68px;} 
+.AmericanSamoa{background-position:0 -85px;} 
+.Andorra{background-position:0 -102px;} 
+.Angola{background-position:0 -119px;} 
+.Anguilla{background-position:0 -136px;} 
+.Antarctica{background-position:0 -153px;} 
+.AntiguaBarbuda{background-position:0 -170px;} 
+.ArabLeague{background-position:0 -187px;} 
+.Argentina, .ars{background-position:0 -204px;} 
+.Armenia{background-position:0 -221px;} 
+.Aruba{background-position:0 -238px;} 
+.Australia, .aus, .aud{background-position:0 -255px;} 
+.Austria{background-position:0 -272px;} 
+.Azerbaijan{background-position:0 -289px;} 
+.Bahamas{background-position:0 -306px;} 
+.Bahrain{background-position:0 -323px;} 
+.Bangladesh{background-position:0 -340px;} 
+.Barbados{background-position:0 -357px;} 
+.Belarus{background-position:0 -374px;} 
+.Belgium{background-position:0 -391px;} 
+.Belize{background-position:0 -408px;} 
+.Benin{background-position:0 -425px;} 
+.Bermuda{background-position:0 -442px;} 
+.Bhutan{background-position:0 -459px;} 
+.Bolivia{background-position:0 -476px;} 
+.Bosnia_and_Herzegovina{background-position:0 -493px;} 
+.Botswana{background-position:0 -510px;} 
+.Brazil, .brl{background-position:0 -527px;} 
+.Brunei{background-position:0 -544px;} 
+.Bulgaria{background-position:0 -561px;} 
+.BurkinaFaso{background-position:0 -578px;} 
+.Burundi{background-position:0 -595px;} 
+.CARICOM{background-position:0 -612px;} 
+.CIS{background-position:0 -629px;} 
+.Cambodja{background-position:0 -646px;} 
+.Cameroon{background-position:0 -663px;} 
+.Canada, .can, .cad{background-position:0 -680px;} 
+.CapeVerde, .Cape_Verde{background-position:0 -697px;} 
+.Cayman_Islands{background-position:0 -714px;} 
+.Central_African_Republic{background-position:0 -731px;} 
+.Chad{background-position:0 -748px;} 
+.Chile, .clp{background-position:0 -765px;} 
+.China, .cny{background-position:0 -782px;} 
+.Colombia, .cop{background-position:0 -799px;} 
+.Commonwealth{background-position:0 -816px;} 
+.Comoros{background-position:0 -833px;} 
+.Congo-Brazzaville{background-position:0 -850px;} 
+.Congo-KinshasaZaire{background-position:0 -867px;} 
+.Cook_Islands{background-position:0 -884px;} 
+.Costa_Rica{background-position:0 -901px;} 
+.Cote_dIvoire{background-position:0 -918px;} 
+.Croatia{background-position:0 -935px;} 
+.Cuba{background-position:0 -952px;} 
+.Cyprus{background-position:0 -969px;} 
+.Czech_Republic, .czk{background-position:0 -986px;} 
+.Denmark, .dkk{background-position:0 -1003px;} 
+.Djibouti{background-position:0 -1020px;} 
+.Dominica{background-position:0 -1037px;} 
+.Dominican_Republic{background-position:0 -1054px;}
+.Dubai{background-position:-17px -1819px;}
+.EastTimor{background-position:0 -1071px;} 
+.Ecuador{background-position:0 -1088px;} 
+.Egypt{background-position:0 -1105px;} 
+.El_Salvador{background-position:0 -1122px;} 
+.England{background-position:0 -1139px;} 
+.EquatorialGuinea{background-position:0 -1156px;} 
+.Eritrea{background-position:0 -1173px;} 
+.Estonia{background-position:0 -1190px;} 
+.Ethiopia{background-position:0 -1207px;} 
+.European_Union, .eur, .Europe {background-position:0 -1224px;} 
+.Faroes{background-position:0 -1241px;} 
+.Fiji{background-position:0 -1258px;} 
+.Finland{background-position:0 -1275px;} 
+.France{background-position:0 -1292px;} 
+.Gabon{background-position:0 -1309px;} 
+.Gambia{background-position:0 -1326px;} 
+.Georgia{background-position:0 -1343px;} 
+.Germany{background-position:0 -1360px;} 
+.Ghana{background-position:0 -1377px;} 
+.Gibraltar{background-position:0 -1394px;} 
+.Greece{background-position:0 -1411px;} 
+.Greenland{background-position:0 -1428px;} 
+.Grenada{background-position:0 -1445px;} 
+.Guadeloupe{background-position:0 -1462px;} 
+.Guademala{background-position:0 -1479px;} 
+.Guam{background-position:0 -1496px;} 
+.Guinea-Bissau{background-position:0 -1513px;} 
+.Guinea{background-position:0 -1530px;} 
+.Guyana{background-position:0 -1547px;} 
+.Haiti{background-position:0 -1564px;} 
+.Honduras{background-position:0 -1581px;} 
+.Hong_Kong, .hkd{background-position:0 -1598px;} 
+.Hungary, .huf{background-position:0 -1615px;} 
+.Iceland{background-position:0 -1632px;} 
+.India, .inr{background-position:0 -1649px;} 
+.Indonesia, .idr{background-position:0 -1666px;} 
+.Iran{background-position:0 -1683px;} 
+.Iraq{background-position:0 -1700px;} 
+.Ireland{background-position:0 -1717px;} 
+.IslamicConference{background-position:0 -1734px;} 
+.Israel{background-position:0 -1751px;} 
+.Italy{background-position:0 -1768px;} 
+.Jamaica{background-position:0 -1785px;} 
+.Japan, .jpn, .jpy{background-position:0 -1802px;} 
+.Jersey{background-position:0 -1819px;} 
+.Jordan{background-position:0 -1836px;} 
+.Kazakhstan{background-position:0 -1853px;} 
+.Kenya{background-position:0 -1870px;} 
+.Kiribati{background-position:0 -1887px;} 
+.Kuwait{background-position:0 -1904px;} 
+.Kyrgyzstan{background-position:0 -1921px;} 
+.Laos{background-position:0 -1938px;} 
+.Latvia{background-position:0 -1955px;} 
+.Lebanon{background-position:0 -1972px;} 
+.Lesotho{background-position:0 -1989px;} 
+.Liberia{background-position:-17px 0;} 
+.Libya{background-position:-17px -17px;} 
+.Liechtenstein{background-position:-17px -34px;} 
+.Lithuania{background-position:-17px -51px;} 
+.Luxembourg{background-position:-17px -68px;} 
+.Macao{background-position:-17px -85px;} 
+.Macedonia{background-position:-17px -102px;} 
+.Madagascar{background-position:-17px -119px;} 
+.Malawi{background-position:-17px -136px;} 
+.Malaysia, .myr{background-position:-17px -153px;} 
+.Maldives{background-position:-17px -170px;} 
+.Mali{background-position:-17px -187px;} 
+.Malta{background-position:-17px -204px;} 
+.MarshallIslands{background-position:-17px -221px;} 
+.Martinique{background-position:-17px -238px;} 
+.Mauritania{background-position:-17px -255px;} 
+.Mauritius{background-position:-17px -272px;} 
+.Mexico, .mxn{background-position:-17px -289px;} 
+.Micronesia{background-position:-17px -306px;} 
+.Moldova{background-position:-17px -323px;} 
+.Monaco{background-position:-17px -340px;} 
+.Mongolia{background-position:-17px -357px;} 
+.Montenegro{background-position:-17px -374px;} 
+.Montserrat{background-position:-17px -391px;} 
+.Morocco{background-position:-17px -408px;} 
+.Mozambique{background-position:-17px -425px;} 
+.MyanmarBurma{background-position:-17px -442px;} 
+.NATO{background-position:-17px -459px;} 
+.Namibia{background-position:-17px -476px;} 
+.Nauru{background-position:-17px -493px;} 
+.Nepal{background-position:-17px -510px;} 
+.Netherlands{background-position:-17px -527px;} 
+.Netherlands_Antilles{background-position:-17px -544px;} 
+.New_Zealand, .nzl, .nzd{background-position:-17px -561px;} 
+.Nicaragua{background-position:-17px -578px;} 
+.Niger{background-position:-17px -595px;} 
+.Nigeria{background-position:-17px -612px;} 
+.NorthKorea{background-position:-17px -629px;} 
+.NorthernIreland{background-position:-17px -646px;} 
+.Northern_Cyprus{background-position:-17px -663px;} 
+.Norway, .nok{background-position:-17px -680px;} 
+.OPEC{background-position:-17px -697px;} 
+.OlimpicMovement{background-position:-17px -714px;} 
+.Oman{background-position:-17px -731px;} 
+.Pakistan{background-position:-17px -748px;} 
+.Palau{background-position:-17px -765px;} 
+.Palestine, .Palestinian_Territory {background-position:-17px -782px;} 
+.Panama{background-position:-17px -799px;} 
+.Papua_New_Guinea{background-position:-17px -816px;} 
+.Paraguay{background-position:-17px -833px;} 
+.Peru, .pen{background-position:-17px -850px;} 
+.Philippines, .php{background-position:-17px -867px;} 
+.Poland, .pln{background-position:-17px -884px;} 
+.Portugal{background-position:-17px -901px;} 
+.PuertoRico{background-position:-17px -918px;} 
+.Qatar{background-position:-17px -935px;} 
+.RedCross{background-position:-17px -952px;} 
+.Reunion{background-position:-17px -969px;} 
+.Romania{background-position:-17px -986px;} 
+.Russian_Federation, .rub{background-position:-17px -1003px;} 
+.Rwanda{background-position:-17px -1020px;} 
+.SaintLucia{background-position:-17px -1037px;} 
+.Samoa{background-position:-17px -1054px;} 
+.SanMarino{background-position:-17px -1071px;} 
+.Sao_Tome_Principe{background-position:-17px -1088px;} 
+.Saudi_Arabia{background-position:-17px -1105px;} 
+.Scotland{background-position:-17px -1122px;} 
+.Senegal{background-position:-17px -1139px;} 
+.Serbia{background-position:-17px -1156px;} 
+.Seychelles{background-position:-17px -1173px;} 
+.SierraLeone{background-position:-17px -1190px;} 
+.Singapore, .sgd{background-position:-17px -1207px;} 
+.Slovakia{background-position:-17px -1224px;} 
+.Slovenia{background-position:-17px -1241px;} 
+.Solomon_Islands{background-position:-17px -1258px;} 
+.Somalia{background-position:-17px -1275px;} 
+.Somaliland{background-position:-17px -1292px;} 
+.South_Afriica, .South_Africa, .zar{background-position:-17px -1309px;}
+.South_Korea, .krw{background-position:-17px -1326px;} 
+.Spain{background-position:-17px -1343px;} 
+.Sri_Lanka{background-position:-17px -1360px;} 
+.StKittsNevis{background-position:-17px -1377px;} 
+.StVincenttheGrenadines{background-position:-17px -1394px;} 
+.Sudan{background-position:-17px -1411px;} 
+.Suriname{background-position:-17px -1428px;} 
+.Swaziland{background-position:-17px -1445px;} 
+.Sweden, .sek{background-position:-17px -1462px;} 
+.Switzerland, .che, .chf{background-position:-17px -1479px;} 
+.Syria{background-position:-17px -1496px;} 
+.TahitiFrenchPolinesia{background-position:-17px -1513px;} 
+.Taiwan, .twd{background-position:-17px -1530px;} 
+.Tajikistan{background-position:-17px -1547px;} 
+.Tanzania{background-position:-17px -1564px;} 
+.Thailand, .thb{background-position:-17px -1581px;} 
+.Timor-Leste{background-position:-17px -1598px;} 
+.Togo{background-position:-17px -1615px;} 
+.Tonga{background-position:-17px -1632px;} 
+.Trinidad_Tobago{background-position:-17px -1649px;} 
+.Tunisia{background-position:-17px -1666px;} 
+.Turkey, .try{background-position:-17px -1683px;} 
+.Turkmenistan{background-position:-17px -1700px;} 
+.TurksandCaicosIslands{background-position:-17px -1717px;} 
+.Tuvalu{background-position:-17px -1734px;}
+.USA, .USD, .usa, .usd, .United_States {background-position:-17px -1751px;}
+.Uganda{background-position:-17px -1768px;} 
+.Ukraine, .uah{background-position:-17px -1785px;} 
+.UnitedNations{background-position:-17px -1802px;} 
+.United_Arab_Emirates{background-position:-17px -1819px;}
+.UK, .United_Kingdom, .gbr, .gbp{background-position:-17px -1836px;}
+.Uruguay{background-position:-17px -1853px;} 
+.Uzbekistan{background-position:-17px -1870px;} 
+.Vanuatu{background-position:-17px -1887px;} 
+.VaticanCity{background-position:-17px -1904px;} 
+.Venezuela, .vef{background-position:-17px -1921px;} 
+.Viet_Nam, .vnd, .Vietnam{background-position:-17px -1938px;} 
+.VirginIslandsBritish, .British_Virgin_Islands{background-position:-17px -1955px;} 
+.VirginIslandsUS, .Virgin_Islands_US{background-position:-17px -1972px;} 
+.Wales{background-position:-17px -1989px;} 
+.WesternSahara{background-position:-34px 0;} 
+.Yemen{background-position:-34px -17px;} 
+.Zambia{background-position:-34px -34px;} 
+.Zimbabwe{background-position:-34px -51px;} 
+/* Flags */
+
+.poweredBy {font-size:11px; margin-top:9px;}
+
+.tabsForBox {height:21px; line-height:21px; padding:0; margin:0; text-align:left;}
+.tabsForBox LI {float:left; height:21px; *height:22px; padding:0; list-style:none;}
+.tabsForBox LI A {font-weight:bold; margin:0; padding:0 11px; height:14px; line-height:14px; display:inline-block; border-right:1px solid #DADADA;}
+.tabsForBox LI.selected {margin:-2px -1px 0 -1px; *margin:-8px -1px 0 -1px; background:none;}
+.tabsForBox LI.selected A {cursor:default;}
+.tabsForBox LI.selected A:hover {cursor:default; text-decoration:none;}
+.tabsForBox LI.selected.first {margin:-2px -1px 0 0; *margin:-8px -1px 0 0; background:none;}
+.tabsForBox LI.selected.first A {padding-left:13px;}
+.tabsForBox LI.first A {padding-left:14px;background:none;}
+.tabsForBox LI.last A {border:none;}
+.tabsForBox LI.selected A {margin:0 1px; background-color:#fff; border:1px solid #BABABA; border-top:2px solid #20538A; border-bottom:none; color:#333333; height:22px; *height:28px; line-height:21px; *line-height:25px;  position:relative; width:auto; margin:0;}
+.tabsForBox LI DIV {background-position:-35px -64px; height:9px; width:5px; margin:-24px 0 0 46px; padding:3px; position:relative; cursor:pointer;}
+
+/* GENERAL TABLE */
+TABLE.genTable {border-spacing:0; border-collapse:separate !important;}
+TABLE.collapsedTable {border-collapse:collapse !important;}
+
+.genTable TH {color:#333333; font-weight:bold; text-align:right; height:24px;}
+.genTable TD {border-top:1px solid #DADADA; height:23px; height/*\**/:22px\9; *height:22px; text-align:right; vertical-align:middle; padding-left:5px;}
+.genTable TR:first-child TD {border-top:2px solid #BABABA;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .genTable TD {height:22px;} /* WEBKIT */
+}
+
+.genTable .left {text-align:left;}
+.genTable .right {text-align:right;}
+.genTable .center {text-align:center;}
+.genTable .textNum {padding-left:10px;}
+.genTable TD:first-child {font-weight:bold;}
+.genTable .sideColumn {width:11px; border:0;}
+.genTable .icon {width:26px; text-align:center;}
+.genTable .flag {width:35px; padding-left:3px; text-align:center;}
+.genTable .last TD {border-bottom:none;}
+.genTable .timeSeparator TD {border-top:2px solid #BABABA;}
+/* /GENERAL TABLE */
+
+/* OPEN TABLE */
+.openTable TH {padding-top:5px;}
+.openTable TR:first-child TD {padding-top:4px; height:27px; height/*\**/:21px\9;}
+
+/* CLOSED TABLE */
+TABLE.closedTable {border:1px solid #BABABA; border-bottom:2px solid #BABABA;}
+TABLE.closedTable TBODY TR:hover {background-color:#EDF4FA;}
+TABLE.closedTable TBODY TR.noHover:hover {background-color:#FFFFFF;}
+TABLE.closedTable .last TD {border-bottom:none;}
+/* /CLOSED TABLE */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .openTable TR:first-child TD {height:21px;} /* WEBKIT */
+}
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
+    .openTable TR:first-child TD {height:27px;} /* OPERA */
+}
+/* /OPEN TABLE */
+
+.studySummaryOval {color:#FFFFFF; padding:2px 12px; -moz-border-radius:9px; -ms-border-radius:9px; -o-border-radius:9px; -webkit-border-radius:9px; border-radius:9px; margin:-2px 3px -3px; text-transform:uppercase;}
+.studySummaryOval.buy {background-color:#00994d;}
+.studySummaryOval.sell {background-color:#D94141;}
+.studySummaryOval.neutral {background-color:#999999;}
+
+.toolIframeBox {margin-top:14px;}
+.logo {width:137px; height:25px; border:0;}
+
+.showMoreReplies {background-color:#fff; border:1px solid #d3d3d3; height:17px; line-height:17px; margin:11px 0 20px 42px; display:block; cursor:pointer;}
+.showMoreReplies:hover {background-color:#f7f7f7; border:1px solid #d9d9d9;}
+.showMoreReplies:active .showArrowafter {color:#92b6d5}
+
+/* HOVER ROWS TABLE LIKE */
+.hoverRows {padding:0; margin:0; width:298px;}
+.hoverRows A {font-weight:bold;}
+.hoverRows I {font-style:normal; display:inline-block; *display:inline; zoom:1; padding:0; margin:0;}
+.hoverRows .row I {border-bottom:1px solid #dadada; height:21px; line-height:21px; text-align:right;}
+.hoverRows .row .first {text-align:left;}
+.hoverRows .sideColumn {width:11px; border:0 none !important;}
+.hoverRows .lastRow I {border:0;}
+.hoverRows .row:hover {background-color:#edf4fa; height:21px; margin-top:-1px; border-top:1px solid #dadada; border-bottom:1px solid #dadada;}
+.hoverRows .lastRow I{height:22px;}
+/* /HOVER ROWS TABLE LIKE */
+
+/* HOVERS BOX - genenral */
+.hoverboxWithShadow {padding:5px; background-color:#999; background:none repeat scroll 0 0 rgba(0, 0, 0, 0.4); -moz-border-radius:3px; -ms-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; z-index:9999;}
+.hoverboxWithShadow .arrow {bottom:auto; height:12px; left:50%; margin-left:-11px; top:-7px; width:22px; position:absolute;}
+/* /HOVERS BOX - genenral */
+
+
+/***** BUTTONS *****/
+.newBtn {position:relative; display:inline-block; *display:inline; *zoom:1; outline:0; padding:3px 10px 4px 31px; font-size:11px; line-height:14px; font-weight:bold;	before: " "; after: " ";}
+.newBtn:hover {text-decoration:none;}
+.newBtn:before, .newBtn .before, .newBtn.blueDropDownArrow:after, .newBtn.blueDropDownArrow .after {background-image:URL('http://glocdn.investing.com/newSiteIconsSprite_v28.png'); content: ""; display: block; position: absolute; top: 0;left: 0;}
+.newBtn:after, .newBtn .after {position:absolute; content:""; border-width:0 1px 1px; border-style:solid; width:100%; bottom:-2px; left:-1px;}
+.newBtn.LightGray {color:#333333; background:-o-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-ms-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-moz-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-webkit-gradient(linear, left top, left bottom, from(#f6f6f6),to(#e4e4e4)); filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#f6f6f6,endColorstr=#e4e4e4,GradientType=0); zoom:1; border:1px solid #8c8c8c; box-shadow:inset 0px 0px 0px 1px #EBEBEB; -moz-box-shadow:inset 0px 0px 0px 1px #EBEBEB; -webkit-box-shadow:inset 0px 0px 0px 1px #EBEBEB;}
+.newBtn.LightGray:hover {background:-o-linear-gradient(top,#ededed 0%,#d6d6d6); background:-ms-linear-gradient(top,#ededed 0%,#d6d6d6); background:-moz-linear-gradient(top,#ededed 0%,#d6d6d6); background:-webkit-gradient(linear, left top, left bottom, from(#ededed),to(#d6d6d6));	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#ededed,endColorstr=#d6d6d6,GradientType=0); zoom:1; box-shadow:inset 0px 0px 0px 1px #F7F7F7; -moz-box-shadow:inset 0px 0px 0px 1px #F7F7F7; -webkit-box-shadow:inset 0px 0px 0px 1px #F7F7F7;}
+.newBtn.LightGray:active {background:-o-linear-gradient(top,#e6e6e6 0%,#dadada); background:-ms-linear-gradient(top,#e6e6e6 0%,#dadada); background:-moz-linear-gradient(top,#e6e6e6 0%,#dadada); background:-webkit-gradient(linear, left top, left bottom, from(#e6e6e6),to(#dadada)); filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#e6e6e6,endColorstr=#dadada,GradientType=0); zoom:1; box-shadow:inset 0px 0px 0px 1px #E3E3E3; -moz-box-shadow:inset 0px 0px 0px 1px #E3E3E3; -webkit-box-shadow:inset 0px 0px 0px 1px #E3E3E3;}
+.newBtn.LightGray:before, .newBtn.lGray .before {box-shadow:inset -1px 0px 0px 0px #F8F8F8;}
+.newBtn.LightGray:after, .newBtn.lGray .after {border-color:#E3E3E3;}
+.newBtn.LightGray:active:after, .newBtn.lGray:active .after {border:0;}
+
+.newBtn.Arrow:before, .newBtn.Arrow .before {background-position:-15px -177px; height:17px; width:22px; margin:2px 0 0px 1px; border-right:1px solid #8C8C8C;}
+/***** /BUTTONS *****/
+
+.tabsForBox LI.selected.first {margin:-2px 0 0 -1px;}
+.tabsForBox LI {float:right;}
+.tabsForBox LI A {border-right:0; border-left:1px solid #ccc;}
+
+
+BODY {text-align:right;}
+
+HTML.ae BODY {font-size:13px;}
+HTML.ae .arial_10 {font-size:11px;}
+HTML.ae .arial_11 {font-size:12px;}
+HTML.ae .arial_12 {font-size:13px;}
+HTML.ae .arial_14 {font-size:15px;}
+
+.text_align_lang_base_1{text-align:right;}
+.text_align_lang_base_2{text-align:left;}
+
+.dir_lang_base_1 {direction:rtl;}
+.dir_lang_base_2 {direction:ltr;}
+
+.float_lang_base_1 {float:right;}
+.float_lang_base_2 {float:left;}
+
+.darkGrayDownArrow {background-position:0 -336px; padding:0 4px 0 0; margin:3px 3px 0; height:10px;}
+
+.downArrow {background-position:-96px -478px; width:21px; height:21px; margin:9px -1px 0 11px;}
+.noneArrow {background-position:-121px -453px; width:21px; height:21px; margin:9px -1px 0 11px;}
+.upArrow {background-position:-70px -478px; width:22px; height:21px; margin:9px -1px 0 11px;}
+
+.tabsForBox {text-align:right;}
+.tabsForBox LI {float:right;}
+.tabsForBox LI A {border-right:0; border-left:1px solid #cccccc;}
+.tabsForBox LI.selected.first {margin:-2px 0 0 -1px; *margin:-8px 0 0 -1px;}
+.tabsForBox LI.selected.first A {padding-left:12px; padding-right:13px;}
+.tabsForBox LI.first A {padding-left:12px; padding-right:14px;}
+.tabsForBox LI DIV {margin:-24px 46px 0 0;}
+
+/* GENERAL TABLE */
+.genTable TD {direction:ltr;}
+.genTable TH.left, .genTable TD.left {text-align:right;}
+.genTable .right {text-align:left;}
+.genTable .flag {padding-right:3px;}
+.genTable td:first-child {direction:rtl;}
+/* /GENERAL TABLE */
+
+/*** NEW BUTTONS ***/
+.newBtn {padding:3px 31px 4px 10px;}
+.newBtn:before, .newBtn .before, .newBtn.blueDropDownArrow:after, .newBtn.blueDropDownArrow .after {left:auto; right:0;}
+.newBtn:after, .newBtn .after {left:auto; right:-1px;}
+.newBtn.LightGray:before, .newBtn.LightGray .before {box-shadow:inset 1px 0 0 0 #F8F8F8;}
+.newBtn.Arrow:before, .newBtn.Arrow .before {background-position:-106px -177px; margin:2px 1px 0 0; border:0; border-left:1px solid #8C8C8C; border:0\9; border-right:1px solid #8C8C8C\9; *border:0; *border-left:1px solid #8C8C8C;}
+/*** /NEW BUTTONS ***/
+
+</style>
+    <style>
+.newSiteIconsSprite {
+	background-image: url('http://glocdn.investing.com/newSiteIconsSprite_v29h.png');
+}
+.greenAndroidIcon {
+	background-position:-95px -1337px;
+	width:15px;
+	height:19px;
+}
+.downloadApp {
+	margin-left:5px;
+	position:relative;
+	top:-3px;
+}
+.wmtTooltip {
+	display:none;
+	padding:5px 8px 5px 7px;
+	background-color:#333;
+	color:#fff;
+	line-height:normal;
+	position:absolute;
+	top:31px;
+	left:-5px;
+	z-index:1;
+	white-space:nowrap;
+	font-weight:bold;
+}
+.wmtTooltip:before {
+	content:"";
+	border-style:solid;
+	border-color:transparent transparent #333 transparent;
+	border-width:0 6px 6px 6px;
+	left:7px;
+	top:-6px;
+	position:absolute;
+	display:block;
+}/* tooltip triangle */
+.downloadApp:hover .wmtTooltip {
+	display:block;
+}
+/* Time Zone Setting */
+.ecoTimeAndText {
+	/*margin-top:15px;*/
+	position:relative;
+}
+.ecoCurrentTime {
+	padding:4px 0 2px 5px;
+	border:1px solid #fff;
+	position:relative;
+	margin:2px;
+}
+.ecoCurrentTime:hover {
+	border:1px solid #a6a6a6;
+	cursor:pointer;
+	background:-o-linear-gradient(top, #ffffff 0%, #f5f5f5);
+	background:-ms-linear-gradient(top, #ffffff 0%, #f5f5f5);
+	background:-moz-linear-gradient(top, #ffffff 0%, #f5f5f5);
+	background:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#ffffff, endColorstr=#f5f5f5, GradientType=0);
+}
+.ecoCurrentTimePop {
+    position: absolute;
+    z-index: 1;
+    top: 28px;
+    left: -108px;
+}
+.ecoCurrentTimePop UL {
+    background-color: #fff;
+    height: 265px;
+    overflow-y: scroll;
+    padding: 7px 0;
+    border: 1px solid #595959;
+}
+.ecoCurrentTimePop LI {
+    color:$default-font-color;
+    padding: 0 7px;
+}
+.ecoCurrentTimePop LI:hover {
+    background-color: #e8f2fa;
+    cursor: pointer;
+}
+.ecoAutoUpdateText {
+	padding:2px 4px;
+}
+.ecoTimeAndDate {
+	position:relative;
+	margin-top: 36px;
+}
+.ecoTimeAndText .arrow {
+	background-position:-51px -339px;
+	padding:3px 12px;
+	position:absolute;
+	top:-11px;
+	left:143px;
+	z-index:1;
+	line-height:1px;
+}
+.ecoCurrentTimePop UL {
+	background-color:#fff;
+	height:265px;
+	overflow-y:scroll;
+	padding:7px 0;
+	border:1px solid #595959;
+}
+.ecoCurrentTimePop LI {
+	color:#333;
+	padding:0 7px;
+}
+.ecoCurrentTimePop LI:hover {
+	background-color:#e8f2fa;
+	cursor:pointer;
+}
+/* /Time Setting */
+
+      .ecoTimeAndDate .arrow {
+	background-position:-51px -339px;
+	padding:3px 12px;
+	position:absolute;
+	top:-11px;
+	left:38px;
+	z-index:1;
+	line-height:1px;
+}
+.ecoCalTable {
+color:defaultFont;
+	width:100%; /*max-width:636px;*/
+	min-width:440px
+}
+.eCalNew TABLE.ecoCalTable {
+	margin-top:12px;
+*border-collapse:collapse !important;
+}
+.eCalNew HEADER+TABLE.ecoCalTable {
+	margin-top:27px;
+}
+.eCalMain TABLE.ecoCalTable TH, .eCalMain TABLE.ecoCalTable TD {
+	text-align:right;
+}
+.eCalMain TABLE.ecoCalTable TH.time, .eCalMain TABLE.ecoCalTable TD.time, .eCalMain TABLE.ecoCalTable TD.center {
+	padding:0;
+	text-align:center;
+}
+.eCalMain TABLE.ecoCalTable TH.flagCur, .eCalMain TABLE.ecoCalTable TD.flagCur {
+	padding-left:11px;
+	white-space:nowrap;
+	text-align:left;
+}
+.eCalMain .ceFlags {
+	margin-right:3px;
+}
+.eCalMain TABLE.ecoCalTable TH.sentiment, .eCalMain TABLE.ecoCalTable TD.sentiment {
+	white-space:nowrap;
+	padding-left:5px;
+	text-align:left;
+}
+.eCalMain TABLE.ecoCalTable TH.event, .eCalMain TABLE.ecoCalTable TD.event {
+	line-height:19px;
+	padding:2px 0 2px 10px;
+	text-align:left;
+}
+.eCalMain .act, .eCalMain .fore, .eCalMain .prev {
+	padding-left:5px;
+	direction:ltr;
+}
+.eCalMain .act, .eCalMain .fore {
+	padding:0 5px;
+}
+.eCalMain .diamond {
+	width:7px;
+	padding:0 10px;
+}
+.eCalMain .noHover TD {
+	padding:0;
+}
+.eCalMain .noHover TD DIV.eventDetailWrap {
+	width:99%;
+}
+/*.eCalNew .ecoCalTable.genTable TH {text-align:center;}*/
+	  .eCalNew .ecoCalTable.genTable TD {
+	height:25px;
+}
+.eCalNew .ecoCalTable.genTable TD.event {
+	height:21px;
+}
+.eCalNew .ecoCalTable.genTable TD:first-child {
+	font-weight:normal;
+}
+.eCalMain TABLE.ecoCalTable .theDay {
+	text-align:center;
+background-color:#B2B2B2;
+	border-top:0;
+	height:17px !important;
+	line-height:17px;
+color:#FFFFFF;
+	font-weight:bold !important;
+	cursor:default;
+}
+.eCalNew .passedTime {
+	background-color:#ffffe5;
+}
+.eCalNew .mainEcoAd {
+	background-color:#f2f2f2;
+	height:50px;
+	padding:1px 11px 11px;
+}
+.eCalNew .advertisement {
+	background-color:#f2f2f2;
+	height:58px;
+	padding:0 10px 10px;
+}
+.eCalNew .mainEcoAd .advText, .eCalNew .advertisement .advText {
+	margin-left:14px;
+	max-width:429px;
+}
+.eCalMain .ecoCalTabs {
+	margin-top:26px;
+	border-bottom:1px solid #BABABA;
+}
+.eCalMain .ecoCalTabs .clear {
+*height:0;
+}
+.eCalMain .socialWidgets {
+	margin-top:-8px;
+}
+.eCalMain .tabsForBoxBottomReg {
+	border:0;
+	padding:0;
+}
+.eCalMain .buttonLine {
+	margin-top:26px;
+}
+.eCalMain .infoBox .advertisement .advText {
+	margin-left:14px;
+	max-width:393px;
+}
+.eCalMain .infoBox .ceFlags {
+	margin-right:0;
+}
+.eCalMain .infoBox {
+	padding:15px 15px 25px;
+}
+.eCalMain .infoBox .title {
+	margin-top:20px;
+	font-size:18px;
+	font-weight:bold;
+}
+.eCalMain .infoBox .tabsForBox {
+	margin-top:37px;
+border-bottom:1px solid #BABABA;
+}
+.eCalMain .infoBox .tabsForBoxBottomReg {
+	width:auto;
+	height:26px;
+	border-bottom:0;
+}
+.eCalMain .realData {
+	margin:23px 26px 0 0;
+	padding:4px 10px 7px;
+border:1px solid #DADADA;
+}
+.eCalMain .realData I {
+	margin:0 0 3px 3px;
+*margin:0 0 -13px;
+}
+.eCalMain .realDataTable DIV {
+	margin:6px 0 0 6px;
+	width:161px;
+}
+.eCalMain .realDataTable DIV:first-child {
+	margin-top:4px;
+	height:20px;
+}
+.eCalMain .realDataTable DIV.previous {
+	margin-top:1px;
+}
+.eCalMain .details {
+	margin:23px 0 0;
+	width:316px;
+	vertical-align:middle;
+}
+.eCalMain .details DL {
+	margin-top:9px;
+}
+.eCalMain .details DT, .eCalMain .details DD {
+	float:left;
+	padding:3px 0;
+	margin:2px 0;
+}
+.eCalMain .details DT {
+	width:114px;
+}
+.eCalMain .details DD {
+	width:202px;
+}
+.genTable.ecoCalTable TBODY TR {
+	cursor:pointer;
+}
+.genTable.ecoCalTable TR.noHover TD {
+	border-top:1px solid #dfe9f2;
+border-bottom:1px solid #BABABA;
+	cursor:default;
+}
+.eCalMain .openedTr TD {
+	background-color:#dfe9f2;
+border-top:1px solid #BABABA;
+}
+ .eCalMain .timeSeparator TD, {
+border-top:2px solid #DADADA;
+}
+.eCalMain .eventOverview {
+	width:550px;
+}
+.eCalMain .showMoreReplies {
+	margin:12px 0 3px;
+}
+.genTable.ecoCalTable .ecHistoryTable TR {
+	cursor:default;
+}
+.genTable.ecoCalTable TR.noHover .ecHistoryTable TD {
+	border-bottom:none;
+}
+.eCalMain .ecHistoryTable {
+	width:100%;
+}
+.eCalMain .ecHistoryTable TR:hover {
+	background-color:#fff;
+}
+/*.eCalMain .ecHistoryTable.genTable TH:first-child {text-align:left;}*/
+.eCalMain .ecHistoryTable.genTable TD:first-child {
+	font-weight:bold;
+}
+.eCalMain .ecHistoryTable.genTable TH {
+	padding:0;
+}
+.eCalMain .ecHistoryTable.genTable TH.symbol {
+	width:55%;
+}
+.eCalMain .ecHistoryTable.genTable TH.act {
+	width:15%;
+}
+.eCalMain .ecHistoryTable.genTable TH.for {
+	width:15%;
+}
+.eCalMain .ecHistoryTable.genTable TH.pre {
+	width:15%;
+}
+.eCalMain .ecHistoryTable.genTable TH.diamond {
+	width:11px;
+}
+.eCalMain .ecHistoryTable.genTable TR:first-child TD {
+border-top:2px solid #BABABA !important;
+}
+.eCalMain .ecHistoryTable.genTable TD {
+	height:21px;
+}
+.eCalMain .ecHistoryTable.genTable .left {
+	text-align: left;
+}
+.eCalMain .ecHistoryTable TD {
+	padding:0;
+}
+
+.eCalMain TABLE.ecoCalTable TD.center.noResults {
+	padding: 10px 0 12px;
+}
+
+.eCalMain TABLE.ecoCalTable TR:hover TD.center.noResults {
+	pointer:default;
+	background-color:white;
+}
+
+.genTable.ecHistoryTable TD {
+border-top:1px solid #DADADA !important;
+}
+.grayFullBullishIcon {
+    background-position: -5px -1077px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.grayEmptyBullishIcon {
+    background-position: -5px -1059px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.whiteEmptyBullishIcon {
+    background-position: -62px -1095px;
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+}
+.eCalNew .genTable.ecoCalTable TR:hover .grayEmptyBullishIcon, .eCalNew .genTable.ecoCalTable TR.openedTr .grayEmptyBullishIcon {
+	background-position:-62px -1095px;
+}
+.eCalNew .genTable.ecoCalTable TR:hover .infoBox .grayEmptyBullishIcon {
+	background-position:-4px -1057px;
+}
+.ecoCalTable .grayFullBullishIcon, .ecoCalTable .grayEmptyBullishIcon {
+	margin: 0 3px 3px 0;
+}
+.datePickerWrap .datePickerIconWrap {
+	background-position:-68px -715px;
+	width:15px;
+	height:21px;
+	float:right;
+	padding:0 5px;
+	border-left:1px solid #8C8C8C;
+	background:-o-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+	background:-ms-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+	background:-moz-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+	background:-webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e4e4e4));
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#f9f9f9, endColorstr=#e4e4e4, GradientType=0);
+	zoom:1;
+}
+/* Economic Calendar Event Chart Tooltip */
+	  .ec-highchart {
+	height: 240px;
+	direction:ltr;
+	text-align:center;
+}
+.ec-highchart .highcharts-tooltip {
+	z-index:9999 !important;
+}
+.ec-highchart .highcharts-tooltip span {
+	color:#4d4d4d;
+	background-color:#f2f2f2;
+	white-space:normal !important;
+}
+.ec-highchart .highcharts-tooltip .event-tooltip-container {
+	white-space:nowrap;
+	min-width:84px;
+	margin:5px 8px !important;
+}
+.ec-highchart .highcharts-tooltip .event-tooltip-container td {
+	border: none !important;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: auto !important;
+	text-align: left;
+}
+.ec-highchart .highcharts-tooltip .event-title, .ec-highchart .highcharts-tooltip .event-title-actual {
+	padding: 0 7px 0 0;
+}
+.ec-highchart .highcharts-tooltip .event-title-actual, .ec-highchart .highcharts-tooltip .event-value-actual-up, .ec-highchart .highcharts-tooltip .event-value-actual-down, .ec-highchart .highcharts-tooltip .event-value-actual-neutral {
+	font-size: 12px;
+	font-weight: bold !important;
+}
+.ec-highchart .highcharts-tooltip .event-value-actual-up {
+	color: green;
+}
+.ec-highchart .highcharts-tooltip .event-value-actual-down {
+	color: red;
+}
+ @media (max-width: 570px) {
+.eCalMain .ceFlags {
+	display:block;
+	margin-left:4px;
+}
+.eCalMain .realData, .eCalMain .details {
+	float:none;
+}
+.eCalMain .eventOverview {
+	width:400px;
+}
+}
+ @media (max-width: 445px) {
+.sentiment, .imp {
+	display:none;
+}
+}
+.loading-responsive {
+	height:36px;
+	width:36px;
+	margin:0 auto;
+	background-image:url('http://glocdn.investing.com/loading_circle.gif');
+	background-repeat:no-repeat;
+	background-position:center;
+	text-indent:-9999px;
+}
+.loading-responsive.medium-circle {
+	background-image:url('http://glocdn.investing.com/ajax-loader-big.gif');
+}
+HEADER {
+	background:rgba(255,255,255,0.95);
+	height:29px;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+HEADER.floating {
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.25);
+	box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+.newBtn.toggleButton {
+	border-right: none;
+	padding: 3px 10px 4px;
+}
+.ecoButtonLine .toggleButton.last {
+	margin-right: 13px;
+}
+.newBtn.toggleButton.last {
+	border-right: 1px solid #8C8C8C;
+}
+.newBtn.toggleButton.toggled {
+	color: #FFF;
+	cursor: default;
+	-moz-box-shadow: inset 0 1px 2px #808080;
+	-webkit-box-shadow: inset 0 1px 2px #808080;
+	box-shadow: inset 0 1px 2px #808080;
+	background: none;
+	background-color: #999;
+	filter: none;
+}
+.newBtn.filter {
+	padding: 3px 6px 4px 31px;
+}
+.filtersOffLight, .filtersOnLight {
+	margin-left: 8px;
+}
+.filtersOffLight {
+	background-image: URL("http://c1308342.r42.cf0.rackcdn.com/newSiteIconsSprite_v30e.png");
+	background-position: -139px -229px;
+	display: inline-block;
+	width: 10px;
+	height: 11px;
+	padding: 0;
+}
+.filtersOnLight {
+	background-image: URL("http://c1308342.r42.cf0.rackcdn.com/newSiteIconsSprite_v30e.png");
+	background-position: -139px -216px;
+	display: inline-block;
+	width: 10px;
+	height: 11px;
+	padding: 0;
+}
+.newBtn.LightGray:after, .newBtn.lGray .after {
+	border-color: #E3E3E3;
+}
+.newBtn:after, .newBtn .after {
+	position: absolute;
+	content: "";
+	border-width: 0 1px 1px;
+	border-style: solid;
+	width: 100%;
+	bottom: -2px;
+	left: -1px;
+}
+
+.newBtn.filter:before, .newBtn.filter .before {
+	background-position: -130px -199px;
+	height: 17px;
+	width: 22px;
+	margin: 2px 0 0px 1px;
+	border-right: 1px solid #8C8C8C;
+}
+.ecoFilterBox {
+	background-color: #F2F2F2;
+	border-top: 1px solid #FFF;
+	padding: 17px;
+	position:relative;
+	min-width:420px;
+}
+.ecoSearchBox {
+	background-color: #F2F2F2;
+	padding: 18px 0;
+	position: relative;
+}
+.eCalMainNew .arrowIndicator {
+	width: 23px;
+	height: 16px;
+	padding: 0;
+	margin-left: 38px;
+}
+.bugCloseIcon {
+	background-image: URL("http://c1308342.r42.cf0.rackcdn.com/newSiteIconsSprite_v30e.png");
+	background-position: -32px -386px;
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	cursor: pointer;
+}
+.bugCloseIcon:hover {
+	background-position: -32px -401px;
+	text-decoration: none;
+}
+.ecoSearchBox .bugCloseIcon {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+.ecoFilterBox .left {
+	display:table-cell;
+	width:83px;
+}
+.ecoFilterBox .left P {
+	margin-bottom: 9px;
+	margin-top: -1px;
+}
+.ecoFilterBox .right {
+	display:table-cell;
+	vertical-align:top;
+}
+.ecoFilterBox .right LI {
+	width: 163px;
+	padding-left: 10px;
+	margin-bottom:5px;
+	float: left;
+}
+.ecoFilterBox .right .ceFlags {
+	margin-left: 4px;
+	vertical-align: top;
+	line-height: 13px;
+	display: inline-block;
+	margin-top:1px;
+}
+.ecoFilterBox .right LABEL {
+	width: 120px;
+	display: inline-block;
+	padding-left: 7px;
+	line-height: 13px;
+}
+.ecoFilterBox .right LABEL I:first-child {
+	margin-left: 0;
+}
+.ecoFilterBox .right LABEL I {
+	margin-left: 3px;
+}
+.ecoFilterBox .right .countryOption LABEL {vertical-align:middle; width:auto; padding-left:0;}
+.ecoFilterBox .right fieldset {padding-left: 10px; margin-bottom: 6px;}
+.ecoFilterBox .right fieldset LABEL {margin-top: 2px; width: auto;}
+.arrowIndicator {
+	background-image: URL("http://c1308342.r42.cf0.rackcdn.com/newSiteIconsSprite_v30e.png");
+	background-position: 0 -424px;
+	display: block;
+	width: 22px;
+	height: 14px;
+}
+.eCalMainNew .arrowIndicator {
+	width: 23px;
+	height: 16px;
+	padding: 0;
+	margin-left: 38px;
+}
+.dateBtns LI {
+	float:left;
+}
+HEADER, .ecoTimeAndDate {min-width:380px;}
+.searchText {background: none; height: 20px; padding: 0 7px 0 6px; margin: 0; color: #969796; border: none;}
+.combineSearchBox .searchText {width: 250px; font-size: 11px;}
+.newInput {border: 1px solid #737373; resize: none; font-size: 12px; font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+.combineSearchBox {color: inherit; background: none; width: 286px; height: 20px; border: 1px solid #0D416F; margin: 0; position: relative; z-index: 301;}
+.combineSearchBox {border: 1px solid #737373;}
+.newInput:hover {-webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.15);}
+.newInput.inputTextBox {height: 21px; padding: 0 5px;}
+.ecoSearchBox .combineSearchBox {background-color: #FFF; margin: 0 auto; border: 1px solid #969696; z-index: 1;}
+.combineSearchBox.newInput.inputTextBox, .portfolioSearch .newInput.inputTextBox {padding: 0;}
+.ecoSearchBox .combineSearchOption {line-height: 20px;}
+.combineSearchOption {width:20px; padding:0; border:0; background:none; height:15px; line-height:15px; font-size:11px;}
+#economicCalendarLoading {display: none; margin: 20px auto; width: 10px;}
+
+.ecoFilterBox .restore {position:absolute; right:18px; top:18px;}	
+/* NEW SEARCH */
+.searchPopupResults {width: auto;position: relative;top: -2px;left: 0;background-color: #fff;z-index: 4;border: 1px solid #808080;-webkit-box-shadow: 0 3px 3px rgba(64, 64, 64, 0.5);-moz-box-shadow: 0 3px 3px rgba(64, 64, 64, 0.5);box-shadow: 0 3px 3px rgba(64, 64, 64, 0.5);width: 570px\0;}
+.addSymboleContainer .searchPopupResults {top: 17px;z-index: 3;	position: absolute;}
+.searchPopupResults.dirSearchResults {position: absolute;top: 21px;left: 0px;width: 286px;}
+.searchPopupResults .row {width: auto;}
+.searchPopupResults .textBox {max-height: 315px;overflow-x: hidden;overflow-y: auto;padding: 0;width: auto;}
+.searchPopupResults I {display: inline;direction: ltr;}
+.searchPopupResults .textBox TABLE {width: 100%;}
+.searchPopupResults .row:hover {cursor: pointer;background-color:#edf4fa;}
+.searchPopupResults .hoverSearch {background-color:#edf4fa;}
+.searchPopupResults .textBox TD.first {width: 22%;padding-left: 10px;}
+.searchPopupResults .textBox TD.second {width: 49%;}
+.searchPopupResults .textBox TD.third {width: 29%;padding-right: 10px;color: #b2b2b2;}
+.searchPopupResults .textBox TD {white-space: nowrap;line-height: 21px;height: 21px;color: #333;}
+.searchPopupResults .countriesDiv {top: 21px;right: -40px;display: block;position: absolute;background-color: #fff;padding: 4px 0;border: 1px solid #808080;height: 250px;overflow-y: scroll;}
+.searchPopupResults .countriesDiv TD {padding: 0 10px;height: 21px;line-height: 21px;cursor: pointer;}
+.searchPopupResults .countriesDiv TD:hover {background-color:#edf4fa}
+.searchPopupResults .countriesDiv TD.selected {background-color: #DFE9F2;cursor: default;}
+.searchTabs {font-size: 11px;}
+.searchTabs .tabsForBox {border-bottom: 1px solid #999;width: 100%;}
+.searchTabs .tabsForBox LI A {padding: 0 11px;height: 11px;line-height: 11px;}
+.searchTabs .tabsForBox LI.selected A {margin: 0;border-top: 1px solid #999;margin-top: -1px;height: 22px;line-height: 21px;}
+.searchTabs .tabsForBox LI.selected.first A {padding-left: 12px;}
+.searchTabs .tabsForBox LI.first A {padding-left: 13px;}
+.searchTabs .tabsForBox LI.selected {margin: 0 0 0 -1px;}
+.searchTabs .tabsForBox LI.selected.last {margin: 0 -1px 0 -1px;}
+.searchTabs .tabsForBox LI.first {margin: 0 0 0 9px;}
+.searchTabs .tabsForBox LI.country {float: right;}
+.searchTabs .tabsForBox LI.country A {font-weight: normal; padding-left: 7px;}
+.searchTabs .tabsForBox LI.country A:after {content: ''; background-image:URL("http://c1308342.r42.cf0.rackcdn.com/newSiteIconsSprite_v30e.png"); background-position:-82px -65px; display:inline-block; width:13px; height:8px;}
+.searchPopupResults .smallTriangleArrowUp {position:absolute; top:16px; right:50px; z-index:3;}
+.searchTabs .tabsForBox LI:last-child A {border-right:none;}
+.searchTabs .tabsForBox LI:last-child.selected A {border-right:1px solid #999;}
+.searchPopupResults.dirSearchResults {top: 20px;left: -1px;}
+/* /NEW SEARCH */
+
+.dateBtns .saveSpace {display:none;}
+
+@media (max-width: 635px) {	
+	.dateBtns .saveSpace {
+		display:block;
+	}
+	
+	/* Closed */
+	.dateBtns {
+		position:relative;
+		float:none;
+		left:auto;
+		right:175px;
+	}
+	
+	.dateBtns LI {
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:1;
+		float:none;
+	}
+	
+	.dateBtns A.newBtn, .dateBtns A.newBtn.toggled {
+		width:82px;
+		height:20px;
+		line-height:22px;
+		padding:3px 10px 4px 6px;
+		border-right:1px solid #8C8C8C;
+		border-top:0;
+		border-bottom:1px solid #dadada;
+		background:#fff;
+		font-weight:normal;
+		box-shadow:none;
+		display:none;
+	}
+	
+	.dateBtns A.newBtn:after, .dateBtns A.newBtn .after {
+		border: none;
+	}
+	
+	.dateBtns A.newBtn.toggled,	.dateBtns .saveSpace A.newBtn {
+		color:#333;
+		font-weight:bold;
+	}
+	
+	.dateBtns .saveSpace {
+		z-index:2;
+	}
+	
+	.dateBtns A.newBtn.last {
+		border-bottom:1px solid #8C8C8C;
+	}
+	
+	.dateBtns .saveSpace A {
+		color: #333;
+		background:#f6f6f6;
+		background:-o-linear-gradient(top,#f6f6f6 0%,#e4e4e4);
+		background:-ms-linear-gradient(top,#f6f6f6 0%,#e4e4e4);
+		background:-moz-linear-gradient(top,#f6f6f6 0%,#e4e4e4);
+		background:-webkit-gradient(linear, left top, left bottom, from(#F6F6F6),to(#E4E4E4));
+		border: 1px solid #8C8C8C;
+		box-shadow:none;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+		display:block;
+		border-top:1px solid #8C8C8C;
+		border-bottom:1px solid #8C8C8C;
+		line-height:14px;
+		height:14px;
+
+	}
+	
+	.dateBtns LI.openArrow {
+		z-index:2;
+	}
+	
+	.dateBtns LI.openArrow SPAN, .dateBtns:hover LI.openArrow SPAN {
+		background-image: URL("http://c1308342.r42.cf0.rackcdn.com/newSiteIconsSprite_v30e.png");
+		z-index:4;
+		background-position:-136px -1094px;
+		position:absolute;
+		width:9px;
+		height:7px;
+		top:8px;
+		right:8px;
+	}
+	
+	/* Opened */
+	
+	.dateBtns.opened {
+		position:absolute;
+		left:auto;
+		right:175px;
+	}
+	.dateBtns.opened LI {
+		position:relative;
+		left:0;
+		right:0;
+		z-index:2;
+	}
+
+	.dateBtns.opened LI A, .dateBtns.opened A.newBtn.toggled {
+		display:block;
+	}
+	.dateBtns.opened LI A:hover, .dateBtns.opened A.newBtn.toggled:hover {
+		background:#fff;
+		box-shadow:none;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+	}
+	
+	.dateBtns.opened .saveSpace A:hover {
+		background:#ededed;
+		background:-o-linear-gradient(top,#ededed 0%,#d6d6d6);
+		background:-ms-linear-gradient(top,#ededed 0%,#d6d6d6);
+		background:-moz-linear-gradient(top,#ededed 0%,#d6d6d6);
+		background:-webkit-gradient(linear, left top, left bottom, from(#EDEDED),to(#D6D6D6));
+		box-shadow:inset 0px 0px 0px 1px #F7F7F7;
+		-moz-box-shadow:inset 0px 0px 0px 1px #F7F7F7;
+		-webkit-box-shadow:inset 0px 0px 0px 1px #F7F7F7;
+	}
+	
+	.dateBtns.opened LI.openArrow {
+		position:absolute;
+	}
+	
+	/*.newBtn.toggleButton.toggled {color:#333333; background:-o-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-ms-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-moz-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-webkit-gradient(linear, left top, left bottom, from(#f6f6f6),to(#e4e4e4)); filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#f6f6f6,endColorstr=#e4e4e4,GradientType=0); zoom:1; border:1px solid #8c8c8c; box-shadow:inset 0px 0px 0px 1px #EBEBEB; -moz-box-shadow:inset 0px 0px 0px 1px #EBEBEB; -webkit-box-shadow:inset 0px 0px 0px 1px #EBEBEB;}
+	.newBtn.LightGray:hover {background:-o-linear-gradient(top,#ededed 0%,#d6d6d6); background:-ms-linear-gradient(top,#ededed 0%,#d6d6d6); background:-moz-linear-gradient(top,#ededed 0%,#d6d6d6); background:-webkit-gradient(linear, left top, left bottom, from(#ededed),to(#d6d6d6));	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#ededed,endColorstr=#d6d6d6,GradientType=0); zoom:1; box-shadow:inset 0px 0px 0px 1px #F7F7F7; -moz-box-shadow:inset 0px 0px 0px 1px #F7F7F7; -webkit-box-shadow:inset 0px 0px 0px 1px #F7F7F7;}
+	.newBtn.LightGray:active {background:-o-linear-gradient(top,#e6e6e6 0%,#dadada); background:-ms-linear-gradient(top,#e6e6e6 0%,#dadada); background:-moz-linear-gradient(top,#e6e6e6 0%,#dadada); background:-webkit-gradient(linear, left top, left bottom, from(#e6e6e6),to(#dadada)); filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#e6e6e6,endColorstr=#dadada,GradientType=0); zoom:1; box-shadow:inset 0px 0px 0px 1px #E3E3E3; -moz-box-shadow:inset 0px 0px 0px 1px #E3E3E3; -webkit-box-shadow:inset 0px 0px 0px 1px #E3E3E3;}
+	.newBtn.LightGray:before, .newBtn.lGray .before {box-shadow:inset -1px 0px 0px 0px #F8F8F8;}
+	.newBtn.LightGray:after, .newBtn.lGray .after {border-color:#E3E3E3;}
+	.newBtn.LightGray:active:after, .newBtn.lGray:active .after {border:0;}*/
+	
+	
+	.ecoFilterBox .left {width:77px;}
+	
+	}
+
+</style>
+        <style>
+        .eCalMain TABLE.ecoCalTable TH.flagCur, .eCalMain TABLE.ecoCalTable TD.flagCur {padding:0 11px 0 0; text-align:right;}
+        .eCalMain TABLE.ecoCalTable TD.flagCur {direction:rtl;}
+        .eCalMain TABLE.ecoCalTable TH.sentiment, .eCalMain TABLE.ecoCalTable TD.sentiment {padding:0 5px 0 0; text-align:right;}
+        .eCalMain TABLE.ecoCalTable TH.event, .eCalMain TABLE.ecoCalTable TD.event {padding:2px 10px 2px 0; text-align:right;}
+
+        .eCalMain .realData {margin:23px 0 0 26px;}
+        .eCalMain .realData I {margin:0 3px 3px 0;}
+        .eCalMain .realDataTable DIV {margin:6px 6px 0 0;}
+		.eCalMain .ceFlags {margin-right:0; margin-left:3px;}
+        .eCalMain .details DT, .eCalMain .details DD {float:right;}
+
+        .ecoTimeAndDate .arrow {left:auto; right:38px;}
+        .ecoCurrentTimePop {left:auto; right:-130px;}
+
+        .datePickerWrap .datePickerIconWrap {float:left; border-left:0px; border-right:1px solid #8C8C8C;}
+
+        .eCalMain .ecHistoryTable.genTable .left {text-align: right;}
+
+        .eCalMain td.event {direction:rtl;}
+		
+		.newBtn.filter {padding: 3px 31px 4px 6px;}
+		.filtersOnLight {margin: 0; margin-right: 8px;}
+		.ecoFilterBox .right LABEL {
+			padding-left:0;
+			padding-right:7px;
+		}
+		.ecoFilterBox .right .countryOption LABEL {
+			padding:0;
+		}
+		.ecoFilterBox .right LABEL I {
+			margin-left:0; 
+			margin-right:3px;
+		}
+		.ecoFilterBox .right LABEL I:first-child {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.ecoFilterBox .right .ceFlags {
+			margin-left:3px;
+			margin-right:4px;
+		}
+        /* Economic Calendar Event Chart Tooltip */
+		.ec-highchart .highcharts-tooltip .event-tooltip-container td {text-align: right;}
+		.ec-highchart .highcharts-tooltip {text-align: right; direction: rtl;}
+		.ec-highchart .highcharts-tooltip .event-title, .ec-highchart .highcharts-tooltip .event-title-actual {padding: 0 0 0 7px; clear: both;}
+		.ec-highchart .highcharts-tooltip .event-value, .ec-highchart .highcharts-tooltip .event-value-actual-up, .ec-highchart .highcharts-tooltip .event-value-actual-down, .ec-highchart .highcharts-tooltip .event-value-actual-neutral {direction: ltr;}
+		
+		/****** Geroge Arabic Changes  *******/
+		html[lang="ar"] .section-title.hp {
+				padding-right: 10px;
+				text-align: right;
+		}

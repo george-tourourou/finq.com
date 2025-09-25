@@ -1,0 +1,149 @@
+<?php
+
+/**
+ * hook_install implementation
+ */
+function instruments_enable() {
+  //update blocks settings for markets theme
+  $blocks = array(
+    array(
+      'status' => 1,
+      'weight' => 20,
+      'region' => 'sidebar_second',
+      'visibility' => 1,
+      'pages' => 'instruments/*',
+      'module' => 'instruments',
+      'delta' => 'instruments_sidebar',
+      'theme' => 'markets',
+    ),
+    array(
+      'status' => 1,
+      'weight' => -19,
+      'region' => 'sidebar_second',
+      'visibility' => 1,
+      'pages' => '<front>',
+      'module' => 'instruments',
+      'delta' => 'instruments_search',
+      'theme' => 'markets',
+    ),
+  );
+
+  foreach ($blocks as $block) {
+    db_merge('block')
+      ->key(
+        array(
+          'module' => $block['module'],
+          'delta' => $block['delta'],
+          'theme' => $block['theme'],
+        )
+      )
+      ->fields(
+        array(
+          'status' => $block['status'],
+          'weight' => $block['weight'],
+          'region' => $block['region'],
+          'visibility' => $block['visibility'],
+          'pages' => $block['pages'],
+        )
+      )
+      ->execute();
+  }
+
+}
+
+/**
+ * hook_uninstall implementation
+ */
+function instruments_uninstall() {
+}
+
+/**
+ * hook_schema implementation - provide information about DB schema which we will use
+ */
+function instruments_schema() {
+  $schema['instruments'] = array(
+    'description' => 'The base table for instruments.',
+    'fields' => array(
+      'iid' => array(
+        'description' => 'The primary identifier for a instrument (based on instrument symbol).',
+        'type' => 'varchar',
+        'length' => 255,
+        'size' => 'normal',
+        'not null' => TRUE,
+      ),
+      'symbol' => array(
+        'description' => 'Instrument symbol.',
+        'type' => 'varchar',
+        'length' => 255,
+        'size' => 'normal',
+        'not null' => TRUE,
+      ),
+      'category' => array(
+        'description' => 'The category of this instrument.',
+        'type' => 'varchar',
+        'length' => 255,
+        'size' => 'normal',
+        'not null' => TRUE,
+      ),
+      'changed' => array(
+        'description' => 'The Unix timestamp when the instrument was most recently updated.',
+        'type' => 'int',
+        'size' => 'big',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'data' => array(
+        'description' => 'The instrument data JSON.',
+        'type' => 'blob',
+        'size' => 'normal',
+        'not null' => TRUE,
+      ),
+    ),
+    'indexes' => array(
+      'instrument_group' => array('category'),
+      'instrument_changed' => array('changed'),
+    ),
+    'primary key' => array('iid'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Implementation of hook_requirements - provide status information for drupal status page
+ * @param $phase
+ * @return array
+ */
+function instruments_requirements($phase) {
+  $requirements = array();
+  switch ($phase) {
+    case 'runtime': {
+      $count = db_select('instruments')
+        ->fields(NULL, array('iid'))
+        ->countQuery()
+        ->execute()
+        ->fetchField();
+
+      $requirements['instruments'] = array(
+        'title' => 'Instruments data',
+        'value' => "Local DB stores {$count} rows with instruments dealing data. " . l(
+            "Re-read data from service",
+            "admin/config/tradefxl/instruments-refill"
+          ),
+        'description' => 'Status of integration with API service',
+        'severity' => REQUIREMENT_INFO,
+        'weight' => 100,
+      );
+    }
+  }
+  return $requirements;
+}
+
+/**
+ * Implements hook_update_N().
+ * Remove unused field from instrument table
+ */
+function instruments_update_7001() {
+  // drop unused field
+  db_drop_field('instruments', 'search_index');
+}

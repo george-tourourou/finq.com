@@ -1,0 +1,28 @@
+# Finnish translation of Upload default avatar (user picture) (7.x-1.1)
+# Copyright (c) 2013 by the Finnish translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Upload default avatar (user picture) (7.x-1.1)\n"
+"POT-Creation-Date: 2013-04-06 01:30+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Finnish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "<none>"
+msgstr "<ei mitään>"
+msgid "Anonymous"
+msgstr "Anonyymi"
+msgid "View user profile."
+msgstr "Näytä käyttäjäprofiili."
+msgid "@user's picture"
+msgstr "Käyttäjän @user kuva"
+msgid ""
+"Failed to upload the picture image; the %directory directory doesn't "
+"exist or is not writable."
+msgstr ""
+"Kuvan siirto ei onnistunut, hakemistoa %directory ei löydy tai siihen "
+"ei voi kirjoittaa."

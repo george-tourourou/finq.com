@@ -1,0 +1,48 @@
+/*
+* @Author: Florin M.
+* @Date:   2016-05-05 18:00:44
+* @Last Modified by:   Florin M.
+* @Last Modified time: 2016-05-05 18:00:46
+*/
+
+.leverate-rates-grid-container{width:100%;font-size:0.750em;font-family:"Helvetica Neue",HelveticaNeue,"Helvetica-Neue",Helvetica,"BBAlpha Sans",sans-serif !important;background:#235099;color:#fff;border-radius:5px;box-shadow:inset 0 20px 50px #07224d;position:relative;}
+.leverate-rates-grid-container .leverate-ratesgrid-sirix-logo{width:36px;height:16px;position:absolute;bottom:0;right:0;border-radius:2px 0 0 0;background:#ccc url(../../content/images/website/sirix_black.png) no-repeat center center;box-shadow:-1px -1px 1px #aaa;}
+.leverate-rates-grid-container ::-webkit-scrollbar{width:0.833em;}
+.leverate-rates-grid-container ::-webkit-scrollbar-track{border-radius:5px;}
+.leverate-rates-grid-container ::-webkit-scrollbar-thumb{border-radius:3px;border-radius:10px;background:rgba(255,255,255,0.5);}
+.leverate-rates-grid-container ::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,0.7);}
+.leverate-rates-tabs{font-size:1.167em;padding:10px;border-bottom:solid 1px #fff;display:block !important;}
+.leverate-rates-tabs .leverate-rates-tab{cursor:pointer;margin-right:7px;display:inline-block;padding:3px 5px;}
+.leverate-rates-tabs .leverate-rates-tab.leverate-tab-selected{font-weight:bold;border-radius:5px;background:#fff;color:#333;box-shadow:inset 0 1px 3px #555;}
+.leverate-grid-header{font-weight:bold;background:#4c7ac5;padding:0px 5px;margin-bottom:3px;display:block !important;}
+.leverate-grid-header .leverate-header-item{margin-right:5px;line-height:1.667em;}
+.leverate-grid-header .leverate-header-item.leverate-item-symbol{width:10.750em;}
+.leverate-grid-header .leverate-header-item.leverate-item-bid{width:6.250em;}
+.leverate-grid-header .leverate-header-item.leverate-item-ask{}
+.leverate-rates-grids{}
+.leverate-rates-grids .leverate-grid-table{display:none;overflow:auto;height:31.667em;}
+.leverate-rates-grids .leverate-grid-table.leverate-table-selected{display:block !important;}
+.leverate-rates-grids .leverate-grid-table .leverate-table-row{line-height:2.000em;border-bottom:solid 1px #ccc;padding-top:9px;margin-left:5px;}
+.leverate-rates-grids .leverate-grid-table .leverate-table-row .leverate-row-item{}
+.leverate-rates-grids .leverate-grid-table .leverate-table-row .leverate-row-item.leverate-item-instrument{width:4.000em;margin-right:5px;}
+.leverate-rates-grids .leverate-grid-table .leverate-table-row .leverate-row-item.leverate-item-symbol{width:5.000em;margin-right:5px;font-weight:bold;}
+.leverate-rates-grids .leverate-grid-table .leverate-table-row .leverate-row-item.leverate-item-arrow{width:10px;height:9px;margin-right:5px;margin-top:7px;}
+.leverate-row-item.leverate-item-arrow.leverate-arrow-up{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGtJREFUeNpiDJ7HxIAGJgPxLyAuRhZkQVNkAMSZUPYCIL4Mk2DCYhozFLcjSyAr9AZiGzS+N7pCNiCewIAJuqCmwxWC3KWCRaEWEKfBFAoBcR0DbtACUgNS2AhVjAuA5EpBCgMZCIMogAADAN2QDHt8jpmMAAAAAElFTkSuQmCC) no-repeat;}
+.leverate-row-item.leverate-item-arrow.leverate-arrow-down{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHpJREFUeNpivMbB8YSBgUGaAT84ywQk1jMQBgcZgSYKARm3gVgIh6J3QKzKBGU04TGtBqQGZCKIwwbEV4FYBU3RTSDWBuK/TFCBX0BcgMW0YpAiEIMJSXArEB9B42+FcZjQTMiFmvAX6jY4YEFTeAGIp0OdcgFZAiDAAI7JGb3zfejMAAAAAElFTkSuQmCC) no-repeat;}
+.leverate-rates-grids .leverate-grid-table .leverate-table-row .leverate-row-item.leverate-item-bid{width:6.250em;margin-right:5px;}
+.leverate-rates-grids .leverate-grid-table .leverate-table-row .leverate-row-item.leverate-item-ask{width:6.250em;}
+.leverate-clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.leverate-clearfix{display:inline-block;}
+html[xmlns] .leverate-clearfix{display:block;}
+* html .leverate-clearfix{height:1%;}
+
+/* common */
+.leverate-fl{float:left;display:inline;}
+.leverate-fr{float:right;display:inline;}
+.leverate-pr{position:relative;}
+.leverate-pa{position:absolute;}
+.leverate-hide{display:none;}
+.leverate-inline{display:inline}
+.leverate-block{display:block;}
+.leverate-iblock{display:inline-block;}
+.leverate-center{margin-left:auto;margin-right:auto;}

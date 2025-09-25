@@ -1,0 +1,121 @@
+<?php
+/**
+* Function To Display Trading Conditions MT4 Table
+* @param function_parameter
+* @returns function output description
+*/
+
+function getConnection() {
+	$dbName = 'lcm-instruments' ;
+    $dbHost = '343ceac831677d3fdb2676ca6fd4913ba6e030d8.rackspaceclouddb.com' ;
+    $dbUsername = 'partners';
+    $dbUserPassword = 'Yee9piey7phu';
+	
+	$connection = new mysqli($dbHost, $dbUsername, $dbUserPassword, $dbName);
+	
+	// Check connection
+	if ($connection->connect_error) {
+		die("Connection failed: " . $connection->connect_error);
+	} 
+	
+	return $connection;
+}
+
+function mt4_table($category,$subcategory){
+	
+	
+	//db_set_active('lcm-instruments');
+
+	$connection = getConnection();
+	
+	global $language;
+
+	$trading_conditions = $category."_".$subcategory;
+	switch ($trading_conditions) {
+		case "mt4_stocks":
+			$myfields = "Instrument,Spreads,Leverage,Commission_per_lot,TradingHours";
+			break;
+		case "expiration_dates":
+			$myfields = "PlatformName,ActualExpirationdate,Rolloverdate";
+			break;		
+		case "mt4_commodities":
+			$myfields = "Instrument,Spreads,Floating,Leverage,TradingHours";        
+			break;		
+		case "mt4_forex":
+		   $myfields = "Instrument,Spreads,Leverage,Size_of_1_lot,TradingHours";
+			break;
+		default:
+			$myfields = "Instrument,Spreads,Leverage,TradingHours";
+	}
+	
+	//return false;
+	
+	$query = "SELECT ".$myfields." FROM ".$category."_".$subcategory;
+	//$result=db_query($query);
+	
+	$result = $connection->query($query);
+
+	
+	if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+		while($row = mysqli_fetch_assoc($result)) {
+		  echo '<tr>';
+		  foreach ($row as $column => $data) {
+			 echo '<td>';
+			 echo getLeverage($column, $language->prefix, $data);
+			 echo '</td>';
+		  }
+		  echo '</tr>';
+		}
+	} 
+	
+	/*
+	if ($result->num_rows > 0) {
+		echo "in";
+		while ($row = $result->fetchAssoc()) {
+		  echo '<tr>';
+		  foreach ($row as $column => $data) {
+			 echo '<td>';
+			 echo getLeverage($column, $language->prefix, $data);
+			 echo '</td>';
+		  }
+		  echo '</tr>';
+		}
+	}
+	*/
+	
+	$connection = null;
+	return false;
+	
+	//db_set_active();
+}
+
+function getLeverage($column, $langCode, $data) 
+{	 
+	$MAX_POLISH_LEVERAGE_VALUE = 100;
+	
+	
+	if(strtolower($column) === 'leverage' && $langCode === 'pl' && strpos($data, ':') === 1) {
+		
+		$myArray = explode(':', $data);
+		$leverageVal = $myArray[1];
+		if (ctype_digit($leverageVal)) {
+			$leverageVal = (int)$leverageVal;
+			
+			if($leverageVal > $MAX_POLISH_LEVERAGE_VALUE) {
+				return $myArray[0].':'.$MAX_POLISH_LEVERAGE_VALUE;
+			}			
+		} else {
+			return $data;
+		}		
+	} else {
+		return $data;
+	}
+}
+
+
+
+
+
+
+

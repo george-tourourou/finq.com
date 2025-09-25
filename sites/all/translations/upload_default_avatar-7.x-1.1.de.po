@@ -1,0 +1,28 @@
+# German translation of Upload default avatar (user picture) (7.x-1.1)
+# Copyright (c) 2013 by the German translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Upload default avatar (user picture) (7.x-1.1)\n"
+"POT-Creation-Date: 2013-04-06 01:30+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "<none>"
+msgstr "- keine -"
+msgid "Anonymous"
+msgstr "Gast"
+msgid "View user profile."
+msgstr "Benutzerprofil anzeigen."
+msgid "@user's picture"
+msgstr "Bild des Benutzers @user"
+msgid ""
+"Failed to upload the picture image; the %directory directory doesn't "
+"exist or is not writable."
+msgstr ""
+"Das Hochladen des Bildes ist fehlgeschlagen; das Verzeichnis "
+"%directory ist nicht vorhanden oder nicht beschreibbar."

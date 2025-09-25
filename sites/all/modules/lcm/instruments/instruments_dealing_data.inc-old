@@ -1,0 +1,774 @@
+<?php
+
+/**
+ * Provide instrument page (read data and render it via template)
+ * @param $instrument_id - iid of instrument
+ * @return string
+ */
+ 
+ function GET_CFDS_UPDATED_VALUES_LEVERAGE($instrument_alias, $default_leverage, $category_name)
+ {
+	$instrument_alias = trim($instrument_alias);
+	$instrument_alias = strtolower($instrument_alias);
+	
+	
+	$category_name = serialize($category_name);
+	$category_name = trim($category_name);
+	$category_name = strtolower($category_name);
+	
+	 
+	//Cryptos - Leverage 1:5
+	//$cryptos_1_5 = 'bitcoin,ethereum,bitcoineur,dash,dasheur,ethereumeur,litecoin,litecoineur,ripple,bchusd';
+	$cryptos_1_5 = 'bitcoin,bitcoineur,bchusd,ethereum,ethclassic,ethereumeur,dash,dasheur,litecoin,litecoineur,ripple';
+	$cryptos_1_5 = strtolower($cryptos_1_5);
+	
+	if (strpos($cryptos_1_5, $instrument_alias) !== false) {
+		return '1:5';
+	}
+	 
+	//Indices - Leverage 1:100
+	$indices_1_100 = 'Spain35';
+	$indices_1_100 = strtolower($indices_1_100);
+	
+	if (strpos($indices_1_100, $instrument_alias) !== false) {
+		return '1:100';
+	}
+	 
+	//Indices - Leverage 1:151
+	$indices_1_151 = 'Amsterdam25,Denmark20,Italy40,JAPAN225,SWEDEN30,Swiss20';
+	$indices_1_151 = strtolower($indices_1_151);
+	
+	if (strpos($indices_1_151, $instrument_alias) !== false) {
+		return '1:151';
+	}
+	
+	//Indices - Leverage 1:200
+	$indices_1_200 = 'Australia200,DollarIndex,Europe50,France40,Germany30,TECH100,UK100,USA2000,USA30,USA500';
+	$indices_1_200 = strtolower($indices_1_200);
+	
+	if (strpos($indices_1_200, $instrument_alias) !== false) {
+		return '1:200';
+	}
+	
+	//Commodities - Leverage 1:100
+	$commodities_1_100 = 'silver';
+	$commodities_1_100 = strtolower($commodities_1_100);
+	
+	if (strpos($commodities_1_100, $instrument_alias) !== false) {
+		return '1:100';
+	}
+	
+	//Commodities - Leverage 1:151
+	$commodities_1_151 = 'BrentOil,HeatingOil,OIL,SILVER';
+	$commodities_1_151 = strtolower($commodities_1_151);
+	
+	if (strpos($commodities_1_151, $instrument_alias) !== false) {
+		return '1:151';
+	}
+	
+	//Commodities - Leverage 1:200
+	$commodities_1_200 = 'GOLD';
+	$commodities_1_200 = strtolower($commodities_1_200);
+	
+	if (strpos($commodities_1_200, $instrument_alias) !== false) {
+		return '1:200';
+	}
+	
+	//Forex - Leverage 1:300
+	$forex_1_300 = 'AUDUSD,EURUSD,GBPUSD,NZDUSD,USDCAD,USDCHF,USDJPY,AUDCAD,AUDCHF,AUDJPY,AUDNZD,CADCHF,CADJPY,CHFJPY,EURAUD,EURCAD,EURCHF,EURGBP,EURJPY,EURNZD,GBPAUD,GBPCAD,GBPCHF,GBPJPY,GBPNZD,NZDCAD,NZDCHF,NZDJPY,USDDKK';
+	$forex_1_300 = strtolower($forex_1_300);
+	
+	if (strpos($forex_1_300, $instrument_alias) !== false) {
+		return '1:300';
+	}
+	
+	//Stocks - Leverage 1:10
+	$stocks_1_10 = 'Shares.Australia,Shares.USA,Shares.HongKong';
+	$stocks_1_10 = strtolower($stocks_1_10);
+	
+	$stocks_1_10_Arr = array("shares.australia","shares.usa","shares.hongkong");
+	$stocks_arr_len = count($stocks_1_10_Arr);
+	
+	
+	for($i = 0; $i < $stocks_arr_len; $i++)
+	{
+		$check_category = array_pop($stocks_1_10_Arr);
+		
+		if (strpos($category_name, $check_category) !== false) {
+			
+			return '1:10';
+		}
+	}
+
+	
+	return $default_leverage;
+ }
+ 
+ function GET_CFDS_UPDATED_VALUES_SPREAD($instrument_alias, $default_leverage, $setCurrency)
+ {
+	 $amount = $default_leverage;
+	 $isUpdated = false;
+	 
+	 switch ($instrument_alias) {
+		case 'bitcoin':
+			$amount = '100.00';
+			$isUpdated = true;
+			break;
+		case 'bitcoineur':
+			$amount =  '80.00';
+			$isUpdated = true;
+			break;
+		case 'bchusd':
+			$amount =  '40.00';
+			$isUpdated = true;
+			break;
+		case 'dash':
+			$amount =  '6.00';
+			$isUpdated = true;
+			break;
+		case 'dasheur':
+			$amount =  '6.00';
+			$isUpdated = true;
+			break;
+		case 'ethclassic':
+			$amount =  '0.3';
+			$isUpdated = true;
+			break;
+		case 'litecoin':
+			$amount =  '0.8';
+			$isUpdated = true;
+			break;
+		case 'litecoineur':
+			$amount =  '0.5';
+			$isUpdated = true;
+			break;
+		case 'ripple':
+			$amount =  '0.003';
+			$isUpdated = true;
+			break;
+	}
+	
+	if($isUpdated && $setCurrency)
+	{
+		if($instrument_alias == 'bitcoineur')
+		{
+			$amount = $amount.' (EUR)';
+		}
+		else {
+			$amount = $amount.' (USD)';			
+		}
+	}
+	
+	return $amount;
+ }
+ 
+  function GET_CFDS_UPDATED_VALUES_OVERNIGHT_INTEREST($instrument_alias, $default_leverage)
+{
+    $amount = $default_leverage;
+    $isUpdated = false;
+    //$cryptos = 'bitcoin,ethereum,bitcoineur,dash,dasheur,ethereumeur,litecoin,litecoineur,ripple,bchusd';
+    $cryptos = 'bitcoin,bitcoineur,bchusd,ethereum,ethclassic,ethereumeur,dash,dasheur,litecoin,litecoineur,ripple';
+
+    $cryptos = strtolower($cryptos);
+
+    if (strpos($cryptos, $instrument_alias) !== false) {
+        //return '-0.375%';
+        return '-1%';
+    }
+
+    return $amount;
+}
+
+    function GET_CFDS_UPDATED_VALUES_INITIAL_MARGIN($instrument_alias, $default_leverage)
+    {
+        $cryptos = 'bitcoin,bitcoineur,bchusd,ethereum,ethclassic,ethereumeur,dash,dasheur,litecoin,litecoineur,ripple';
+
+        $cryptos = strtolower($cryptos);
+
+        if (strpos($cryptos, $instrument_alias) !== false) {
+            return '20%';
+        }
+
+        return $default_leverage;
+    }
+
+    function GET_CFDS_UPDATED_VALUES_MAINTENANCE_MARGIN($instrument_alias, $default_leverage)
+    {
+        $cryptos = 'bitcoin,bitcoineur,bchusd,ethereum,ethclassic,ethereumeur,dash,dasheur,litecoin,litecoineur,ripple';
+
+        $cryptos = strtolower($cryptos);
+
+        if (strpos($cryptos, $instrument_alias) !== false) {
+            return '10%';
+        }
+
+        return $default_leverage;
+    }
+  
+ function GET_DEALING_DATA($instrument_id)
+ {
+	$dealing_data = db_select('instruments', 'i')
+		->fields('i', array('iid', 'data'))
+		->condition('i.iid', $instrument_id)
+		->execute()
+		->fetchAll();	 
+	 
+	 $dealing_data = unserialize($dealing_data[0]->data);
+	 
+	 $dealing_data["leverage"] = GET_CFDS_UPDATED_VALUES_LEVERAGE($instrument_id, $dealing_data["leverage"], $dealing_data["category"]);
+	 $dealing_data["spreadPerUnit"] = GET_CFDS_UPDATED_VALUES_SPREAD($instrument_id, $dealing_data["spreadPerUnit"], false);
+	 $dealing_data["overnightInterestBuy"] = GET_CFDS_UPDATED_VALUES_OVERNIGHT_INTEREST($instrument_id, $dealing_data["overnightInterestBuy"]);
+     $dealing_data["overnightInterestSell"] = GET_CFDS_UPDATED_VALUES_OVERNIGHT_INTEREST($instrument_id, $dealing_data["overnightInterestSell"]);
+     $dealing_data["initialMargin"] = GET_CFDS_UPDATED_VALUES_INITIAL_MARGIN($instrument_id, $dealing_data["overnightInterestSell"]);
+     $dealing_data["maintenanceMargin"] = GET_CFDS_UPDATED_VALUES_MAINTENANCE_MARGIN($instrument_id, $dealing_data["overnightInterestSell"]);
+	 //GET_CFDS_UPDATED_VALUES_OVERNIGHT_INTEREST($instrument_alias, $default_leverage)
+	 	 
+	 return $dealing_data;
+ }  
+ 
+ function GET_DEALING_DATA_UNSERIALIZED($instrument_id)
+ {
+	$dealing_data = db_select('instruments', 'i')
+		->fields('i', array('iid', 'data'))
+		->condition('i.iid', $instrument_id)
+		->execute()
+		->fetchAll();	 
+	 
+	 //$dealing_data = unserialize($dealing_data[0]->data);
+	 
+	 
+	 return serialize($dealing_data[0]->data);
+ }
+ 
+function _instrument_info_page($instrument_id) {
+  $instrument_id_low = strtolower($instrument_id);
+  if($instrument_id !== $instrument_id_low){
+    drupal_goto("instruments/{$instrument_id_low}");
+  }
+
+  global $language;
+  /*
+  $dealing_data = db_select('instruments', 'i')
+    ->fields('i', array('iid', 'data'))
+    ->condition('i.iid', $instrument_id)
+    ->execute()
+    ->fetchAll();
+
+  if (!$dealing_data) {
+    return MENU_NOT_FOUND;
+  }
+
+  $dealing_data = unserialize($dealing_data[0]->data);
+  */
+  $dealing_data = GET_DEALING_DATA($instrument_id);
+  
+  //var_dump($dealing_data);
+
+  $instrument_display_name = tt($dealing_data['displayName']);
+
+  if ($dealing_data['ticker']) {
+    $instrument_display_name .= " ({$dealing_data['ticker']})";
+  }
+
+  drupal_set_title("{$instrument_display_name} CFD");
+  
+  $instrument_category = strtolower(serialize($dealing_data['category']));
+  
+  //FOR TESTING PURPOSES
+  //$instrument_serialized = GET_DEALING_DATA_UNSERIALIZED($instrument_id);
+
+  $file_path = drupal_get_path('module', 'instruments') . '/';
+  drupal_add_css(path_to_theme() . '/css/instruments.css');
+  drupal_add_js($file_path . 'js/highstock.js');
+  drupal_add_js($file_path . 'js/jquery.jsonp.js');
+  drupal_add_js($file_path . 'js/instruments.js');
+  drupal_add_js(
+    array('instrumentSymbol' => strtolower($instrument_id)),
+    'setting'
+  );
+  drupal_add_js(
+    array('instrumentSymbolSensitive' => $dealing_data['symbol']),
+    'setting'
+  );
+  
+  $currencyPosition = strpos($dealing_data['category'][0], 'currency');
+  $spread_text = tt('translate_kw_spreads_as_low_as');
+  
+	if ($currencyPosition === false) {
+		$spread_text = tt('translate_kw_spreads_as_low_as');
+	} else {
+		$spread_text = tt('translate_kw_spreads_in_pips_currencies');
+	}
+
+
+  $table_header = array(
+    $spread_text,
+    tt('translate_kw_leverage_up_to'),
+    tt('translate_kw_trading_hours')
+  );
+
+  $instrument_table = theme_table(
+    array(
+      'header' => $table_header,
+      'rows' => array(
+        array(
+          ($dealing_data['spreadPerUnit'] ? $dealing_data['spreadPerUnit'] : '-') . " ({$dealing_data['spreadPerUnitCurrency']})",
+          $dealing_data['leverage'],
+          $dealing_data['tradingHours'],
+        ),
+      ),
+      'attributes' => array(),
+      'colgroups' => array(),
+      'empty' => '',
+      'caption' => FALSE,
+    )
+  );
+
+  return theme_render_template(
+    $file_path . 'templates/instrument-page.tpl.php',
+    array(
+      'dealing_data' => $dealing_data,
+      'instrument_table' => $instrument_table,
+	  'instrument_symbol' => $dealing_data['symbol'],
+	  'instrument_category' => $instrument_category
+    )
+  );
+}
+
+/**
+ * Make some changes with instruments data before render table with it
+ * @param $instruments
+ */
+function _instruments_preprocess_data(&$instruments, $category_name) {
+	
+  foreach ($instruments as &$instrument_data) {
+		$instrument_id = $instrument_data[0];
+
+		$instrument_data[3] = GET_CFDS_UPDATED_VALUES_LEVERAGE($instrument_id, $instrument_data[3], $category_name);
+		$instrument_data[2] = GET_CFDS_UPDATED_VALUES_SPREAD($instrument_id, $instrument_data[2], true);	  
+
+		$instrument_data[1] = l(
+			tt($instrument_data[1]),
+			"/instruments/" . $instrument_data[0]
+		);
+    unset($instrument_data[0]);
+  }
+}
+
+/**
+ * Provide instruments list page (read data and render it via template)
+ * @return string
+ */
+function _instruments_list_page() {
+  module_load_include('inc', 'instruments', 'instruments_api');
+
+  drupal_set_title(tt('translate_footer_assets'));
+
+  $file_path = drupal_get_path('module', 'instruments') . '/';
+  drupal_add_js($file_path . 'js/instruments-list.js');
+  drupal_add_css(path_to_theme() . '/css/instruments-list.css');
+
+  $data = _instruments_get_dealing_data(TRUE);
+
+  //$spread_text = tt('translate_kw_spreads');
+  $spread_text = tt('translate_kw_spreads_as_low_as');
+
+  $spread_as_pips_text = tt('translate_kw_spreads_in_pips_currencies');
+
+
+	$table_header = array(
+		tt('translate_kw_instrument'),
+		$spread_text,
+		tt('translate_kw_leverage_up_to'),
+		tt('translate_kw_trading_hours'),
+	);
+
+
+  $tables = array();
+  
+  foreach ($data as $category_name => $category_data) {
+	  
+    if ('currency' == $category_name) {
+      $table_header[1] = $spread_as_pips_text;
+    }
+    else {
+      $table_header[1] = $spread_text;
+    }
+
+    $tables[$category_name] = array();
+    if (
+      isset($category_data['instruments']) &&
+      is_array($category_data['instruments']) &&
+      $category_data['instruments']
+    ) {
+
+      _instruments_preprocess_data($category_data['instruments'], $category_name);
+
+      $tables[$category_name]['instruments'] = theme_table(
+        array(
+          'header' => $table_header,
+          'rows' => $category_data['instruments'],
+          'attributes' => array(),
+          // 'sticky' => TRUE,
+          'colgroups' => array(),
+          'empty' => '',
+          'caption' => FALSE,
+        )
+      );
+    }
+    if (is_array(
+        $category_data['subcategories']
+      ) && $category_data['subcategories']
+    ) {
+      $tables[$category_name]['subcategories'] = '';
+	  
+	$is_active_tab = 'active btn btn-promo';
+	$subcategories_tabs = '<div class="sub-category-tabs">';
+	
+	foreach ($category_data['subcategories'] as $subcategory_name => $subcategory_data) {
+		$subcategories_tabs .= '<a class="sub-category-tab '.$is_active_tab.'" data-toggle="tab" href="#c-'.$subcategory_name.'">'. tt($subcategory_name) .'</a>';
+		
+		$is_active_tab = '';
+	}
+	
+	$subcategories_tabs .= '</div>';
+	
+	$is_active_tab = 'active';
+	  //set sub categories tebles
+      foreach ($category_data['subcategories'] as $subcategory_name => $subcategory_data) {
+
+        _instruments_preprocess_data($subcategory_data['instruments'], $category_name.'.'.$subcategory_name);
+
+        $tables[$category_name]['subcategories'] .=
+          _instruments_render_subcategory(
+            $subcategory_data,
+            $table_header,
+            $file_path,
+			$is_active_tab
+          );
+		  
+		  $is_active_tab = '';
+      }
+	  
+      $tables[$category_name]['subcategories'] = $subcategories_tabs.$tables[$category_name]['subcategories'];
+    }
+  }
+  
+  return theme_render_template(
+    $file_path . 'templates/instruments-list.tpl.php',
+    array(
+      'tables' => $tables,
+      'block_risk_warning' => _get_risk_warning_block(),
+      'block_cfd_intro' => _get_intro_block(),
+    )
+  );
+}
+
+function _instruments_category_page($instrument_id, $sub_category) {
+  module_load_include('inc', 'instruments', 'instruments_api');
+
+  $file_path = drupal_get_path('module', 'instruments') . '/';
+  drupal_add_js($file_path . 'js/instruments-list.js');
+  drupal_add_css(path_to_theme() . '/css/instruments-list.css');
+
+  $data = _instruments_get_dealing_data();
+  // $spread_text = tt('translate_kw_spread');//tt('Spreads'.' '. $instrument_id);
+  // $spread_as_pips_text = tt('translate_kw_spreads_in_pips');
+
+
+	// $table_header = array(
+		// tt('translate_kw_instrument'),
+		// tt('translate_kw_spreads'),
+		// tt('translate_kw_leverage_up_to'),
+		// tt('translate_kw_trading_hours'),
+	// );
+	
+  $spread_text = tt('translate_kw_spreads_as_low_as');
+  $spread_as_pips_text = tt('translate_kw_spreads_in_pips_currencies');
+
+
+	$table_header = array(
+		tt('translate_kw_instrument'),
+		$spread_text,
+		tt('translate_kw_leverage_up_to'),
+		tt('translate_kw_trading_hours'),
+	);
+	
+	
+
+  $tables = array();
+  
+  foreach ($data as $category_name => $category_data) {
+	  
+	  if($instrument_id != NULL)
+	  {
+		  if(strtolower($instrument_id) != strtolower($category_name))
+		  {
+			  continue;
+		  }
+	  }
+	  
+    if ('currency' == $category_name) {
+      $table_header[1] = $spread_as_pips_text;
+    }
+    else {
+      $table_header[1] = $spread_text;
+    }
+
+    $tables[$category_name] = array();
+    if (
+      isset($category_data['instruments']) &&
+      is_array($category_data['instruments']) &&
+      $category_data['instruments']
+    ) {
+
+      _instruments_preprocess_data($category_data['instruments'], $category_name);
+
+      $tables[$category_name]['instruments'] = theme_table(
+        array(
+          'header' => $table_header,
+          'rows' => $category_data['instruments'],
+          'attributes' => array(),
+          // 'sticky' => TRUE,
+          'colgroups' => array(),
+          'empty' => '',
+          'caption' => FALSE,
+        )
+      );
+    }
+    if (is_array(
+        $category_data['subcategories']
+      ) && $category_data['subcategories']
+    ) {
+		  $tables[$category_name]['subcategories'] = '';
+		  
+		
+		if($sub_category == NULL)
+		{
+			$is_active_tab = 'active btn btn-promo';
+			$subcategories_tabs = '<div class="sub-category-tabs">';
+			
+			foreach ($category_data['subcategories'] as $subcategory_name => $subcategory_data) {	
+				$subcategories_tabs .= '<a class="sub-category-tab '.$is_active_tab.'" data-toggle="tab" href="#c-'.$subcategory_name.'">'. tt($subcategory_name) .'</a>';
+				
+				$is_active_tab = '';
+			}
+			
+			$subcategories_tabs .= '</div>';		
+			
+			$is_active_tab = 'active';
+			//set sub categories tebles
+			foreach ($category_data['subcategories'] as $subcategory_name => $subcategory_data) {
+
+				_instruments_preprocess_data($subcategory_data['instruments'], $category_name.'.'.$subcategory_name);
+
+				$tables[$category_name]['subcategories'] .=
+				  _instruments_render_subcategory(
+					$subcategory_data,
+					$table_header,
+					$file_path,
+					$is_active_tab
+				  );
+				  
+				  $is_active_tab = '';
+			}
+
+			$tables[$category_name]['subcategories'] = $subcategories_tabs.$tables[$category_name]['subcategories'];
+		}
+		else {
+			$is_active_tab = 'active';
+			foreach ($category_data['subcategories'] as $subcategory_name => $subcategory_data) 
+			{
+			  if(strtolower($sub_category) != strtolower($subcategory_name))
+			  {
+				  continue;
+			  }
+				
+				_instruments_preprocess_data($subcategory_data['instruments'], $category_name.'.'.$subcategory_name);
+
+				$tables[$category_name]['subcategories'] .=
+				_instruments_render_subcategory(
+					$subcategory_data,
+					$table_header,
+					$file_path,
+					$is_active_tab
+				);
+
+				$is_active_tab = '';
+			}
+
+			$tables[$category_name]['subcategories'] = $tables[$category_name]['subcategories'];			
+		}
+    }  
+  }
+  
+
+  return theme_render_template(
+	$file_path . 'templates/instruments-category.tpl.php',
+	array(
+	  'tables' => $tables,
+	  'block_risk_warning' => _get_risk_warning_block(),
+	  'block_cfd_intro' => _get_intro_block(),
+	)
+  );	  
+  
+}
+
+
+function _instruments_render_subcategory($data, $table_header, $file_path, $is_active) {
+  return theme_render_template(
+    $file_path . 'templates/instruments-list-subcategory.tpl.php',
+    array(
+      'name' => $data['name'],
+      'active' => $is_active,
+      'instruments' => theme_table(
+        array(
+          'header' => $table_header,
+          'rows' => $data['instruments'],
+          'attributes' => array(),
+          // 'sticky' => TRUE,
+          'colgroups' => array(),
+          'empty' => '',
+          'caption' => FALSE,
+        )
+      ),
+    )
+  );
+}
+
+/**
+ * Provide instrument chart widget for affiliates (read data and render it via template)
+ * @return string
+ */
+function _instrument_widget_page() {
+  global $language;
+  $instrument_id = isset($_GET['instrument']) ? $_GET['instrument'] : 'apple';
+
+  $dealing_data = db_select('instruments', 'i')
+    ->fields('i', array('iid', 'data'))
+    ->condition('i.iid', $instrument_id)
+    ->execute()
+    ->fetchAll();
+
+  if (!$dealing_data) {
+    $instrument_id = 'apple';
+    $dealing_data = db_select('instruments', 'i')
+      ->fields('i', array('iid', 'data'))
+      ->condition('i.iid', $instrument_id)
+      ->execute()
+      ->fetchAll();
+  }
+
+  $dealing_data = unserialize($dealing_data[0]->data);
+
+
+  drupal_set_title("{$dealing_data['symbol']} CFD");
+
+  $file_path = drupal_get_path('module', 'instruments') . '/';
+  drupal_add_css(path_to_theme() . '/css/instruments.css');
+  drupal_add_js($file_path . 'js/highstock.js');
+  drupal_add_js($file_path . 'js/jquery.jsonp.js');
+  drupal_add_js($file_path . 'js/instruments.js');
+  drupal_add_js(array('instrumentSymbol' => $instrument_id), 'setting');
+  drupal_add_js(
+    array('instrumentSymbolSensitive' => $dealing_data['symbol']),
+    'setting'
+  );
+
+  /*
+   * Work with get params
+   */
+
+  $availableIntervals = array('5m', '15m', '30m', '1h', '2h', '4h', '1d', '1w');
+  $availableTypesOfChart = array(
+    'c', //: 'candlestick'
+    'l', //: 'line',
+  );
+  $chart_interval = isset($_GET['chart_interval']) && in_array(
+    $_GET['chart_interval'],
+    $availableIntervals
+  ) ? $_GET['chart_interval'] : $availableIntervals[0];
+  $chart_type = isset($_GET['chart_type']) && in_array(
+    $_GET['chart_type'],
+    $availableTypesOfChart
+  ) ? $_GET['chart_type'] : $availableTypesOfChart[0];
+  $pid = isset($_GET['pid']) ? intval($_GET['pid']) : '0';
+  $link = isset($_GET['link']) ? urldecode(
+    $_GET['link']
+  ) : 'http://www.markets.com/';
+
+  drupal_add_js(array('chart_interval' => $chart_interval), 'setting');
+  drupal_add_js(array('chart_type' => $chart_type), 'setting');
+
+  $additional_params = drupal_get_query_parameters(
+    $_GET,
+    array('chart_interval', 'chart_type', 'q', 'link')
+  );
+
+  return theme_render_template(
+    $file_path . 'templates/instrument-widget.tpl.php',
+    array(
+      'dealing_data' => $dealing_data,
+      'partner_id' => $pid,
+      'chart_type' => $chart_type,
+      'lang_prefix' => $language->prefix ? ('/' . $language->prefix) : '',
+      //'external_url' => url($link, array('query' => $additional_params)),
+      'instrument' => $instrument_id,
+    )
+  );
+}
+
+/**
+ * ///@TODO will be good to generate JSON file
+ * Provide instrument array for search
+ * @return array
+ */
+function _instruments_get_data() {
+  global $language;
+
+  $cache_en = cache_get('instruments_search_data_en');
+  $cache_current = cache_get('instruments_search_data_' . $language->language);
+  $instrumentsSearchData = '[]';
+  // Check if cache doesn't exist
+  if (!isset($cache_en->data) || $cache_en->data == 'null') {
+    module_load_include('inc', 'instruments', 'instruments_api');
+    $interval = variable_get_value('instruments_read_external_data_interval');
+    if (_instruments_get_dealing_data_from_api()) {
+      // warm the cache if successfully read data
+      _instruments_get_dealing_data(TRUE);
+      variable_set_value(
+        'instruments_read_external_data_next_execution',
+        time() + $interval
+      );
+      $cache_en = cache_get('instruments_search_data_en');
+      $cache_current = cache_get(
+        'instruments_search_data_' . $language->language
+      );
+    }
+    else {
+      watchdog(
+        'instruments',
+        'Error during get dealing data from api',
+        array(),
+        WATCHDOG_CRITICAL
+      );
+    }
+  }
+
+  if (isset($cache_en->data) && $cache_en->data != 'null') {
+    if (isset($cache_current->data) && $cache_current->data != 'null') {
+      $instrumentsSearchData = drupal_json_encode(
+        array_merge(
+          drupal_json_decode($cache_en->data),
+          drupal_json_decode($cache_current->data)
+        )
+      );
+    }
+    else {
+      $instrumentsSearchData = $cache_en->data;
+    }
+  }
+  drupal_add_http_header('Content-Type', 'application/json');
+  echo $instrumentsSearchData;
+  drupal_exit();
+}

@@ -1,0 +1,14 @@
+/* 
+* @Author: Florin M.
+* @Date:   2015-11-27 11:16:12
+* @Last Modified by:   Florin M.
+* @Last Modified time: 2015-11-27 11:32:57
+*/
+.sticky-header nav .tb-menu a {
+	padding: 15px 27px !important;
+}
+@media (min-width: 1200px) {
+	nav .tb-menu a {
+		font-size: 16.5px;
+	}
+}

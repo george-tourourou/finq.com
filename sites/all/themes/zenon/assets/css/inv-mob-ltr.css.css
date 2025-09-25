@@ -1,0 +1,153 @@
+body{font-family:Arial, Verdana, Helvetica, sans-serif;color:#000;padding:0px;margin:0px;font-size:11px;background-color:#fff;width:100%;text-align:center;direction:ltr;}
+* {margin:0px;padding:0px;}
+#siteCanvas, #pageWrap{background-color:#fff;}
+/* Extra */
+a, a:link, a:visited{text-decoration:none;}
+a img{text-decoration:none;border:medium none;}	
+.clear{clear:both;}
+.arial_11{font:11px arial;color:#000;}
+.arial_11_bold{font:bold 11px arial;color:#000;}
+.arial_11_blue_bold{font:bold 11px arial;color:#0059B0;}
+.arial_11_gray{font:11px arial;color:#515151;}
+.arial_11_dark_gray{font:11px arial;color:#5C5C5C;}
+.arial_11_white{font:11px arial;color:#fff;}
+.arial_12{font:12px arial;color:#000;}
+.arial_12_bold{font:bold 12px arial;color:#000;}
+.arial_12_blue_bold{font:bold 12px arial;color:#0059B0;}
+.arial_12_white{font:12px arial;color:#fff;}
+.arial_12_white_bold{font:bold 12px arial;color:#fff;}
+.arial_12_gray{font:12px arial;color:#515151;}
+.arial_14{font:14px arial;color:#000;}
+.arial_14_bold{font:bold 14px arial;color:#000;}
+.arial_14_white_bold{font:bold 14px arial;color:#fff;}
+.arial_14_blue_bold{font:bold 14px arial;color:#0059B0;}
+.arial_16{font:16px arial;color:#000;}
+.arial_16_bold{font:bold 16px arial;color:#000;}
+.arial_16_blue_bold{font:bold 16px arial;color:#0059B0;}
+.arial_17_dark_gray{font:17px arial;color:#6A7483;}
+.arial_18_bold{font:bold 18px arial;color:#000;}
+.arial_20_gray_bold{font:bold 20px arial;color:#515151;}
+.arial_22_bold{font:bold 22px arial;color:#000;}
+.textShadow{text-shadow:#fff 0px 1px 0px;}
+.textShadowUp{text-shadow:#000 0px -1px 0px;}
+
+.blackFont {color:#000;}
+.redFont {color:#e50000;}
+.greenFont {color:#2a8215;}
+
+.float_lang_base_1{float:left;}
+.float_lang_base_2{float:right;}
+
+.subHeader{height:21px;background-color:#808792;text-align:left;padding:3px 11px 0px 9px;}
+span .timeStempSubCategoryHeader{padding:0px 5px 0px 0px;}
+.articlesListCanvas{text-align:left;}
+.eventCurrency{margin:0px 0px 0px 5px;}
+.eventHeaderCanvas{padding:6px 2px 0px 10px;border-bottom:1px solid #B8BEC6;height:44px;vertical-align:middle;}
+.eventInfoCanvas{padding:6px 0px 0px 2px;border-bottom:1px solid #B8BEC6;height:44px;vertical-align:middle;}
+.subCategoryCanvas{background-color:#E8EAED;border-top:1px solid #808792;}
+.subHeaderCanvas{height:24px;background-color:#D1D4D8;padding:1px 0px 0px 0px;}
+.timeStempSubCategoryHeader{padding:2px 0px 0px 0px;}
+.eventTimeNCurrencyCanvas{margin:0px 0px 5px 0px;}
+.eventName{margin:0px 0px 5px 0px;white-space:normal;}
+.eventDataCanvas{width:100%;padding:0px 0px 4px 0px;}
+
+/* New Buttons */
+.newBtn{background-image:url('<?=$url_for_images;?>/new_btn_v6.png');height:21px;}
+.newBtnHover{text-decoration:none !important;white-space:nowrap;}
+.radioTextBottonsCanvas{height:25px;padding:16px 0px 16px 0px;width:100%;}
+
+.newBtnLeft{background-repeat:no-repeat;padding:2px 0px 3px 0px;width:5px;margin:0px 0px 0px 0px;font-size:14px;}
+.newBtnCenter{background-repeat:repeat-x;padding:2px 11px 3px 11px;color:#fff;font-size:14px;white-space:nowrap;}
+.newBtnRight{background-repeat:no-repeat;padding:2px 2px 3px 0px;width:5px;margin:0px 0px 0px 0px;font-size:14px;}
+
+.radioTextBottonCanvas .leftNewBtnRadioText{background-position:left -1377px;padding:5px 0px 6px 0px;width:4px;margin:0px -1px 0px 0px;}
+.radioTextBottonCanvas .centerNewBtnRadioText{background-position:0px -1073px;padding:5px 6px 6px 6px;font:bold 14px arial;color:#000;text-shadow:#fff 0px 1px 0px;}
+.radioTextBottonCanvas .rightNewBtnRadioText{background-position:left -1041px;padding:5px 0px 6px 0px;width:4px;margin:0px 0px 0px -1px;}
+
+.radioTextBottonCanvas .leftNewBtnFirstRadioText{background-position:left -1377px;padding:5px 0px 6px 0px;width:4px;margin:0px -1px 0px 0px;}
+.radioTextBottonCanvas .centerNewBtnFirstRadioText{background-position:0px -1073px;padding:5px 6px 6px 6px;font:bold 14px arial;color:#000;text-shadow:#fff 0px 1px 0px;}
+.radioTextBottonCanvas .rightNewBtnFirstRadioText{background-position:left -1137px;padding:5px 0px 6px 0px;width:4px;margin:0px 0px 0px -1px;}
+
+.radioTextBottonCanvas .leftNewBtnMidRadioText{background-position:left -1105px;padding:5px 0px 6px 0px;width:4px;margin:0px -1px 0px 0px;}
+.radioTextBottonCanvas .centerNewBtnMidRadioText{background-position:0px -1073px;padding:5px 6px 6px 6px;font:bold 14px arial;color:#000;text-shadow:#fff 0px 1px 0px;}
+.radioTextBottonCanvas .rightNewBtnMidRadioText{background-position:left -1137px;padding:5px 0px 6px 0px;width:4px;margin:0px 0px 0px -1px;}
+
+.radioTextBottonCanvas .leftNewBtnLastRadioText{background-position:left -1105px;padding:5px 0px 6px 0px;width:4px;margin:0px -1px 0px 0px;}
+.radioTextBottonCanvas .centerNewBtnLastRadioText{background-position:0px -1073px;padding:5px 6px 6px 6px;font:bold 14px arial;color:#000;text-shadow:#fff 0px 1px 0px;}
+.radioTextBottonCanvas .rightNewBtnLastRadioText{background-position:left -1041px;padding:5px 0px 6px 0px;width:4px;margin:0px 0px 0px -1px;}
+
+.selectedRadioTextBottonCanvas .leftNewBtnRadioText{background-position:left -945px;padding:5px 0px 6px 0px;width:4px;margin:0px -1px 0px 0px;}
+.selectedRadioTextBottonCanvas .centerNewBtnRadioText{background-position:0px -977px;padding:5px 6px 6px 6px;font:bold 14px arial;color:#fff;text-shadow:#fff 0px 0px 0px;}
+.selectedRadioTextBottonCanvas .rightNewBtnRadioText{background-position:left -1313px;padding:5px 0px 6px 0px;width:4px;margin:0px 0px 0px -1px;}
+
+.selectedRadioTextBottonCanvas .leftNewBtnFirstRadioText{background-position:left -945px;padding:5px 0px 6px 0px;width:4px;margin:0px -1px 0px 0px;}
+.selectedRadioTextBottonCanvas .centerNewBtnFirstRadioText{background-position:0px -977px;padding:5px 6px 6px 6px;font:bold 14px arial;color:#fff;text-shadow:#fff 0px 0px 0px;}
+.selectedRadioTextBottonCanvas .rightNewBtnFirstRadioText{background-position:left -1009px;padding:5px 0px 6px 0px;width:4px;margin:0px 0px 0px -1px;}
+
+.selectedRadioTextBottonCanvas .leftNewBtnMidRadioText{background-position:left -1345px;padding:5px 0px 6px 0px;width:4px;margin:0px -1px 0px 0px;}
+.selectedRadioTextBottonCanvas .centerNewBtnMidRadioText{background-position:0px -977px;padding:5px 6px 6px 6px;font:bold 14px arial;color:#fff;text-shadow:#fff 0px 0px 0px;}
+.selectedRadioTextBottonCanvas .rightNewBtnMidRadioText{background-position:left -1009px;padding:5px 0px 6px 0px;width:4px;margin:0px 0px 0px -1px;}
+
+.selectedRadioTextBottonCanvas .leftNewBtnLastRadioText{background-position:left -1345px;padding:5px 0px 6px 0px;width:4px;margin:0px -1px 0px 0px;}
+.selectedRadioTextBottonCanvas .centerNewBtnLastRadioText{background-position:0px -977px;padding:5px 6px 6px 6px;font:bold 14px arial;color:#fff;text-shadow:#fff 0px 0px 0px;}
+.selectedRadioTextBottonCanvas .rightNewBtnLastRadioText{background-position:left -1313px;padding:5px 0px 6px 0px;width:4px;margin:0px 0px 0px -1px;}
+
+/* Arrows */
+.arrows{background-image:url('<?=$url_for_images;?>/arrows.1.0.1.png');background-repeat:no-repeat;}
+.whiteArrow{background-position:left -7px;font-size:4px;padding:0px 1px 1px 7px;position:relative;top:-4px;}
+
+.table{display:table;}
+.tableRow{display:table-row;}
+.tableHeaderRow{background-color:#E6E6E6;}
+.tableCell{display:table-cell;white-space:nowrap;}
+
+/* Icons */
+.icons{background-image:url('<?=$url_for_images;?>/icons.1.0.1.png');background-repeat:no-repeat;}
+.diamondIcon{background-position:-24px -15px;font-size:6px;padding:0px 3px 0px 3px;position:relative;top:-1px;}
+.grayBullishIcon{background-position:-35px 0px;font-size:10px;vertical-align:super;padding:1px 7px 1px 6px;}
+.redBullishIcon{background-position:-19px 0px;font-size:10px;vertical-align:super;padding:1px 7px 1px 6px;}
+
+
+.newBtn {
+        -moz-user-select: none !important;
+        background-image: none !important;
+        cursor: pointer !important;
+        display: inline-block !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        line-height: 1.42857 !important;
+        margin-bottom: 10px !important;
+        padding: 5px 15px !important;
+        text-align: center !important;
+        text-transform: uppercase !important;
+        vertical-align: middle !important;
+        white-space: nowrap !important;
+        border-radius: 3px !important;
+        padding: 10px 20px !important;
+        text-align: left !important;
+        margin: 0 1px !important;
+        border: none !important;
+        background: #000000 none repeat scroll 0 0 !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }
+
+.newBtn.toggled {
+        background-color: #1cbb4b !important;
+        color: #fff !important;
+        text-decoration: none !important;
+    }
+
+.newBtn.toggled:hover,
+.newBtn.toggled:focus {
+        background-color: #449d44 !important;
+    }
+
+
+.newBtn:hover,
+.newBtn:focus {
+        background: #111111 none repeat scroll 0 0 !important;
+        color: #fff !important;
+    }
+
+.radioTextBottonCanvas .centerNewBtnFirstRadioText{background-position:0 0 ; background:black !important;}

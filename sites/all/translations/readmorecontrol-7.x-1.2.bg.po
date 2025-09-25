@@ -1,0 +1,28 @@
+# Bulgarian translation of Read More Control (7.x-1.2)
+# Copyright (c) 2014 by the Bulgarian translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Read More Control (7.x-1.2)\n"
+"POT-Creation-Date: 2014-02-17 19:04+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Bulgarian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "User interface"
+msgstr "Потребителски интерфейс"
+msgid "disabled"
+msgstr "деактивиран"
+msgid "Help"
+msgstr "Справка"
+msgid "Default"
+msgstr "По подразбиране"
+msgid "URL"
+msgstr "URL"
+msgid "Read more<span class=\"element-invisible\"> about @title</span>"
+msgstr ""
+"Прочети още<span class=\"element-invisible\"> about "
+"@title</span>"

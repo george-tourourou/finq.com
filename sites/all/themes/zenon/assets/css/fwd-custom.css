@@ -1,0 +1,47 @@
+#footer-sitemap .main-menu > ul > li {
+    margin: 0 20px !important;
+    width: 10.5% !important;
+}
+
+#footer-sitemap .main-menu > ul > li > ul > li {
+    line-height: 16px;
+    margin-bottom: 9px;
+}
+
+#footer-sitemap .main-menu > ul > li > ul > li > a {
+    font-size: 12px !important;
+    background: none !important;
+    padding-left: 0px;
+}
+
+html[lang="cs"] .market-news-title {
+    text-transform: none !important;
+}
+
+
+/* ALL TEXT BLACK */
+.key-news-item-title a,
+#promogroup1container,
+#video-tabs-header,
+#video-tabs li a span.glyphicon,
+#video-tabs li a span.link,
+#analysis-table td.anal-text,
+.key_grey,
+p.key_simple_par,
+#maincontainer,
+.node-pricing-plan .pricing-plan--heading,
+.node-pricing-plan .field-name-field-pricing-plan-subtitle,
+.node-pricing-plan, ul, li span:not(.glyphicon),
+#maincontainer .heavy,
+#timeline .body .content,
+#block-block-49 span:not(.custom-mail) {
+    color: #3b3b3b !important;
+}
+
+/* account types price table -- fixes */
+.node-pricing-plan span.glyphicon-remove {
+    color: #FF0000 !important;
+}
+.node-pricing-plan span.glyphicon-remove + * {
+    font-weight: 600 !important;
+}

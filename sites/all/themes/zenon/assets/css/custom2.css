@@ -1,0 +1,337 @@
+/* Top Bar Login Area */
+.login-area { }
+
+    .login-area ul li a.login_button:before {
+        padding-right: 1px;
+        font-size: 8px !important;
+        font-weight: 400;
+    }
+
+/* Top Login Drop Down */
+.login-slide-down-section { }
+
+    .login-slide-down-section .widget-box {
+        padding: 25px 45px;
+        height: 250px;
+    }
+
+    .login-slide-down-section .widget-box.border-right {
+        border-right: 1px solid #d4d4d4 !important;
+    }
+
+    .login-slide-down-section .widget-box .title {
+        color: #28313a;
+    }
+
+    .login-slide-down-section .widget-box .title.no-margin-bottom {
+        margin-bottom: 0;
+    }
+
+    .login-slide-down-section .widget-box .message {
+        color: #666666;
+        font-size: 17px;
+        line-height: 29px;
+    }
+
+    .login-slide-down-section .widget-box a {
+        font-weight: 600;
+    }
+
+    .login-slide-down-section .widget-box iframe {
+        height: 180px;
+        margin-top: 5px !important;
+    }
+
+    .login-slide-down-section .widget-box .contact-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .login-slide-down-section .widget-box p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #666666;
+        margin: 0;
+    }
+
+    .login-slide-down-section .widget-box p span {
+        color: #ff9001;
+    }
+
+    .login-slide-down-section .widget-box .phone-nr {
+        color: #28313a;
+        margin-top: 16px;
+    }
+
+/* Main Menu */
+ul.main-menu { }
+
+    ul.main-menu > li > a {
+        font-weight: bold;
+    }
+
+/* Quick Open Account Widget */
+.quick-open-account-widget { }
+
+    .quick-open-account-widget .section-title {
+        margin-top: 0px;
+    }
+
+    .quick-open-account-widget form {
+        position: relative;
+    }
+
+    .quick-open-account-widget form:before {
+        content: '';
+        position: absolute;
+        top: -7px;
+        left: 50px;
+        width: 20px;
+        height: 20px;
+        background-color: #28313A;
+        transform: rotate(45deg);
+    }
+
+    .quick-open-account-widget form input {
+        font-size: 11px;
+        width: 100%;
+        padding: 1px 5px !important;
+    }
+
+    .quick-open-account-widget form ::-webkit-input-placeholder {
+        color: #333333;
+    }
+
+    .quick-open-account-widget form :-moz-placeholder { /* Firefox 18- */
+        color: #333333;
+    }
+
+    .quick-open-account-widget form ::-moz-placeholder {  /* Firefox 19+ */
+        color: #333333;
+    }
+
+    .quick-open-account-widget form :-ms-input-placeholder {
+        color: #333333;
+    }
+
+    .quick-open-account-widget a.open-demo-account-btn {
+        line-height: 20px !important;
+        transition: all 500ms ease-out;
+    }
+
+    .quick-open-account-widget a.open-demo-account-btn:hover {
+        background: #29AD82 !important;
+    }
+
+/* Middle banner */
+#homepage_second_slider_content .slide_item .caption {
+    text-align: center;
+}
+
+/* News section */
+#news-section-1 {
+    padding-left: 15px !important;
+}
+#news-section-1 [class^="col-"] {
+    padding-left: 0 !important;
+}
+#news-section-1 .news-item .title {
+    line-height: 16px;
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+}
+#news-section-1 .news-item .title a {
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+#news-section-1 .news-item .news-read-more {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+#news-section-1 .news-item .date {
+    line-height: 15px;
+    margin-top: 7px;
+}
+
+/* Open Account Bottom Section */
+.open-account-section {  }
+
+    .open-account-section .keystock_button_full_green {
+        font-weight: 600;
+    }
+
+    .open-account-section .section-title {
+        font-family: 'Roboto';
+        font-weight: 300;
+    }
+
+/* Prefooter (paymebnt icons) */
+#globalfootertopwrapper {
+    background: #f5f5f5;
+}
+#block-block-29 img {
+    width: auto;
+}
+
+/* Footer Sitemap */
+#footer-sitemap > .fs-block-content > .main-menu > ul > li > a {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.001em;
+}
+#footer-sitemap > .fs-block-content > .main-menu > ul > li > ul {
+    margin-top: 35px !important;
+}
+#footer-sitemap > .fs-block-content > .main-menu > ul > li > ul li {
+    margin-bottom: 4px;
+}
+#footer-sitemap > .fs-block-content > .main-menu > ul > li > ul li a {
+    font-size: 13px !important;
+    color: #CCCCCC !important;
+}
+
+/* Footer Social */
+.footer_social h6 {
+    margin-top: 0px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #4d4d4d;
+}
+.footer_social .social-icons a {
+    margin-right: 10px;
+}
+
+/* Legal age */
+.legal-age-block {
+    margin-top: 0 !important;
+}
+
+/* Video Area */
+
+#video-tabs {}
+    #video-tabs li:hover, #video-tabs > li.active:hover > a, #video-tabs > li.active, #video-tabs > li.active a:last-child {
+        background: #f7f7f7;
+    }
+    #video-tabs li a {
+        text-align: left;
+    }
+    #video-tabs li a .link + div,  #video-tabs li a span.views {
+        color: #b3b3b3 !important;
+        font-size: 12px;
+    }
+
+
+
+/* ================ Different languages fixes ===================== */
+
+/*.i18n-ar nav#main-menu ul.main-menu > li > a  {
+	/*font-size: 13px;*/
+}*/
+
+.i18n-ar .md-objects
+{
+	direction: ltr;
+}
+.i18n-ar #footer-sitemap > .fs-block-content > .main-menu > ul > li > a {
+	font-size: 15px;
+}
+
+.i18n-ar #block-menu-menu-top-menu-logged-out ul li 
+{
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+/*.i18n-cs nav#main-menu ul.main-menu > li > a  {
+	font-size: 14px;
+}
+
+.i18n-el nav#main-menu ul.main-menu > li > a  {
+	padding: 21px 6px!important;
+    font-size: 12px;
+}
+
+.i18n-hu nav#main-menu ul.main-menu > li > a  {
+	font-size: 13px;
+}
+
+.i18n-it nav#main-menu ul.main-menu > li > a  {
+	padding: 21px 5px!important;
+    font-size: 14px;
+}
+
+.i18n-pl nav#main-menu ul.main-menu > li > a  {
+	font-size: 13px;
+}
+
+.i18n-ro nav#main-menu ul.main-menu > li > a  {
+	padding: 21px 6px!important;
+    font-size: 12px;
+}
+
+.i18n-ru nav#main-menu ul.main-menu > li > a  {
+	padding: 21px 5px!important;
+    font-size: 12px;
+}
+
+.i18n-sk nav#main-menu ul.main-menu > li > a  {
+	padding: 21px 6px!important;
+    font-size: 13px;
+}
+
+.i18n-es nav#main-menu ul.main-menu > li > a  {
+	font-size: 14px;
+}*/
+
+@media(max-width: 1199px) {
+	
+	/*.i18n-cs nav#main-menu ul.main-menu > li > a  {
+		font-size: 12px;
+	}	
+	.i18n-el nav#main-menu ul.main-menu > li > a {
+	    padding: 21px 4px!important;
+	    font-size: 11px;
+	}
+	 
+	.i18n-hu nav#main-menu ul.main-menu > li > a {
+		font-size: 12px;
+		padding: 21px 4px !important;
+	}
+	.i18n-it nav#main-menu ul.main-menu > li > a  {
+	    font-size: 12px;
+	}
+	.i18n-pl nav#main-menu ul.main-menu > li > a {
+	    font-size: 12px;
+	}
+	.i18n-ro nav#main-menu ul.main-menu > li > a {
+	    padding: 21px 4px!important;
+	    font-size: 11px;
+	}
+	.i18n-ru nav#main-menu ul.main-menu > li > a {
+	    padding: 21px 3px!important;
+	    font-size: 11px;
+	}
+	.i18n-sk nav#main-menu ul.main-menu > li > a {
+	    padding: 21px 5px!important;
+	    font-size: 12px;
+	}
+	.i18n-es nav#main-menu ul.main-menu > li > a {
+	    font-size: 13px;
+	    padding: 21px 4px !important;
+	}*/
+}
+
+/* //////////////// Different languages fixes ///////////////////// */
+
+
+/* ================== LEAD REGISTRATION HOMEPAGE ========================*/
+
+
+#lead-registration-homepage #iframe{
+	background-color: transparent;
+}
+
+/* ////////////////// LEAD REGISTRATION HOMEPAGE ////////////////////////*/

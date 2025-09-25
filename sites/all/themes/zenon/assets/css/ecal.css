@@ -1,0 +1,1166 @@
+
+
+
+/* ================= */
+
+#economicCalendarForm {
+  /* Flags */
+  /* tooltip triangle */
+  /* Time Zone Setting */
+  /* /Time Setting */
+  /*.eCalNew .ecoCalTable.genTable TH {text-align:center;}*/
+  /*.eCalMain .ecHistoryTable.genTable TH:first-child {text-align:left;}*/
+  /* Economic Calendar Event Chart Tooltip */
+}
+#economicCalendarForm .arial_10 {
+  font-size: 10px;
+}
+#economicCalendarForm .arial_11 {
+  font-size: 11px;
+}
+#economicCalendarForm .arial_12 {
+  font-size: 12px;
+}
+#economicCalendarForm .arial_14 {
+  font-size: 14px;
+}
+#economicCalendarForm .arial_15 {
+  font-size: 15px;
+}
+#economicCalendarForm .arial_16 {
+  font-size: 16px;
+}
+#economicCalendarForm .arial_24 {
+  font-size: 24px;
+}
+#economicCalendarForm .lightgrayFont {
+  color: #808080;
+}
+#economicCalendarForm .greenFont {
+  color: #0EA600;
+}
+#economicCalendarForm .redFont {
+  color: #FF0000;
+}
+#economicCalendarForm .neutralFont {
+  color: #808080;
+}
+#economicCalendarForm .blackFont {
+  color: #000;
+}
+#economicCalendarForm .bold {
+  font-weight: bold;
+}
+#economicCalendarForm .text_align_lang_base_1 {
+  text-align: left;
+}
+#economicCalendarForm .text_align_lang_base_2 {
+  text-align: right;
+}
+#economicCalendarForm .align_center {
+  text-align: center;
+}
+#economicCalendarForm .align_right {
+  text-align: right;
+}
+#economicCalendarForm .align_left {
+  text-align: left;
+}
+#economicCalendarForm .dirLtr {
+  direction: ltr;
+}
+#economicCalendarForm .dirRtl {
+  direction: rtl;
+}
+#economicCalendarForm .dir_lang_base_1 {
+  direction: ltr;
+}
+#economicCalendarForm .dir_lang_base_2 {
+  direction: rtl;
+}
+#economicCalendarForm .fLeft {
+  float: left;
+}
+#economicCalendarForm .fRight {
+  float: right;
+}
+#economicCalendarForm .float_lang_base_1 {
+  float: left;
+}
+#economicCalendarForm .float_lang_base_2 {
+  float: left;
+}
+#economicCalendarForm .clear {
+  clear: both;
+}
+#economicCalendarForm .auto {
+  margin: 0 auto;
+}
+#economicCalendarForm .inline {
+  display: inline;
+}
+#economicCalendarForm .block {
+  display: block;
+}
+#economicCalendarForm .displayNone {
+  display: none;
+}
+#economicCalendarForm .inlineblock {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#economicCalendarForm .hidden {
+  visibility: hidden;
+}
+#economicCalendarForm .visible {
+  visibility: visible;
+}
+#economicCalendarForm .vertical, #economicCalendarForm .middle {
+  vertical-align: middle !important;
+}
+#economicCalendarForm .top, #economicCalendarForm .alignTop {
+  vertical-align: top !important;
+}
+#economicCalendarForm .alignBottom {
+  vertical-align: bottom !important;
+}
+#economicCalendarForm .arrows {
+  background-image: url("https://ca33f332e2199349c49c-dc74b5af55c9b2a1bd8891aa9e8701fc.ssl.cf1.rackcdn.com/arrows_v10.png");
+  background-repeat: no-repeat;
+}
+#economicCalendarForm .darkGrayDownArrow {
+  background-position: 0 -336px;
+  padding: 0 4px 0 0;
+  margin: 3px 3px 0;
+  height: 10px;
+}
+#economicCalendarForm .wordBreak {
+  word-wrap: break-word;
+}
+#economicCalendarForm .uppercaseText {
+  text-transform: uppercase;
+}
+#economicCalendarForm .newSiteIconsSprite {
+  background-image: url("https://ca33f332e2199349c49c-dc74b5af55c9b2a1bd8891aa9e8701fc.ssl.cf1.rackcdn.com/newSiteIconsSprite_v30i.png");
+}
+#economicCalendarForm .downArrow {
+  background-position: -96px -478px;
+  width: 21px;
+  height: 21px;
+  margin: 9px 9px 0 -1px;
+}
+#economicCalendarForm .noneArrow {
+  background-position: -121px -478px;
+  width: 21px;
+  height: 21px;
+  margin: 9px 9px 0 -1px;
+}
+#economicCalendarForm .upArrow {
+  background-position: -70px -478px;
+  width: 22px;
+  height: 21px;
+  margin: 9px 9px 0 -1px;
+}
+#economicCalendarForm .greenClockIcon {
+  background-position: -33px -42px;
+  padding: 0 0 3px 10px;
+}
+#economicCalendarForm .redClockIcon {
+  background-position: -33px -20px;
+  padding: 0 0 3px 10px;
+}
+#economicCalendarForm .datePickerIcon {
+  background-position: -73px -718px;
+  width: 15px;
+  height: 13px;
+  margin-top: 3px;
+}
+#economicCalendarForm .audioIconNew {
+  background-position: -74px -581px;
+  width: 18px;
+  height: 13px;
+  display: inline-block;
+}
+#economicCalendarForm .diamondNewIcon {
+  background-color: #edb23b;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 7px;
+  height: 7px;
+}
+#economicCalendarForm .sandClock {
+  background-position: -119px -582px;
+  width: 10px;
+  height: 14px;
+  display: inline-block;
+}
+#economicCalendarForm .smallGrayP {
+  background-position: -98px -583px;
+  width: 15px;
+  height: 12px;
+  display: inline-block;
+}
+#economicCalendarForm .grayClockIcon {
+  background-position: -136px -643px;
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+}
+#economicCalendarForm .dropDownArrowGray {
+  background-position: -111px -107px;
+  padding: 0 5px 0;
+}
+#economicCalendarForm .searchGlassIcon {
+  background-position: 3px -40px;
+  border-left: 1px solid #0D416F;
+  margin: 2px 0 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+}
+#economicCalendarForm .ecoSearchBox .searchGlassIcon {
+  border-left: none;
+  margin: 0;
+  background-position: -130px -1057px;
+  padding: 1px 13px 0 4px;
+}
+#economicCalendarForm .ecoFilterRestoreIcon {
+  background-position: -130px -1073px;
+  padding: 0 7px;
+  margin-right: 5px;
+}
+#economicCalendarForm .ceFlags {
+  width: 16px;
+  height: 15px;
+  background-image: url("https://ca33f332e2199349c49c-dc74b5af55c9b2a1bd8891aa9e8701fc.ssl.cf1.rackcdn.com/ce_flags_v6.png");
+  background-repeat: no-repeat;
+  padding: 0;
+  display: inline-block;
+  display: none;
+}
+#economicCalendarForm .ASEAN {
+  background-position: 0 0;
+}
+#economicCalendarForm .Afghanistan {
+  background-position: 0 -17px;
+}
+#economicCalendarForm .AfricanUnion {
+  background-position: 0 -34px;
+}
+#economicCalendarForm .Albania {
+  background-position: 0 -51px;
+}
+#economicCalendarForm .Algeria {
+  background-position: 0 -68px;
+}
+#economicCalendarForm .AmericanSamoa {
+  background-position: 0 -85px;
+}
+#economicCalendarForm .Andorra {
+  background-position: 0 -102px;
+}
+#economicCalendarForm .Angola {
+  background-position: 0 -119px;
+}
+#economicCalendarForm .Anguilla {
+  background-position: 0 -136px;
+}
+#economicCalendarForm .Antarctica {
+  background-position: 0 -153px;
+}
+#economicCalendarForm .AntiguaBarbuda {
+  background-position: 0 -170px;
+}
+#economicCalendarForm .ArabLeague {
+  background-position: 0 -187px;
+}
+#economicCalendarForm .Argentina, #economicCalendarForm .ars {
+  background-position: 0 -204px;
+}
+#economicCalendarForm .Armenia {
+  background-position: 0 -221px;
+}
+#economicCalendarForm .Aruba {
+  background-position: 0 -238px;
+}
+#economicCalendarForm .Australia, #economicCalendarForm .aus, #economicCalendarForm .aud {
+  background-position: 0 -255px;
+}
+#economicCalendarForm .Austria {
+  background-position: 0 -272px;
+}
+#economicCalendarForm .Azerbaijan {
+  background-position: 0 -289px;
+}
+#economicCalendarForm .Bahamas {
+  background-position: 0 -306px;
+}
+#economicCalendarForm .Bahrain {
+  background-position: 0 -323px;
+}
+#economicCalendarForm .Bangladesh {
+  background-position: 0 -340px;
+}
+#economicCalendarForm .Barbados {
+  background-position: 0 -357px;
+}
+#economicCalendarForm .Belarus {
+  background-position: 0 -374px;
+}
+#economicCalendarForm .Belgium {
+  background-position: 0 -391px;
+}
+#economicCalendarForm .Belize {
+  background-position: 0 -408px;
+}
+#economicCalendarForm .Benin {
+  background-position: 0 -425px;
+}
+#economicCalendarForm .Bermuda {
+  background-position: 0 -442px;
+}
+#economicCalendarForm .Bhutan {
+  background-position: 0 -459px;
+}
+#economicCalendarForm .Bolivia {
+  background-position: 0 -476px;
+}
+#economicCalendarForm .Bosnia, #economicCalendarForm .Bosnia_and_Herzegovina {
+  background-position: 0 -493px;
+}
+#economicCalendarForm .Botswana {
+  background-position: 0 -510px;
+}
+#economicCalendarForm .Brazil, #economicCalendarForm .brl {
+  background-position: 0 -527px;
+}
+#economicCalendarForm .Brunei {
+  background-position: 0 -544px;
+}
+#economicCalendarForm .Bulgaria {
+  background-position: 0 -561px;
+}
+#economicCalendarForm .BurkinaFaso {
+  background-position: 0 -578px;
+}
+#economicCalendarForm .Burundi {
+  background-position: 0 -595px;
+}
+#economicCalendarForm .CARICOM {
+  background-position: 0 -612px;
+}
+#economicCalendarForm .CIS {
+  background-position: 0 -629px;
+}
+#economicCalendarForm .Cambodja {
+  background-position: 0 -646px;
+}
+#economicCalendarForm .Cameroon {
+  background-position: 0 -663px;
+}
+#economicCalendarForm .Canada, #economicCalendarForm .can, #economicCalendarForm .cad {
+  background-position: 0 -680px;
+}
+#economicCalendarForm .CapeVerde, #economicCalendarForm .Cape_Verde {
+  background-position: 0 -697px;
+}
+#economicCalendarForm .Cayman_Islands {
+  background-position: 0 -714px;
+}
+#economicCalendarForm .Central_African_Republic {
+  background-position: 0 -731px;
+}
+#economicCalendarForm .Chad {
+  background-position: 0 -748px;
+}
+#economicCalendarForm .Chile, #economicCalendarForm .clp {
+  background-position: 0 -765px;
+}
+#economicCalendarForm .China, #economicCalendarForm .cny {
+  background-position: 0 -782px;
+}
+#economicCalendarForm .Colombia, #economicCalendarForm .cop {
+  background-position: 0 -799px;
+}
+#economicCalendarForm .Commonwealth {
+  background-position: 0 -816px;
+}
+#economicCalendarForm .Comoros {
+  background-position: 0 -833px;
+}
+#economicCalendarForm .Congo-Brazzaville {
+  background-position: 0 -850px;
+}
+#economicCalendarForm .Congo-KinshasaZaire {
+  background-position: 0 -867px;
+}
+#economicCalendarForm .Cook_Islands {
+  background-position: 0 -884px;
+}
+#economicCalendarForm .Costa_Rica {
+  background-position: 0 -901px;
+}
+#economicCalendarForm .Cote_dIvoire {
+  background-position: 0 -918px;
+}
+#economicCalendarForm .Croatia {
+  background-position: 0 -935px;
+}
+#economicCalendarForm .Cuba {
+  background-position: 0 -952px;
+}
+#economicCalendarForm .Cyprus {
+  background-position: 0 -969px;
+}
+#economicCalendarForm .Czech_Republic, #economicCalendarForm .czk {
+  background-position: 0 -986px;
+}
+#economicCalendarForm .Denmark, #economicCalendarForm .dkk {
+  background-position: 0 -1003px;
+}
+#economicCalendarForm .Djibouti {
+  background-position: 0 -1020px;
+}
+#economicCalendarForm .Dominica {
+  background-position: 0 -1037px;
+}
+#economicCalendarForm .Dominican_Republic {
+  background-position: 0 -1054px;
+}
+#economicCalendarForm .Dubai {
+  background-position: -17px -1819px;
+}
+#economicCalendarForm .EastTimor {
+  background-position: 0 -1071px;
+}
+#economicCalendarForm .Ecuador {
+  background-position: 0 -1088px;
+}
+#economicCalendarForm .Egypt {
+  background-position: 0 -1105px;
+}
+#economicCalendarForm .El_Salvador {
+  background-position: 0 -1122px;
+}
+#economicCalendarForm .England {
+  background-position: 0 -1139px;
+}
+#economicCalendarForm .EquatorialGuinea {
+  background-position: 0 -1156px;
+}
+#economicCalendarForm .Eritrea {
+  background-position: 0 -1173px;
+}
+#economicCalendarForm .Estonia {
+  background-position: 0 -1190px;
+}
+#economicCalendarForm .Ethiopia {
+  background-position: 0 -1207px;
+}
+#economicCalendarForm .European_Union, #economicCalendarForm .eur, #economicCalendarForm .Europe {
+  background-position: 0 -1224px;
+}
+#economicCalendarForm .Faroes {
+  background-position: 0 -1241px;
+}
+#economicCalendarForm .Fiji {
+  background-position: 0 -1258px;
+}
+#economicCalendarForm .Finland {
+  background-position: 0 -1275px;
+}
+#economicCalendarForm .France {
+  background-position: 0 -1292px;
+}
+#economicCalendarForm .Gabon {
+  background-position: 0 -1309px;
+}
+#economicCalendarForm .Gambia {
+  background-position: 0 -1326px;
+}
+#economicCalendarForm .Georgia {
+  background-position: 0 -1343px;
+}
+#economicCalendarForm .Germany {
+  background-position: 0 -1360px;
+}
+#economicCalendarForm .Ghana {
+  background-position: 0 -1377px;
+}
+#economicCalendarForm .Gibraltar {
+  background-position: 0 -1394px;
+}
+#economicCalendarForm .Greece {
+  background-position: 0 -1411px;
+}
+#economicCalendarForm .Greenland {
+  background-position: 0 -1428px;
+}
+#economicCalendarForm .Grenada {
+  background-position: 0 -1445px;
+}
+#economicCalendarForm .Guadeloupe {
+  background-position: 0 -1462px;
+}
+#economicCalendarForm .Guademala {
+  background-position: 0 -1479px;
+}
+#economicCalendarForm .Guam {
+  background-position: 0 -1496px;
+}
+#economicCalendarForm .Guinea-Bissau {
+  background-position: 0 -1513px;
+}
+#economicCalendarForm .Guinea {
+  background-position: 0 -1530px;
+}
+#economicCalendarForm .Guyana {
+  background-position: 0 -1547px;
+}
+#economicCalendarForm .Haiti {
+  background-position: 0 -1564px;
+}
+#economicCalendarForm .Honduras {
+  background-position: 0 -1581px;
+}
+#economicCalendarForm .Hong_Kong, #economicCalendarForm .hkd {
+  background-position: 0 -1598px;
+}
+#economicCalendarForm .Hungary, #economicCalendarForm .huf {
+  background-position: 0 -1615px;
+}
+#economicCalendarForm .Iceland {
+  background-position: 0 -1632px;
+}
+#economicCalendarForm .India, #economicCalendarForm .inr {
+  background-position: 0 -1649px;
+}
+#economicCalendarForm .Indonesia, #economicCalendarForm .idr {
+  background-position: 0 -1666px;
+}
+#economicCalendarForm .Iran {
+  background-position: 0 -1683px;
+}
+#economicCalendarForm .Iraq {
+  background-position: 0 -1700px;
+}
+#economicCalendarForm .Ireland {
+  background-position: 0 -1717px;
+}
+#economicCalendarForm .IslamicConference {
+  background-position: 0 -1734px;
+}
+#economicCalendarForm .Israel {
+  background-position: 0 -1751px;
+}
+#economicCalendarForm .Italy {
+  background-position: 0 -1768px;
+}
+#economicCalendarForm .Jamaica {
+  background-position: 0 -1785px;
+}
+#economicCalendarForm .Japan, #economicCalendarForm .jpn, #economicCalendarForm .jpy {
+  background-position: 0 -1802px;
+}
+#economicCalendarForm .Jersey {
+  background-position: 0 -1819px;
+}
+#economicCalendarForm .Jordan {
+  background-position: 0 -1836px;
+}
+#economicCalendarForm .Kazakhstan {
+  background-position: 0 -1853px;
+}
+#economicCalendarForm .Kenya {
+  background-position: 0 -1870px;
+}
+#economicCalendarForm .Kiribati {
+  background-position: 0 -1887px;
+}
+#economicCalendarForm .Kuwait {
+  background-position: 0 -1904px;
+}
+#economicCalendarForm .Kyrgyzstan {
+  background-position: 0 -1921px;
+}
+#economicCalendarForm .Laos {
+  background-position: 0 -1938px;
+}
+#economicCalendarForm .Latvia {
+  background-position: 0 -1955px;
+}
+#economicCalendarForm .Lebanon {
+  background-position: 0 -1972px;
+}
+#economicCalendarForm .Lesotho {
+  background-position: 0 -1989px;
+}
+#economicCalendarForm .Liberia {
+  background-position: -17px 0;
+}
+#economicCalendarForm .newSiteIconsSprite {
+  background-image: url("https://ca33f332e2199349c49c-dc74b5af55c9b2a1bd8891aa9e8701fc.ssl.cf1.rackcdn.com/newSiteIconsSprite_v30i.png");
+}
+#economicCalendarForm .greenAndroidIcon {
+  background-position: -95px -1337px;
+  width: 15px;
+  height: 19px;
+  display: inline-block;
+}
+#economicCalendarForm .greyAppleLogo {
+  background-position: -94px -1464px;
+  width: 15px;
+  height: 17px;
+  display: inline-block;
+}
+#economicCalendarForm .downloadApp {
+  margin-left: 5px;
+  position: relative;
+  top: -3px;
+}
+#economicCalendarForm .downloadApp + .downloadApp {
+  margin-left: 7px;
+  padding-left: 5px;
+  border-left: 1px solid #dadada;
+  height: 16px;
+  line-height: 0;
+}
+#economicCalendarForm .wmtTooltip {
+  display: none;
+  padding: 5px 8px 5px 7px;
+  background-color: #333;
+  color: #fff;
+  line-height: normal;
+  position: absolute;
+  top: 31px;
+  left: -5px;
+  z-index: 1;
+  white-space: nowrap;
+  font-weight: bold;
+}
+#economicCalendarForm .wmtTooltip:before {
+  content: "";
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  border-width: 0 6px 6px 6px;
+  left: 7px;
+  top: -6px;
+  position: absolute;
+  display: block;
+}
+#economicCalendarForm .downloadApp:hover .wmtTooltip {
+  display: block;
+}
+#economicCalendarForm .downloadApp + .downloadApp .wmtTooltip {
+  left: -1px;
+  top: 29px;
+}
+#economicCalendarForm .ecoTimeAndText {
+  /*margin-top:15px;*/
+  position: relative;
+}
+#economicCalendarForm IFRAME + .ecoTimeAndText {
+  margin-right: 20px;
+}
+#economicCalendarForm .ecoCurrentTime {
+  border: 1px solid #fff;
+  position: relative;
+  margin: 2px;
+  white-space: nowrap;
+  padding: 2px 0 2px 5px;
+	color: #28313A;
+	font-weight: initial;
+	margin-top: 7px;
+	font-size: 12px;
+}
+#economicCalendarForm .ecoCurrentTime:hover {
+  border: 1px solid #a6a6a6;
+  cursor: pointer;
+  background: -o-linear-gradient(top, #ffffff 0%, #f5f5f5);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f5f5f5);
+  background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#ffffff, endColorstr=#f5f5f5, GradientType=0);
+  background: #fff;
+}
+#economicCalendarForm .ecoCurrentTimePop {
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  left: -108px;
+  left: 0px;
+width: 250px;
+}
+#economicCalendarForm .ecoCurrentTimePop UL {
+  background-color: #fff;
+  height: 265px;
+  overflow-y: scroll;
+  padding: 7px 0;
+  border: 1px solid #595959;
+}
+#economicCalendarForm .ecoCurrentTimePop LI {
+  padding: 0 7px;
+}
+#economicCalendarForm .ecoCurrentTimePop LI:hover {
+  background-color: #e8f2fa;
+  cursor: pointer;
+}
+#economicCalendarForm .ecoAutoUpdateText {
+  padding: 2px 4px;
+}
+#economicCalendarForm .doubleArrowLink {
+  height: 7px;
+  width: 8px;
+  vertical-align: middle;
+  background-image: URL("https://ca33f332e2199349c49c-dc74b5af55c9b2a1bd8891aa9e8701fc.ssl.cf1.rackcdn.com/newSiteIconsSprite_v34o.png");
+  background-position: -35px -462px;
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+#economicCalendarForm .doubleArrowLinkRtl {
+  background-position: -50px -462px;
+}
+#economicCalendarForm .eCalNew a {
+  color: #333;
+}
+#economicCalendarForm H2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 13px 0;
+}
+#economicCalendarForm .inlineBlock {
+  display: inline-block;
+}
+#economicCalendarForm .ecoTimeAndDate {
+  position: relative;
+  margin-top: 36px;
+}
+#economicCalendarForm .ecoTimeAndText .arrow {
+  background-position: -51px -339px;
+  padding: 3px 12px;
+  position: absolute;
+  top: -11px;
+  left: 143px;
+  z-index: 1;
+  line-height: 1px;
+}
+#economicCalendarForm .ecoCurrentTimePop UL {
+  background-color: #fff;
+  height: 265px;
+  overflow-y: scroll;
+  padding: 7px 0;
+  border: 1px solid #595959;
+}
+#economicCalendarForm .ecoCurrentTimePop LI {
+  color: #333;
+  padding: 0 7px;
+}
+#economicCalendarForm .ecoCurrentTimePop LI:hover {
+  background-color: #e8f2fa;
+  cursor: pointer;
+}
+#economicCalendarForm .ecoTimeAndDate .arrow {
+  background-position: -51px -339px;
+  padding: 3px 12px;
+  position: absolute;
+  top: -11px;
+  left: 38px;
+  z-index: 1;
+  line-height: 1px;
+}
+#economicCalendarForm .ecoCalTable {
+  color: defaultFont;
+  width: 100%;
+  /*max-width:636px;*/
+  min-width: 440px;
+}
+#economicCalendarForm .eCalNew TABLE.ecoCalTable {
+  margin-top: 12px;
+  *border-collapse: collapse !important;
+}
+#economicCalendarForm .eCalNew HEADER + TABLE.ecoCalTable {
+  margin-top: 27px;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable TH, #economicCalendarForm .eCalMain TABLE.ecoCalTable TD {
+  text-align: right;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable TH.time, #economicCalendarForm .eCalMain TABLE.ecoCalTable TD.time {
+  white-space: nowrap;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable TH.time, #economicCalendarForm .eCalMain TABLE.ecoCalTable TD.time, #economicCalendarForm .eCalMain TABLE.ecoCalTable TD.center {
+  /*padding:0;*/
+  text-align: center;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable TH.flagCur, #economicCalendarForm .eCalMain TABLE.ecoCalTable TD.flagCur {
+  padding-left: 0px;
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+  color: #28313A;
+}
+#economicCalendarForm .eCalMain .ceFlags {
+  margin-right: 3px;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable TH.sentiment, #economicCalendarForm .eCalMain TABLE.ecoCalTable TD.sentiment {
+  white-space: nowrap;
+  padding-left: 5px;
+  text-align: left;
+  display: none;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable TH.event, #economicCalendarForm .eCalMain TABLE.ecoCalTable TD.event {
+  line-height: 19px;
+  padding: 2px 0 2px 10px;
+  text-align: left;
+}
+#economicCalendarForm .eCalMain .act, #economicCalendarForm .eCalMain .fore, #economicCalendarForm .eCalMain .prev {
+/*  padding-left: 5px;
+  direction: ltr;*/
+padding-left: 2px;
+direction: ltr;
+padding-right: 3px;
+}
+#economicCalendarForm .eCalMain .act, #economicCalendarForm .eCalMain .fore {
+  padding: 0 2px;
+}
+#economicCalendarForm .eCalMain .diamond {
+  width: 7px;
+  padding: 0 2px;
+  display: none;
+}
+#economicCalendarForm .eCalMain .noHover TD {
+  padding: 0;
+}
+#economicCalendarForm .eCalMain .noHover TD DIV.eventDetailWrap {
+  width: 99%;
+}
+#economicCalendarForm .eCalNew .ecoCalTable.genTable TD {
+  height: 25px;
+}
+#economicCalendarForm .eCalNew .ecoCalTable.genTable TD.event {
+  height: 21px;
+  color: #28313A;
+}
+#economicCalendarForm .eCalNew .ecoCalTable.genTable TD:first-child {
+  font-weight: normal;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable .theDay {
+    text-align: center;
+    background-color: #E8E8E8;
+    border-top: 0;
+    height: 17px !important;
+    line-height: 17px;
+    color: #FFFFFF;
+    font-weight: normal; !important;
+    cursor: default;
+    height: 30px !important;
+    color: #000;
+}
+#economicCalendarForm .eCalNew .passedTime {
+  background-color: #ffffe5;
+}
+#economicCalendarForm .eCalNew .mainEcoAd {
+  background-color: #f2f2f2;
+  height: 50px;
+  padding: 1px 11px 11px;
+}
+#economicCalendarForm .eCalNew .advertisement {
+  background-color: #f2f2f2;
+  height: 58px;
+  padding: 0 10px 10px;
+}
+#economicCalendarForm .eCalNew .mainEcoAd .advText, #economicCalendarForm .eCalNew .advertisement .advText {
+  margin-left: 14px;
+  max-width: 429px;
+}
+#economicCalendarForm .eCalMain .ecoCalTabs {
+  margin-top: 26px;
+  border-bottom: 1px solid #BABABA;
+}
+#economicCalendarForm .eCalMain .ecoCalTabs .clear {
+  *height: 0;
+}
+#economicCalendarForm .eCalMain .socialWidgets {
+  margin-top: -8px;
+}
+#economicCalendarForm .eCalMain .tabsForBoxBottomReg {
+  border: 0;
+  padding: 0;
+}
+#economicCalendarForm .eCalMain .buttonLine {
+  margin-top: 26px;
+}
+#economicCalendarForm .eCalMain .infoBox .advertisement .advText {
+  margin-left: 14px;
+  max-width: 393px;
+}
+#economicCalendarForm .eCalMain .infoBox .ceFlags {
+  margin-right: 0;
+}
+#economicCalendarForm .eCalMain .infoBox {
+  padding: 15px 15px 25px;
+}
+#economicCalendarForm .eCalMain .infoBox .title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#economicCalendarForm .eCalMain .infoBox .tabsForBox {
+  margin-top: 37px;
+  border-bottom: 1px solid #BABABA;
+}
+#economicCalendarForm .eCalMain .infoBox .tabsForBoxBottomReg {
+  width: auto;
+  height: 26px;
+  border-bottom: 0;
+}
+#economicCalendarForm .eCalMain .realData {
+  margin: 23px 26px 0 0;
+  padding: 4px 10px 7px;
+  border: 1px solid #DADADA;
+}
+#economicCalendarForm .eCalMain .realData I {
+  margin: 0 0 3px 3px;
+  *margin: 0 0 -13px;
+}
+#economicCalendarForm .eCalMain .realDataTable DIV {
+  margin: 6px 0 0 6px;
+  width: 161px;
+}
+#economicCalendarForm .eCalMain .realDataTable DIV:first-child {
+  margin-top: 4px;
+  height: 20px;
+}
+#economicCalendarForm .eCalMain .realDataTable DIV.previous {
+  margin-top: 1px;
+}
+#economicCalendarForm .eCalMain .details {
+  margin: 23px 0 0;
+  width: 316px;
+  vertical-align: middle;
+}
+#economicCalendarForm .eCalMain .details DL {
+  margin-top: 9px;
+}
+#economicCalendarForm .eCalMain .details DT, #economicCalendarForm .eCalMain .details DD {
+  float: left;
+  padding: 3px 0;
+  margin: 2px 0;
+}
+#economicCalendarForm .eCalMain .details DT {
+  width: 114px;
+}
+#economicCalendarForm .eCalMain .details DD {
+  width: 202px;
+}
+#economicCalendarForm .genTable.ecoCalTable TBODY TR {
+  cursor: pointer;
+  background: #fff;
+  font-size:12px;
+  border-bottom: 1px solid #ddd;
+}
+#economicCalendarForm .genTable.ecoCalTable TR.noHover TD {
+  border-top: 1px solid #dfe9f2;
+  border-bottom: 1px solid #BABABA;
+  cursor: default;
+}
+#economicCalendarForm .eCalMain .openedTr TD {
+  background-color: #dfe9f2;
+  border-top: 1px solid #BABABA;
+}
+#economicCalendarForm .eCalMain .timeSeparator TD {
+  border-top: 2px solid #DADADA;
+}
+#economicCalendarForm .eCalMain .eventOverview {
+  /*width: 550px;*/
+  width: 100%;
+}
+#economicCalendarForm .eCalMain .showMoreReplies {
+  margin: 12px 0 3px;
+}
+#economicCalendarForm .genTable.ecoCalTable .ecHistoryTable TR {
+  cursor: default;
+}
+#economicCalendarForm .genTable.ecoCalTable TR.noHover .ecHistoryTable TD {
+  border-bottom: none;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable {
+  width: 100%;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable TR:hover {
+  background-color: #fff;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TD:first-child {
+  font-weight: bold;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TH {
+  padding: 0;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TH.symbol {
+  width: 55%;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TH.act {
+  width: 15%;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TH.for {
+  width: 15%;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TH.pre {
+  width: 15%;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TH.diamond {
+  width: 11px;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TR:first-child TD {
+  border-top: 2px solid #BABABA !important;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable TD {
+  height: 21px;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable.genTable .left {
+  text-align: left;
+}
+#economicCalendarForm .eCalMain .ecHistoryTable TD {
+  padding: 0;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable TD.center.noResults {
+  padding: 10px 0 12px;
+}
+#economicCalendarForm .eCalMain TABLE.ecoCalTable TR:hover TD.center.noResults {
+  pointer: default;
+  background-color: white;
+}
+#economicCalendarForm .genTable.ecHistoryTable TD {
+  border-top: 1px solid #DADADA !important;
+}
+#economicCalendarForm .grayFullBullishIcon {
+  background-position: -5px -1077px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+#economicCalendarForm .grayEmptyBullishIcon {
+  background-position: -5px -1059px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+#economicCalendarForm .whiteEmptyBullishIcon {
+  background-position: -62px -1095px;
+  width: 15px;
+  height: 13px;
+  display: inline-block;
+}
+#economicCalendarForm .eCalNew .genTable.ecoCalTable TR:hover .grayEmptyBullishIcon, #economicCalendarForm .eCalNew .genTable.ecoCalTable TR.openedTr .grayEmptyBullishIcon {
+  background-position: -62px -1095px;
+}
+#economicCalendarForm .eCalNew .genTable.ecoCalTable TR:hover .infoBox .grayEmptyBullishIcon {
+  background-position: -4px -1057px;
+}
+#economicCalendarForm .ecoCalTable .grayFullBullishIcon, #economicCalendarForm .ecoCalTable .grayEmptyBullishIcon {
+  margin: 0 3px 3px 0;
+}
+#economicCalendarForm .datePickerWrap .datePickerIconWrap {
+  background-position: -68px -715px;
+  width: 15px;
+  height: 21px;
+  float: right;
+  padding: 0 5px;
+  /*border-left: 1px solid #8C8C8C;*/
+  background: -o-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+  background: -ms-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e4e4e4));
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#f9f9f9, endColorstr=#e4e4e4, GradientType=0);
+  zoom: 1;
+  background: #fff;
+}
+#economicCalendarForm .ec-highchart {
+  height: 240px;
+}
+
+
+#economicCalendarForm .ec-highchart {
+	font-size: 11.5px;
+}
+
+
+#economicCalendarForm {
+	background: #fff;
+	font-family: Roboto,'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#economicCalendarForm #ecEventsTable {
+    max-width: 100%;
+    min-width: initial;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#ecoCalLegend {
+	background-color: #ddd;
+	font-family: Roboto,'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:12px;
+}
+
+#economicCalendarLoading {
+	display: none;
+}
+
+#economicCalendarForm #ecEventsTable th {
+	font-size: 12px;
+    height: 30px;
+    background: #28313A;
+    color: #fff;
+}
+
+#economicCalendarForm .ecoTimeAndDate {
+	margin-top: 5px;
+}
+
+#economicCalendarForm #widgetField {
+	display: none;
+}
+#flatDatePickerCanvasHol {
+	width: 25px !important;
+}
+
+#economicCalendarForm .ecoTimeAndDate {
+	float: right;
+	margin-right: 15px;
+}
+
+#economicCalendarForm #headerRow {
+	float: left;
+}
+
+#flatDatePickerCanvasHol {
+	border: none !important;
+}
+
+.inlineblock .eCalMain #headerRow  a.logo, .inlineblock .eCalMain #headerRow  a.downloadApp, .inlineblock .eCalMain #headerRow  a[class^="nyx_"] {
+	display: none !important;
+	height: 0;
+	overflow: hidden;
+	width: 0;
+}
+
+#currentTime {
+	font-weight: initial !important;
+}
+
+.ecoTimeAndDate .datepicker {
+	border: 1px solid #28313A;
+}
+
+#widgetCalendar, #widgetHolCalendar {
+	box-shadow: none;
+}
+
+#ecoCalLegend {
+	display: none;
+}

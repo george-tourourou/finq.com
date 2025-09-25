@@ -1,0 +1,28 @@
+# Arabic translation of Upload default avatar (user picture) (7.x-1.1)
+# Copyright (c) 2013 by the Arabic translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Upload default avatar (user picture) (7.x-1.1)\n"
+"POT-Creation-Date: 2013-04-06 01:30+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=((n==1)?(0):((n==0)?(1):((n==2)?(2):((((n%100)>=3)&&((n%100)<=10))?(3):((((n%100)>=11)&&((n%100)<=99))?(4):5)))));\n"
+
+msgid "<none>"
+msgstr "<لا يوجد>"
+msgid "Anonymous"
+msgstr "مجهول"
+msgid "View user profile."
+msgstr "عرض ملف المستخدم."
+msgid "@user's picture"
+msgstr "صورة @user"
+msgid ""
+"Failed to upload the picture image; the %directory directory doesn't "
+"exist or is not writable."
+msgstr ""
+"فشل في رفع الصورة. الدليل %directory غير "
+"موجود. أو غير مسموح بالكتابة فيه."
