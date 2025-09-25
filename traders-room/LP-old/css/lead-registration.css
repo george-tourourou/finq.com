@@ -1,0 +1,74 @@
+.page-node-806305 #MainNavbar,
+.page-node-806305 #LangNavbar,
+.page-node-806305 .navbar-toggler,
+.page-node-806305 #footer {
+  display: none;
+}
+.page-node-806305 .empty {
+  padding: 1px;
+}
+.page-node-806305 #popup-proccess-window {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 10000;
+}
+.page-node-806305 #popup-proccess-window img {
+  display: block;
+  margin: 150px auto 10px;
+  width: 120px;
+}
+.page-node-806305 #popup-proccess-window span {
+  float: left;
+  width: 100%;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+.page-node-806305 form .form_row {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 30px;
+}
+.page-node-806305 form input[type="text"],
+.page-node-806305 form input[type="tel"],
+.page-node-806305 form input[type="password"] {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+.page-node-806305 form #phone2 {
+  width: 19%;
+  float: left;
+  margin: 0;
+  padding: 15px 10px;
+}
+.page-node-806305 form #phone {
+  float: left;
+  margin: 0 0 0 1%;
+  width: 80%;
+}
+.page-node-806305 form .error {
+  color: #e74c3c;
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  float: left;
+  display: none;
+}
+.page-node-806305 form .custom-submit-div .btn {
+  width: 100%;
+}

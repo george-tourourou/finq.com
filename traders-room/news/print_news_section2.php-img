@@ -1,0 +1,16 @@
+<?php
+	global $language;
+
+	$curr_lang = $language->language;
+	
+	if 	($curr_lang=="ar") {$investing_lang="3";}
+	elseif 	($curr_lang=="ru") {$investing_lang="7";}
+	elseif 	($curr_lang=="el") {$investing_lang="14";}	
+	elseif 	($curr_lang=="it") {$investing_lang="9";}	
+	elseif 	($curr_lang=="de") {$investing_lang="8";}		
+	elseif 	($curr_lang=="es") {$investing_lang="4";}			
+	else {$investing_lang="1";}	
+?>
+<?php $baseUrl = $_SERVER['REQUEST_URI']?>
+<div id="market_rates"><img class="img-responsive center-block" alt="" src="https://dev.trade.com/traders-room/img/comsos-feed.PNG" /></div>
+

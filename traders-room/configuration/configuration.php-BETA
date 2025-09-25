@@ -1,0 +1,21 @@
+<?php
+
+$website_url = "https://beta.trade.com/";
+// $widgets_url = "https://dev-widgets.asia-stock.com.cn/"; 
+$widgets_url = "https://widgets.trade.az-qa.com/";
+
+
+/*
+$website_url = "https://www.trade.com/";
+$widgets_url = "https://widgets.trade.com/"; */
+$webrtrader_url= "https://webtrader.trade.com/";
+//$webrtrader_url= "https://widgets.stock.com/en/autologin/webtrader";
+$tablet_trader_url ="https://tablet.trade.com/";
+/*
+$MT4_file_url = "https://beta.trade.com/files/leadcapitalmarketstradecom4setup.exe";
+*/
+$MT4_file_url = "https://www.trade.com/files/leadcapitalmarketstradecom4setup.exe";
+
+
+
+?>

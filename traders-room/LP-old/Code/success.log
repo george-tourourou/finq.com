@@ -1,0 +1,80 @@
+
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:04 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:04 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:05 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:05 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:06 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:06 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:29 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:29 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:47 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:47 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:55 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:55 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:56 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:56 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:57 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:57 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:58 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:58 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 14:59 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=gfdgdfg&lastname=gfdgdfg&phone=357-97-89789797&email=gfdgdfgd@jkhhkj.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 14:59 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869014,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T12:59:24.683Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 15:00 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=dsfsd&lastname=fsdfs&phone=357-89-78978979&email=fsdfsdf@1111.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 15:00 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869138,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T14:00:32.004Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 19:24 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=fdgdfs&lastname=sdfgsfdgsdfg&phone=357-99-654645&email=gfdsgdsgsdfg@hhh.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:24 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869617,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:24:47.457Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 19:27 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=fdgdfs&lastname=sdfgsfdgsdfg&phone=357-99-654645&email=gfdsgdsgsdfg@hhh.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:27 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869617,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:24:47.457Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 19:29 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=fdgdfs&lastname=sdfgsfdgsdfg&phone=357-99-654645&email=12345677gfdsgdsgsdfg@hhh.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&zone=99999&affiliate_id=&notes=&campaignId=5699b1f1-5032-4bbc-b8bf-43e8ced8eea0&pid=&mid=&cid=&zid=&custom=
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:29 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869627,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:29:35.271Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 19:30 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=fdgdfs&lastname=sdfgsfdgsdfg&phone=357-99-654645&email=12345677gfdsgdsgsdfg@hhh.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:30 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869627,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:29:35.270Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 19:31 | access_token=FHf36Ztl5fv9R51oaphj39q3VKMa&firstname=fdgdfs&lastname=sdfgsfdgsdfg&phone=357-99-654645&email=12345677gfdsgdsgsdfg@hhh.com&crm_brand_id=78&language=en&userip=&country=CY&optin=true&servicetype=&
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:31 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869627,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:29:35.270Z"}";"; utm: 
+ OK
+ Finq Lead | ECHO API CALL  date and time: Tue Jun 30, 2020 19:31 | 
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:31 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869627,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:29:35.270Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:33 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869627,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:29:35.270Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:37 | s:189:"s:180:"{"resultStatus":"DUPLICATE","statusCode":400,"msg":"Customer already exist","leadId":29869627,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:29:35.270Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:38 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869644,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:39:01.049Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:42 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869647,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:43:23.306Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:48 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869657,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:48:44.011Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:49 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869659,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:49:49.895Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 19:56 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869666,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T18:57:01.074Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 20:06 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869676,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T19:06:36.753Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 20:10 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869684,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T19:11:02.467Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Tue Jun 30, 2020 20:10 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29869686,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-06-30T19:11:29.183Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Wed Jul 01, 2020 7:04 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29870275,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-07-01T06:05:20.139Z"}";"; utm: 
+ OK
+ Finq Lead |  date and time: Wed Jul 01, 2020 17:07 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29872589,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-07-01T16:08:11.675Z"}";"; utm: &utm_campaign=UAE Competition - LP Conversions&utm_medium=ppc&utm_source=facebook&utm_term=&utm_content=&utm_category=&ad_id=&ad_group=&gclid=
+ OK
+ Finq Lead |  date and time: Wed Jul 01, 2020 18:14 | s:189:"s:180:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29872711,"poolName":"Sales Finq Internal Disqualified Leads","date":"2020-07-01T17:15:07.428Z"}";"; utm: &utm_campaign=UAE Competition - LP Conversions&utm_medium=ppc&utm_source=facebook&utm_term=&utm_content=&utm_category=&ad_id=23845198933240562&ad_group=23845198933380562&gclid=
+ OK
+ Finq Lead |  date and time: Thu Jul 02, 2020 6:15 | s:197:"s:188:"{"resultStatus":"OK","statusCode":200,"msg":"Lead was created successfully","leadId":29873591,"poolName":"Sales Finq External BI Ocean Plus English Desk","date":"2020-07-02T05:16:29.135Z"}";"; utm: &utm_campaign=UAE Competition - LP Conversions&utm_medium=ppc&utm_source=facebook&utm_term=&utm_content=&utm_category=&ad_id=23845198933270562&ad_group=23845198933540562&gclid=
+ OK

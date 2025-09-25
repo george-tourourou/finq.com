@@ -1,0 +1,222 @@
+
+.margin-top-10px {
+    margin-top: 10px !important;
+}
+
+.header div {
+    background: #000000 !important;
+}
+
+#AppCtrl h1.md-display-2 {
+    line-height: 1.2;
+    float: left;
+    width: 100%;
+}
+
+#AppCtrl .md-select-value 
+{
+    display: block;
+}
+
+#AppCtrl .md-select-value > span
+{
+    float: left;
+    width: 100%;
+    text-overflow: unset;
+    white-space: normal;
+    overflow: unset;
+}
+
+.md-select-menu-container md-option
+{
+    padding: 0;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.md-select-menu-container md-option div.md-text
+{
+    float: left;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    padding: 0 10px 5px;
+    white-space: normal;
+    overflow: unset;
+    text-overflow: unset;
+}
+
+.inputdemoErrorsAdvanced md-input-container .hint {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    display: block !important;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+md-input-container .md-errors-spacer {
+    min-height: auto;
+    min-width: auto;
+}
+
+#AppCtrl button {
+    position: relative;
+    z-index: 50;
+}
+
+#AppCtrl {
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+    background: #fff;
+}
+
+body,
+.container,
+#AppCtrl,
+#AppCtrl > md-content{
+    background: #fff;
+
+}
+
+#AppCtrl > md-content{
+    float: left;
+    width: 100%;
+}
+
+#AppCtrl h3.md-diplay-1 {
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 600px) {
+    md-container h1.md-display-2 {
+        margin: 15px 0 10px;
+        font-size: 30px;
+    }
+
+    #AppCtrl div.BankDetails strong {
+        width: 100%;
+        text-align: left;
+        float: left;
+    }
+
+    #AppCtrl div.BankDetails span {
+        float: left;
+        margin: 0 0 15px;
+        max-width: 100%;
+    }
+}
+
+form {
+    float: left;
+    width: 100%;
+}
+
+.md-input-focused label,
+.md-input-has-value label {
+    display: none;
+}
+
+md-input-container {
+    margin: 5px 0;
+}
+
+h1.md-display-2 {
+    line-height: 1.2;
+    margin: 10px 0 0 13px;
+}
+
+.alert {
+    margin: 0;
+}
+
+.md-button {
+    margin-top: 20px;
+}
+
+.inputdemoErrorsAdvanced .hint {
+    /* Position the hint */
+    position: absolute;
+    left: 39px;
+    right: auto;
+    bottom: 7px;
+    /* Copy styles from ng-messages */
+    font-size: 12px;
+    line-height: 14px;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    /* Set our own color */
+    color: grey; }
+.inputdemoErrorsAdvanced .hint.ng-hide,
+.inputdemoErrorsAdvanced .hint.ng-enter,
+.inputdemoErrorsAdvanced .hint.ng-leave.ng-leave-active {
+    bottom: 26px;
+    opacity: 0; }
+.inputdemoErrorsAdvanced .hint.ng-leave,
+.inputdemoErrorsAdvanced .hint.ng-enter.ng-enter-active {
+    bottom: 7px;
+    opacity: 1; }
+
+.material-icons {
+    color: gray;
+}
+
+.inputdemoErrorsAdvanced md-input-container.md-input-invalid > md-icon{
+    color:rgb(221,44,0); }
+
+.header {
+    background-color: #000;
+}
+
+.layout-gt-sm-row {
+    float: left;
+    width: 100%;
+}
+
+form .layout-gt-sm-row {
+    margin-top: 10px;
+}
+body[dir=rtl] .hint {
+    right: 2px;
+    left: auto;
+}
+
+iframe {
+    display: none;
+}
+
+.md-gold {
+    background-color: #dbab63;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.md-gold:hover {
+    background-color: #cc9b51 !important;
+}
+
+.BankDetails, .full {
+    float: left; width: 100%;
+    display: block;
+}
+
+.BankDetails strong {
+    width: 180px; text-align: right; float: left;
+}
+
+.BankDetails span {
+    float: left; margin-left: 10px;max-width: 350px;
+}
+
+@media (min-width: 576px){
+    .container {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,1 @@
+<?php$website_url = "https://www.trade.com/";$widgets_url = "https://widgets.trade.com/";$MT4_file_url = "https://www.trade.com/files/leadcapitalmarkets4setup.exe";$webrtrader_url= "https://webtrader.trade.com/";$tablet_trader_url ="https://tablet.trade.com/";$check_country = "FALSE";$show_registration = "TRUE";$brand_name = "TRADE"; ?>
